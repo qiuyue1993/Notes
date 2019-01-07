@@ -85,11 +85,11 @@
 - "*I love you*" is our training data, and current target word is "*love*".
 - Define $c$ as the words number used to compute the target word.
 - Define one-hot vector for every word have $v$ dimension
-- Weight : $w_1 :v*n$, $w_2 :n*v$ dimension vectors.
+- Weight : $w_1 :v * n$, $w_2 :n * v$ dimension vectors.
 - Pooling operates : $$maxpooling_{c\to1}$$
-- Input is $c*v$ dimension matrix
-- CBOW can be denoted as : $$maxpooling_{c\to1}( Input*w_1 )*w_2*$$
-- Output : $1*v$ dimension vector, indicating the propability of each word
+- Input is $c * v$ dimension matrix
+- CBOW can be denoted as : $$maxpooling_{c\to1}( Input * w_1 ) * w_2$$
+- Output : $1 * v$ dimension vector, indicating the propability of each word
 - Training : Minimizing Cross Entropy or other losses functions.
 
 ##### Un-, Weak- Supervised Learning or Supervised Learning
