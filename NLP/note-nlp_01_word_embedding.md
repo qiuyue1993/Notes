@@ -16,7 +16,7 @@
 - Top Conference: ACL
 - Someone said that " *Image and Sound is kind of low level data* "
 - However, language is highly abstract
--  **To use NN, the first biggest problem is how to represent language data**
+-  **To use NN, the core problem is how to represent language data**
 
 ---
 ### Categories of NLP Representation
