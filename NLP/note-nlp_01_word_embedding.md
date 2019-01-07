@@ -5,7 +5,7 @@
 - [Categories of NLP Representation](#Categories-of-NLP-Representation)
 - [NLP Language Model](#NLP-Language-Model)
 - [Distributed Representation](#Distributed-Representation)
-- [Word-Embeding](#Word-Embeding)
+- [Word Embeding](#Word-Embeding)
 - [Neural Network Language Model and word2vec](#Neural-Network-Language-Model-and-word2vec)
 - [Some thoughts](#Some-thoughts)
 - [Reference](#Reference)
@@ -60,9 +60,9 @@
 
 ---
 ### Word Embedding
-![avatar](C:/Users/qiu/Boostnote/notes/images/NLP_Note01/f1.png)
+
 - Word Embedding can be considered as a by-product of the neural network language model.
-- Comparing with one-hot vector representation, word embedding use dense representation (above figure). 
+- Comparing with one-hot vector representation, word embedding use dense representation. 
 - For a word vector, every element is a real number.
 - Absolutly, the dimension will be far smaller than one-hot vector.
 
