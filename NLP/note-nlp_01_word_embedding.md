@@ -1,7 +1,7 @@
 # The NLP Note - 01: Word Embedding
 
 ### Indexing:
-- [The core of DeepNLP : Representation](#The core of DeepNLP : Representation)
+- [The core of DeepNLP - Representation](#The core of DeepNLP - Representation)
 - [Introduction](#introduction)
 - Categories of NLP Representation 
 -- One-Hot Representation
@@ -18,7 +18,7 @@
 -- Word Embedding
 - Some thoughts
 ---
-## The core of DeepNLP : Representation
+## The core of DeepNLP - Representation
 
 - Top Conference: ACL
 - Someone said that " *Image and Sound is kind of low level data* "
