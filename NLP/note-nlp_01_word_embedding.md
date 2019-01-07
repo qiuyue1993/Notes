@@ -3,19 +3,13 @@
 ### Indexing:
 - [The core of DeepNLP](#The-core-of-DeepNLP)
 - [Categories of NLP Representation](#Categories-of-NLP-Representation)
--- One-Hot Representation
--- Distributed Representation
 - [NLP Language Model](#NLP-Language-Model)
 - [Distributed Representation](#Distributed-Representation)
-- Word Embeding
-- [Neural Network Language Model and word2vec](#Neural Network Language Model and word2vec)
--- Neural Network  based Language Model
--- Word2Vec, CBOW, Skip-gram
-- Neural Network Language Model and word2vec
--- Neural Network Language Model
--- Word2vec, CBOW, Skip-gram
--- Word Embedding
-- Some thoughts
+- [Word-Embeding](#Word-Embeding)
+- [Neural Network Language Model and word2vec](#Neural-Network-Language-Model-and-word2vec)
+- [Some thoughts](#Some-thoughts)
+- [Reference](#Reference)
+
 ---
 ### The core of DeepNLP
 
