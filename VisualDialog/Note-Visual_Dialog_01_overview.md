@@ -62,10 +62,10 @@ $$NDCG@k =\frac{DCG@k\ for\ submitted\ ranking}{DCG@k\ for\ ideal\ ranking}$$
 ---
 ### Challenges
 #### EvalAI
-- [Visual Dialog Challenge](#https://visualdialog.org/challenge/2018)
-- [WizWiz Challenge](#http://vizwiz.org/data/#challenge)
-- [Vision and Language Navigation](#https://evalai.cloudcv.org/web/challenges/challenge-page/97/overview)
-- [VQA Challenge](#https://visualqa.org/challenge.html)
+- [Visual Dialog Challenge](https://visualdialog.org/challenge/2018)
+- [WizWiz Challenge](http://vizwiz.org/data/#challenge)
+- [Vision and Language Navigation](https://evalai.cloudcv.org/web/challenges/challenge-page/97/overview)
+- [VQA Challenge](https://visualqa.org/challenge.html)
 ---
 ### Encoder Decoder Models
 #### Decoders:
