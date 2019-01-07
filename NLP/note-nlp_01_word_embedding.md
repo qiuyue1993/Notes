@@ -60,7 +60,7 @@
 
 ---
 ### Word Embedding
-![Word Embedding](http://pjreddie.com/media/files/darknet-black-small.png)
+![Word Embedding](https://github.com/qiuyue1993/Notes/blob/master/NLP/images/nlp_01_wordembedding.png)
 - Word Embedding can be considered as a by-product of the neural network language model.
 - Comparing with one-hot vector representation, word embedding use dense representation. 
 - For a word vector, every element is a real number.
