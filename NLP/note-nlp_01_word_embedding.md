@@ -27,7 +27,7 @@
 -  **To use NN, the first biggest problem is how to represent language data**
 
 ---
-### Categories of NLP Representation
+## Categories of NLP Representation
 #### One-hot Reprentation
 - Eg. *Microwave* -> [0,0,1,0,0]
 - Use one hot vector to represent a word, thus, for a vocabulary with 1,000 words, you need to use 1000-dim to represent every word.
