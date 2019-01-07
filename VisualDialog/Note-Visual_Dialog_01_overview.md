@@ -12,6 +12,7 @@
 ---
 
 ###  Introduction:
+
 #### Why Visual Dialog?
 - Natural Language instructions for robots
 - Aid visually impaired users
@@ -78,6 +79,7 @@ $$NDCG@k =\frac{DCG@k\ for\ submitted\ ranking}{DCG@k\ for\ ideal\ ranking}$$
 - Encoding of each of 100 options
 ---
 ### Performance
+https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/visualdialog_01-challengeresults.png
 - Human performance: NDCG 64.27
 - 1st place model: 55.64
 - baseline: 47.57
