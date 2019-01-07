@@ -12,8 +12,7 @@
 ---
 
 ###  Introduction:
-![VD_Overview](https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/visualdialog_01-overview.png =200*200)
-
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/visualdialog_01-overview.png" width="200" hegiht="200" align=center />
 #### Why Visual Dialog?
 - Natural Language instructions for robots
 - Aid visually impaired users
