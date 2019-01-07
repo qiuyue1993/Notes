@@ -37,11 +37,11 @@
 ### Evaluation
 #### Evaluation(as in CVPR17 paper)
 - 100 answer options
--- 50 answers from NN questions
--- 30 popular answers
--- up to 20 random answers
--- Rank 100 options
--- Accurarcy: mean rank of GT answer, recall@k
+  50 answers from NN questions
+  30 popular answers
+  up to 20 random answers
+  Rank 100 options
+  Accurarcy: mean rank of GT answer, recall@k
 #### Normalized Discounted Cumulative Gain (NDCG)
 ```
 Answer options: [``two'', ``yes'', ``probably'', ``no'', ``yes it is'' ]
