@@ -3,6 +3,7 @@
 ### Indexing:
 - [The core of DeepNLP - Representation](#The core of DeepNLP - Representation)
 - [Introduction](#introduction)
+- [Categories of NLP Representation](#Categories of NLP Representation)
 - Categories of NLP Representation 
 -- One-Hot Representation
 -- Distributed Representation
