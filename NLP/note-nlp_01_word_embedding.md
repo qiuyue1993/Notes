@@ -1,7 +1,8 @@
-## The NLP Note - 01: Word Embedding
+# The NLP Note - 01: Word Embedding
 
 ### Indexing:
 - [The core of DeepNLP : Representation](#The core of DeepNLP : Representation)
+- [Introduction](#introduction)
 - Categories of NLP Representation 
 -- One-Hot Representation
 -- Distributed Representation
