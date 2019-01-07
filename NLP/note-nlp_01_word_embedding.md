@@ -39,10 +39,10 @@
 ### NLP Language Model
 - Statistics Language Model
 -- A language (Sequence of Words) is a random event, and statistics language model use some probability to describe this event.
--- Define vocabulary set as $V$, a sequence (or sentence) $S = <w_1, w_2,...,w_m>\in V_n$, statistics language model computes a probability for this sequence $P(S)$ to measure the confidence of $S$ in conforming to the grammer and semantic rules.
+-- Define vocabulary set as $V$, a sequence (or sentence) $$S = <w_1, w_2,...,w_m>\in V_n$$, statistics language model computes a probability for this sequence $P(S)$ to measure the confidence of $S$ in conforming to the grammer and semantic rules.
 - Popular Statistics Language Model
 -- N-gram Model (unigram model, bigram model, trigram model)
--- Usually, $P(w_i\mid w_1, w_2, ..., w_{i-1})\approx P(w_i\mid w_{i-(n-1)}, ..., w_{i-1})$
+-- Usually, $$P(w_i\mid w_1, w_2, ..., w_{i-1})\approx P(w_i\mid w_{i-(n-1)}, ..., w_{i-1})$$
 
 ---
 ### Distributed Representation
@@ -94,9 +94,9 @@
 -- Define $c$ as the words number used to compute the target word.
 -- Define one-hot vector for every word have $v$ dimension
 -- Weight : $w_1 :v*n$, $w_2 :n*v$ dimension vectors.
--- Pooling operates : $maxpooling_{c\to1}$
+-- Pooling operates : $$maxpooling_{c\to1}$$
 -- Input is $c*v$ dimension matrix
--- CBOW can be denoted as : $maxpooling_{c\to1}( Input*w_1 )*w_2*$
+-- CBOW can be denoted as : $$maxpooling_{c\to1}( Input*w_1 )*w_2*$$
 -- Output : $1*v$ dimension vector, indicating the propability of each word
 -- Training : Minimizing Cross Entropy or other losses functions.
 
