@@ -1,5 +1,3 @@
-# 得到
-
 ## The NLP Note - 01: Word Embedding
 
 ### Indexing:
@@ -37,12 +35,12 @@
 
 ---
 ### NLP Language Model
-- Statistics Language Model
--- A language (Sequence of Words) is a random event, and statistics language model use some probability to describe this event.
--- Define vocabulary set as $V$, a sequence (or sentence) $$S = <w_1, w_2,...,w_m>\in V_n$$, statistics language model computes a probability for this sequence $P(S)$ to measure the confidence of $S$ in conforming to the grammer and semantic rules.
-- Popular Statistics Language Model
--- N-gram Model (unigram model, bigram model, trigram model)
--- Usually, $$P(w_i\mid w_1, w_2, ..., w_{i-1})\approx P(w_i\mid w_{i-(n-1)}, ..., w_{i-1})$$
+#### Statistics Language Model
+- A language (Sequence of Words) is a random event, and statistics language model use some probability to describe this event.
+- Define vocabulary set as $V$, a sequence (or sentence) $$S = <w_1, w_2,...,w_m>\in V_n$$, statistics language model computes a probability for this sequence $P(S)$ to measure the confidence of $S$ in conforming to the grammer and semantic rules.
+#### Popular Statistics Language Model
+- N-gram Model (unigram model, bigram model, trigram model)
+- Usually, $$P(w_i\mid w_1, w_2, ..., w_{i-1})\approx P(w_i\mid w_{i-(n-1)}, ..., w_{i-1})$$
 
 ---
 ### Distributed Representation
@@ -68,12 +66,6 @@
 - For a word vector, every element is a real number.
 - Absolutly, the dimension will be far smaller than one-hot vector.
 
----
-- Neural Network Language Model and word2vec
--- Neural Network Language Model
--- Word2vec, CBOW, Skip-gram
--- Word Embedding
-
 ### Neural Network Language Model and word2vec
 #### Neural Network Language Model
 - Neural Network Language Model, NNLM
@@ -84,25 +76,25 @@
 - Skip-gram
 
 ####  Word2vec
-- word2vec
--- CBOW, Skip-gram are famous word2vec, can be used to train word vector
--- CBOW : Computing target word's probability according to the n- words before target words or n-words following it.
--- Skip-gram : Computing the probabilities of n- words before current words or n- words following it according to the current words.
+##### word2vec
+- CBOW, Skip-gram are famous word2vec, can be used to train word vector
+- CBOW : Computing target word's probability according to the n- words before target words or n-words following it.
+- Skip-gram : Computing the probabilities of n- words before current words or n- words following it according to the current words.
 
-- Eg : CBOW
--- "*I love you*" is our training data, and current target word is "*love*".
--- Define $c$ as the words number used to compute the target word.
--- Define one-hot vector for every word have $v$ dimension
--- Weight : $w_1 :v*n$, $w_2 :n*v$ dimension vectors.
--- Pooling operates : $$maxpooling_{c\to1}$$
--- Input is $c*v$ dimension matrix
--- CBOW can be denoted as : $$maxpooling_{c\to1}( Input*w_1 )*w_2*$$
--- Output : $1*v$ dimension vector, indicating the propability of each word
--- Training : Minimizing Cross Entropy or other losses functions.
+##### Eg : CBOW
+- "*I love you*" is our training data, and current target word is "*love*".
+- Define $c$ as the words number used to compute the target word.
+- Define one-hot vector for every word have $v$ dimension
+- Weight : $w_1 :v*n$, $w_2 :n*v$ dimension vectors.
+- Pooling operates : $$maxpooling_{c\to1}$$
+- Input is $c*v$ dimension matrix
+- CBOW can be denoted as : $$maxpooling_{c\to1}( Input*w_1 )*w_2*$$
+- Output : $1*v$ dimension vector, indicating the propability of each word
+- Training : Minimizing Cross Entropy or other losses functions.
 
-- Un-, Weak- Supervised Learning or Supervised Learning
--- Un-, Weak- Supervised Learning : word2vec, auto-encoder
--- Supervised Learning usually have complicated structure and more precise.
+##### Un-, Weak- Supervised Learning or Supervised Learning
+- Un-, Weak- Supervised Learning : word2vec, auto-encoder
+- Supervised Learning usually have complicated structure and more precise.
 
 ---
 ### Some thoughts
