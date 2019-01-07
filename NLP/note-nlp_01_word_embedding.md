@@ -1,5 +1,5 @@
 # 得到
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default" ></script>
+
 ## The NLP Note - 01: Word Embedding
 
 ### Indexing:
