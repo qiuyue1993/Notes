@@ -12,7 +12,7 @@
 ---
 
 ###  Introduction:
-![VD_Overview](https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/visualdialog_01-overview.png){height="100px" width="400px"}
+![VD_Overview{height="100px" width="400px"}](https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/visualdialog_01-overview.png)
 
 #### Why Visual Dialog?
 - Natural Language instructions for robots
