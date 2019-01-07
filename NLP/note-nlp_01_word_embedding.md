@@ -1,14 +1,12 @@
-# The NLP Note - 01: Word Embedding
+## The NLP Note - 01: Word Embedding
 
 ### Indexing:
-- [The core of DeepNLP - Representation](#The core of DeepNLP - Representation)
-- [Introduction](#introduction)
-- [Categories of NLP Representation](#Categories of NLP Representation)
-- Categories of NLP Representation 
+- [The core of DeepNLP](#The-core-of-DeepNLP)
+- [Categories of NLP Representation](#Categories-of-NLP-Representation)
 -- One-Hot Representation
 -- Distributed Representation
-- NLP Language Model
-- Distributed Representation
+- [NLP Language Model](#NLP-Language-Model)
+- [Distributed Representation](#Distributed-Representation)
 - Word Embeding
 - [Neural Network Language Model and word2vec](#Neural Network Language Model and word2vec)
 -- Neural Network  based Language Model
@@ -19,7 +17,7 @@
 -- Word Embedding
 - Some thoughts
 ---
-## The core of DeepNLP - Representation
+### The core of DeepNLP
 
 - Top Conference: ACL
 - Someone said that " *Image and Sound is kind of low level data* "
@@ -27,7 +25,7 @@
 -  **To use NN, the first biggest problem is how to represent language data**
 
 ---
-## Categories of NLP Representation
+### Categories of NLP Representation
 #### One-hot Reprentation
 - Eg. *Microwave* -> [0,0,1,0,0]
 - Use one hot vector to represent a word, thus, for a vocabulary with 1,000 words, you need to use 1000-dim to represent every word.
@@ -89,7 +87,7 @@
 - CBOW (Continuous Bag of Words)
 - Skip-gram
 
-##  Word2vec
+####  Word2vec
 - word2vec
 -- CBOW, Skip-gram are famous word2vec, can be used to train word vector
 -- CBOW : Computing target word's probability according to the n- words before target words or n-words following it.
