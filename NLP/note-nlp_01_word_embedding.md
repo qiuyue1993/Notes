@@ -10,7 +10,7 @@
 - NLP Language Model
 - Distributed Representation
 - Word Embeding
-- [Word2vec](#Word2vec)
+- [Neural Network Language Model and word2vec](#Neural Network Language Model and word2vec)
 -- Neural Network  based Language Model
 -- Word2Vec, CBOW, Skip-gram
 - Neural Network Language Model and word2vec
