@@ -10,7 +10,7 @@
 - NLP Language Model
 - Distributed Representation
 - Word Embeding
-- Word2Vec
+- [Word2vec](#Word2vec)
 -- Neural Network  based Language Model
 -- Word2Vec, CBOW, Skip-gram
 - Neural Network Language Model and word2vec
@@ -89,7 +89,7 @@
 - CBOW (Continuous Bag of Words)
 - Skip-gram
 
-####  Word2vec, CBOW, Skip-gram
+##  Word2vec
 - word2vec
 -- CBOW, Skip-gram are famous word2vec, can be used to train word vector
 -- CBOW : Computing target word's probability according to the n- words before target words or n-words following it.
