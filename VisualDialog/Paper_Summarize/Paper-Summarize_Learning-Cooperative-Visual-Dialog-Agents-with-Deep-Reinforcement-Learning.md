@@ -69,7 +69,7 @@ At each round, for
 B-bot:
 - Must provide a 'description' $\hat{y}$ of the unknown image *I* based only on the dialog history
 Both players:
-- Receive a reward from the environment inversely proportional to the error in this description under some metric $l(\hat{y}), y^{gt}$
+- Receive a reward from the environment inversely proportional to the error in this description under some metric $l(\hat{y}, y^{gt})$
 
 **This is a general setting where the 'description' $\hat{y}$ can take on varying levels of specificity - from image embeddings to textual descriptions to pixel-level image generations**
 
