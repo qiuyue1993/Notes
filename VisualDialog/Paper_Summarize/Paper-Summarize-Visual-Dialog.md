@@ -138,7 +138,7 @@ Base framework:
 - Evaluation: options are ranked based on their posterior probabilites.
 
 #### Encoders
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_visualdialog_NetworkArchitecture.png" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_visualdialog_NetworkArchitecture.png" width="400" hegiht="600" align=center/>
 
 Image Representation: $l2$-normalized activations of the penultimate layer of VGG-16.
 For each decoder, experiment with all possible ablated versions: $E(Q_t), E(Q_t, I), E(Q_t, H), E(Q_t, I, H)$
@@ -179,7 +179,7 @@ For each decoder, experiment with all possible ablated versions: $E(Q_t), E(Q_t,
 - VQA models such as, SAN, HieCoAtt
 
 #### Results
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_visualdialog_resultofVisDialv0-9.png" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_visualdialog_resultofVisDialv0-9.png" width="400" hegiht="600" align=center/>
 - All learning based models outperform non-learning baselines.
 - All discriminative models outperform generative models
 - MN-QIH-G : 0.526 MRR
