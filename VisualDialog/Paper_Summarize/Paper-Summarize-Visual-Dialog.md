@@ -135,7 +135,7 @@ Base framework:
 - Computes dot prodcution similarity between input encoding and an LSTM encoding of each answer.
 - Training: maximize the log-likelihood of the correct option.
 - Evaluation: options are ranked based on their posterior probabilites.
-- 
+
 #### Encoders
 Image Representation: $l2$-normalized activations of the penultimate layer of VGG-16.
 For each decoder, experiment with all possible ablated versions: $E(Q_t), E(Q_t, I), E(Q_t, H), E(Q_t, I, H)$
