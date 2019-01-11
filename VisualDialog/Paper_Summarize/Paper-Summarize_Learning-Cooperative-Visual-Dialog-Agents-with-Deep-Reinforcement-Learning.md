@@ -11,7 +11,7 @@
 - [References](#References)
 ---
 ### Introduction
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/visualdialog_01-overview.png" width="400" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_q-bot-a-bot_overview.png" width="400" hegiht="400" align=center/>
 
 #### Problems of Visual Dialog Task
 - Treat dialog as static supervised learning problem, rather than an  interactive agent learning problem than it naturally is.
