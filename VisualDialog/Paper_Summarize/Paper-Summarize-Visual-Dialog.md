@@ -11,6 +11,7 @@
 - [Reference](#Reference)
 ---
 ### Introduction
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_visualdialog_overview.png" width="400" hegiht="400" align=center/>
 #### Task
 - Given an image, a dialog history, and a question about the image, the agent has to ground the question in image, infer context from history, and answer the question accurately.
 
@@ -137,6 +138,8 @@ Base framework:
 - Evaluation: options are ranked based on their posterior probabilites.
 
 #### Encoders
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_visualdialog_NetworkArchitecture.png" align=center/>
+
 Image Representation: $l2$-normalized activations of the penultimate layer of VGG-16.
 For each decoder, experiment with all possible ablated versions: $E(Q_t), E(Q_t, I), E(Q_t, H), E(Q_t, I, H)$
 ##### Late Fusion (LF) Encoder:
@@ -146,6 +149,8 @@ For each decoder, experiment with all possible ablated versions: $E(Q_t), E(Q_t,
 - Linearyly transformed to joint embedding size.
 
 ##### Hierarchical Recurrent Encoder (HRE):
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_visualdialog_HRE.png" width="400" hegiht="400" align=center/>
+
 - Recurrent block ($R_t$): Embeds question and image jointly via LSTM.
 - Recurrent block ($R_t$): Embeds each rounds of history $H_t$
 - Concatenate above embeddings
@@ -174,6 +179,7 @@ For each decoder, experiment with all possible ablated versions: $E(Q_t), E(Q_t,
 - VQA models such as, SAN, HieCoAtt
 
 #### Results
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_visualdialog_resultofVisDialv0-9.png" align=center/>
 - All learning based models outperform non-learning baselines.
 - All discriminative models outperform generative models
 - MN-QIH-G : 0.526 MRR
