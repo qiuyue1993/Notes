@@ -12,6 +12,7 @@
 ---
 ### Introduction
 <img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_visualdialog_overview.png" width="400" hegiht="400" align=center/>
+
 #### Task
 - Given an image, a dialog history, and a question about the image, the agent has to ground the question in image, infer context from history, and answer the question accurately.
 
