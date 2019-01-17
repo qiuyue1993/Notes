@@ -2,8 +2,7 @@
 
 ### Index
 - [Introduction](*Introduction)
-- [Conclusion](*Conclusion*)
-
+- [Conclusion](*Conclusion)
 - [References](*References)
 ---
 ### Introduction
