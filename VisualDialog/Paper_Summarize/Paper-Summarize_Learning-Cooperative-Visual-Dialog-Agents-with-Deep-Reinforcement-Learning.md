@@ -180,6 +180,7 @@ Problems of traditional Visual Dialog settings:
 
 Problems of Q-bot and A-bot settings:
 - Emergence of language is somehow useless?
+- Actually learnt to communicate with each other (Q-bot and A-bot), rather than communicate with human.
 
 ---
 ### References
