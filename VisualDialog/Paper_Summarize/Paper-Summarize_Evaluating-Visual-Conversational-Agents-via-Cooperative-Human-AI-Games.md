@@ -1,9 +1,9 @@
 ## Evaluating Visual Conversational Agents via Cooperative Human-AI Games
 
 ### Index
-- [Introduction](*Introduction)
-- [Conclusion](*Conclusion)
-- [References](*References)
+- [Introduction](#Introduction)
+- [Conclusion](#Conclusion)
+- [References](#References)
 ---
 ### Introduction
 - In this work, we design a cooperative game – GuessWhich – to measure human-AI team performance in the speciﬁc context of the AI being a visual conversational agent. 
