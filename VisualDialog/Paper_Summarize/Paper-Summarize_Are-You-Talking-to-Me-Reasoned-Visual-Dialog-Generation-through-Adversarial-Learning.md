@@ -13,7 +13,8 @@
 ### Introduction
 - Human-like vs. Machine-like responses in a visual dialog
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_q-bot-a-bot_overview.png" width="400" hegiht="400" align=center/> 
+<img src="
+https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
 
 
 - We present a novel approach that combines **Reinforcement Learning** and **Generative Adversarial Networks (GANs)** to generate more **human-like responses** to questions. 
@@ -30,7 +31,7 @@ We particularly frame the task as a reinforcement learning problem that we joint
 ### Approach
 - Proposed adversarial learning framework
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_q-bot-a-bot_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_proposed-model.png" width="600" hegiht="300" align=center/> 
 
 Proposed model is composed of two components:
 -  A sequential co-attention generator that accepts as input image, question and dialog tuples, and uses the co-attention encoder to jointly reason over them.
@@ -42,7 +43,7 @@ The output from the discriminator is used as a reward to push the generator to g
 - Evaluation Metrics: MR; Recall@k; MRR
 -  Results on VisDial v0.9
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_q-bot-a-bot_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_experiments-results.png" width="600" hegiht="300" align=center/> 
 
 ---
 ### Conclusion
