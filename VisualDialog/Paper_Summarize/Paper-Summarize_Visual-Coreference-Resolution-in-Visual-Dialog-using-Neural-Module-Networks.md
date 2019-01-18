@@ -11,7 +11,7 @@
 ### Introduction
 - Overview of proposed visual coreference resolution
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_q-bot-a-bot_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Coreference-Resolution-in-Visual-Dialog_overview.png" width="600" hegiht="200" align=center/> 
 
 #### Problem Definition
 -  We focus on one such problem called **visual coreference resolution** that involves determining which words, typically noun phrases and pronouns, co-refer to the same entity/object instance in an image.
@@ -28,7 +28,7 @@
 ### Approach
 - Overview of proposed model architecture
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_q-bot-a-bot_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Coreference-Resolution-in-Visual-Dialog_overview-of-proposed-model.png" width="600" hegiht="200" align=center/> 
 
 As rounds of dialog progress, the model collects unique entities and their corresponding visual groundings, and uses this reference pool to resolve any coreferences in subsequent questions. 
 Three broad componets:
@@ -51,7 +51,7 @@ Three broad componets:
 #### VisDial Dataset
 - Results on VisDial v1.0 dataset
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/papersummarize_q-bot-a-bot_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Coreference-Resolution-in-Visual-Dialog_results-on-VisDial-v1.png" width="600" hegiht="300" align=center/> 
 
 - Results show that proposed method outperforms all previous methods in VisDial Dataset.
 ---
