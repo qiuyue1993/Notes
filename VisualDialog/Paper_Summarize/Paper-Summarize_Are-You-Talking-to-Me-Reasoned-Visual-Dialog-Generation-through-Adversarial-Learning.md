@@ -13,8 +13,7 @@
 ### Introduction
 - Human-like vs. Machine-like responses in a visual dialog
 
-<img src="
-https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
 
 
 - We present a novel approach that combines **Reinforcement Learning** and **Generative Adversarial Networks (GANs)** to generate more **human-like responses** to questions. 
