@@ -90,13 +90,13 @@ To tackle variable length history:
 - Perform similarity scoring and feature fusion jointly using MLP.
 
 #### Network Training
-- Adam optimizer with a learning rate of $10-3$
+- Adam optimizer with a learning rate of $10^{-3}$
 - Sharing the weights of the language embedding greatly helps in learning better word representations.
 - Two hidden layered MLP nets performs better than one layer.
 - **All our models converge in under 5 epochs of training on VisDial dataset.**
 
 #### Implementation Details
-- **Utilize deep metric learning and a self-attention mechanism to train a discriminator network which leverages the availability of answer options.  We achieve this via a simple LSTM-MLP approach. **
+- **Utilize deep metric learning and a self-attention mechanism to train a discriminator network which leverages the availability of answer options.  We achieve this via a simple LSTM-MLP approach.**
 
 #### VisDial-Q Dataset and Evaluation
 -  We create a similar ‘VisDial-Q evaluation protocol.’ A visual question generation system is required to choose one out of 100 next question candidates for a given question-answer pair.
