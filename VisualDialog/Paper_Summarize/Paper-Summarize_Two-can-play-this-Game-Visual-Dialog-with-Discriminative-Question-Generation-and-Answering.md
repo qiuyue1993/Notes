@@ -11,6 +11,10 @@
 
 ---
 ### Introduction
+- Overview 
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
+
 Abstract
 - In this paper, we demonstrate a **simple symmetric discriminative baseline**, that can be applied to **both predicting an answer** as well as **predicting a question**.
 
@@ -39,6 +43,15 @@ Contribution
 
 ---
 ### Approach
+- Brief difference between proposed method and traditional methods
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
+
+- Overview of proposed architecture
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
+
+
 #### Overview
 - It is the purpose of this paper to **maximally utilize the informativeness of options**, i.e., to use early option input. Hence, we focus on discriminative visual dialog systems. 
 - In this paper, we also provide results for **question generation**.
@@ -102,11 +115,12 @@ To tackle variable length history:
 ##### Visual Question Answering
 - VisDial evaluation metrics
 
-
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
 
 ##### Visual Question Generation
 - VisDial-Q evaluation metrics
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
 
 Obtained intuitive insights
 - Predicting the next question is a much more difficult task than answering a question without context.
@@ -115,6 +129,9 @@ Obtained intuitive insights
 
 #### Qualitative Evaluation
 - Examples of generated dialogs
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
+
 ---
 ### Conclusion
 - We developed a **discriminative method** for the visual dialog task, i.e., predicting an answer given question and context.
