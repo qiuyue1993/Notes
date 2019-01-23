@@ -13,7 +13,7 @@
 ### Introduction
 - Overview 
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_VD-with-Discriminative-Question-Generation-and-Answering_overview.png" width="400" hegiht="400" align=center/> 
 
 Abstract
 - In this paper, we demonstrate a **simple symmetric discriminative baseline**, that can be applied to **both predicting an answer** as well as **predicting a question**.
@@ -45,11 +45,11 @@ Contribution
 ### Approach
 - Brief difference between proposed method and traditional methods
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_VD-with-Discriminative-Question-Generation-and-Answering_structure-brief.png" width="400" hegiht="400" align=center/> 
 
 - Overview of proposed architecture
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_VD-with-Discriminative-Question-Generation-and-Answering_proposed-structure.png" width="400" hegiht="400" align=center/> 
 
 
 #### Overview
@@ -115,12 +115,12 @@ To tackle variable length history:
 ##### Visual Question Answering
 - VisDial evaluation metrics
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_VD-with-Discriminative-Question-Generation-and-Answering_VisDial-Evaluation.png" width="400" hegiht="400" align=center/> 
 
 ##### Visual Question Generation
 - VisDial-Q evaluation metrics
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_VD-with-Discriminative-Question-Generation-and-Answering_VisDial-Q-Evaluation.png" width="400" hegiht="400" align=center/> 
 
 Obtained intuitive insights
 - Predicting the next question is a much more difficult task than answering a question without context.
@@ -130,7 +130,7 @@ Obtained intuitive insights
 #### Qualitative Evaluation
 - Examples of generated dialogs
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Reasoned-Visual-Dialog-through-GAN_overview.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_VD-with-Discriminative-Question-Generation-and-Answering_Generated-Dialogs.png" width="400" hegiht="400" align=center/> 
 
 ---
 ### Conclusion
