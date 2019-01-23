@@ -49,7 +49,7 @@ Contribution
 
 - Overview of proposed architecture
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_VD-with-Discriminative-Question-Generation-and-Answering_proposed-structure.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_VD-with-Discriminative-Question-Generation-and-Answering_proposed-structure.png" width="600" hegiht="400" align=center/> 
 
 
 #### Overview
@@ -130,7 +130,7 @@ Obtained intuitive insights
 #### Qualitative Evaluation
 - Examples of generated dialogs
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_VD-with-Discriminative-Question-Generation-and-Answering_Generated-Dialogs.png" width="400" hegiht="400" align=center/> 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_VD-with-Discriminative-Question-Generation-and-Answering_Generated-Dialogs.png" width="600" hegiht="400" align=center/> 
 
 ---
 ### Conclusion
