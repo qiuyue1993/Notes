@@ -13,17 +13,17 @@
 
 - Overview of proposed method
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Evaluating-Human-AI-Team_overview1.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_Explainable-Neural-Computation-via-Stack-Neural-Module-Networks_Proposed-Structure.png" width="600" hegiht="400" align=center/>
 
 
 - Proposed Decomposition of reasoning procedure
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Evaluating-Human-AI-Team_overview1.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_Explainable-Neural-Computation-via-Stack-Neural-Module-Networks_Proposed-Decomposition-of-reasoning-procedure.png" width="600" hegiht="400" align=center/>
 
 
 - Results on VQA datasets
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Evaluating-Human-AI-Team_overview1.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_Explainable-Neural-Computation-via-Stack-Neural-Module-Networks_Results-on-VQA-dataset.png" width="600" hegiht="400" align=center/>
 
 ---
 ### Conclusion
