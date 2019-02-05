@@ -11,19 +11,19 @@
 
 - Overview of Proposed Method
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Evaluating-Human-AI-Team_overview1.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_FiLM-Visual-Reasoning-with-a-General-Conditioning-Layer.png" width="600" hegiht="400" align=center/>
 
 - Proposed FiLM layer
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Evaluating-Human-AI-Team_overview1.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_FiLM-Visual-Reasoning-with-a-General-Conditioning-Layer_FiLM-Layer.png" width="600" hegiht="400" align=center/>
 
 - Results on CLEVR dataset
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Evaluating-Human-AI-Team_overview1.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_FiLM-Visual-Reasoning-with-a-General-Conditioning-Layer_Accuracy-on-CLEVR.png" width="600" hegiht="400" align=center/>
 
 - FiLM parameters cluster
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Evaluating-Human-AI-Team_overview1.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_FiLM-Visual-Reasoning-with-a-General-Conditioning-Layer_Parameters-Visualization.png" width="600" hegiht="400" align=center/>
 
 ---
 ### Conclusion
