@@ -13,7 +13,7 @@
 
 - Previous method and Proposed method
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VisualDialog/images/Paper-Summarize_Evaluating-Human-AI-Team_overview1.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_Cascaded-Mutual-Modulation-for-Visual-Reasoning.png" width="600" hegiht="400" align=center/>
 
 ----
 ### Conclusion
