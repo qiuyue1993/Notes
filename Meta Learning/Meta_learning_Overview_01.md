@@ -1,6 +1,7 @@
 ## Meta Learning Overview 01
 ### Indexing:
 - [What is Meta Learning](#What-is-Meta-Learning)
+- [Unsupervised Meta Learning](#Unsupervised-Meta-Learning)
 - [References](#References)
 
 ---
@@ -15,5 +16,22 @@
 - Back-propagation
 
 ---
+### Unsupervised Meta Learning
+#### Unsupervised Learning Task
+- Use unlabeled data to learn feature representation
+- Apply learned feature representation to Few-Shot Learning 
+
+#### How to update network parameters for unlabeled data
+- Construct a network (Meta Network) to predict parameters to be updated
+
+#### Unsupervised Learning via Meta-Learning
+- Run unsupervised learning to learn a initial embedding function
+- Cluster embedding multiple times
+- Automatically construct tasks without supervision
+- Run meta-learning on tasks
+
+---
 ### References
 - [最前沿：Meta Learning/Learning to Learn, 到底我们要学会学习什么？](https://zhuanlan.zhihu.com/p/32270990)
+- [谈谈无监督Meta Learning的研究](https://zhuanlan.zhihu.com/p/46339823)
+- [Meta Learning单排小教学](https://zhuanlan.zhihu.com/p/46059552)
