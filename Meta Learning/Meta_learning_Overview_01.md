@@ -2,6 +2,7 @@
 ### Indexing:
 - [What is Meta Learning](#What-is-Meta-Learning)
 - [Unsupervised Meta Learning](#Unsupervised-Meta-Learning)
+- [Three type of Meta Learning](#Three-type-of-Meta-Learning)
 - [Task-Agnostic Meta-Learning](#Task-Agnostic-Meta-Learning)
 - [References](#References)
 
@@ -30,6 +31,9 @@
 - Cluster embedding multiple times
 - Automatically construct tasks without supervision
 - Run meta-learning on tasks
+
+---
+### Three type of Meta Learning
 
 ---
 ### Task-Agnostic Meta Learning
