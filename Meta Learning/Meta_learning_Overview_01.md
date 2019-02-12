@@ -1,12 +1,18 @@
 ## Meta Learning Overview 01
-Indexing:
+### Indexing:
 - [What is Meta Learning](#What-is-Meta-Learning)
 - [References](#References)
 
 ---
 ### What is Meta Learning
-
-
+#### Meta of Deep Learning
+- Hyper Parameters: learning rate, batch size, input size, etc.
+- Network Architecture
+- Initialization
+- Optimizer: SGD, Adam, RMSProp
+- Network parameters: ??
+- Loss Function
+- Back-propagation
 
 ---
 ### References
