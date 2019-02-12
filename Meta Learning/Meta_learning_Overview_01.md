@@ -2,6 +2,7 @@
 ### Indexing:
 - [What is Meta Learning](#What-is-Meta-Learning)
 - [Unsupervised Meta Learning](#Unsupervised-Meta-Learning)
+- [Task-Agnostic Meta-Learning](#Task-Agnostic Meta-Learning)
 - [References](#References)
 
 ---
@@ -31,7 +32,12 @@
 - Run meta-learning on tasks
 
 ---
+### Task-Agnostic Meta Learning
+
+
+---
 ### References
 - [最前沿：Meta Learning/Learning to Learn, 到底我们要学会学习什么？](https://zhuanlan.zhihu.com/p/32270990)
 - [谈谈无监督Meta Learning的研究](https://zhuanlan.zhihu.com/p/46339823)
 - [Meta Learning单排小教学](https://zhuanlan.zhihu.com/p/46059552)
+- [任务无偏的元学习(Task-Agnostic Meta-Learning)：最小化任务性能之间的不平等](https://zhuanlan.zhihu.com/p/37076777)
