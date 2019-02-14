@@ -34,7 +34,9 @@
 
 ---
 ### Three type of Meta Learning
-
+- HyperNetwork for network parameters generation
+- Conditional Neural Network
+- MAML (Model-Agnostic Meta-Learning)
 ---
 ### Task-Agnostic Meta Learning
 
