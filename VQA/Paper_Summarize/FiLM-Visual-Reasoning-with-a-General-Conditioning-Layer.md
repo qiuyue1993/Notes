@@ -16,12 +16,6 @@
 
 - In the case of visual reasoning, FiLM layers **enable a Recurrent Neural Network (RNN) over an input question to influence Convolutional Neural Network (CNN) computation** over an image.
 
-
-
-
-
-
-
 ---
 ### Method
 #### Feature-wise Linear Modulation
@@ -99,7 +93,7 @@ Overall model contains:
 
 - Activation Visualization Examples 
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_FiLM-Visual-Reasoning-with-a-General-Conditioning-Layer_Accuracy-on-CLEVR.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_FiLM-Visual-Reasoning-with-a-General-Conditioning-Layer_Activation-visualization.png" width="600" hegiht="200" align=center/>
 
 - These images reveal that the FiLM model predicts using features of areas near answer-related or question-related objects, as the high CLEVR accuracy also suggests. 
 
