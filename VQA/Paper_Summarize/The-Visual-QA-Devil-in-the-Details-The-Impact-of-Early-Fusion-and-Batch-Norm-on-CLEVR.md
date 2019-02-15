@@ -13,7 +13,7 @@
 ---
 ### Models
 - Simple Feed Forward Network
-
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_The-Visual-QA-Devil-in-the-Details-The-Impact-of-Early-Fusion-and-Batch-Norm-on-CLEVR_Multimodal-Core.png" width="600" hegiht="400" align=center/>
 
 
 - Image CNN: 4 layers of Conv, ReLU, 128 kernels of size 3-by-3 and strides 2 and batch-norm
@@ -27,6 +27,8 @@ We investigate four variants for fusing the vision and language.
 ---
 ### Experiments and Conclusions
 - Experiments on CLEVR
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_The-Visual-QA-Devil-in-the-Details-The-Impact-of-Early-Fusion-and-Batch-Norm-on-CLEVR_Results-on-CLEVR.png" width="600" hegiht="400" align=center/>
 
 - **Early fusion** is indeed critical for CLEVR;
 - **Batch-norm** shows small but non-trivial gains, especially on harder questions like counting or comparing numbers.
