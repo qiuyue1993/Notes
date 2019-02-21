@@ -2,7 +2,7 @@
 
 Papers Summaries for Video Visualization.
 
-Papers to read:
+Paper list:
 
 2002:
 - [Generation, Visualization, and Editing of 3D Video](http://vision.kuee.kyoto-u.ac.jp/__STATIC__/japanese/happyou/pdf/Matsuyama_2002_IC_46.pdf)
