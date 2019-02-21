@@ -6,6 +6,7 @@ Papers to read:
 
 2002:
 - [Generation, Visualization, and Editing of 3D Video](http://vision.kuee.kyoto-u.ac.jp/__STATIC__/japanese/happyou/pdf/Matsuyama_2002_IC_46.pdf)
+[summarize](https://github.com/qiuyue1993/Notes/blob/master/Video%20Visualization/Paper_Summarize/Generation-Visualization-and-Editing-of-3D-Video.md)
 
 2003:
 - [Video Visualization](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.63.1648&rep=rep1&type=pdf)
