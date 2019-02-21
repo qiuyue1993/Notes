@@ -11,6 +11,7 @@ Paper list:
 
 2003:
 - [Video Visualization](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.63.1648&rep=rep1&type=pdf)
+
   [(summarize)](https://github.com/qiuyue1993/Notes/blob/master/Video%20Visualization/Paper_Summarize/Video-Visualization.md)
 
 2006:
