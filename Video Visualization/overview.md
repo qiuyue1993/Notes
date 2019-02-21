@@ -16,6 +16,9 @@ Paper list:
 
 2006:
 - [Visual Signatures in Video Visualization](https://www.researchgate.net/profile/Rathiah_Hashim/publication/3411294_Visual_Signatures_in_Video_Visualization/links/5438569a0cf204cab1d6d3ab/Visual-Signatures-in-Video-Visualization.pdf)
+   
+  [(summarize)](https://github.com/qiuyue1993/Notes/blob/master/Video%20Visualization/Paper_Summarize/Visual-Signatures-in-Video-Visualization.md)
+
 - [Schematic Storyboarding for Video Visualization and Editing](http://grail.cs.washington.edu/projects/storyboards/paper/review-4-19.pdf)
 
 2008:
