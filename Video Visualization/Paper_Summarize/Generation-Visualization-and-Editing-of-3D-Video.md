@@ -7,7 +7,6 @@
 
 --- 
 ### Introduction
-Contribution:
 Following an overview of the real-time 3D shape reconstruction method, we present
 - an algorithm of generating texture on the 3D object surface from the multi-view video images
 - an editing system for visualizing 3D video with an omnidirectional background image using versatile 3D camera works
