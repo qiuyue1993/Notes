@@ -8,7 +8,7 @@
 ---
 ### Introduction
 - Example of Schematic Storyboard
-
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_Cascaded-Mutual-Modulation-for-Visual-Reasoning.png" width="600" hegiht="400" align=center/>
 
 
 - We present a method for visualizing short video clips in a single staic image, using the visual language of storyboards.
