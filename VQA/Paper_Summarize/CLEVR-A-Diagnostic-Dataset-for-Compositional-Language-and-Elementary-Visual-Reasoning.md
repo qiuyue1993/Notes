@@ -2,7 +2,7 @@
 
 ### Indexing:
 - [Introduction](#Introduction)
-- [The CLEVR Diagnostic Dataset](#The-CLEVR-Diagnositc-Dataset)
+- [The CLEVR Diagnostic Dataset](#The-CLEVR-Diagnostic-Dataset)
 - [References](#References)
 ---
 ### Introduction
