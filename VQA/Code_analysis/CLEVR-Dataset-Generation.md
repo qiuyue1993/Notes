@@ -3,6 +3,7 @@
 ### Indexing
 - [Implementation Code](#Implementation-Code)
 - [Rendering Overview](#Rendering-Overview)
+- [CLEVR Question Generation](#CLEVR-Question-Generation)
 - [References](#References)
 ---
 ### Implementation Code
@@ -73,6 +74,8 @@ Other parameters
 
 #### Restricting Shape / Color Combinations
 - **--shape_color_combos_json** flag can be used to restrict the colors of each shape.
+---
+### CLEVR Question Generation
 
 
 ---
