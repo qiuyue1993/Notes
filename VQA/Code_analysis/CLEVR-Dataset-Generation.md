@@ -29,7 +29,7 @@ Camera and lights
 - Controlled with the **--key_light_jitter**, **--fill_light_jitter**, **--back_light_jitter**, **--camera_jitter**
 
 Objects
-- After loading the base scene, objects are pkaced one by one into the scene.
+- After loading the base scene, objects are placed one by one into the scene.
 - Number of objects for each scene is a random integer between **--min_objects(default 3)**, **--max_objects(default 10)**
 - After placing all objects, we ensure that no objects are fully occluded; 
 - minimal occupy for each object is 100 pixels (customizable using **--min_pixels_per_object**).
