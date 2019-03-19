@@ -94,6 +94,7 @@ Question Templates consists of four components:
 - One or more **parameters**, values for each parameters of choosed template
 - One or more **text templates**, natural-language representation of the question
 - A **program template**, consisting of a sequence of node, each node may expand to multiple functions
+- Zero or more **constraints**, restricting the allowed values of the parameters
 
 **metadata.json**
 - defines the simple functional programming language used to construct programs and program templates.
