@@ -43,8 +43,8 @@ a 3D shape can be recognized even from **a single view** at an accuracy far **hi
 
 ---
 ### Method
-
-
+- If the views are rendered **in a reproducible order**, one could also **concatenate the 2D descriptors of all** the views.
+- Our approach is to learn to **combine information from multiple views** using a uniﬁed CNN architecture that includes a **view-pooling layer**.
 
 #### Input: A Multi-view Representation
 
