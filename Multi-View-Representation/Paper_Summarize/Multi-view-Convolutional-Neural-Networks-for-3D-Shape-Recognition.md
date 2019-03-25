@@ -49,7 +49,7 @@ a 3D shape can be recognized even from **a single view** at an accuracy far **hi
 #### Input: A Multi-view Representation
 ##### Camera Setup
 **First camera setup**
-- Assume that the input shapes are upright oriented along a consistent axis (e.g., z-axis)
+- Assume that the input shapes are **upright oriented** along a consistent axis (e.g., z-axis)
 - 12 rendered views by placing 12 virtual cameras around the model every 30 degrees.
 - The cameras are elevated 30 degrees from the ground plane.
 - The cameras are pointing towards the centroid of the model.
@@ -64,20 +64,30 @@ a 3D shape can be recognized even from **a single view** at an accuracy far **hi
 - CNN features: Use the VGG-M network, consists of mainly five convolutional layers conv_{1,...,5} followed by three fully connected layers fc_{6,...,8} and a softmax classification layer. Use **fc_7** as image descriptor.
 
 **Classification**
-- Sum up the values over 12 views with the highest sum.
-- Averaging image descriptors lead to worse accuracy.
+- **Sum up** the values over 12 views with the highest sum.
+- **Averaging** image descriptors lead to **worse** accuracy.
 
 **Retrieval**
 - A distance or similarity measure is required for retrieval tasks.
 - Using l_2 distance between image feature vectors as distance.
 
 #### Multi-view CNN: Learning to Aggregate Views
+- We design the multi-view CNN on top of image-based CNNs;
+- CNN_1: Each image of a 3D shape's multi-view representation is passed through CNN_1 seperately and **shared weight**.
+- View-pooling: Aggregate multi-view information. We use **element-wise maximum operation**. **Element-wise mean operation is not as effective.** **placed close to the last conv layer resulted in optimal performance.**
+- CNN_2
 
+
+**Low-rank Mahalanobis metric:**
+- Used for better performance on retrieval task.
 
 ---
 ### Experiments
 #### 3D Shape Classification and Retrieval
-
+- ModelNet40 dataset
+- Baselines: 3D ShapeNets; Spherical Harmonics descriptor; LightField descriptor; Fisher vectors
+- Assuption of **upright orientation didn't affect** the results.
+- Performance is **not very sensitive among the later few layers** (conv_4-fc_7)
 
 #### Sketch Recognition: Jittering Revisited
 
