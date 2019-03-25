@@ -28,6 +28,20 @@ a 3D shape can be recognized even from **a single view** at an accuracy far **hi
 - The multi-view CNN learns to **combine the views instead of averaging**, and thus can use the more informative views of the object for prediction while ignoring others. 
 
 ---
+### Related Work
+#### Shape descriptors
+##### 3D shape descriptors 
+- Directly work on native 3D representations of objects, such as polygon meshes, voxel-based discretizations, point clouds, or implicit surfaces.
+**Former works:**
+- Voxel-based representation through 3D convolutional nets
+- Histograms of bag-of-features models constructed out of surface normals, curvatures and so on.
+- Challenges of hand-designed 3D features: lack of datasets and size limitation of datasets; 3D descriptors tend to be very high-dimensional, making classifiers prone to overfitting.
+
+##### Collection of 2D projections
+- LightField descriptor, which extracts a set of geometric and Fourier descriptors from object silhouettes rendered from several different viewpoints.
+- Former descriptors are largely **hand-engineered** and some do not generalize well across different domains.
+
+---
 ### Method
 
 
