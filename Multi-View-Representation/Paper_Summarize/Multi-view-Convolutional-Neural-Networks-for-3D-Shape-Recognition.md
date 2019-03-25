@@ -10,6 +10,8 @@
 
 ---
 ### Introduction
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_Cascaded-Mutual-Modulation-for-Visual-Reasoning.png" width="800" hegiht="300" align=center/>
+
 #### Abstract
 - We ﬁrst present a standard CNN architecture trained to recognize the shapes’ rendered views independently of each other, and show that
 a 3D shape can be recognized even from **a single view** at an accuracy far **higher than** using state-of-the-art **3D shape descriptors**.
