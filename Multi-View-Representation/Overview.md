@@ -10,5 +10,14 @@
 #### RotationNet: Joint Object Categorization and Pose Estimation Using Multiviews from Unsupervised Viewpoints
 - [References](https://arxiv.org/pdf/1603.06208.pdf)
 
+#### Triplet-Center Loss for Multi-View 3D Object Retrieval
+- [References](http://openaccess.thecvf.com/content_cvpr_2018/papers/He_Triplet-Center_Loss_for_CVPR_2018_paper.pdf)
+
+#### SeqViews2SeqLables: Learning 3D Global Features via Aggregating Sequential Views by RNN With Attention
+- [References](http://cgcad.thss.tsinghua.edu.cn/liuyushen/main/pdf/LiuYS_TIP19RNN.pdf)
+
+#### Auto-Encoding Progressive Generative Adversarial Networks For 3D Multi Object Scenes
+- [References](https://arxiv.org/pdf/1903.03477.pdf)
+
 
 
