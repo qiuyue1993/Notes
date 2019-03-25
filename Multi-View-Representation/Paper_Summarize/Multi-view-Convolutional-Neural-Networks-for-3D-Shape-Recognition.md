@@ -90,11 +90,9 @@ a 3D shape can be recognized even from **a single view** at an accuracy far **hi
 - Performance is **not very sensitive among the later few layers** (conv_4-fc_7)
 
 #### Sketch Recognition: Jittering Revisited
-
+- We now examine whether we can get more **beneﬁt out of jittered views of an image** by using the same feature aggregation scheme we developed for recognizing 3D shapes.
 
 #### Sketch-based 3D Shape Retrieval
-
-
 
 ---
 ### Conclusion
