@@ -47,11 +47,29 @@ a 3D shape can be recognized even from **a single view** at an accuracy far **hi
 - Our approach is to learn to **combine information from multiple views** using a uniﬁed CNN architecture that includes a **view-pooling layer**.
 
 #### Input: A Multi-view Representation
+##### Camera Setup
+**First camera setup**
+- Assume that the input shapes are upright oriented along a consistent axis (e.g., z-axis)
+- 12 rendered views by placing 12 virtual cameras around the model every 30 degrees.
+- The cameras are elevated 30 degrees from the ground plane.
+- The cameras are pointing towards the centroid of the model.
 
-
+**Second camera setup**
+- Do not make use of the assumption about consistent up-right orientation of shapes.
+- 20 virtual cameras, 4 rendered views from each camera, yielding total 80 views.
 
 #### Recognition with Multi-view Representations
+**Image descriptors**
+- Two types of image descriptors for each 2D view: image descriptor based on Fisher vectors with multiscale SIFT; CNN activation features.
+- CNN features: Use the VGG-M network, consists of mainly five convolutional layers conv_{1,...,5} followed by three fully connected layers fc_{6,...,8} and a softmax classification layer. Use **fc_7** as image descriptor.
 
+**Classification**
+- Sum up the values over 12 views with the highest sum.
+- Averaging image descriptors lead to worse accuracy.
+
+**Retrieval**
+- A distance or similarity measure is required for retrieval tasks.
+- Using l_2 distance between image feature vectors as distance.
 
 #### Multi-view CNN: Learning to Aggregate Views
 
