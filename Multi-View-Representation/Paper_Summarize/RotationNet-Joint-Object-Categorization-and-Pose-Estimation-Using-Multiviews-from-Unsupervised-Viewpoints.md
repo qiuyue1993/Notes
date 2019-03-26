@@ -34,7 +34,7 @@
 
 #### Viewpoint setups for training
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/Multi-View-Representation/images/Paper_Summarize-RotationNet-Framework.png" width="400" hegiht="150" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Multi-View-Representation/images/Paper_Summarize-RotationNet-Viewpoints.png" width="600" hegiht="200" align=center/>
 
 **Case (i): with upright orientation**
 - Assume upright orientation
