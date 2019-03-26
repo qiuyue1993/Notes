@@ -34,10 +34,33 @@
 
 #### Viewpoint setups for training
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Multi-View-Representation/images/Paper_Summarize-RotationNet-Framework.png" width="400" hegiht="150" align=center/>
 
+**Case (i): with upright orientation**
+- Assume upright orientation
+- Fix a specific axis as the rotation axis (e.g., the z-axis)
+- Elevate by 30 degree
+- 12 views for an object
+
+**Case (ii): w/o upright orientation**
+- Do not assume upright orientation
+- Place virtual cameras on the M=20 vertices of a dodecahedron encompassing the object.
+
+**Case (iii): with upright orientation and multiple elevation levels**
+- Extension of case (i).
+- Elevation angle varies from -90 degree to 90 degree
 
 ---
 ### Experiments
+**Settings**:
+- Baseline architecture: AlexNet
+- Pre-trained on ImageNet
+- Momentum SGD with a learning rate of 0.0005 and a momentum of 0.9 for optimization.
+
+**Baseline model**
+- Modified version of MVCNN
+- View-pooling layer is placed after final softmax layer.
+- Using average pooling instead of  max pooling.
 
 #### Experiment on 3D model datasets
 
