@@ -25,7 +25,9 @@
 - **v_i are treated as latent variables that are optimized in the training process**
 
 **Idea**
-- We introduce an ``incorrect view'' class 
+- We introduce an ``incorrect view'' class and append it to the target category class
+- When v_i is correct, the possibility of correct label y_i should be 1
+- When v_i is incorrect, the possibility of correct label y_i may not necessarily be high
 
 #### Viewpoint setups for training
 
