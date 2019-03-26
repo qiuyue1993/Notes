@@ -9,6 +9,9 @@
 
 ---
 ### Introduction
+https://github.com/qiuyue1993/Notes/blob/master/Multi-View-Representation/images/Paper_Summarize-RotationNet-Framework.png
+
+
 #### Abstract
 - We propose a Convolutional Neural Network (CNN)based model “RotationNet,” which takes **multi-view images** of an object as input and **jointly estimates its pose and object category**.
 - Our method treats the **viewpoint labels as latent variables**, which are learned in an **unsupervised** manner during the training using an unaligned object dataset. 
