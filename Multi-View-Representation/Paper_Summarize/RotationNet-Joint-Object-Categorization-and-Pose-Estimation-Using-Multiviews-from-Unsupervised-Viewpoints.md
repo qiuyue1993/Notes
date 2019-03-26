@@ -9,8 +9,8 @@
 
 ---
 ### Introduction
-https://github.com/qiuyue1993/Notes/blob/master/Multi-View-Representation/images/Paper_Summarize-RotationNet-Framework.png
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Multi-View-Representation/images/Paper_Summarize-RotationNet-Framework.png" width="800" hegiht="300" align=center/>
 
 #### Abstract
 - We propose a Convolutional Neural Network (CNN)based model “RotationNet,” which takes **multi-view images** of an object as input and **jointly estimates its pose and object category**.
