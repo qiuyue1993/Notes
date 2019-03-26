@@ -63,12 +63,26 @@
 - Using average pooling instead of  max pooling.
 
 #### Experiment on 3D model datasets
+- ModelNet10 (4,899 object instances, 10 categories) and ModelNet40 (12,311 object instances, 40 categories)
+- Ablation: views used for prediction; viewpoint setups; network architectures (AlexNet, VGG-M, ResNet-50)
+- 
 
+**Results**
+- The method with late view-pooling is slightly better than original MVCNN with the view-pooling layer in the middle.
+- The placement of viewpoints is the most important factor in multiview-based 3D object classification.
 
 #### Experiment on a real image benchmark dataset
+- RGBD dataset (300 object instances in 51 categories)
+- When estimating object instance/category and pose using 12 views altogether, both accuracies are remarkably improved.
 
 #### Experiment on a 3D rotated real image dataset
+- New dataset: MIRO (Multi-view Images of Rotated Objects)
+- 3D MFP to capture multi-view images
+- 12 categories, 10 object instances per category
 
+**Real-world applications**
+- Viewpoint setup case (iii)
+- Not only object classification but also estimation performance is improved by using multiple views.
 
 ---
 ### Discussion
