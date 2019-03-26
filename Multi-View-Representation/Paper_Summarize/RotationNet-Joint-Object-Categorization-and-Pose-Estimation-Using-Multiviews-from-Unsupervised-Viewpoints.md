@@ -24,6 +24,8 @@
 - Viewpoint variable v_i for each images in M
 - **v_i are treated as latent variables that are optimized in the training process**
 
+**Idea**
+- We introduce an ``incorrect view'' class 
 
 #### Viewpoint setups for training
 
