@@ -21,3 +21,8 @@
 7. Information Maximizing Visual Question Generation
 - [Link](https://arxiv.org/pdf/1903.11207.pdf)
 
+8. Unsupervised Image Captioning
+- [Link](https://arxiv.org/pdf/1811.10787.pdf)
+
+9. Explainable and Explicit Visual Reasoning over Scene Graphs
+- [Link](https://arxiv.org/pdf/1812.01855.pdf)
