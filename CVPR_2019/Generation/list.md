@@ -18,4 +18,6 @@
 6. Image Generation from Layout
 - [Link](https://arxiv.org/abs/1811.11389)
 
+7. Semantic Image Synthesis with Spatially-Adaptive Normalization (**Oral**)
+- [Link](https://arxiv.org/pdf/1903.07291.pdf)
 
