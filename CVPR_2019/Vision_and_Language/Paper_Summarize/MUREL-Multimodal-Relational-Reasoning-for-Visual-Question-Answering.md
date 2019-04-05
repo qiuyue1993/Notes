@@ -38,7 +38,7 @@ process the image.
 ---
 ### MuRel approach
 #### Overview
-- Image representation: ${V_i}$
+- Image representation: $\{V_i\}$
 
 #### MuRel cell
 
