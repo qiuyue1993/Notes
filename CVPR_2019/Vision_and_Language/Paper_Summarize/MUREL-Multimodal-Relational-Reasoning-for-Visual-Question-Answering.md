@@ -38,11 +38,27 @@ process the image.
 ---
 ### MuRel approach
 #### Overview
-- Image representation: $\{V_i\}$
+- Image representation: a set of vectors, a vector corresponds to an **object** detected in the picture; **Bounding boxes**;
+- Question representation: sentence embedding using gated recurrent unit network.
 
 #### MuRel cell
+- Visual Representation: a bag of N visual features, along with their bounding box coordinates.
+- Bilinear fusion module: merges question and region feature vectors to provide a local multimodal embedding.
+- Pairwise modeling component: update each multimodal representation with respect to its own spatial and visual context.
 
+**Multimodal fusion**:
+- Mutan: based on the Tucker decomposition of third-order tensors. This bilinear fusion model learns to focus on the relevant correlations between input dimensions. It models rich and fine-grained multimodal interactions, while keeping a relatively low number of parameters.
+- In the MuRel cell, the local multimodal information is represented within a richer vectorial form $m_i$ which can encode more complex correlations between both modalities.
 
+**Pairwise interactions**:
+- Reason over multiple object that interact together.
+- Each representation to be aware of the spatial and semantic context.
+- Use pairwise relationship modeling where each region receives a message based on its relations to its neighbors.
+
+- Compute a context vector for every region consisting in an aggregation of all the pairwise links coming into it.
+- Use max operator in the agggregation function.
+- Use bilinear fusion function for semantic and spatial information pairwise fusion.
+- The MuREL cell's output is computed as a residual function.
 
 #### MuRel network
 
