@@ -43,7 +43,8 @@ process the image.
 
 ---
 ### Conclusion
-
+- Our system is based on **rich representations of visual image regions** that are **progressively merged** with the question representation.
+- We also included **region relations with pairwise combinations**.
 
 ---
 ### References
