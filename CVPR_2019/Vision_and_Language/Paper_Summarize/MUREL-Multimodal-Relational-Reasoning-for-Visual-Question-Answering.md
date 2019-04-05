@@ -29,6 +29,11 @@ process the image.
 - [FiLM](https://arxiv.org/pdf/1709.07871.pdf): modulates the visual feature map with an affine transformation whose parameters depend on the question.
 - [Relation Network](https://papers.nips.cc/paper/7082-a-simple-neural-network-module-for-relational-reasoning.pdf): reason over all the possible pairs of objects in the picture.
 
+### VQA on real data
+**Tensor decomposition frameworks**
+- [Mutan](http://openaccess.thecvf.com/content_ICCV_2017/papers/Ben-younes_MUTAN_Multimodal_Tucker_ICCV_2017_paper.pdf)
+- [MCB](https://arxiv.org/pdf/1606.01847.pdf)
+- [MLB](https://arxiv.org/pdf/1610.04325.pdf)
 
 #### 
 
