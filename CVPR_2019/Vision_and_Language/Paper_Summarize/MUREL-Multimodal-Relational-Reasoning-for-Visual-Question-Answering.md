@@ -35,8 +35,6 @@ process the image.
 - [MCB](https://arxiv.org/pdf/1606.01847.pdf)
 - [MLB](https://arxiv.org/pdf/1610.04325.pdf)
 
-#### 
-
 ---
 ### MuRel approach
 
