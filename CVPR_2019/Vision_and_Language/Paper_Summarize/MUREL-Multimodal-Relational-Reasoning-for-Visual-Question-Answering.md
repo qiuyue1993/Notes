@@ -83,14 +83,26 @@ process the image.
 - Hyper-parameters: Bottom-up features to represent image as a set of 36 localized regions; Pretrained Skip-throught encoder of question embedding; Adam optimizer with a learning scheduler.
 
 #### Model validation
+- Comparison to Attention-based model (Mutan): Significant gain on three datasets.
 
+
+- Ablation study: Ablation on **Pairwise module** and **Iterative Process**; Model with pairwise module and iterative process results in a best performance.
+
+
+- Number of reasoning steps: Ablation of one, two, three, four layers of iterative MuRel cells. Model with three iterative layers results in the best overall performance, whilist the model with four iterative layers performs best in counting questions.
 
 #### State of the art comparison
+- VQA2.0: Obtain same level of overall accuracy with VQA Challenge 2018 champion while did not extensively tune the hyperparameters. 
 
+
+- TDIUC: Obtain state-of-the-art results on Overall accuracy and the arithmetic mean of per-type accuracies (A-MPT). Lower harmonic mean of per-type accuracies (H-MPT) as the low score on the Utility and Affordances task which are not directly related to the visual understanding of the scene.
+
+
+- VQA-CP v2: state-of-the-art overall accuracy meanwhile less prone to question-based overfitting than classical attention architectures.
 
 #### Qualitative results
-
-
+- Iterations through the MuRel cell tend to **gradually discard regions**, keeping only the most relevant ones.
+- VQA models are often subject to linguistic bias, the MuRel network acctually relies on the visual information to answer questions.
 ---
 ### Conclusion
 - Our system is based on **rich representations of visual image regions** that are **progressively merged** with the question representation.
