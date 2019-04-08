@@ -61,12 +61,35 @@ process the image.
 - The MuREL cell's output is computed as a residual function.
 
 #### MuRel network
+- A MuRel cell **iteratively updates the region state** vectors, each time refining the representations with **contextual** and **question** information.
+- The **weights are shared** across the cells, which enables compact parametrization and good generalization.
+- At step $t=T$, the representations are aggregated with a global max pooling operation to provide a single vector; This scene representation contains information about **objects**, the **spatial** and **semantic** relations between them.
+- The scene representation is merged with the question embedding $q$ to compute a score for every possible answer.
 
+**Visualizing MuRel network**
+- The proposed model can be used to **highlight important relations** between image regions for answering a specific question.
+- The proposed model also can be used to visualize **the pairwise relationships** involved in the prediction of MuRel cell.
 
-
+**Connection to previous work (comparison with the FiLM network)**
+- Dataset: real VQA dataset vs. synthetic CLEVR dataset
+- Residual cells: one per interation vs. multiple cells
+- Multimodal interaction: bilinear fusion strategy vs. feature-wise affine modulation.
+- Spatial structure of the image representation: non trivial relational modeling vs. locally-connected graph.
 
 ---
 ### Experiments
+#### Experimental setup
+- Datasets: VQA2.0; VQA Changing Priors v2; TDIUC (12 well-defined types of question; biggest dataset for VQA)
+- Hyper-parameters: Bottom-up features to represent image as a set of 36 localized regions; Pretrained Skip-throught encoder of question embedding; Adam optimizer with a learning scheduler.
+
+#### Model validation
+
+
+#### State of the art comparison
+
+
+#### Qualitative results
+
 
 ---
 ### Conclusion
