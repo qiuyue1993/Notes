@@ -18,6 +18,8 @@ Problem of **Multimodal attentional networks**:
 - MuRel cell: atomic reasoning primitive representing interactions between question and image regions.
 - MuRel **progressively** refines visual and question interactions.
 
+
+
 ---
 ### Related work
 #### Visual reasoning
