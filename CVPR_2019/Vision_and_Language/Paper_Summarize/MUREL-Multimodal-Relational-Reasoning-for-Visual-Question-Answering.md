@@ -18,8 +18,6 @@ Problem of **Multimodal attentional networks**:
 - MuRel cell: atomic reasoning primitive representing interactions between question and image regions.
 - MuRel **progressively** refines visual and question interactions.
 
-
-
 ---
 ### Related work
 #### Visual reasoning
@@ -44,6 +42,9 @@ process the image.
 - Question representation: sentence embedding using gated recurrent unit network.
 
 #### MuRel cell
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_MUREL_MuRel-cell.png" width="600" hegiht="400" align=center/>
+
 - Visual Representation: a bag of N visual features, along with their bounding box coordinates.
 - Bilinear fusion module: merges question and region feature vectors to provide a local multimodal embedding.
 - Pairwise modeling component: update each multimodal representation with respect to its own spatial and visual context.
@@ -63,6 +64,9 @@ process the image.
 - The MuREL cell's output is computed as a residual function.
 
 #### MuRel network
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_MUREL_MuRel-Overall-Network.png" width="600" hegiht="400" align=center/>
+
 - A MuRel cell **iteratively updates the region state** vectors, each time refining the representations with **contextual** and **question** information.
 - The **weights are shared** across the cells, which enables compact parametrization and good generalization.
 - At step $t=T$, the representations are aggregated with a global max pooling operation to provide a single vector; This scene representation contains information about **objects**, the **spatial** and **semantic** relations between them.
@@ -87,22 +91,33 @@ process the image.
 #### Model validation
 - Comparison to Attention-based model (Mutan): Significant gain on three datasets.
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_MUREL_MuRel-vs-attention-model.png" width="600" hegiht="400" align=center/>
 
 - Ablation study: Ablation on **Pairwise module** and **Iterative Process**; Model with pairwise module and iterative process results in a best performance.
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_MUREL_MuRel-module-ablation.png" width="600" hegiht="400" align=center/>
 
 - Number of reasoning steps: Ablation of one, two, three, four layers of iterative MuRel cells. Model with three iterative layers results in the best overall performance, whilist the model with four iterative layers performs best in counting questions.
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_MUREL_MuRel-iterative-time-ablation.png" width="600" hegiht="400" align=center/>
 
 #### State of the art comparison
 - VQA2.0: Obtain same level of overall accuracy with VQA Challenge 2018 champion while did not extensively tune the hyperparameters. 
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_MUREL_Experiment-result-on-VQA2.png" width="600" hegiht="400" align=center/>
 
 - TDIUC: Obtain state-of-the-art results on Overall accuracy and the arithmetic mean of per-type accuracies (A-MPT). Lower harmonic mean of per-type accuracies (H-MPT) as the low score on the Utility and Affordances task which are not directly related to the visual understanding of the scene.
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_MUREL_Experiment-result-on-TDIUC.png" width="600" hegiht="400" align=center/>
 
 - VQA-CP v2: state-of-the-art overall accuracy meanwhile less prone to question-based overfitting than classical attention architectures.
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_MUREL_Experiment-result-on-VQACP2.png" width="600" hegiht="400" align=center/>
+
 #### Qualitative results
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_MUREL_Visualization-results.png" width="600" hegiht="400" align=center/>
+
 - Iterations through the MuRel cell tend to **gradually discard regions**, keeping only the most relevant ones.
 - VQA models are often subject to linguistic bias, the MuRel network acctually relies on the visual information to answer questions.
 ---
