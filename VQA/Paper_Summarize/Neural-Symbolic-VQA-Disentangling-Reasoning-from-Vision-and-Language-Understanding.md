@@ -49,6 +49,8 @@ the question. It then **excutes the program on the scene representation** to obt
 
 ---
 ### Approach
+
+
 **Overview**
 - A scene parser (de-renderer): de-render image to obtain a **structural scene representation**
 - A question parser (program generator): generate a hierarchical program from the question
@@ -73,6 +75,8 @@ the question. It then **excutes the program on the scene representation** to obt
 - Reasoning: Supervised training with 20,000 iterations, **reinforce training** for 2M iterations.
 ---
 ### Evaluations
+
+
 #### Data-Efficient, Interpretable Reasoning
 - Setup: CLEVR dataset; Ablation of numbers of ground-truth programs; Compared with IEP baseline.
 - Results: Outperforms all of the other methods on all five question types.
