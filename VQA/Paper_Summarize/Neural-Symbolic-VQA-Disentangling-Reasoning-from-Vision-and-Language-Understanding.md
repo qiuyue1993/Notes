@@ -50,6 +50,7 @@ the question. It then **excutes the program on the scene representation** to obt
 ---
 ### Approach
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_Neural-Symbolic_Overall-framework.png" width="600" hegiht="400" align=center/>
 
 **Overview**
 - A scene parser (de-renderer): de-render image to obtain a **structural scene representation**
@@ -76,6 +77,7 @@ the question. It then **excutes the program on the scene representation** to obt
 ---
 ### Evaluations
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_Neural-Symbolic_Results-on-CLEVR.png" width="600" hegiht="400" align=center/>
 
 #### Data-Efficient, Interpretable Reasoning
 - Setup: CLEVR dataset; Ablation of numbers of ground-truth programs; Compared with IEP baseline.
