@@ -49,12 +49,46 @@ the question. It then **excutes the program on the scene representation** to obt
 
 ---
 ### Approach
+**Overview**
+- A scene parser (de-renderer): de-render image to obtain a **structural scene representation**
+- A question parser (program generator): generate a hierarchical program from the question
+- A program executor: run the program on the structural representation to obtain an answer
 
+**Scene parser**
+- Step 1: use Mask R-CNN to generate **segment proposals** of all objects. Also predicts the **categorical labels** of discrete instrinct attributes. (0.9 threshold for proposals)
+- Step 2: extract spatial attributes (pose, 3D coordinates) from object proposals and original image
 
+**Question parser**
+- Attention-based sequence to sequence model with encoder-decoder structure.
+- Encoder: bidirectional LSTM
+- Decoder: LSTM
+
+**Program executor**
+- A collection of deterministic, generic functional modules in Python.
+- Each functional module sequentially executes on the output of previous one.
+- The last module outputs the final answer to the question.
+
+**Traning Paradigm**
+- Scene parsing: Mask R-CNN (ResNet-50 FPN as backbone, train the model for 30,000 iterations with 8 image mini-batch), train proposed object segments computed from the training data for 30,000 for object categorical labels prediction. Both networks are trained on 4,000 generated CLEVR images.
+- Reasoning: Supervised training with 20,000 iterations, **reinforce training** for 2M iterations.
 ---
 ### Evaluations
+#### Data-Efficient, Interpretable Reasoning
+- Setup: CLEVR dataset; Ablation of numbers of ground-truth programs; Compared with IEP baseline.
+- Results: Outperforms all of the other methods on all five question types.
+- High data-efficiency and recovering of underlying programs.
 
+#### Generalizing to Unseen Attribute Combinations
+- Setup: CLEVR-CoGenT dataset
+- Results: Generalize well after finetuning.
 
+#### Generalizing to Questions from Humans
+- Setup: CLEVR-Humans dataset
+- Results: Outperforms IEP by a considerable margin.
+
+#### Extending to New Scene Context
+- Setup: A new dataset with images from Minecraft; With 10,000 Minecraft scenes and 100K questions.
+- Results: behavior is similar to CLEVR.
 
 ---
 ### Discussion
