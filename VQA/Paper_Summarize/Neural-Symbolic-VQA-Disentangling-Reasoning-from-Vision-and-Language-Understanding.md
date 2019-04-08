@@ -18,6 +18,9 @@ the question. It then **excutes the program on the scene representation** to obt
 - More data- and memory-**efficient**.
 - Offering full **transparency** to the reasoning process.
 
+**Comparison with former work**:
+- Our neural-symbolic approach **fully disentangles vision and language understanding from reasoning**.
+
 ---
 ### Related Work
 
