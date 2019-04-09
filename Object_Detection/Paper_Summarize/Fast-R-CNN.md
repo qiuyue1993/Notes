@@ -6,6 +6,9 @@
 
 ---
 ### Introduction
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Object_Detection/Images/Paper-Summarize_Fast-RCNN_Overall-framework.png" width="600" hegiht="400" align=center/>
+
 **Contributions**
 - End-to-end training
 - Joint training of Classification and bbox regression
