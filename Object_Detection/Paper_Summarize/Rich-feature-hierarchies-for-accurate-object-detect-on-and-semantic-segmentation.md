@@ -1,4 +1,4 @@
-## Rich feature hierarchies for accurate object detection and semantic segmentation
+## Rich feature hierarchies for accurate object detection and semantic segmentation (R-CNN)
 
 ### Indexing
 - [Introduction](#Introduction)
