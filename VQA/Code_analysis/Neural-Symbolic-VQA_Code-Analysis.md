@@ -1,7 +1,7 @@
 ## Neural-Symbolic Visual Question Answering (NS-VQA) Code Analysis
 
 ### Indexing
-- [Steps]
+- [Steps](#Steps)
 - [References](#References)
 
 ---
@@ -20,7 +20,7 @@ python scene_parse/mask_rcnn/tools/test_net.py
 - Preprocess code:
 ```
 python scene_parse/attr_net/tools/process_proposals.py
----
+```
 - generates a .json file which can be loaded by the attribute network
 
 - Attribute extraction code:
@@ -28,6 +28,13 @@ python scene_parse/attr_net/tools/process_proposals.py
 python scene_parse/attr_net/tools/run_test.py
 ```
 - which will generate parsed scenes that are going to be used for reasoning.
+
+**Reasoning**
+- Code:
+```
+python reason/tools/run_test.py
+```
+- The pretrained model will yield an overall question accuracy on CLEVR_v1.0 test split.
 
 ### References
 - [Code](https://github.com/kexinyi/ns-vqa)
