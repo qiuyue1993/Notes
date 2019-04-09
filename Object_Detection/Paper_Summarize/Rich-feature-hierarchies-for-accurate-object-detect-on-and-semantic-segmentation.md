@@ -6,6 +6,9 @@
 
 ---
 ### Introduction
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Object_Detection/Images/Paper-Summarize_R-CNN_Overall-framework.png" width="600" hegiht="400" align=center/>
+
 **Overall Process**
 - Input image
 - Extract region proposals (~2k) (selective search)
