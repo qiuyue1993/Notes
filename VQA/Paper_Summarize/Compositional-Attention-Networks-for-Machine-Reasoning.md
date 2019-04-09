@@ -3,6 +3,7 @@
 ### Indexing:
 - [Introduction](#Introduction)
 - [The MAC Network](#The-MAC-Network)
+- [Experiments](#Experiments)
 - [References](#References)
 ---
 ### Introduction
@@ -42,17 +43,33 @@
 
 #### The MAC Cell
 - A recurrent cell to capture the **atomic and universal** reasoning operation.
-- $i^(th)$ cell maintains hidden states: control $c_i$ and memory $m_i$
+- $i^{th}$ cell maintains hidden states: control $c_i$ and memory $m_i$
+- Control $c_i$ represents the reasoning operation, accomplished by a soft attention-based weighted average of question
+- Memory $m_i$ computed recurrently by integrating the preceding hidden state with new information
 
 #### The Control Unit
-
+- Identifies a series of operations
 
 #### The Read Unit
-
+- Extracts relevant information from a given knowledge base
 
 #### The Write Unit
+- Integrates the information into memory 
 
 #### The Output Unit
+- Predicts the final answer to the question based on the question representation and final memory.
+
+---
+### Experiments
+**Results on CLEVR Dataset**
+- State-of-the-art results on overall accuracy especially for the **numerical questions**
+
+**CLEVR Humans and Error Analysis**
+- State-of-the-art results on CLEVR Humans
+
+**Ablations**
+- Question Attention: using attention over the question words is highly effective
+- Control and Memory: Worse performance while shared weighting.
 
 ---
 ### Rerences
