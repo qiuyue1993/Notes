@@ -1,9 +1,9 @@
 ## Neural scene representation and rendering
 
 ### Indexing
-- [Introduction]
-- [Related work](#Related work)
-- [Generative Query Network](Generative Query Network)
+- [Introduction](#Introduction)
+- [Related work](#Related-work)
+- [Generative Query Network](Generative-Query-Network)
 - [References](#References)
 ---
 ### Introduction
@@ -40,4 +40,6 @@ viewpoint.
 ---
 ### References
 - [Neural scene representation and rendering](https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf)
+- [Summarize Blog 1](https://www.slideshare.net/MasayaKaneko/neural-scene-representation-and-rendering-33d)
+- [Summarize Blog 2](https://www.slideshare.net/DeepLearningJP2016/dlgqn-111725780)
 ---
