@@ -3,7 +3,7 @@
 ### Indexing
 - [Introduction](#Introduction)
 - [Related work](#Related-work)
-- [Generative Query Network](Generative-Query-Network)
+- [Generative Query Network](#Generative-Query-Network)
 - [References](#References)
 ---
 ### Introduction
