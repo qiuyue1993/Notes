@@ -37,9 +37,15 @@ viewpoint.
 - Scene presentation from multiple viewpoint images.
 - Recurrent Module: ConvLSTM
 
+### The Usefulness of Generative Query Network
+- The GQN's generation network can 'imagine' previously unobserved scenes from new viewpoints with remarkable precision.
+- The GQN's representation network can learn to count, localise and classify objects without any object-level labels.
+- The GQN can represent, measure and reduce uncertainty. It can combine multiple partial views of a scene to from a coherent whole.
+- The GQN's representation allows for robust, data-efficient reinforcement learning.
 ---
 ### References
 - [Neural scene representation and rendering](https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf)
+- [Official Blog](https://deepmind.com/blog/neural-scene-representation-and-rendering/)
 - [Summarize Blog 1](https://www.slideshare.net/MasayaKaneko/neural-scene-representation-and-rendering-33d)
 - [Summarize Blog 2](https://www.slideshare.net/DeepLearningJP2016/dlgqn-111725780)
 ---
