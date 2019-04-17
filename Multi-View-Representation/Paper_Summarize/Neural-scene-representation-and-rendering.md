@@ -5,6 +5,7 @@
 - [Related work](#Related-work)
 - [Generative Query Network](#Generative-Query-Network)
 - [Experiments](#Experiments)
+- [Conclusion](#Conclusion)
 - [References](#References)
 ---
 ### Introduction
@@ -34,6 +35,11 @@ viewpoint (render).
 ### Conditional VAE
 - Generate image conditioned by input condition $y$
 
+### Compared to former work
+- Classical neural approaches (autoencoding and density models) are required to capture **only the distribution of observed images** and there is **no explicit mechanism to encourage learning of how different views of the same 3D scene relate to one another**.
+- Viewpoint transformation networks have far been **nonprobabilistic and limited in scale**.
+- GQN can be **augmented** with a second "generator" that given an image of a scene, **predicts the viewpoint** from which it was taken, providing a **new source of gradients** with which to train the representation network. 
+
 ---
 ### Generative Query Network
 #### Comparison with CVAE
@@ -48,7 +54,30 @@ viewpoint (render).
 - The GQN's representation allows for robust, data-efficient reinforcement learning.
 ---
 ### Experiments
+#### Rooms with multiple objects
 
+**Scene Setting**
+- Scenes in a square room containing a variety of objects.
+- Wall textures, shapes, positions, colors of the object and lights are randomized.
+
+**Training**
+- The model observes only a small number of images (in this experiment, fewer than five) during training.
+
+**Results**
+- t-SNE visualization of GQN scene representation vectors shows clear **clustering of images of the same scene**, **despite** marked changes in **viewpoint**.
+- GQN exhibits **compositional** behavior.
+- Object color, shape, size, light position, and, to lesser extent, object positions are indeed **factorized**.
+- GQN is able to carry out **scene algebra**, by adding and subtracting representations of related scenes, the object and scene properties can be controlled.
+- GQN also learns to **integrate information from different viewpoints** in an efficient and consistent manner.
+
+#### Control of a robotic arm
+
+
+#### Partially observed maze environments
+
+
+---
+### Conclusion
 
 ---
 ### References
