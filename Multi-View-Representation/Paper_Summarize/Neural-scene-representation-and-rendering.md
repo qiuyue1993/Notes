@@ -9,6 +9,10 @@
 ---
 ### Introduction
 **Overview**
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Multi-View-Representation/images/Paper-Summarize_Generative-Query-Network_Overall-framework.png" width="600" hegiht="400" align=center/>
+
+
 - GQN (Generative Query Network): The GQN takes as input **images of a scene taken from different viewpoints**, constructs an **internal representation**, and uses this representation to **predict** the appearance of that scene from **previously unobserved viewpoints**.
 viewpoint (render).
 - Scene representation: Multiple viewpoint images -> scene representation
