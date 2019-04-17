@@ -4,11 +4,12 @@
 - [Introduction](#Introduction)
 - [Related work](#Related-work)
 - [Generative Query Network](#Generative-Query-Network)
+- [Experiments](#Experiments)
 - [References](#References)
 ---
 ### Introduction
 **Overview**
-- GQN (Generative Query Network): Given images taken from multiple viewpoint of a 3D map and a query viewpoint, output the image from that
+- GQN (Generative Query Network): The GQN takes as input **images of a scene taken from different viewpoints**, constructs an **internal representation**, and uses this representation to **predict** the appearance of that scene from **previously unobserved viewpoints**.
 viewpoint (render).
 - Scene representation: Multiple viewpoint images -> scene representation
 - Rendering image: scene representation, viewpoint -> image
@@ -24,8 +25,7 @@ viewpoint (render).
 ---
 ### Related work
 #### VAE (Variational Autoencoder)
-- Use VQE, one can transform a image from a viewpoint to a latent variant $z$; but it's difficult to operate $z$ to obtain image of desired
-viewpoint.
+- Use VQE, one can transform a image from a viewpoint to a latent variant $z$; but it's difficult to operate $z$ to obtain image of desired viewpoint.
 
 ### Conditional VAE
 - Generate image conditioned by input condition $y$
@@ -42,6 +42,10 @@ viewpoint.
 - The GQN's representation network can learn to count, localise and classify objects without any object-level labels.
 - The GQN can represent, measure and reduce uncertainty. It can combine multiple partial views of a scene to from a coherent whole.
 - The GQN's representation allows for robust, data-efficient reinforcement learning.
+---
+### Experiments
+
+
 ---
 ### References
 - [Neural scene representation and rendering](https://science.sciencemag.org/content/sci/360/6394/1204.full.pdf)
