@@ -14,6 +14,10 @@
 - ASR: Generating text from video
 - Video representation: S3D, hierachy clustering
 
+- Example of VideoBERT:
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/NLP/images/Paper-Summarize_VideoBERT_Examples.png" width="600" hegiht="400" align=center/>
+
 **Abstract**
 - We propose a **joint visual-linguistic model** to learn high-level features **without any explicit supervision**.
 - We build upon the BERT model to learn **bidirectional joint distributions** over sequences of visual and linguistic tokens, derived from vector quantization of video data and off-the-shelf speech recognition outputs, respectively.
@@ -64,6 +68,11 @@ Model the relationship between the visual domain and the linguistic domain by co
 
 ---
 ### VideoBERT
+
+- The illustration of VideoBERT
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/NLP/images/Paper-Summarize_VideoBERT_Illustration-of-VideoBERT.png" width="600" hegiht="400" align=center/>
+
 #### The BERT model
 - The BERT model can be thought of as a **fully connected Markov Random Field (MRF)** on a set of discrete tokens.
 - [SEP] token indicates the end of the sequence.
