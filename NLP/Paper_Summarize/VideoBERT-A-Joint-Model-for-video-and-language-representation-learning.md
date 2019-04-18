@@ -18,6 +18,7 @@
 - We build upon the BERT model to learn **bidirectional joint distributions** over sequences of visual and linguistic tokens, derived from vector quantization of video data and off-the-shelf speech recognition outputs, respectively.
 
 **VideoBERT**
+
 Model the relationship between the visual domain and the linguistic domain by combining three off-the-shelf methods:
 - ASR: automatic speech recognition system to convert speech to text
 - Vector Quantization (VQ): applied to low-level spatio-temporal visual features derived from pretrained video classification models.
