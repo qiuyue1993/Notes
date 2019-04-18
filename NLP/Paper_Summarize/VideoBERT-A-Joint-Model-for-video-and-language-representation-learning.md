@@ -116,17 +116,42 @@ Model the relationship between the visual domain and the linguistic domain by co
 - For each ASR word sequence, break the stream of words into sentences by adding punctuation using an off-the-shelf LSTM-based language model.
 
 #### Model Pre-training
-
+- Use the pre-trained model: BERT_LARGE (24 layers of Transformer blocks, each block has 1,024 hidden units and 16 selfattention heads)
+- Add support for video tokens by appending 20,736 entries to the word embedding lookup table for each of "visual words"
+- Training process largely follows the setup of BERT
 
 #### Zero-shot action classification
+
+- Results on YouCook 2:
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/NLP/images/Paper-Summarize_VideoBERT_Results-on-YouCOOK2.png" width="600" hegiht="400" align=center/>
+
+- Once pretrained, the VideoBERT model can be used for "zero-shot" classification on novel datasets.
+- Trained on proposed datasets, test on YouCook 2 dataset.
+- Results show that the VideoBERT has an effectively open vocabulary.
+
+- Results of predictions of noun and verb:
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/NLP/images/Paper-Summarize_VideoBERT_VideoBERT-predict-noun-verb.png" width="600" hegiht="400" align=center/>
 
 
 #### Benefits of large training sets
 
+- Results on YouCook 2 of VideoBERT pre-trained on different dataset size show that the VideoBERT benefits a lof from the dataset size.
+- Also, the results indicates that VideoBERT may benefit from even larger pretraining datasets.
 
 #### Transfer learning for captioning
+- Demonstrate the effectiveness of VideoBERT when used as a feature extractor.
+- Accomplish this by using a fill-in-the-blank task, by appending the video tokens to a template sentence "now let's [MASK] the [MASK] to the [MASK], and then [MASK] the [MASK]"
+- VideoBERT achieves the best performance across all metrics on YouCook 2.
 
+- Quantitative results on YouCook 2:
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/NLP/images/Paper-Summarize_VideoBERT_Image-Captioning-Results.png" width="600" hegiht="400" align=center/>
+
+- Qualitative results on YouCook 2:
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/NLP/images/Paper-Summarize_VideoBERT_Image-captioning-Example.png" width="600" hegiht="400" align=center/>
 
 ---
 ### Conclusion
