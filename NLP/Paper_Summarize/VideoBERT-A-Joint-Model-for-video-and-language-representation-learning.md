@@ -4,6 +4,7 @@
 - [Introduction](#Introduction)
 - [Related Work](#Related-Work)
 - [VideoBERT](#VideoBERT)
+- [Experiments and Analysis](#Experiments-and-Analysis)
 - [Conclusion](#Conclusion)
 - [References](#References)
 
@@ -63,6 +64,59 @@ Model the relationship between the visual domain and the linguistic domain by co
 
 ---
 ### VideoBERT
+#### The BERT model
+- The BERT model can be thought of as a **fully connected Markov Random Field (MRF)** on a set of discrete tokens.
+- [SEP] token indicates the end of the sequence.
+
+#### The VideoBERT model
+- In oder to leverage pretrained language models and scalable implementations for inference and learning, VideoBERT **transform the raw visual data into a discrete sequence of tokens**.
+- Combine the linguistic sentence with the visual sentence to generate data such as: [CLS] orange chicken with [MASK] sauce [>] v01 [MASK] v08 v72 [SEP]. ([>] is a special token to combine text and video sentences)
+- VideoBERT propose a linguistic-visual alignment task, where they use the final hidden state of the [CLS] token to predict whether the linguistic sentence is **temporally aligned** with the visual sentence.
+
+**steps for learning temporally alignment**
+- Randomly concatenate neighboring sentences into a single long sentence, to allow the model to learn **semantic correspondence.
+- Randomly pick a subsampling rate of 1 to 5 steps for the video tokens (merits: robust to variations in video sppeds; allows the model to capture temporal dynamics over greater time horizons and learn longer-term state transitions)
+
+**training regimes**
+- text-only, video-only: the standard mask-completion objectives are used for training the models.
+- text-video: use the linguistic-visual alignment classification objective.
+- Overall training objective: weighted sum of the individual objectives.
+- text objective: forces VideoBERT to learning language modeling
+- video objective: forces VideoBERT to learn a language model for video, which can be used for learning dynamics and forecasting
+- text-video objective: forces VideoBERT to learn a correspondence between the two domains.
+
+**Applications**
+- Treat VideoBERT as a probabilistic model: ask it to predict or impute the symbols that have been MASKed out.
+- Extract the predicted representation for the [CLS] token, and use that dense vector as a representation of the entire input.
+
+---
+### Experiments and Analysis
+#### Dataset
+- Find videos where the spoken words are more likely to refer to visual content.
+- Turn to YouTube to collect a large-scale video dataset for training (cooking and recipe).
+- 312K videos, 23,186 hours total duration
+- ASR (Automatic speech recognition) toolkit to retrieve timestamped speech information
+- Result of 120K english dataset
+- Evaluate VideoBERT on the YouCook 2 dataset.
+
+#### Video and Language Preprocessing
+- For each video, sample frames at 20 fps, create clips from 30-frame non-overlapping windows over the video
+- For each 30-frame clip, apply a pretrained video ConvNet to extract features (S3D).
+- Take the feature activations before the final linear classifier and apply 3D average pooling to obtain a 1024-dimension feature vector.
+- Tokenize the visual features using hierarchical k-means, 20736 clusters in total.
+- For each ASR word sequence, break the stream of words into sentences by adding punctuation using an off-the-shelf LSTM-based language model.
+
+#### Model Pre-training
+
+
+#### Zero-shot action classification
+
+
+#### Benefits of large training sets
+
+
+#### Transfer learning for captioning
+
 
 
 ---
