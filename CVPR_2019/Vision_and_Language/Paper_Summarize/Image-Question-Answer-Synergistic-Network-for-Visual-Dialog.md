@@ -2,6 +2,10 @@
 
 ### Indexing:
 - [Introduction](#Introduction)
+- [Related Work](#Related-Work)
+- [Synergistic Network](#Synergistic-Network)
+- [Extension to the Generative Model](#Extension-to-the-Generative-Model)
+- [Experiments](#Experiments)
 - [References](#References)
 
 ---
@@ -17,6 +21,47 @@
 **Problem of former methods**
 - The **scoring method is insufficient** to capture the similarity between inputs and answers, since the vecotr of inputs and answers have been separately learned without deep fusion.
 - Both generative and discriminative models tend to give short and safe answer, as their fusion methods focus on the major signal in short answer but will not look into details in a longer one.
+
+---
+### Related Work
+#### Visual Question Answering (VQA)
+- Main categories of VQA: early fusion models; later fusion models; external knowledge-based models.
+
+#### Visual Dialog
+- Extending the single turn dialog task (VQA) to a multi-turn one.
+
+---
+### Synergistic Network
+
+
+#### Primary Stage
+
+
+#### Synergistic Stage
+
+---
+### Extension to the Generative Model
+
+
+---
+### Experiments
+#### Dataset and Evaluation Metric
+
+
+
+#### Implementation Details
+
+
+#### Comparison with the State-of-the-art
+
+
+#### Ablation Study
+
+
+
+#### Qualitative Analysis
+
+
 
 ---
 ### References
