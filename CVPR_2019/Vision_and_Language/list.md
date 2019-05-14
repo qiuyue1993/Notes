@@ -30,3 +30,11 @@
 
 9. Explainable and Explicit Visual Reasoning over Scene Graphs
 - [Link](https://arxiv.org/pdf/1812.01855.pdf)
+
+10. Cycle-Consistency for Robust Visual Question Answering
+- [Paper Link](https://arxiv.org/pdf/1902.05660.pdf)
+
+11. Towards VQA Models that can Read
+- [Paper Link]()
+
+12. 
