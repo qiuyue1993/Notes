@@ -37,6 +37,11 @@
 
 ---
 ### Synergistic Network
+
+- Overall framework
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Image-Question-Answer-Synergistic-Network_Overall-framework.png" width="600" hegiht="400" align=center/>
+
 #### Primary Stage
 **Abstract**
 - Learn **representative vectors of the image, history, and question** using a **co-attention module**
@@ -82,6 +87,11 @@
 - Achieve the highest NDCG on the test-standard server of Visual Dialog Challenge 2018.
 
 #### Ablation Study
+
+- Ablation result on different imbalance impact parameters
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Image-Question-Answer-Synergistic-Network_Ablation-Result-on-imbalance-impact-parameter.png" width="600" hegiht="400" align=center/>
+
 - The performance **improves while the imbalance impact parameter decays**, which makes the model pay more attention to incorrect answers scored near or higher than the correct answer. 
 - Feeding more samples by increasing M improves performance to produce the best model at *M30*
 - The **primary stage show more importance** to the synergistic stage.
@@ -89,6 +99,9 @@
 - In **generative model**, we **increase** the selected answer number **N** from 10 to 30 in the second stage.
 
 #### Qualitative Analysis
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Image-Question-Answer-Synergistic-Network_Quantitative-results.png" width="600" hegiht="400" align=center/>
+
 - **One-stage model tend to give a safe answer** such as 'NO'
 - Surprisingly, our model can sometimes even **generate better answers** than those provided.
 
