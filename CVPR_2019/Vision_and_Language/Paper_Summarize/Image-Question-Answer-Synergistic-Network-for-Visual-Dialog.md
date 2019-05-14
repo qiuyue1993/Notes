@@ -6,6 +6,7 @@
 - [Synergistic Network](#Synergistic-Network)
 - [Extension to the Generative Model](#Extension-to-the-Generative-Model)
 - [Experiments](#Experiments)
+- [Conclusions](#Conclusions)
 - [References](#References)
 
 ---
