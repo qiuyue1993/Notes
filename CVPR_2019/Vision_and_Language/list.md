@@ -11,6 +11,8 @@
 3. Image-Question-Answer Synergistic Network for Visual Dialog
 - [Link](https://arxiv.org/pdf/1902.09774.pdf)
 
+- [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Image-Question-Answer-Synergistic-Network-for-Visual-Dialog.md)
+
 4. Tactical Rewind: Self-Correction via Backtracking in Vision-and-Language Navigation (**Oral**)
 - [Link](https://arxiv.org/pdf/1903.02547.pdf)
 
