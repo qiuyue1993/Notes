@@ -39,3 +39,6 @@
 
 12. Embodied Question Answering in Photorealistic Environments with Point Cloud Perception
 - [Paper Link](https://arxiv.org/pdf/1904.03461.pdf)
+
+13. Vision-based Navigation with Language-based Assistance via Imitation Learning with Indirect Intervention
+- [Paper Link](https://arxiv.org/pdf/1812.04155.pdf)
