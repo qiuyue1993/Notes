@@ -2,7 +2,8 @@
 
 ### Indexing:
 - [Introduction](#Introduction)
-- [Related-Work](#Related-Work)
+- [Related Work](#Related-Work)
+- [Reinforced Cross Modal Matching](#Reinforced-Cross-Modal-Matching)
 - [References](#References)
 
 ---
@@ -31,6 +32,24 @@
 - We are the first to propose to explore unseen environments for the VLN task.
 
 #### Exploration
+- We adapt SIL and validate its effectiveness and efficiency on the VLN.
+
+---
+### Reinforced Cross Modal Matching
+#### Overview
+- RCM framework mainly consists of two modules: a reasoning navigator, a matching critic.
+- Intoduce two reward functions: an **extrinsic reward provided by the environment** to measure the success signal and the navigation error of each action; an **intrinsic reward** comes from **matching critic** to measure the alignment between the language instruction and navigator's trajectory.
+
+#### Model
+**Cross-Modal Reasoning Navigator**
+- The navigator is a policy-based agent that maps the input instruction onto a sequence of actions.
+- We 
+
+
+**Cross-Modal Matching Critic**
+
+
+#### Learning
 
 
 ---
