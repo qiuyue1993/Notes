@@ -1,7 +1,37 @@
 ## Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation
 
 ### Indexing:
-- [References]
+- [Introduction](#Introduction)
+- [Related-Work](#Related-Work)
+- [References](#References)
+
+---
+### Introduction
+**Abstract**
+- We present two novel approaches, RCM and SIL, which combine the strength of reinforcement learning and self-supervised imitation learning for the vision-language navigation task.
+
+**critical challenges**
+- Cross-modal grounding
+- Ill-posed feedback
+- Generalization problems
+
+**Contributions**
+- Proposed a novel reinforced cross-modal matching (**RCM**) that enforces cross-modal grounding both locally and globally via reinforcement learning
+- A **matching critic** is used to provide an intrinsic reward to encourage **global matching between instructions and trajectories**
+- We further introduce a self-supervised imitation learning (**SIL**) method to explore unseen environments by imitating its own past, good decisions.
+- Performs the new state-of-the-art performance on the Room-to-Room dataset.
+
+---
+### Related Work
+#### Vision-and-Language Grounding
+- VQA and Visual Dialog task focus on passive visual perception and the visual inputs are usually fixed.
+- VLN solve the **dynamic multi-modal** grounding problem in **both temporal and spatial** spaces
+
+#### Embodied Navigation Agent
+- We are the first to propose to explore unseen environments for the VLN task.
+
+#### Exploration
+
 
 ---
 ### References
