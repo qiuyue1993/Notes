@@ -1,7 +1,36 @@
 ## Tactical Rewind: Self-Correction via Backtracking in Vision-and-Language Navigation
 
 ### Indexing:
+- [Introduction](#Introduction)
+- [Method](#Method)
+- [Experiments](#Experiments)
+- [Analysis](#Analysis)
+- [Related Work](#Related-Work)
+- [Conclusion](#Conclusion)
 - [References](#References)
+
+---
+### Introduction
+
+
+---
+### Method
+
+---
+### Experiments
+
+
+---
+### Analysis
+
+
+---
+### Related Work
+
+
+---
+### Conclusion
+
 
 ---
 ### References
