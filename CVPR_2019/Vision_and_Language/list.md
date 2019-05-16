@@ -11,7 +11,7 @@
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Reinforced-Cross-Modal-Matching-and-Self-Supervised-Imitation-Learning-for-Vision-Language-Navigation.md)
 
 3. Image-Question-Answer Synergistic Network for Visual Dialog
-- [Link](https://arxiv.org/pdf/1902.09774.pdf)
+- [Paper Link](https://arxiv.org/pdf/1902.09774.pdf)
 
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Image-Question-Answer-Synergistic-Network-for-Visual-Dialog.md)
 
