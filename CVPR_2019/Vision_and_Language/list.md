@@ -5,7 +5,7 @@
 
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/MUREL-Multimodal-Relational-Reasoning-for-Visual-Question-Answering.md)
 
-2. Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation
+2. Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation (Oral)
 - [Paper Link](https://arxiv.org/pdf/1811.10092.pdf)
 
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Reinforced-Cross-Modal-Matching-and-Self-Supervised-Imitation-Learning-for-Vision-Language-Navigation.md)
