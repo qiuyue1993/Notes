@@ -6,7 +6,9 @@
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/MUREL-Multimodal-Relational-Reasoning-for-Visual-Question-Answering.md)
 
 2. Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation
-- [Link](https://arxiv.org/pdf/1811.10092.pdf)
+- [Paper Link](https://arxiv.org/pdf/1811.10092.pdf)
+
+- [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Reinforced-Cross-Modal-Matching-and-Self-Supervised-Imitation-Learning-for-Vision-Language-Navigation.md)
 
 3. Image-Question-Answer Synergistic Network for Visual Dialog
 - [Link](https://arxiv.org/pdf/1902.09774.pdf)
