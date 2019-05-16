@@ -10,6 +10,10 @@
 
 ---
 ### Introduction
+- Illustration
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Reinforced-Cross-Modal-Matching_Illustration.png" width="600" hegiht="400" align=center/>
+
 **Abstract**
 - We present two novel approaches, RCM and SIL, which combine the strength of reinforcement learning and self-supervised imitation learning for the vision-language navigation task.
 
@@ -38,12 +42,19 @@
 
 ---
 ### Reinforced Cross Modal Matching
+- Overview of proposed framework
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Reinforced-Cross-Modal-Matching_Overall-framework.png" width="600" hegiht="400" align=center/>
+
 #### Overview
 - RCM framework mainly consists of two modules: a reasoning navigator, a matching critic.
 - Intoduce two reward functions: an **extrinsic reward provided by the environment** to measure the success signal and the navigation error of each action; an **intrinsic reward** comes from **matching critic** to measure the alignment between the language instruction and navigator's trajectory.
 
 #### Model
 **Cross-Modal Reasoning Navigator**
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Reinforced-Cross-Modal-Matching_Cross-modal-reasoning-navigator.png" width="600" hegiht="400" align=center/>
+
 - The navigator is a **policy-based agent** that **maps the input instruction** onto a sequence of **actions**.
 - We design a cross-modal reasoning navigator that learns the **trajectory history**, the **focus of the textual instruction**, and the **local visual attention** which forms a cross-modal reasoning path to encourage the **local dynamics of both modalities**
 
@@ -61,6 +72,9 @@
 - It calculates the probability of each navigable direction using a bilinear dot product.
 
 **Cross-Modal Matching Critic**
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Reinforced-Cross-Modal-Matching_Cross-modal-matching-critic.png" width="600" hegiht="400" align=center/>
+
 - This intrinsic reward encourages the **global matching** between the **language instruction** and the **navigator trajectory**.
 - One way to realize this goal is to **measure the cycle-reconstruction reward**.
 - We adopt an **attention-based sequence-to-sequence language model**
@@ -116,6 +130,11 @@
 - Adam optimizer is used to optimize all the parameters.
 
 #### Results on the Test Set
+
+- Results on R2R Dataset
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Reinforced-Cross-Modal-Matching_Comparison-on-the-R2R-test-set.png" width="600" hegiht="400" align=center/>
+
 *Comparison with SOTA*
 - RCM significantly outperforms the existing methods, expecially for SPL
 - Compare the results without beam search
@@ -124,6 +143,9 @@
 - SIL indeed leads to a better policy even without knowing the target locations.
 
 #### Ablation Study
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Reinforced-Cross-Modal-Matching_Ablation-study.png" width="600" hegiht="400" align=center/>
+
 *Effect of Individual Components*
 - Romoving the intrinsic reward, the sucess rate on unseen environments drops. This indirectly validates the importantce of exploration on unseen environments.
 - Directly optimizing the extrinsic reward signals can guarantee the stability of the reinforcement learning and bring a big performance gain
@@ -132,6 +154,8 @@
 - Our RCM approach is much more generalizable to unseen enviroments compared with the baseline.
 
 *Qualitative Analysis*
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Reinforced-Cross-Modal-Matching_Qualitative-examples.png" width="600" hegiht="400" align=center/>
 
 ---
 ### References
