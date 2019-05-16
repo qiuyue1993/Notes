@@ -9,6 +9,7 @@
 - [References](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Su_Multi-View_Convolutional_Neural_ICCV_2015_paper.pdf)
 
 #### RotationNet: Joint Object Categorization and Pose Estimation Using Multiviews from Unsupervised Viewpoints
+- [Summarize](https://github.com/qiuyue1993/Notes/blob/master/Multi-View-Representation/Paper_Summarize/RotationNet-Joint-Object-Categorization-and-Pose-Estimation-Using-Multiviews-from-Unsupervised-Viewpoints.md)
 - [References](https://arxiv.org/pdf/1603.06208.pdf)
 
 #### Triplet-Center Loss for Multi-View 3D Object Retrieval
