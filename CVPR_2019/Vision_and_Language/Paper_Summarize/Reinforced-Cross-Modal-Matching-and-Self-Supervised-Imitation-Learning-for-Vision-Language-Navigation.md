@@ -5,6 +5,7 @@
 - [Related Work](#Related-Work)
 - [Reinforced Cross Modal Matching](#Reinforced-Cross-Modal-Matching)
 - [Self-Supervised Imitation Learning](#Self-Supervised-Imitation-Learning)
+- [Experiments and Analysis](#Experiments-and-Analysis)
 - [References](#References)
 
 ---
@@ -87,6 +88,50 @@
 #### Details
 - Given a natural language instruction, the navigator produces a set of possible trajectories and then stores the best trajectory into a replay buffer.
 - The loss can also be interpreted as the supervised learning loss.
+
+---
+### Experiments and Analysis
+#### Experimental Setup
+*R2R Dataset*
+- R2R dataset is built upon the Matterport3D dataset
+- 7,189 paths, 21,567 human-annotated instructions (avg. 29 words)
+- Splits: training, seen validation, unseen validation, test sets
+
+*Testing Scenarios*
+- Train the agent in seen environments, test in previously unseen environments
+
+*Evaluation Metrics*
+- Five evaluation metrics
+- Path Length (PL)
+- Navigation Error (NE)
+- Oracle Success Rate (OSR)
+- Success Rate (SR)
+- Success rate weighted by inverse Path Length (SPL)
+- **SPL** is the recommended primary measure of navigation performance, as it considers both **effectiveness and efficiency**
+
+*Implementation Details*
+- **ResNet-152 CNN** features are extracted for all images without fine-tuning
+- The **pretrained GloVe word embedding** are used for initialization and fine-tuned during training.
+- Train the matching critic with human demonstrations and fix it during policy learning.
+- Adam optimizer is used to optimize all the parameters.
+
+#### Results on the Test Set
+*Comparison with SOTA*
+- RCM significantly outperforms the existing methods, expecially for SPL
+- Compare the results without beam search
+
+*Self-Supervised Imitation Learning*
+- SIL indeed leads to a better policy even without knowing the target locations.
+
+#### Ablation Study
+*Effect of Individual Components*
+- Romoving the intrinsic reward, the sucess rate on unseen environments drops. This indirectly validates the importantce of exploration on unseen environments.
+- Directly optimizing the extrinsic reward signals can guarantee the stability of the reinforcement learning and bring a big performance gain
+
+*Generalizability*
+- Our RCM approach is much more generalizable to unseen enviroments compared with the baseline.
+
+*Qualitative Analysis*
 
 ---
 ### References
