@@ -12,6 +12,11 @@
 
 ---
 ### Introduction
+
+- Illustration
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Tactical-Rewind_Illustration.png" width="600" hegiht="400" align=center/>
+
 **Abstract**
 - We present the **Frontier Aware Search with backTracking (FAST) Navigator**, a general framework for action decoding.
 - We use **asynchronous search to boost any VLN navigator by enabling explicit backtrack when an agent detects if it is lost**
@@ -127,8 +132,17 @@
 - FAST(long) uses the explore strategy
 
 #### Results
+
+- Results on R2R dataset
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Tactical-Rewind_Results-on-R2R.png" width="600" hegiht="400" align=center/>
+
 - In R2R dataset, FAST outperform previous approaches in almost every setting
 - FAST can be intergrated with current approaches (SPEAKER-FOLLOWER, SMNA) easly
+
+- Qualitative results
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Tactical-Rewind_Qualitative-Results.png" width="600" hegiht="400" align=center/>
 
 ---
 ### Analysis
