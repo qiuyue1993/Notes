@@ -31,6 +31,22 @@
 
 ---
 ### Method
+#### Settings
+- Input: instruction $X$, contains sentences describing a desired trajectory.
+- Input at each step $t$: surrounding $V_t^{k}$, $k$ denotes the viewponit number
+- Action: $a_1, a_2, ...,a_T \in A$， use panoramic action space, including a *stop* action
+
+#### Learning Signals
+
+
+
+#### Framework
+
+
+
+#### Algorithm
+
+
 
 ---
 ### Experiments
