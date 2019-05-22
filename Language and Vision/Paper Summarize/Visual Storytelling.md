@@ -26,16 +26,25 @@
 ---
 ### Motivation and Related Work
 - Related Work: Image Captioning; Question Answering; Visual Phrases; Video Understanding; Visual Concepts
-- Storytelling itself is one of the oldest known human activities, providing a way to educate, preserve culture, instill morals, and share
-advice.
+- Storytelling itself is one of the oldest known human activities, providing a way to educate, preserve culture, instill morals, and share advice.
 ---
 ### Dataset Construction
 #### Extracting Photos
+- Album name with high frequency
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Language%20and%20Vision/images/Paper-Summarize_Visual-Storytelling_Albums-name-with-high-frequency.png" width="600" hegiht="400" align=center/>
+
+- 
+
 - Albums with **EVENT**
 - Only include albums **with 10 to 50 photos**, where all photos are taken **within a 48-hour span**
 - Using AMT to collect the corresponding stories and descriptions
 
 #### Crowdsourcing Stories In Sequence
+- Dataset crowdsourcing workflow
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Language%20and%20Vision/images/Paper-Summarize_Visual-Storytelling_Dataset-crowdsourcing-workflow.png" width="600" hegiht="400" align=center/>
+
 - 2-stage crowdsourcing workflow
 - First stage: **storytelling**
 - Select a subset of photos from a given album
@@ -52,8 +61,16 @@ advice.
 - Identified named entities with their entity type (e.g., *location*)
 - training, validation, test split for 80%, 10%, and 10%
 
+- Dataset Example
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Language%20and%20Vision/images/Paper-Summarize_Visual-Storytelling_Dataset-Example.png" width="600" hegiht="400" align=center/>
+
 ---
 ### Data Analysis
+- Dataset top-words
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Language%20and%20Vision/images/Paper-Summarize_Visual-Storytelling_Top-words.png" width="600" hegiht="400" align=center/>
+
 - 10,117 Flickr albums with 210,819 unique photos
 - average time span of 7.9 hours
 - Identify the words most closely associated with each tier, results show that
@@ -70,6 +87,10 @@ advice.
 
 ---
 ### Baseline Experiments
+- Qualitative Results
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Language%20and%20Vision/images/Paper-Summarize_Visual-Storytelling_Qualitative-results.png" width="600" hegiht="400" align=center/>
+
 - Sequence-to-sequence recurrent neural network
 - Image encoder: GRUs
 - Story decoder: GRUs
