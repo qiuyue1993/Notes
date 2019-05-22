@@ -3,7 +3,8 @@
 ### Indexing:
 - [Introduction](#Introduction)
 - [Related Work](#Related-Work)
-- [LoRRA(Look, Read, Reason & Answer)](#LoRRA(Look,-Read,-Reason-&-Answer))
+- [LoRRA Look Read Reason Answer](#LoRRA-Look-Read-Reason-Answer)
+- [TextVQA](#TextVQA)
 - [Conclusion](#Conclusion)
 - [References](#References)
 
@@ -41,9 +42,40 @@
 - Copy mechanism provides networks the ability to generate **out-of-vocabulary** words
 
 ---
-### LoRRA(Look, Read, Reason & Answer)
+### LoRRA Look Read Reason Answer
+#### Overview
+- Three components: VQA component; Reading component; Answering module
+- The OCR model and backbone VQA model is arbitrary
+
+#### VQA Component
+- Question: embed the question by embedding function and RNN
+- Images: spatial features
+- Attention over spatial features
+- Combine the output with question embedding
+
+#### Reading Component
+- OCR model: not jointly trained with VQA
+- OCR models extracts words from the image and then embedded with pre-trained word embedding
+- Use the same architecture as VQA component to get combined OCR-question features
+- The architecture above do not share weights with VQA model
+
+#### Answer Module
+- Extend answer space to $N+M$ through addition of a dynamic component which corresponds to $M$ OCR tokens
+- If the model predicts an index larger than $N$, copy the corresponding OCR token
+
+#### Implementation Details
+- VQA component: Pythia v1.0 (VQA 2018 challenge winner)
+
+---
+### TextVQA
+#### Images
 
 
+#### Questions and Answers
+
+
+
+#### Statistics and Analysis
 
 
 
