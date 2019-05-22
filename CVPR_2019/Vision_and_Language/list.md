@@ -41,6 +41,8 @@
 11. Towards VQA Models that can Read
 - [Paper Link](https://arxiv.org/pdf/1904.08920.pdf)
 
+- [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Towards%20VQA%20Models%20That%20Can%20Read.md)
+
 12. Embodied Question Answering in Photorealistic Environments with Point Cloud Perception
 - [Paper Link](https://arxiv.org/pdf/1904.03461.pdf)
 
