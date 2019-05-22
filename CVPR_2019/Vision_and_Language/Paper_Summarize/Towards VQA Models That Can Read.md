@@ -11,6 +11,10 @@
 
 ---
 ### Introduction
+- Examples from TextVQA dataset
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_TextVQA_Examples-from-TextVQA-dataset.png" width="600" hegiht="400" align=center/>
+
 **TextVQA** dataset
 - 45,336 questions
 - 28,408 images from the Open Images dataset
@@ -44,6 +48,10 @@
 
 ---
 ### LoRRA Look Read Reason Answer
+- Overview of LoRRA framework 
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_TextVQA_LoRRA-Framework.png" width="600" hegiht="400" align=center/>
+
 #### Overview
 - Three components: VQA component; Reading component; Answering module
 - The OCR model and backbone VQA model is arbitrary
@@ -95,9 +103,22 @@
 - 26,263 unique majority answers (49.2%) vs VQA 2.0 (3.4%) VS VizWiz(22.8%)
 - Answer space is diverse, ("yes":4.71%)
 - Average answer length: 1.58
+- Top answer (left), OCR tokens (right)
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_TextVQA_top-answer-ocr-tokens.png" width="600" hegiht="400" align=center/>
+
 
 ---
 ### Experiments
+
+- Evaluation results on VQA2.0 and VizWiz
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_TextVQA_Single-model-VQA-2-and-VizWizpng.png" width="600" hegiht="400" align=center/>
+
+- Evaluation results on TextVQA
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_TextVQA_Evaluation-on-TextVQA.png" width="600" hegiht="400" align=center/>
+
 #### Upper Bounds and Heuristics
 *Vocabulary*
 - **SA**: size of 3,996, contains answers which appear at least twice in training set
