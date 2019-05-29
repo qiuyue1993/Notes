@@ -21,7 +21,9 @@
 - Execute language subgoals to make progress
 
 **I3L**
+
 *Different from conventional Imitation Learning*
+
 - Advisor present in environment not only during training time but also test time
 - Assist by modifying the environment instead of directly making decisions
 ---
