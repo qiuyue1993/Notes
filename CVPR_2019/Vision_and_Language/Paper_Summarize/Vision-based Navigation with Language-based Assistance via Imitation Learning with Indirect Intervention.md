@@ -4,6 +4,7 @@
 - [Introduction](#Introduction)
 - [Related Work](#Related-Work)
 - [Vision-based Navigation with Language-based Assistance](#Vision-based-Navigation-with-Language-based-Assistance)
+- [Imitation Learning with Indirect Intervention](#Imitation-Learning-with-Indirect-Intervention)
 - [Future Work](#Future-Work)
 - [References](#References)
 
@@ -53,9 +54,79 @@
 ---
 ### Vision-based Navigation with Language-based Assistance
 #### Setup
+- The agent starts at a **random location**
+- A requester assigns it an **object-finding task** by sending a high-level end-goal
+- The agent is considered to success if it stops at a location within *d* (**task-specific hyperparameter**) meters along the shortest path to an instance of desired object.
+- The agent can **sense** if it **get lost**
+- The advisor then repsonds with language providing a **subgoal**, subgoal **describe the next *k* optimal actions**
 
 #### Constraint formulation
+- The agent faces a **multi-objective problem**: maxmizing success rate, minimizing hep request
+- **Solution**: hard-constrained formulation-**maximizing success rate without exceeding a budgeted number of help requests**
 
+---
+### Imitation Learning with Indirect Intervention
+- **I3L**: models scenarios where a learning agent is **monitored by a more qualified expert** and **receives** help through an **imperfect communication channel** (e.g., language)
+
+#### Advisor
+*Conventional Imitation Learning (IL)*
+- Interaction between a learning agent and a teacher
+- The agent learns by querying and imitation demonstrations of the teacher
+
+*I3L*
+- Agent also receives guidance from an advisor
+- Teacher: only interacts with the agent at training time
+- Advisor: assist the agent during both training and test time
+
+#### Intervention
+*Intervention*
+- The advisor directs the agent to take a sequence of actions through an intervention
+
+*Direct Intervention*
+- The advisor overwrites the agent's decisions with its own
+- The agent always takes actions the advisor wants it to take
+
+*Indirect Intervention*
+- The advisor does not take over the agent, but instead modify the environment to influence its decisons
+- To utilize indirect interventions, the agent must learn to **interpret the signals in the environment to sequences of actions**
+- Introduce an new error: **intervention interpretation error**
+
+#### Formulation
+- The environment is a **Markov decision process** with state transition function
+- Policy 1 for agent: main policy for making decisions on the main task
+- Policy 2 for agent: help-requesting policy for deciding when the advisor should intervene
+- Teacher policies: main, help
+- Advisor policy: phai
+- Techer policies are only available during training, the advisor is always present
+
+*Summarize*
+- When the intervention instructs the agent to take the next *k* actions suggested by the teacher
+- The state distribution induced by the agent, depends on both policy main and help
+- The agent's objective is to minimize expected loss on the agent-induced state distribution
+
+#### Learning to Interpret Indirect Intervensions
+- I3L can be viewed as an imitation learning problem in a dynamic enviroment
+
+*An I3L problem*
+- can be **decomposed into a series of IL** problems; each of which can be solved with standard IL algorithms
+- Teacher navigation policy: optmial shortest-path teacher navigation policy
+- Follow subgoal while made mistakes or follow the teacher all the time are not good
+- **solution**: BCUI (Behavior Cloning Under Interventions), to mix IL with behavior cloning
+- The agent uses the teacher policy as the acting policy (behavior cloning) when executing an intervention
+- As a result, the agent never deviates from the trajectory suggested by teh intervention
+
+#### Connection to imitation learning and behavior cloning
+*Behavior Cloning*
+- Training time: advisor always intervenes
+- Test time: agent make decision on its own
+
+*IL*
+- Training time: advisor intervenes randomly
+- Test time: agent make decision on it own
+
+*I3L-BCUI*
+- Training time: learned policy decides when advisor intervenes, environment changed clue to interventions
+- Test time: agent makes decisions on its won, learned policy decides when advisor intervenes, environment changed clue interventions 
 ---
 ### Future Work
 - Provide more natural, **fully linguistic question and answer interactions** between advisor and agent.
