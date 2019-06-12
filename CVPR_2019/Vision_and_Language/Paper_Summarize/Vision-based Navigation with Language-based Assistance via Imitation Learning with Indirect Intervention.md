@@ -162,6 +162,18 @@
 ---
 ### Implementation
 #### Notation
+- The agent maintains two policies: a navigation policy and help-requesting policy.
+- Each policy is stochastic, outputting a distribution **p** over its action space.
+- An action *a* is chose by selecting the maximum probability action or sampling from the output distribution.
+- The agent is supervised by a navigation teacher and a help-requesting teacher, and is assisted by an advisor
+
+*Dataset*
+- *d-th* data point consists of a start viewpoint
+- a start orientation
+- a set of goal viewpoints
+- 
+#### Algorithm
+
 
 
 #### Agent
