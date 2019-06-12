@@ -5,6 +5,10 @@
 - [Related Work](#Related-Work)
 - [Vision-based Navigation with Language-based Assistance](#Vision-based-Navigation-with-Language-based-Assistance)
 - [Imitation Learning with Indirect Intervention](#Imitation-Learning-with-Indirect-Intervention)
+- [Environment and Data](#Environment-and-Data)
+- [Implementation](#Implementation) 
+- [Experimental Setup](#Experimental-Setup)
+- [Results](#Results)
 - [Future Work](#Future-Work)
 - [References](#References)
 
@@ -127,6 +131,70 @@
 *I3L-BCUI*
 - Training time: learned policy decides when advisor intervenes, environment changed clue to interventions
 - Test time: agent makes decisions on its won, learned policy decides when advisor intervenes, environment changed clue interventions 
+- The advisor in I3L-BCUI intervenes both directly (through behavior cloning) and indirectly (by modifying the environment) at training time, buit only indirectly at test time
+
+---
+### Environment and Data
+#### Matterport3D simulator
+- **Matterport3D dataset**: large RGB-D dataset for scene understanding in indoor environments
+- 90 real building-scale scenes
+- 10,800 panoramic views
+- 194,400 RGB-D images
+- Residential building consisting of multiple rooms, floor levels, annotated with surface construction, camera poses, and semantic segmentation
+- Former methods implemented a simulator that **the pose of the agent is specified by its viewpoint and orientation (heading angle and elevation angle)
+- Edges connect reachable panoramic viewpoints that are less than 5m apart.
+
+#### Visual input
+- Simulator generates an RGB image representing the current first-person view of agent
+- The image is fed into a ResNet-152 pretrained on ImageNet
+
+#### Action space
+- State-independent action space: left, right, up, down, forward, stop
+- Help-requesting action space: request, do_nothing
+
+#### Data Generation
+- Based on the **Matterport3D dataset**, created a dataset **ASKNAV**
+- 61 training, 11 development, 18 test
+- Define data point as a tuple: environment, start pose, goal viewpoints, end-goal
+- End-goal: Find [O] in [R]
+- Development and test sets: seen set and unseen set
+
+---
+### Implementation
+#### Notation
+
+
+#### Agent
+
+
+#### Teachers
+
+
+#### Advisor
+
+
+#### Help-request Budget
+
+
+
+---
+### Experimental Setup
+
+
+
+---
+### Results
+#### Main Results
+
+
+
+#### Effects of subgoals
+
+
+#### Does the agent learn to identify objects?
+
+
+
 ---
 ### Future Work
 - Provide more natural, **fully linguistic question and answer interactions** between advisor and agent.
