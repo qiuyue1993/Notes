@@ -28,6 +28,17 @@
 ---
 ### Vision-Language Navigation
 
+#### Language-Driven Temporal Activity Localization: A Semantic Matching Reinforcement Learning Model (**6.18**; **Oral**)
+
+- [Paper Link](http://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Language-Driven_Temporal_Activity_Localization_A_Semantic_Matching_Reinforcement_Learning_Model_CVPR_2019_paper.pdf)
+
+- [Summarization]()
+
+- Abstract:
+
+- Opinion:
+
+
 #### Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation (**6.19**;**Oral**)
 - [Paper Link](https://arxiv.org/pdf/1811.10092.pdf)
 
@@ -64,6 +75,25 @@
 
 - Opinion: Practicle in real-environment; Closer to real robot-human interaction.
 
+#### The Regretful Agent: Heuristic-Aided Navigation Through Progress Estimation (**6.19**; **Oral**)
+- [Paper Link](https://arxiv.org/pdf/1903.01602.pdf)
+
+- [Summarization]()
+
+- Astract:
+
+- Opinion:
+
+#### TOUCHDOWN: Natural Language Navigation and Spatial Reasoning in Visual Street Environments (**6.20**; Poster)
+
+- [Paper Link](https://nips2018vigil.github.io/static/papers/accepted/11.pdf)
+
+- [Summarization]()
+
+- Abstract:
+
+- Opinion:
+
 ---
 ### Visual Dialog
 
@@ -81,7 +111,43 @@
 ---
 ### Embodied Question Answering
 
-12. Embodied Question Answering in Photorealistic Environments with Point Cloud Perception
+#### Multi-Target Embodied Question Answering (**6.19**; Poster)
+
+- [Paper Link](https://arxiv.org/pdf/1904.04686.pdf)
+
+- [Summarization]()
+
+- Abstract:
+
+- Opinion:
+
+
+#### Embodied Question Answering in Photorealistic Environments with Point Cloud Perception (**6.19**; **Oral**)
+
 - [Paper Link](https://arxiv.org/pdf/1904.03461.pdf)
+
+- [Summarization]()
+
+- Abstract:
+
+- Opinion:
+
+
+###
+
+---
+### Visual Question Generation
+
+#### What's to Know? Uncertainty as a Guide to Asking Goal-Oriented Questions (**6.18**; Poster)
+
+- [Paper Link](https://arxiv.org/pdf/1812.06401.pdf)
+
+- [Summarization]()
+
+- Abstract:
+
+- Opinion:
+
+
 
 
