@@ -1,9 +1,11 @@
 ## Vision and Language Papers of CVPR 2019
 
-1. MUREL: Multimodal Relational Reasoning for Visual Question Answering
+1. MUREL: Multimodal Relational Reasoning for Visual Question Answering (6.19; Poster)
 - [Paper Link](https://arxiv.org/pdf/1902.09487.pdf)
 
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/MUREL-Multimodal-Relational-Reasoning-for-Visual-Question-Answering.md)
+
+- Sub-field: visual question answering; 
 
 2. Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation (**Oral**)
 - [Paper Link](https://arxiv.org/pdf/1811.10092.pdf)
