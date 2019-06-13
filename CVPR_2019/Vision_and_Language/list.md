@@ -5,28 +5,28 @@
 
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/MUREL-Multimodal-Relational-Reasoning-for-Visual-Question-Answering.md)
 
-- Sub-field: **visual question answering**; 
+- Sub-field: **Visual Question Answering**; **VQA2.0**
 
 2. Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation (**6.19**;**Oral**)
 - [Paper Link](https://arxiv.org/pdf/1811.10092.pdf)
 
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Reinforced-Cross-Modal-Matching-and-Self-Supervised-Imitation-Learning-for-Vision-Language-Navigation.md)
 
-- Sub-field: **Vision-Language Navigation**; **Reinforcement Learning**; **Imitation Learning**
+- Sub-field: **Vision-Language Navigation**; **Reinforcement Learning**; **Imitation Learning**; **Matter**
 
 3. Image-Question-Answer Synergistic Network for Visual Dialog (**6.20**; Poster)
 - [Paper Link](https://arxiv.org/pdf/1902.09774.pdf)
 
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Image-Question-Answer-Synergistic-Network-for-Visual-Dialog.md)
 
-- Sub-field: **Visual Dialog**
+- Sub-field: **Visual Dialog**; **Visdial1.0**
 
 4. Tactical Rewind: Self-Correction via Backtracking in Vision-and-Language Navigation (**6.19**; **Oral**)
 - [Paper Link](https://arxiv.org/pdf/1903.02547.pdf)
 
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Tactical-Rewind-Self-Correction-via-Backtracking-in-Vision-and-Language-Navigation.md)
 
-- Sub-field: **Vision-Language Navigation**
+- Sub-field: **Vision-Language Navigation**; 
 
 5. Learning to Compose Dynamic Tree Structures for Visual Contexts (**Oral**)
 - [Link](https://arxiv.org/pdf/1812.01880.pdf)
