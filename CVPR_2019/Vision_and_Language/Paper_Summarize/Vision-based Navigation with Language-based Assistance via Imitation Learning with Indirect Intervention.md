@@ -34,6 +34,10 @@
 - Advisor present in environment not only during training time but also test time
 - Assist by modifying the environment instead of directly making decisions
 
+- Illlustration
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_I3L_Illustration.png" width="600" hegiht="400" align=center/>
+
 ---
 ### Related Work
 #### Language and robots
@@ -133,6 +137,10 @@
 - Test time: agent makes decisions on its won, learned policy decides when advisor intervenes, environment changed clue interventions 
 - The advisor in I3L-BCUI intervenes both directly (through behavior cloning) and indirectly (by modifying the environment) at training time, buit only indirectly at test time
 
+- I3L-BCUI
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_I3L_I3L-BCUI.png" width="600" hegiht="400" align=center/>
+
 ---
 ### Environment and Data
 #### Matterport3D simulator
@@ -226,9 +234,13 @@ At time step *t*:
 - room-finding success rate
 - navigation error
 
-
 ---
 ### Results
+
+- Quantitative Results
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_I3L_Quantitaive-Results.png" width="600" hegiht="400" align=center/>
+
 #### Main Results
 - Requesting help is more useful in unseen environments
 - LEARNED policy outperforms all agent-agnostic polices
