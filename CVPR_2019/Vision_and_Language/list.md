@@ -64,7 +64,7 @@
 
 - Opinion: Practicle in real-environment; Closer to real robot-human interaction.
 
-
+---
 ### Visual Dialog
 
 #### Image-Question-Answer Synergistic Network for Visual Dialog (**6.20**; Poster)
@@ -74,7 +74,11 @@
 
 - Sub-field: **Visual Dialog**; **Visdial1.0**
 
+- Abstract: Current VQA methods usually model the relationship of image and question, despite the information contains in the answers. Thus, these methods failed to predict answer with a lot of words. This work propose to use the information contain in the answer and model the relationship between image, question and answer. This work also proposed a two stage process, in the first stage, filter out the answers, in the next stage, rerank those answers.
 
+- Opinion：Modeling the Image-Question-Answer relationship is important.
+
+---
 ### Embodied Question Answering
 
 12. Embodied Question Answering in Photorealistic Environments with Point Cloud Perception
