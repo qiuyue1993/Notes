@@ -26,6 +26,10 @@
 - Finally outputs the temporal boundaries of the given sentence uery
 - In particular, we introduce a state value, which measures the similarity of given sentence query and current observed video frame.
 
+- Overall Framework
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Images/Paper-Summarize_Language-Driven-Temporal-Activity-Localization_Overall-framework.png" width="600" hegiht="400" align=center/>
+
 ---
 ### Experiment and Result
 **Benchmark datasets**
