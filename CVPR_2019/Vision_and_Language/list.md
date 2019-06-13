@@ -148,7 +148,7 @@
 
 - Sub-field: **Temporal Action Detection**
 
-- Abstract: 
+- Abstract: This paper focuses on a problem of localizing an activity via a sentence query; Propose a reinforcement learning-based semantic matching to select frames to match the description sentence
 
 - Opinion: Also give a practical way to solve the action definition difficulty problem
 
