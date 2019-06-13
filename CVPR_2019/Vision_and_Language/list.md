@@ -48,3 +48,5 @@
 
 13. Vision-based Navigation with Language-based Assistance via Imitation Learning with Indirect Intervention
 - [Paper Link](https://arxiv.org/pdf/1812.04155.pdf)
+
+- [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Vision-based%20Navigation%20with%20Language-based%20Assistance%20via%20Imitation%20Learning%20with%20Indirect%20Intervention.md)
