@@ -171,41 +171,75 @@
 - *d-th* data point consists of a start viewpoint
 - a start orientation
 - a set of goal viewpoints
-- 
+- a end goal
+- the full map
+
 #### Algorithm
+- Train navigation policy: I3L-BCUI algorithm
+- Train help-requesting policy: behavior cloning
 
-
+At time step *t*:
+- Agent receives a view of the environment
+- Agent computes a **tentative navigation distribution**
+- The tentative navigation distribution is used as an input to **compute a help-requesting distribution**
+- The agent **invokes the help-requesting teacher** to decide if it should request help
+- Either the advisor is invoked to provide help, using the subgoal to be the end-goal
+- Or the requesting help is not met, the end-goal keep unchange
+- When the last-requesting action is executed, the agent selects the acting navigation policy based on the principle of the I3L-BCUI
+- When the request is within the last *k* steps, the teacher policy acts
 
 #### Agent
-
+- Separate nn modules for Navigation policy and Help-requesting policy
+- **Navigation module**: encoder-decoder model with a multiplicative attention mechanism and converage modeling, encode an end-goal, decodes a sequence of actions
+- **Help-requesting module**: a multi-layer feed-forward nn with ReLU activation functions and a softmax final layer
 
 #### Teachers
+*Navigation teacher*
+- Choose actions to traverse along the shortest path from the current viewpoint to the goal viewpoints
+- Issues the *stop* action when one of the goal viewpoints is reached
 
+*Help-requesting teacher*
+- Time to request help 1: The agent deviates from the shortest path distant than a threshold distance
+- Time to request help 2: The agent is "confused". (Decided by the entropy)
+- Time to request help 3: The agent has remained at the same viewpoint for a fixed steps
+- The help-request budget is greater than the number of remaining steps
+- The agent is at a goal viewpoint but the highest navigation distribution is *forward*
 
 #### Advisor
-
+- The advisor queries the navigation teacher for *k* consecutive steps
+- Then he actions are aggregated to make the language
 
 #### Help-request Budget
-
-
+- Define a hyperparameter which is the ratio between the total number of steps where the agent receives assistance and the time budget
 
 ---
 ### Experimental Setup
+#### Baselines
+- LEARNED: learned help-requesting policy
+- NONE: never request help
+- FIRST: request help continuously till a fixed steps
+- RANDOM: uniformly randomly choose a fixed steps to request help
+- TEACHER: follows the help-requesting teacher
 
+#### Evaluation metrics:
+- success rate
+- room-finding success rate
+- navigation error
 
 
 ---
 ### Results
 #### Main Results
-
-
+- Requesting help is more useful in unseen environments
+- LEARNED policy outperforms all agent-agnostic polices
+- There is a gap between LEARNED and TEACHER
+- RANDOM is better than FIRST for unseen environments, for seen environments, the results are opposite
 
 #### Effects of subgoals
-
+- Receiving subgoals boosts sucess rate on TEST UNSEEN whether interention is direct or indirect
 
 #### Does the agent learn to identify objects?
-
-
+- The agent which is equipped with a learned help-requesting policy and trained with room types, learns to recognize objects.
 
 ---
 ### Future Work
