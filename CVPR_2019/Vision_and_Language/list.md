@@ -33,7 +33,7 @@
 
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Reinforced-Cross-Modal-Matching-and-Self-Supervised-Imitation-Learning-for-Vision-Language-Navigation.md)
 
-- Sub-field: **Vision-Language Navigation**; **Reinforcement Learning**; **Imitation Learning**; **Matter**
+- Sub-field: **Vision-Language Navigation**; **Reinforcement Learning**; **Imitation Learning**; **Matterport 3D**
 
 - Abstract:
 
@@ -46,7 +46,7 @@
 
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Tactical-Rewind-Self-Correction-via-Backtracking-in-Vision-and-Language-Navigation.md)
 
-- Sub-field: **Vision-Language Navigation**; 
+- Sub-field: **Vision-Language Navigation**; **Matterport 3D**
 
 - Abstract: Conventional Vision-Language Navigation failed with a circulation and got lost in some occations; This work proposed a methods that can deal with this situation; Agent can balance the explore and exploit well to prevent from bad circling
 
@@ -58,7 +58,7 @@
 
 - [Summarization](https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Vision-based%20Navigation%20with%20Language-based%20Assistance%20via%20Imitation%20Learning%20with%20Indirect%20Intervention.md)
 
-- Sub-field: **Vision-Language Navigation**; **Imitation Learning**
+- Sub-field: **Vision-Language Navigation**; **Imitation Learning**  **Matterport 3D**
 
 - Abstract: Proposed a new vision-language navigation task that agent can request for language help in test time; Proposed a new imitation method that supports intervention.
 
