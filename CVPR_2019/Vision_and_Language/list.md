@@ -144,11 +144,13 @@
 
 - [Paper Link](http://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Language-Driven_Temporal_Activity_Localization_A_Semantic_Matching_Reinforcement_Learning_Model_CVPR_2019_paper.pdf)
 
-- [Summarization]()
+- [Summarization](https://github.com/qiuyue1993/Notes/edit/master/CVPR_2019/Vision_and_Language/Paper_Summarize/Language-Driven%20Temporal%20Activity%20Localization:%20A%20Semantic%20Matching%20Reinforcement%20Learning%20Model.md)
 
-- Abstract:
+- Sub-field: **Temporal Action Detection**
 
-- Opinion:
+- Abstract: 
+
+- Opinion: Also give a practical way to solve the action definition difficulty problem
 
 
 
