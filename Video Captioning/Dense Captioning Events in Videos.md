@@ -12,12 +12,17 @@
 *Dense-Captioning Events*
 - A new task of detecting and describing events in a video
 
+
 *Illustration*
 
-
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Video%20Captioning/Images/Paper-Summarize_Dense-Captioning-Events_Task-Illustration.png" width="600" hegiht="400" align=center/>
 
 ---
 ### Dense-captioning events model
+#### Overall Framework
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Video%20Captioning/Images/Paper-Summarize_Dense-Captioning-Events_Overall-Framework.png" width="600" hegiht="400" align=center/>
+
 #### Intuition
 - Introduces a variant of an existing proposal module that is designed to capture **both short as well as long events** than span minutes.
 - Introduces a new captioning module that **uses contextual information from past and future events** to jointly describe all events.
