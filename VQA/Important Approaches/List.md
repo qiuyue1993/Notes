@@ -8,6 +8,7 @@
 - [DCN](#DCN)
 - [BAN](#BAN)
 - [MCAN](#MCAN)
+- [Others](#Others)
 - [References](#References)
 ---
 ### MCB
@@ -50,6 +51,13 @@
 - Deep Modular Co-Attention Networks for Visual Question Answering
 - Accepted to CVPR 2019
 - 2019.06
+
+---
+### Others
+- Multimodal Transformer with Multi-View Visual Representation for Image Captioning
+- Submitted to a journal
+- 2019.05
+
 ---
 ### References
 - [MCB](https://arxiv.org/pdf/1606.01847.pdf)
@@ -59,4 +67,5 @@
 - [DCN](http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/3586.pdf)
 - [BAN](https://papers.nips.cc/paper/7429-bilinear-attention-networks.pdf)
 - [MCAN](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yu_Deep_Modular_Co-Attention_Networks_for_Visual_Question_Answering_CVPR_2019_paper.pdf)
+- [Multimodal Transformer](https://arxiv.org/pdf/1905.07841.pdf)
 ---
