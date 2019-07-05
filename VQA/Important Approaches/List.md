@@ -49,7 +49,7 @@
 ### MCAN
 - Deep Modular Co-Attention Networks for Visual Question Answering
 - Accepted to CVPR 2019
-- 
+- 2019.06
 ---
 ### References
 - [MCB](https://arxiv.org/pdf/1606.01847.pdf)
