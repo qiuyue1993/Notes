@@ -1,19 +1,19 @@
 # VQA in CVPR 2019
 
 ## Indexing
-- [Visual Question Answering](#Visual-Question-Answering)
-- [Visual Reasoning](#Visual-Reasoning)
-- [Visual Semantic Embedding](#Visual-Semantic-Embedding)
-- [Visual Question Generation](#Visual-Question-Generation)
-- [Attention](#Attention)
-- [Image Captioning](#Image-Captioning)
-- [Visual Grounding and Embodied](#Visual-Grounding-and-Embodied)
-- [Interpretability](#Interpretability)
-- [Visual Dialog](#Visual-Dialog)
-- [Open Domain](#Open-Domain)
-- [Reinforcement Learning](#Reinforcement-Learning)
-- [Distillation](#Distillation)
-- [3D Vision](#3D-Vision)
+- [Visual Question Answering (15)](#Visual-Question-Answering)
+- [Visual Grounding and Embodied (10)](#Visual-Grounding-and-Embodied)
+- [Visual Reasoning (6)](#Visual-Reasoning)
+- [Image Captioning (6)](#Image-Captioning)
+- [Visual Dialog (5)](#Visual-Dialog)
+- [Visual Semantic Embedding (4)](#Visual-Semantic-Embedding)
+- [Visual Question Generation (2)](#Visual-Question-Generation)
+- [Attention (1)](#Attention)
+- [Open Domain (7)](#Open-Domain)
+- [Distillation (5)](#Distillation)
+- [Interpretability (3)](#Interpretability)
+- [3D Vision (3)](#3D-Vision)
+- [Reinforcement Learning (1)](#Reinforcement-Learning)
 - [References](#References)
 ---
 ## Visual Question Answering
@@ -60,67 +60,6 @@
 
 ### Multi-Task Learning of Hierarchical Vision-Language Representation
 
-
----
-## Visual Reasoning
-### Its Not About the Journey Its About the Destination Following Soft Paths Under Question Guidance for Visual Reasoning
-
-
-### Scene Graph Generation With External Knowledge and Image Reconstruction
-
-
-### CLEVR-Ref+: Diagnosing Visual Reasoning With Referring Expressions
-
-
-### RAVEN: A Dataset for Relational and Analogical Visual REasoNing
-
-
-### Learning to Compose Dynamic Tree Structures for Visual Contexts
-
-### Video Relationship Reasoning Using Gated Spatio-Temporal Energy Graph
-
-
-
----
-## Visual Semantic Embedding
-### Polysemous Visual-Semantic Embedding for Cross-Modal Retrieval
-
-### Unified Visual-Semantic Embeddings: Bridging Vision and Language With Structured Meaning Representations
-
-### Image Generation From Layout
-
-### Multi-Level Multimodal Common Semantic Space for Image-Phrase Grounding
-
----
-## Visual Question Generation
-### Information Maximizing Visual Question Generation
-
-
-### What's to Know? Uncertainty as a Guide to Asking Goal-Oriented Questions
-
-
-
----
-## Attention
-### Factor Graph Attention
-
-
-
----
-## Image Captioning
-### Unsupervised Image Captioning
-
-### Context and Attribute Grounded Dense Captioning
-
-### Dense Relational Captioning: Triple-Stream Networks for Relationship-Based Captioning
-
-### Auto-Encoding Scene Graphs for Image Captioning
-
-### Good News, Everyone! Context Driven Entity-Aware Captioning for News Images
-
-
-### Pointing Novel Objects in Image Captioning
-
 ---
 ## Visual Grounding and Embodied
 ### Neural Sequential Phrase Grounding (SeqGROUND)
@@ -146,14 +85,37 @@
 
 
 ---
-## Interpretability
-### Interpreting CNNs via Decision Trees
+## Visual Reasoning
+### Its Not About the Journey Its About the Destination Following Soft Paths Under Question Guidance for Visual Reasoning
 
 
-### Interpretable and Fine-Grained Visual Explanations for Convolutional Neural Networks
+### Scene Graph Generation With External Knowledge and Image Reconstruction
 
-### Attention Branch Network: Learning of Attention Mechanism for Visual Explanation
 
+### CLEVR-Ref+: Diagnosing Visual Reasoning With Referring Expressions
+
+
+### RAVEN: A Dataset for Relational and Analogical Visual REasoNing
+
+
+### Learning to Compose Dynamic Tree Structures for Visual Contexts
+
+### Video Relationship Reasoning Using Gated Spatio-Temporal Energy Graph
+
+---
+## Image Captioning
+### Unsupervised Image Captioning
+
+### Context and Attribute Grounded Dense Captioning
+
+### Dense Relational Captioning: Triple-Stream Networks for Relationship-Based Captioning
+
+### Auto-Encoding Scene Graphs for Image Captioning
+
+### Good News, Everyone! Context Driven Entity-Aware Captioning for News Images
+
+
+### Pointing Novel Objects in Image Captioning
 
 ---
 ## Visual Dialog
@@ -167,11 +129,30 @@
 ### Image-Question-Answer Synergistic Network for Visual Dialog
 
 ### A Simple Baseline for Audio-Visual Scene-Aware Dialog
+
 ---
-## Learning Words by Drawing Images
-## Neural Task Graphs: Generalizing to Unseen Tasks From a Single Video Demonstration
-## End-To-End Interpretable Neural Motion Planner
-## Informative Object Annotations: Tell Me Something I Don't Know
+## Visual Semantic Embedding
+### Polysemous Visual-Semantic Embedding for Cross-Modal Retrieval
+
+### Unified Visual-Semantic Embeddings: Bridging Vision and Language With Structured Meaning Representations
+
+### Image Generation From Layout
+
+### Multi-Level Multimodal Common Semantic Space for Image-Phrase Grounding
+
+---
+## Visual Question Generation
+### Information Maximizing Visual Question Generation
+
+
+### What's to Know? Uncertainty as a Guide to Asking Goal-Oriented Questions
+
+
+
+---
+## Attention
+### Factor Graph Attention
+
 
 ---
 ## Open Domain
@@ -184,9 +165,13 @@
 
 ### Zero-Shot Task Transfer
 
----
-## Reinforcement Learning
-### Deep Reinforcement Learning of Volume-Guided Progressive View Inpainting for 3D Point Scene Completion From a Single Depth Image
+### Learning Words by Drawing Images
+
+
+### Neural Task Graphs: Generalizing to Unseen Tasks From a Single Video Demonstration
+
+
+### Informative Object Annotations: Tell Me Something I Don't Know
 
 
 ---
@@ -205,6 +190,16 @@
 
 ### Learning Not to Learn: Training Deep Neural Networks With Biased Data
 
+
+---
+## Interpretability
+### Interpreting CNNs via Decision Trees
+
+
+### Interpretable and Fine-Grained Visual Explanations for Convolutional Neural Networks
+
+### Attention Branch Network: Learning of Attention Mechanism for Visual Explanation
+
 ---
 ## 3D Vision
 ### What Do Single-View 3D Reconstruction Networks Learn?
@@ -213,6 +208,13 @@
 
 
 ### Learning Spatial Common Sense With Geometry-Aware Recurrent Networks
+
+---
+## Reinforcement Learning
+### Deep Reinforcement Learning of Volume-Guided Progressive View Inpainting for 3D Point Scene Completion From a Single Depth Image
+
+
+
 ---
 ## References
 
