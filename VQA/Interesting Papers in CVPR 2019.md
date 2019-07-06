@@ -1,4 +1,4 @@
-# VQA in CVPR 2019
+# Interesting Papers in CVPR 2019
 
 ## Indexing
 - [Visual Question Answering (15)](#Visual-Question-Answering)
