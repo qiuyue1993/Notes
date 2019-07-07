@@ -18,7 +18,29 @@
 ---
 ## Visual Question Answering
 ### Actively Seeking and Learning From Live Data
+#### Abstract
+*Intuition*
+- **Searching** for the information required at **test time**
+- Resulting method **dynamically utilizes data** from an **external source**, such as a large set of questions/answers or images/captions.
 
+*Contributions*
+- We propose a new approach to VQA in which the model is trained to **retrieve and utilize information from an external source**, to support its reasoning and answering process.
+
+- We propose an implementation of this approach based on a simple neural network and a **gradient-based adaptation** which is based on the **MAML algorithm**
+
+#### Approach
+*Steps*
+- Learn a set of base weights for a simple VQA model
+- **Adapted to a given question** with the information specifically retrieved for this question
+
+
+#### Experiments
+
+*Results*
+- SOTA on the VQA-CP v2
+- Robust to out-of-distribution test data
+- Capabilities for leveraging non-VQA data (image captions)
+#### Comments
 
 
 ### MUREL Multimodal Relational Reasoning for Visual Question Answering
@@ -217,5 +239,5 @@
 
 ---
 ## References
-
+- [Actively Seeking and Learning From Live Data](http://openaccess.thecvf.com/content_CVPR_2019/papers/Teney_Actively_Seeking_and_Learning_From_Live_Data_CVPR_2019_paper.pdf)
 ---
