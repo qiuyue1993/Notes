@@ -33,6 +33,26 @@
 - Learn a set of base weights for a simple VQA model
 - **Adapted to a given question** with the information specifically retrieved for this question
 
+*Overall*
+- Central idea: learn a VQA model that can **subsequently adapt to each particular given question**, using additional support data relevant to the question
+
+*Underlying VQA model*
+- **Standard VQA model** 
+- Encodes the question as a bag-of-words, taking the average of learned word embeddings
+- Single-headed, question-guided attention over image locations
+- **Hadamard product** to combine the two modalities
+
+*Gradient-based adaptation*
+- Based on **MAML**
+- For adaptation using support data of the same form as for task of interest
+- Use a first-order approximation of the gradient
+- **The support set must be simulated to best mimic the conditions in which the model will be evaluated**
+
+*Using non-VQA data as support*
+
+
+*Retrieval of relevant support data*
+
 
 #### Experiments
 
@@ -40,8 +60,11 @@
 - SOTA on the VQA-CP v2
 - Robust to out-of-distribution test data
 - Capabilities for leveraging non-VQA data (image captions)
-#### Comments
 
+
+#### Comments
+- What is multi-headed attention?
+- What is the relationship between main and adaptation loss
 
 ### MUREL Multimodal Relational Reasoning for Visual Question Answering
 
