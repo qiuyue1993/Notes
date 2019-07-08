@@ -82,6 +82,11 @@
 
 ### MUREL Multimodal Relational Reasoning for Visual Question Answering
 #### Abstract
+
+- Illustration
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_MUREL_Illustration.png" width="600" hegiht="400" align=center/>
+
 *Intuition*
 - Current **multimodal attention is insufficient** to model complex reasoning features for VQA
 
@@ -90,9 +95,15 @@
 - Can be used **iteratively**
 
 #### Approach
-*MuRel*
-- 
 
+- MuRel Cell
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_MUREL_MuRel-cell.png" width="600" hegiht="400" align=center/>
+
+
+- Overall Framework
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_MUREL_Overall-Framework.png" width="600" hegiht="400" align=center/>
 
 #### Experiments
 *Datasets*
