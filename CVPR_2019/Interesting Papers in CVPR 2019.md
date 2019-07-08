@@ -81,7 +81,33 @@
 - How to use the other sources may be a good future work
 
 ### MUREL Multimodal Relational Reasoning for Visual Question Answering
+#### Abstract
+*Intuition*
+- Current **multimodal attention is insufficient** to model complex reasoning features for VQA
 
+*MuRel cell*
+- An atomic reasoning primitive representing **interactions between question and image regions** and modeling region relations with **pairwise combinations**
+- Can be used **iteratively**
+
+#### Approach
+*MuRel*
+- 
+
+
+#### Experiments
+*Datasets*
+- VQA 2.0
+- VQA-CP v2
+- TDIUC
+
+*Results*
+- Better than bottom-up, mutan, mlb on VQA 2.0
+- Pythia and Counter have higher accuracy than MuRel
+
+#### Comments
+- The result on VQA-CP v2 is 39%, which is not high
+- The attention visualization is not trustful
+- **Attention map** in VQA is still not as that trustful
 
 ### OK-VQA A Visual Question Answering Benchmark Requiring External Knowledge
 
