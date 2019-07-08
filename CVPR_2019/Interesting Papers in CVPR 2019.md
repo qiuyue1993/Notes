@@ -276,5 +276,7 @@
 
 ---
 ## References
+### Visual Question Answering
 - [Actively Seeking and Learning From Live Data](http://openaccess.thecvf.com/content_CVPR_2019/papers/Teney_Actively_Seeking_and_Learning_From_Live_Data_CVPR_2019_paper.pdf)
+- [MUREL: Multimodal Relational Reasoning for Visual Question Answering](http://openaccess.thecvf.com/content_CVPR_2019/papers/Cadene_MUREL_Multimodal_Relational_Reasoning_for_Visual_Question_Answering_CVPR_2019_paper.pdf)
 ---
