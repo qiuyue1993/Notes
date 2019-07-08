@@ -28,6 +28,10 @@
 
 - We propose an implementation of this approach based on a simple neural network and a **gradient-based adaptation** which is based on the **MAML algorithm**
 
+- Illustion
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_Actively-Seeking-and-Learning-from-Live-DATA_Illustration.png" width="600" hegiht="400" align=center/>
+
 #### Approach
 *Steps*
 - Learn a set of base weights for a simple VQA model
@@ -35,6 +39,10 @@
 
 *Overall*
 - Central idea: learn a VQA model that can **subsequently adapt to each particular given question**, using additional support data relevant to the question
+
+- Overall Framework
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_Actively-Seeking-and-Learning-from-Live-DATA_Overall-Framework.png" width="600" hegiht="400" align=center/>
 
 *Underlying VQA model*
 - **Standard VQA model** 
