@@ -28,7 +28,7 @@
 
 - We propose an implementation of this approach based on a simple neural network and a **gradient-based adaptation** which is based on the **MAML algorithm**
 
-- Illustion
+- Illustration
 
 <img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_Actively-Seeking-and-Learning-from-Live-DATA_Illustration.png" width="600" hegiht="400" align=center/>
 
@@ -57,10 +57,14 @@
 - **The support set must be simulated to best mimic the conditions in which the model will be evaluated**
 
 *Using non-VQA data as support*
-
+- Challenge: produce beneficial updates the the weights **without access to a loss** on the target VQA model.
+- Evaluate the **extracted captions features** with **image-caption hadamard product features**.
+- Gradient is projected by **a learned projection**
 
 *Retrieval of relevant support data*
-
+- The **selection of a relevant subset is crucial**
+- A **static relevance function** to produce a scalar that reflects the pertinence of a support instance with the input
+- A series simple functions (Uniform sampling, common words comparison, Top-5 answers sentence, similarity of image features)
 
 #### Experiments
 
@@ -73,6 +77,8 @@
 #### Comments
 - What is multi-headed attention?
 - What is the relationship between main and adaptation loss
+- Learned gradient projection is new for me
+- How to use the other sources may be a good future work
 
 ### MUREL Multimodal Relational Reasoning for Visual Question Answering
 
