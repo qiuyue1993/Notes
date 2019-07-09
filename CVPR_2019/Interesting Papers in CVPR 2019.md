@@ -127,6 +127,34 @@
 
 
 ### Visual Question Answering as Reading Comprehension
+#### Abstract
+*Motivation*
+- VQA involves **common sense or general knowledge** which usually **appear in the form of text**
+
+*Intuition*
+- **Unify** all the input information by **natural language** 
+- Convert VQA into a **machine reading comprehension problem**
+
+*Merits*
+- Can be naturally extended to handle **knowledge-based VQA**
+
+#### Approach
+
+
+
+#### Experiments
+*Datasets*
+- FVQA
+- Visual Genome QA
+- Visual7W
+
+*Results*
+- FVQA: promote the accuracy from 62.20(former SOTA) to 62.94, a little bit tricky
+
+#### Comments
+- Idea is cool but also tricky
+- Maybe can be considered a methods to be included into the existing VQA methods
+- Comparing to transform Image into captions, maybe it's more attractive to transform both of the image and language into a meaningful representation with explicit semantic information
 
 ### Dynamic Fusion With Intra- and Inter-Modality Attention Flow for Visual Question Answering
 
