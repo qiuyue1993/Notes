@@ -140,7 +140,7 @@
 
 #### Approach
 
-
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_VQA-as-Reading-Comprehension-Approach.png" width="600" hegiht="400" align=center/>
 
 #### Experiments
 *Datasets*
