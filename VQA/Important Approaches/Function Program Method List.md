@@ -12,6 +12,8 @@
 - [The Neuro-Symbolic Concept Learner](#The-Neuro-Symbolic-Concept-Learner)
 
 - [Learning to Compose Neural Networks for Question Answering](#Learning-to-Compose-Neural-Networks-for-Question-Answering)
+
+- [Compositional models for VQA Can neural module networks really count?](#Compositional-models-for-VQA-Can-neural-module-networks-really-count?)
 - [References](#References)
 ---
 ## Neural Module Network
@@ -42,6 +44,9 @@
 ---
 ## Learning to Compose Neural Networks for Question Answering
 
+
+--
+## Compositional models for VQA Can neural module networks really count?
 
 ---
 ## References
