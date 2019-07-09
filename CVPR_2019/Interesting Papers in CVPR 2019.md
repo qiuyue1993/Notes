@@ -152,6 +152,104 @@
 
 
 ### Answer Them All! Toward Universal Visual Question Answering Models
+#### Abstract
+*Problems*
+- Current VQA research is split into two camps: works focusing on **Real Images** and on **CG Datasets testing reasoning**.
+
+*What we did*
+- Compare **5 SOTA VQA algorithms** on **8 VQA datasets**
+- A new model which generalize relatively well on all datasets
+
+*Interesting Findings*
+- Most VQA algorithms are **not capable of understanding real-world images** and performing **compositional reasoning**
+- All VQA algorithms fare **poorly on generalization tests**, indicating that current methods are still **exploitg dataset biases**.
+
+
+#### Related Work
+- VQA Datasets
+*TDIUC*
+- Analyzes generalization to multiple kinds of questions and rarer answers
+
+*CVQA*
+- Re-split of VQAv1.
+- Tests concept compositionality.
+
+*VQA-CP v2*
+- Re-organizes VQAv2
+- Test performance when train and test distributions differ.
+
+*CLEVR-Humans*
+- Human-generated questions for CLEVR scenes
+
+*CLEVR-CoGenT*
+- Tests the ability to handle unseen concept composition and remember old concept combinations.
+
+- VQA Models Evaluated 
+*UpDn*
+- Bottom-up attention: generate object proposals from Faster R-CNN
+- Top-down attention: predict an attention distribution ove proposals
+
+*Question-Conditioned Graph (QCG)*
+- Represent images as graphs where **object-level features** act as **graph nodes** and **edges**
+- **Encode interactions between regions** that are **conditioned on the question**
+
+*Bilinear Attention Network (BAN)*
+- Fuses **visual and textual modalities** by considering **interactions between all** regions and words
+- Supports multiple glimpses of attention via connected residual connections
+
+*Relation Network (RN)*
+- Takes in every pair of region proposals and **encodes relationships between objects**
+
+*Memory, Attention and Composition (MAC)*
+- Uses computational cells that automatically learn to perform **attention-based reasoning** 
+
+#### Approach
+- RAMEN (Recurrent Aggregation of Multimodal Embeddings Network)	
+*Early fusion of vision and language features*
+- Important for **compositional reasoning**
+
+*Learning bimodal embeddings via shared projections*
+- Important for learn the **inter-relationships** between visual and textual features
+
+*Recurrent aggregation of the learned bimodal embeddings*
+- Bi-directional gated recurrent unit (bi-GRU)
+
+#### Experiments and Results
+*Standardizing Models*
+- Use same visual features for all algorithms (2048-dimensional bottom-up, 36 proposals)
+- Keep the vocabulary the same
+
+*Generalization Across VQA Datasets*
+- RAVEN generalizes the best across all datasets
+- BAN also generalizes well
+
+*Generalization Across Question Types*
+- RAVEN generalizes the best across all question types
+- BAN also generalizes well
+
+*Generalization to Novel Concept Compositions*
+- RAVEN performs best on CVQA
+- BAN also performs well
+
+*Performance on VQA-CP v2*
+- BAN performs best
+
+*Counting and Numerical Comparisons*
+- MAC performs best, the RAVEN performs the second
+- BAN is not good at numerical questions
+
+*Ablation Studies*
+- Early Fusion is very important especially for reasoning
+
+#### Other discussions
+- Results on VQAv2 can be significantly improved by using additional data from **other VQA datasets and ensembling**
+- VQACPv2 results can be improved using **specialized architectures**
+- Some SOTA methods are likely **over-engineered to exploit the biases**
+- It would be interesting to **train a dataset on a universal training set** and then **evaluate it on multiple test sets**, with each test set demanding **a different skill set**
+
+#### Comments
+- BAN is good
+
 
 
 ### Multi-Task Learning of Hierarchical Vision-Language Representation
