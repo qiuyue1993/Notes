@@ -205,6 +205,9 @@
 
 #### Approach
 - RAMEN (Recurrent Aggregation of Multimodal Embeddings Network)	
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_Answer-Them-All_RAMEN.png" width="600" hegiht="400" align=center/>
+
 *Early fusion of vision and language features*
 - Important for **compositional reasoning**
 
@@ -220,6 +223,9 @@
 - Keep the vocabulary the same
 
 *Generalization Across VQA Datasets*
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_Answer-Them-All_5methods8datasets.png" width="600" hegiht="400" align=center/>
+
 - RAVEN generalizes the best across all datasets
 - BAN also generalizes well
 
