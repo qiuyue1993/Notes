@@ -1,4 +1,4 @@
-## Important VQA Approaches
+## Multi-modal Fusion method list
 
 ### Indexing
 - [MCB](#MCB)
