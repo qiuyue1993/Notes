@@ -122,14 +122,25 @@
 
 ### OK-VQA A Visual Question Answering Benchmark Requiring External Knowledge
 #### Abstract
-
-
+*Motivation*
+- **Knowledge-based** visual question answering
+- Encourage methods that rely on **external knowledge resources**
 
 #### Dataset Statistics
 
+- Statistics
 
 
-  bn
+- Knowledge Categories
+
+
+
+*Benchmarking*
+- SOTA VQA models degrade drastically in this new setting
+
+#### Comments
+- Heavy on the NLP side?!
+
 
 ### Deep Modular Co-Attention Networks for Visual Question Answering
 
