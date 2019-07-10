@@ -130,10 +130,11 @@
 
 - Statistics
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_Ok-VQA_Statistics.png" width="600" hegiht="400" align=center/>
 
 - Knowledge Categories
 
-
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_Ok-VQA_Dataset-Examples.png" width="600" hegiht="400" align=center/>
 
 *Benchmarking*
 - SOTA VQA models degrade drastically in this new setting
