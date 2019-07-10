@@ -174,7 +174,42 @@
 
 
 ### Transfer Learning via Unsupervised Task Discovery for Visual Question Answering
+#### Abstract
+*Motivations*
+- Leverage **off-the-shelf** visual and linguistic data to cope with out-of-vocabulary VQA.
 
+*Steps*
+- Learning a task conditional visual classifier, datas come from **unsupervised task discovery**
+- **Transferring the task conditional visual classifier** to VQA
+
+*Contributions*
+- Present a novel **transfer learning algorithm for VQA** based on a **task conditional visual classifier**
+- Propose an **unsupervised task discovery technique** for learning task conditional visual classifiers without explicit task annotations
+
+#### Approach
+
+
+*Process*
+- Introduce a **task conditional visual classifier**, which generates an answer from a visual input and a task specification, as a **medium** for learning and transfering visual concepts
+- **Pretrain the task conditional visual classifier** using visual dataset without questions or task specifications **via unsupervised task discovery**
+- **Adapt it to VQA models** by transferring the learned parameters
+
+#### Experiments
+*Dataset*
+- Re-arranged VQA v2 dataset
+
+*Results*
+- For overall dataset: proposed methods exceed the standard VQA
+- For trained answers only: the standard VQA exceed the proposed methods
+- However, the standard VQA cannot deal with out-of-shelf answers
+
+
+
+#### Comments
+- Enabling using the external knowledge for VQA task is very important
+- **Transfering learning** from external data to cope with out-of-vocabulary words has hardly been studied in VQA, but is actively studied in **novel object captioning**
+- "VQA can be considered as a **task conditional classification problem**" is interesting
+- Actually, the results are not good enough
 
 ### Social-IQ: A Question Answering Benchmark for Artificial Social Intelligence
 
