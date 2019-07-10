@@ -11,7 +11,7 @@
 - [Attention (1)](#Attention)
 - [Open Domain (7)](#Open-Domain)
 - [Distillation (5)](#Distillation)
-- [Interpretability (3)](#Interpretability)
+- [Interpretability (4)](#Interpretability)
 - [3D Vision (3)](#3D-Vision)
 - [Reinforcement Learning (1)](#Reinforcement-Learning)
 - [References](#References)
@@ -353,7 +353,7 @@
 
 ### Multi-Target Embodied Question Answering
 
-### Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation
+### Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation (best student paper)
 
 ### Embodied Question Answering in Photorealistic Environments With Point Cloud Perception
 
@@ -385,7 +385,7 @@
 ### RAVEN: A Dataset for Relational and Analogical Visual REasoNing
 
 
-### Learning to Compose Dynamic Tree Structures for Visual Contexts
+### Learning to Compose Dynamic Tree Structures for Visual Contexts (best paper finalist)
 
 ### Video Relationship Reasoning Using Gated Spatio-Temporal Energy Graph
 
@@ -486,6 +486,9 @@
 ### Interpretable and Fine-Grained Visual Explanations for Convolutional Neural Networks
 
 ### Attention Branch Network: Learning of Attention Mechanism for Visual Explanation
+
+### Text2Scene: Generating Compositional Scenes from Textual Descriptions (Best Paper Finalist)
+
 
 ---
 ## 3D Vision
