@@ -121,7 +121,15 @@
 - **Attention map** in VQA is still not as that trustful
 
 ### OK-VQA A Visual Question Answering Benchmark Requiring External Knowledge
+#### Abstract
 
+
+
+#### Dataset Statistics
+
+
+
+  bn
 
 ### Deep Modular Co-Attention Networks for Visual Question Answering
 
