@@ -175,6 +175,9 @@
 
 ### Transfer Learning via Unsupervised Task Discovery for Visual Question Answering
 #### Abstract
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_Transfer-Learning-for-VQA_Framework.png" width="600" hegiht="400" align=center/>
+
 *Motivations*
 - Leverage **off-the-shelf** visual and linguistic data to cope with out-of-vocabulary VQA.
 
@@ -188,6 +191,7 @@
 
 #### Approach
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/CVPR_2019/Images/Paper-Summarization_Transfer-Learning-for-VQA_Illustration.png" width="600" hegiht="400" align=center/>
 
 *Process*
 - Introduce a **task conditional visual classifier**, which generates an answer from a visual input and a task specification, as a **medium** for learning and transfering visual concepts
