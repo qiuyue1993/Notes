@@ -1,4 +1,4 @@
-# Function Program Method List
+# Models with explicit reasoning module
 
 ## Indexing:
 - [Neural Module Network](#Neural-Module-Network)
