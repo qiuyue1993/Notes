@@ -3,7 +3,7 @@
 ## Indexing
 - [Visual Question Answering (15)](#Visual-Question-Answering)
 - [Visual Grounding and Embodied (10)](#Visual-Grounding-and-Embodied)
-- [Visual Reasoning (6)](#Visual-Reasoning)
+- [Visual Reasoning (7)](#Visual-Reasoning)
 - [Image Captioning (6)](#Image-Captioning)
 - [Visual Dialog (5)](#Visual-Dialog)
 - [Visual Semantic Embedding (4)](#Visual-Semantic-Embedding)
@@ -388,6 +388,9 @@
 ### Learning to Compose Dynamic Tree Structures for Visual Contexts (best paper finalist)
 
 ### Video Relationship Reasoning Using Gated Spatio-Temporal Energy Graph
+
+### Explainable and Explicit Visual Reasoning over Scene graphs
+
 
 ---
 ## Image Captioning
