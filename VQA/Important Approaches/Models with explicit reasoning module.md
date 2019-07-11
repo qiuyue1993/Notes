@@ -27,6 +27,85 @@
 
 ---
 ## Neural Module Network
+- Accept to CVPR 2016
+
+### Introduction
+#### Abstract
+*Intuition*
+- **Shared linguistic substructure** in questions
+
+*Proposed method*
+- **Constucting** and **Learning** neural module networks
+
+*Processes*
+- **Decomposes questions** into their linguistic **substructures**
+- Use those structures to **dynamically instantiate modular networks**
+
+*Contributions*
+- Describe neural module networks, a **general** architecture for discretely composing heterogeneous, jointly-trained neural modules into deep networks.
+
+
+### Approach
+#### Problem Definition
+*Data*
+- $(w, x, y):$ (natural-language question, image, answer)
+
+*Model*
+- A collection of modules ${m}$, each with associated parameters
+- Network layout predictor $P$, which maps from strings to networks
+
+#### Modules
+- The modules operate on 3 basic data types: **images, unormalized attentions, labels**
+- Format: TYPE[INSTANCE](ARG1,...)
+- Weights may be shared at both the **type and instance level**
+
+*Find (Image->Attention)*
+- Convolves every position in the input image with a **weight vector** to produce a heatmap or unnormalized attention
+
+*Transform (Attention->Attention)*
+- Multilayer perceptron with ReLUs
+- Performing a **fully-connected mapping** from one attention to another
+- Weights for this mapping are **distinct for each c**
+
+*Combine (Attention*Attention->Attention)*
+- Merges two attentions into a single attention
+
+*Describe (Image*Attention->Label)*
+- Takes an attention and the input image 
+- Maps both to a distribution over labels
+
+*Measure (Attention->Label)*
+- Takes an attention alone
+- Maps it to a distribution over labels
+
+#### From strings to networks
+- Two steps, parsing and 
+
+*Parsing*
+- Map natural language questions to **layouts**
+- Specify both the **set of modules used** to answer a given questions
+- And the **connections between them**
+- Using **Stanford Parser**, dependency parsing
+
+*Layout*
+- All leaves become **find modules**
+- All internal nodes become **transform or combine modules**
+- Root nodes become **describe or measure** modules depending on the domain
+
+
+#### Answering natural language questions
+- Final model combines the output from the **neural module network** with predictions from a simple **LSTM question encoder**
+
+### Experiments
+*Dataset*
+- VQA dataset
+
+*Results*
+- With overall 58.7% on VQA dataset
+
+### Comments
+- Mannual designed modules might constraint the ability of this model, Is that possible to learn the modules automatically?
+- Kind like mannual designed feature extraction
 
 ---
 ## Learning to Compose Neural Networks for Question Answering
@@ -69,7 +148,7 @@
 
 ---
 ## References
-- []
+- [Neural Module Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Andreas_Neural_Module_Networks_CVPR_2016_paper.pdf)
 - []
 - []
 - []
