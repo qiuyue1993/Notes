@@ -1,7 +1,7 @@
 # Models with explicit reasoning module
 
 ## Indexing:
-- [Relation Network](#Relation Network)
+- [Relation Network](#Relation-Network)
 - [Neural Module Network](#Neural-Module-Network)
 - [Learning to Compose Neural Networks for Question Answering](#Learning-to-Compose-Neural-Networks-for-Question-Answering)
 
