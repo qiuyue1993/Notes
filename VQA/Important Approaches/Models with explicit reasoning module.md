@@ -150,6 +150,7 @@
 
 ### Comments
 - Suited for open-domain VQA baseline experiments
+- How many instances does a module have? 
 
 ---
 ## N2NMN
