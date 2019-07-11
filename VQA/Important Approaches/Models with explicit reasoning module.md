@@ -114,7 +114,42 @@
 
 ---
 ## Dynamic Neural Module Network
+### Introduction
+*Abstract*
+- Use natural language strings to **automatically assemble neural networks** from a collection of composable modules
+- Parameters for these modules are learned jointly with network-assembly parameters via reinforcement learning
+- The supervision is (world, question, answer) triples
+- The world representations can be **images or knowledge bases**
 
+
+### Approach
+#### Problem Definition
+*Notations*
+- $w$: world representation
+- $x$: question
+- $y$: answer 
+- $z$: network layout
+- $theta$: collection of model parameters
+
+*Two Distributions*
+- **Layout model**: choose a layout for a sentence
+- **Execution model**: applies the network specified by $z$ to $w$
+
+
+#### Evaluating modules
+
+
+#### Assembling networks
+
+
+
+### Different from Neural Module Network
+- **Learn a network structure predictor** jointly with module parameters themselves
+- Extend visual primitives from previous work to reason over **structured world representations**
+- Requires **no supervision of network layouts**
+
+### Comments
+- Suited for open-domain VQA baseline experiments
 
 ---
 ## N2NMN
