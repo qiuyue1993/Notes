@@ -2,6 +2,8 @@
 
 ## Indexing:
 - [Neural Module Network](#Neural-Module-Network)
+- [Learning to Compose Neural Networks for Question Answering](#Learning-to-Compose-Neural-Networks-for-Question-Answering)
+
 - [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network)
 - [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks)
 - [Explainable Neural Computation via Stack Neural Module Networks](#Explainable-Neural-Computation-via-Stack-Neural-Module-Networks)
@@ -11,7 +13,7 @@
 - [Neural-Symbolic VQA](#Neural-Symbolic-VQA)
 - [The Neuro-Symbolic Concept Learner](#The-Neuro-Symbolic-Concept-Learner)
 
-- [Learning to Compose Neural Networks for Question Answering](#Learning-to-Compose-Neural-Networks-for-Question-Answering)
+
 
 - [Compositional models for VQA Can neural module networks really count?](#Compositional-models-for-VQA-Can-neural-module-networks-really-count?)
 
@@ -19,6 +21,9 @@
 - [References](#References)
 ---
 ## Neural Module Network
+
+---
+## Learning to Compose Neural Networks for Question Answering
 
 
 ---
@@ -43,8 +48,7 @@
 ## The Neuro-Symbolic Concept Learner
 
 
----
-## Learning to Compose Neural Networks for Question Answering
+
 
 
 --
