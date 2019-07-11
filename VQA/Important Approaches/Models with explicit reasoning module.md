@@ -4,11 +4,10 @@
 
 - [Neural Module Network](#Neural-Module-Network)
 - [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network)
+- [N2NMN](#N2NMN)
 
-- [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network)
 - [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks)
 - [Explainable Neural Computation via Stack Neural Module Networks](#Explainable-Neural-Computation-via-Stack-Neural-Module-Networks)
-- [N2NMN](#N2NMN)
 
 
 - [Inferring and Executing Programs for Visual Reasoning](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
@@ -116,8 +115,6 @@
 ---
 ## Dynamic Neural Module Network
 
----
-## Dynamic Neural Module Network
 
 ---
 ## N2NMN
