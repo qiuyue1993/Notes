@@ -31,6 +31,9 @@
 
 ### Introduction
 #### Abstract
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Neural-Module-Network_Illustration.png" width="600" hegiht="400" align=center/>
+
 *Intuition*
 - **Shared linguistic substructure** in questions
 
@@ -101,6 +104,9 @@
 - VQA dataset
 
 *Results*
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Neural-Module-Network_Sampled-Resultspng.png" width="600" hegiht="400" align=center/>
+
 - With overall 58.7% on VQA dataset
 
 ### Comments
