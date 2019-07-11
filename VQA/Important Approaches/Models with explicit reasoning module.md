@@ -1,6 +1,7 @@
 # Models with explicit reasoning module
 
 ## Indexing:
+- [Relation Network](#Relation Network)
 - [Neural Module Network](#Neural-Module-Network)
 - [Learning to Compose Neural Networks for Question Answering](#Learning-to-Compose-Neural-Networks-for-Question-Answering)
 
@@ -19,6 +20,9 @@
 
 - [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](#Learning-Conditioned-Graph-Structures-for-Interpretable-Visual-Question-Answering)
 - [References](#References)
+---
+## Relation Network
+
 ---
 ## Neural Module Network
 
