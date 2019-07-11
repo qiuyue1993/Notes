@@ -3,7 +3,7 @@
 ## Indexing:
 
 - [Neural Module Network](#Neural-Module-Network)
-- [Learning to Compose Neural Networks for Question Answering](#Learning-to-Compose-Neural-Networks-for-Question-Answering)
+- [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network)
 
 - [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network)
 - [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks)
@@ -114,8 +114,7 @@
 - Kind like mannual designed feature extraction
 
 ---
-## Learning to Compose Neural Networks for Question Answering
-
+## Dynamic Neural Module Network
 
 ---
 ## Dynamic Neural Module Network
@@ -155,7 +154,7 @@
 ---
 ## References
 - [Neural Module Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Andreas_Neural_Module_Networks_CVPR_2016_paper.pdf)
-- []
+- [Dynamic Neural Module Networks](https://arxiv.org/pdf/1601.01705.pdf)
 - []
 - []
 - []
