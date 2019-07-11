@@ -1,4 +1,4 @@
-## Multi-modal Fusion method list
+## Models without explicit reasoning module
 
 ### Indexing
 - [MCB](#MCB)
