@@ -8,6 +8,7 @@
 - [DCN](#DCN)
 - [BAN](#BAN)
 - [MCAN](#MCAN)
+- [FiLM](#FiLM)
 - [Others](#Others)
 - [References](#References)
 ---
@@ -52,6 +53,12 @@
 - Accepted to CVPR 2019
 - 2019.06
 
+---
+### FiLM
+- FiLM: Visual Reasoning with a General Conditioning Layer
+- Accepted to AAAI 2018
+- 2017.09
+- GNN-FILM: GRAPH NEURAL NETWORKS WITH FEATURE-WISE LINEAR MODULATION
 ---
 ### Others
 - Multimodal Transformer with Multi-View Visual Representation for Image Captioning
