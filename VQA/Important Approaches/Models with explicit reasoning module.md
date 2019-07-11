@@ -135,13 +135,35 @@
 - **Layout model**: choose a layout for a sentence
 - **Execution model**: applies the network specified by $z$ to $w$
 
-
 #### Evaluating modules
+*Lookup*
+- Produces attention
 
+*Find*
+- Attention
+- Compute a **distributions over indices** by concatenating the parameter argument with each position of the input feature map, and passing the concatenated vector through a MLP
 
-#### Assembling networks
+*Relate*
+- Attention -> Attention
+- Directs focus from one region of the input to another
 
+*And*
+- Attention* -> Attention
+- Perform an operation analogous to set intersection for attentions
 
+*Describe*
+- Attention -> Labels
+- Computes a weighted average of $w$ under the input attention
+
+*Exists*
+- Existential quantifier
+- Inspects the incoming attention directly to produce a lable
+
+### Experiments
+#### Questions about images
+*Dataset*
+- VQA v1
+- Best at that time
 
 ### Different from Neural Module Network
 - **Learn a network structure predictor** jointly with module parameters themselves
