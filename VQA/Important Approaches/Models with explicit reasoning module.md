@@ -114,6 +114,9 @@
 
 ---
 ## Dynamic Neural Module Network
+
+- Accepted to NAACL 2016
+
 ### Introduction
 *Abstract*
 - Use natural language strings to **automatically assemble neural networks** from a collection of composable modules
@@ -176,7 +179,15 @@
 
 ---
 ## N2NMN
+
+- Accepted to ICCV 2017
+
 ### Introduction
+
+- Illustration
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_N2NMN_Illustration.png" width="600" hegiht="400" align=center/>
+
 *Problems of NMN*
 - Rely on brittle **off-the-shelf** parsers
 - Restricted to the module configurations proposed by these parsers
@@ -194,11 +205,21 @@
 - Requires **no parser**
 
 ### Approach
+
+- Model Overview
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_N2NMN_Model-Overview.png" width="600" hegiht="400" align=center/>
+
 *Two main components*
 - A set of **co-attentive neural modules** that provide **parameterized functions for solving sub-tasks**
 - A **layout policy** to predict a **question-specific layout** 
 
 #### Attentional neural modules
+
+- Neural Module List
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_N2NMN_Module-List.png" width="600" hegiht="400" align=center/>
+
 *Compositions*
 - A set of **neural modules**
 - A module $m$ is parameterized function $y = f_m (a_1, a_2, ...; x_{vis}, x_{txt}, \theta_m)$ 
@@ -244,6 +265,9 @@
 - NMN: 90.80%
 
 #### CLEVR dataset
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_N2NMN_CLEVR-Results.png" width="600" hegiht="400" align=center/>
+
 - Focuses mostly on the reasoning ability
 - Feature extraction with VGG and added extra location information
 - 83.7% overall accuracy on CLEVR 
@@ -251,6 +275,9 @@
 - **The performance consistently improves after end-to-end training with policy search using reinforcement learning**
 
 #### VQA dataset
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_N2NMN_VQAv1-Results.png" width="600" hegiht="400" align=center/>
+
 - Construct an expert layout policy using a **syntactic parse of questions**
 - Better than MCB on VQA v1
 ### Comments
@@ -288,7 +315,7 @@
 ## References
 - [Neural Module Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Andreas_Neural_Module_Networks_CVPR_2016_paper.pdf)
 - [Dynamic Neural Module Networks](https://arxiv.org/pdf/1601.01705.pdf)
-- []
+- [N2NMN](https://arxiv.org/pdf/1704.05526.pdf)
 - []
 - []
 - [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](https://arxiv.org/pdf/1806.07243.pdf)
