@@ -286,6 +286,9 @@
 ---
 ## Explainable Neural Computation via Stack Neural Module Networks
 
+- Accept to ECCV 2018
+
+
 
 
 ---
@@ -321,7 +324,8 @@
 - [Neural Module Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Andreas_Neural_Module_Networks_CVPR_2016_paper.pdf)
 - [Dynamic Neural Module Networks](https://arxiv.org/pdf/1601.01705.pdf)
 - [N2NMN](https://arxiv.org/pdf/1704.05526.pdf)
-- []
+- [Explainable Neural Computation via Stack Neural Module Networks](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Ronghang_Hu_Explainable_Neural_Computation_ECCV_2018_paper.pdf)
+
 - []
 - [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](https://arxiv.org/pdf/1806.07243.pdf)
 ---
