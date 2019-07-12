@@ -176,7 +176,38 @@
 
 ---
 ## N2NMN
+### Introduction
+*Problems of NMN*
+- Rely on brittle **off-the-shelf** parsers
+- Restricted to the module configurations proposed by these parsers
 
+*Proposal*
+- Learn to reason by **directly predicting instance-specific network layouts** (Sequence-to-sequence RNN)
+- Learn to generate **network structures** and **network parameters**
+
+*Contributions*
+- A method for learning a **layout policy that dynamically predicts a network structure for each instance**
+- A **module parameterization** that uses a **soft attention over question words** rather than hard-coded word assignments
+
+*Comparing with Prior Works*
+- Learn to **optimize over the full space of network layouts**
+- Requires **no parser**
+
+### Approach
+*Two main components*
+- A set of **co-attentive neural modules** that provide **parameterized functions for solving sub-tasks**
+- A **layout policy** to predict a **question-specific layout** 
+
+#### Attentional neural modules
+
+#### Layout policy with sequence-to-sequence RNN
+
+#### End-to-end training
+
+### Experiments
+
+
+### Comments
 
 ---
 ## Visual Coreference Resolution
