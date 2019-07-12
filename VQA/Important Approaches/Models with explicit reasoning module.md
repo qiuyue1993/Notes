@@ -166,12 +166,11 @@
 #### Questions about images
 *Dataset*
 - VQA v1
-- Best at that time
+- Best performance at that time
 
 ### Different from Neural Module Network
 - **Learn a network structure predictor** jointly with module parameters themselves
 - Extend visual primitives from previous work to reason over **structured world representations**
-- Requires **no supervision of network layouts**
 
 ### Comments
 - Suited for open-domain VQA baseline experiments
