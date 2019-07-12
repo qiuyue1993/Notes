@@ -69,10 +69,10 @@
 - Performing a **fully-connected mapping** from one attention to another
 - Weights for this mapping are **distinct for each c**
 
-*Combine (Attention*Attention->Attention)*
+*Combine (Attention\*Attention->Attention)*
 - Merges two attentions into a single attention
 
-*Describe (Image*Attention->Label)*
+*Describe (Image\*Attention->Label)*
 - Takes an attention and the input image 
 - Maps both to a distribution over labels
 
