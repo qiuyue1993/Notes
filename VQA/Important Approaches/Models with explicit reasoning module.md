@@ -199,16 +199,63 @@
 - A **layout policy** to predict a **question-specific layout** 
 
 #### Attentional neural modules
+*Compositions*
+- A set of **neural modules**
+- A module $m$ is parameterized function $y = f_m (a_1, a_2, ...; x_{vis}, x_{txt}, \theta_m)$ 
+- Input: $a_1, a_2, ...$, image attention map over the convolutional image feature grid
+- Additional Information: $x_{vis}$ indicates image features; $x_{txt}$ indicates question features
+- Output: $y$ is either an image attention map or a probability distribution
+
+- **Obtains the textual input using soft attention over question words**
 
 #### Layout policy with sequence-to-sequence RNN
+- Input: question $q$
+- Output: probability distribution
+
+*Possible output layouts*
+- The layout policy **predicts a distribution over the space of all possible layouts**
+- Every possible layout can be represented as a **syntax tree**, can be mapped into a linearized sequence using **Reverse Polish Notation**
+
+*Layout prediction process*
+- **Sequence-to-sequence** learning problem from **questions to module tokens**
+- Attentional Recurrent Neural Network
+
+*Test time*
+- predict a maximum-probability layout using beam search
 
 #### End-to-end training
+- Loss is not fully differentiable since the layout is discrete
+- Optimize network using **backpropagation for differentiable parts**
+- **Policy gradient** in reinforcement learning for **non-differentiable part**
+- Introduced a **simple baseline implemented as an exponential moving average over recent loss**
+
+*Behavioral cloning from expert polices*
+- Treat **candidate layouts as an existing expert policy** to provide additional supervision
+- Pretrain model by **behavioral cloning** by minimizing the **KL-divergence** between the expert policy and layout policy
 
 ### Experiments
+#### SHAPES dataset
+- 15,616 image-question pairs with 244 unique questions
+- Each image consists of shapes of different colors and sizes
 
+*Two settings*
+- Behavioral cloning from expert: 100% Accuracy on SHAPES
+- Policy search from scratch: 96.19% Accuracy on SHAPES
+- NMN: 90.80%
 
+#### CLEVR dataset
+- Focuses mostly on the reasoning ability
+- Feature extraction with VGG and added extra location information
+- 83.7% overall accuracy on CLEVR 
+- **Soft attention module parameterization is better than the hard-coded textual parameters in NMN**
+- **The performance consistently improves after end-to-end training with policy search using reinforcement learning**
+
+#### VQA dataset
+- Construct an expert layout policy using a **syntactic parse of questions**
+- Better than MCB on VQA v1
 ### Comments
-
+- Why introduced a **simple baseline** and how can it be used?
+- The model with cloning expert performs far more well than RL from scratch
 ---
 ## Visual Coreference Resolution
 
