@@ -4,7 +4,7 @@
 
 - [Neural Module Network](#Neural-Module-Network)
 - [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network)
-- [N2NMN](#N2NMN)
+- [N2NMN (End-to-end Module Network)](#N2NMN)
 
 - [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks)
 - [Explainable Neural Computation via Stack Neural Module Networks](#Explainable-Neural-Computation-via-Stack-Neural-Module-Networks)
