@@ -20,6 +20,10 @@
 
 - [Relation Network](#Relation-Network)
 
+- [Transparency by design: Closing the gap between performance and interpretability in visual reasoning](Transparency-by-design-Closing-the-gap-between-performance-and-interpretability-in-visual-reasoning)
+
+- [MAC](#MAC)
+
 - [References](#References)
 
 
