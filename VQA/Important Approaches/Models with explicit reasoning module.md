@@ -81,7 +81,7 @@
 - Maps it to a distribution over labels
 
 #### From strings to networks
-- Two steps, parsing and 
+- Two steps, parsing and composing networks
 
 *Parsing*
 - Map natural language questions to **layouts**
