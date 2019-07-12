@@ -58,7 +58,7 @@
 
 #### Modules
 - The modules operate on 3 basic data types: **images, unormalized attentions, labels**
-- Format: TYPE[INSTANCE](ARG1,...)
+- Format: TYPE\[INSTANCE\] (ARG1,...)
 - Weights may be shared at both the **type and instance level**
 
 *Find (Image->Attention)*
@@ -132,7 +132,7 @@
 - $x$: question
 - $y$: answer 
 - $z$: network layout
-- $theta$: collection of model parameters
+- $\theta$: collection of model parameters
 
 *Two Distributions*
 - **Layout model**: choose a layout for a sentence
