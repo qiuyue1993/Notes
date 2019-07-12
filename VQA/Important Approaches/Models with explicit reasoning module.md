@@ -5,9 +5,10 @@
 - [Neural Module Network](#Neural-Module-Network)
 - [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network)
 - [N2NMN (End-to-end Module Network)](#N2NMN)
+- [Explainable Neural Computation via Stack Neural Module Networks](#Explainable-Neural-Computation-via-Stack-Neural-Module-Networks)
 
 - [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks)
-- [Explainable Neural Computation via Stack Neural Module Networks](#Explainable-Neural-Computation-via-Stack-Neural-Module-Networks)
+
 
 
 - [Inferring and Executing Programs for Visual Reasoning](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
@@ -282,6 +283,11 @@
 ### Comments
 - Why introduced a **simple baseline** and how can it be used?
 - The model with cloning expert performs far more well than RL from scratch
+---
+## Explainable Neural Computation via Stack Neural Module Networks
+
+
+
 ---
 ## Visual Coreference Resolution
 
