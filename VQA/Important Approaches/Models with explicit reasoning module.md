@@ -7,11 +7,9 @@
 - [N2NMN (End-to-end Module Network)](#N2NMN)
 - [Explainable Neural Computation via Stack Neural Module Networks](#Explainable-Neural-Computation-via-Stack-Neural-Module-Networks)
 
-- [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks)
-
-
 
 - [Inferring and Executing Programs for Visual Reasoning](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
+- [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks)
 
 - [Neural-Symbolic VQA](#Neural-Symbolic-VQA)
 - [The Neuro-Symbolic Concept Learner](#The-Neuro-Symbolic-Concept-Learner)
