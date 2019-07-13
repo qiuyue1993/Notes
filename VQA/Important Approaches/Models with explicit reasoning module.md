@@ -320,6 +320,11 @@
 $$
 [h_1, ... , h_S] = BiLSTM(q; \theta_{BiLSTM})
 $$
+- The controller runs in a recurrent manner from time-step $t=0$ to $t=T-1$
+- At each time-step $t$, it applies a time-step dependent linear transform to the question $q$, linearly combines it with the previous $d-$dimensional textual parameter $c_{t-1}$ as:
+$$
+u = W_2\[w_1^{(t)}q+b_1;c_{t-1}\] + b_2
+$$
 
 #### Neural modules with a memory stack
 *Neural modules*
@@ -343,7 +348,7 @@ $$
 
 ### Comments
 - Time step is a hyper-parameter?
-
+- Why do they combine question information with the previous textual parameter
 
 ---
 ## Visual Coreference Resolution
