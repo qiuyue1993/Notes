@@ -5,7 +5,7 @@
 - [Neural Module Network](#Neural-Module-Network)
 - [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network)
 - [N2NMN (End-to-end Module Network)](#N2NMN)
-- [Stack NMN](#Stack-NMN)
+- [Stack-NMN](#Stack-NMN)
 - [Inferring and Executing Programs for Visual Reasoning](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
 - [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks)
 - [Transparency by design: Closing the gap between performance and interpretability in visual reasoning](Transparency-by-design-Closing-the-gap-between-performance-and-interpretability-in-visual-reasoning)
@@ -288,7 +288,7 @@
 - Why introduced a **simple baseline** and how can it be used?
 - The model with cloning expert performs far more well than RL from scratch
 ---
-## Stack NMN
+## Stack-NMN
 
 - Accept to ECCV 2018
 
