@@ -437,6 +437,32 @@ $$
 - Can **generalize to novel questions** by composing modules in ways that not seen during training.
 
 ### Approach
+#### Overview
+
+
+- Develop a learnable compositional model for VQA
+- Input: an image $x$, and a question $q$
+- Output: answer $a$ from a fixed set $A$
+- Side-results: a program $z$ representing the reasoning steps
+
+*Components*
+- Program generator: $z = \pi (q)$, predicts programs from questions
+- Execution engine: $a = \phi (x,z)$, executes a program $z$ on an image $x$ to predict an answer $a$
+
+- **The program generator requires very few of supervision programs in order to learn to generalize**
+
+#### Programs
+- Focus on learning semantics for a **fixed syntax**
+- Pre-specifying a set $F$ of functions $f$
+- Represent valid programs $z$ as $syntax trees$ in which each node contains a function $f \in F$
+
+#### Program generator
+
+
+#### Execution engine
+
+
+#### Training
 
 
 
