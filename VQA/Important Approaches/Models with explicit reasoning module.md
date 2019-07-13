@@ -293,6 +293,9 @@
 - Accept to ECCV 2018
 
 ### Introduction
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Stack-NMN_Illustration.png" width="600" hegiht="400" align=center/>
+
 *Problems of prior works*
 - Existing NMN based approaches need **strong supervision** for decision-making process (predicting module layout)
 
@@ -306,6 +309,9 @@
 - Make the layout **soft and continuous**, can be optimized in a **fully differentiable way using gradient descent**
 
 ### Approach
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Stack-NMN_Framework.png" width="600" hegiht="400" align=center/>
+
 #### Module layout controller
 *Layout controller*
 - **Decomposes the reasoning task** into a sequence of sub-tasks
@@ -338,6 +344,9 @@ c_t = \sum_{s=1}^{S} cv_{t,s}\cdot h_s
 $$
 
 #### Neural modules with a memory stack
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Stack-NMN_Modules.png" width="600" hegiht="400" align=center/>
+
 *Neural modules*
 - Each module is a differentiable function with some internal trainable parameters
 - Perform specific sub-task
@@ -363,10 +372,16 @@ $$
 - CLEVR-Ref (for Referential Expression Grounding)
 
 #### Model performance
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Stack-NMN_Evaluation-on-CLEVR.png" width="600" hegiht="400" align=center/>
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Stack-NMN_Evaluation-on-VQAv1VQAv2.png" width="600" hegiht="400" align=center/>
+
 - Joint training the VQA task with REF task can boost the performance for both tasks which shows that the proposed model can **simultaneously handle these two tasks by exploiting the common sub-tasks in them**
 - Trained with expert layout still outperforms training from scratch, the gap between the two scenarios is relatively small
 - **The model learns to discretely select one module through the soft module weights**
 - Comparing to others NMN methods, the proposed Stack-NMN performs comparable to SOTA without supervision of layout prediction
+
 
 #### Model interpretability
 - Human studies on Stack-NMN and MAC
@@ -376,10 +391,18 @@ $$
 - truthful beliefs of forward prediction
 
 *Subjective perceptions*
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Stack-NMN_Subjective-Visualizations.png" width="600" hegiht="400" align=center/>
+
 - Human evaluators are shown the above image for evaluating
 - The Stack-NMN is more clear thant MAC for human evaluators
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Stack-NMN_Subjective-Perceptions.png" width="600" hegiht="400" align=center/>
+
 *Forward prediction*
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Stack-NMN_Forward-Prediction.png" width="600" hegiht="400" align=center/>
+
 - Evaluate whether humans can predict the model's answer
 - Or detect its failure based on visualizations
 - The Stack-NMN is more interpretable than MAC
