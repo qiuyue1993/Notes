@@ -416,11 +416,15 @@ $$
 - Evaluated on both of CLEVR and VQA is brave!
 
 ---
-## Visual Coreference Resolution
+## Inferring and Executing Programs for Visual Reasoning
+
+
 
 
 ---
-## Inferring and Executing Proagrams for Visual Reasoning
+## Visual Coreference Resolution
+
+
 
 ---
 ## Neural-Symbolic VQA
@@ -449,7 +453,7 @@ $$
 - [Dynamic Neural Module Networks](https://arxiv.org/pdf/1601.01705.pdf)
 - [N2NMN (End-to-end Module Network)](https://arxiv.org/pdf/1704.05526.pdf)
 - [Stack NMN](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Ronghang_Hu_Explainable_Neural_Computation_ECCV_2018_paper.pdf)
-
+- [Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/pdf/1705.03633.pdf)
 
 - []
 - [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](https://arxiv.org/pdf/1806.07243.pdf)
