@@ -454,27 +454,75 @@ $$
 #### Programs
 - Focus on learning semantics for a **fixed syntax**
 - Pre-specifying a set $F$ of functions $f$
-- Represent valid programs $z$ as $syntax trees$ in which each node contains a function $f \in F$
+- Represent valid programs $z$ as $syntax$ $trees$ in which each node contains a function $f \in F$
 
 #### Program generator
-
+- Standard LSTM sequence-to-sequence model
+- Test time: take the argmax function
 
 #### Execution engine
+- Implemented using a neural module network
+- Given a program $z$, the execution engine creates a neural network $m(z)$ by mapping each function $f$ to its corresponding module $m_f$ in the order defined by the program
+- The output of the child modules are used as input into their corresponding parent module
 
+**Details**
+- A module of arity $n$ receives $n$ features maps of shape $C\times H\times W$
+- Produces a feature map of shape $C\times H\times W$
+- Each unary module is a standard residual block with $3\times 3$ convolutional layers
+- The final feature map is flattened and passed into a classifier to predict answers
 
 #### Training
-
-
+*Semi-supervised learning approach*
+- Firstly, use a small set of ground-truth programs to train the program generator
+- Then, Fix the generator to train the execution engine using predicted programs
+- Finally, use REINFORCE to jointly finetune the program generator and execution engine
 
 ### Experiments
+*Dataset*
+- CLEVR
 
+#### Baselines
+- Q-type mode: predicts the most frequent answer
+- LSTM: predicts answer uses no image information
+- CNN+LSTM: CNN for images and LSTM for questions, features are concatenated and passed to MLP for answer prediction
+- CNN+LSTM+SA: Images and Questions features are combined with two rounds of soft spatial attention; a linear transform of the attention output predicts the answer
+- CNN+LSTM+SA+MLP: Replace the linear transform with MLP
+
+#### Strongly and semi-supervised learning
+
+
+- Trained on strong supervision, the proposed method achieves nearly perfect results
+- With about 20K ground-truth programs, the semi-supervised achieves performance near to the strongly supervised one
+
+#### What do the modules learn?
+
+
+- The model clearly learns to attend to the correct objects
+- The individual modules do in fact **perform their intended functions**
+- The modules learn **specialized functions without explicit supervision of their outputs**
+
+#### Generalizing to new attribute combinations
+
+
+- CLEVR-CoGenT dataset for compositional generation
+- The results show that actually the proposed model have low compositional abilities; However, only fine-tune on a small set, the model can improve alot
+
+#### Generalizing to new question types
+
+
+- Test the ability of proposed model to generalize from short to long chains of reasoning
+
+
+#### Generalizing to human-posed questions
+*CLEVR-Humans Dataset*
+- Collect Human-posed questions collected from AMT
 
 
 ### Comments
 - "Automatically identifying and learning new modules without program supervision is still an open problem". Charming and horrible problem!
 - Justin Johnson is very expert in writing easy-to-read articles!
 - "While long-term memory is likely to be crucial component of intelligence, it is not a prerequisite for reasoning, especially the kind of reasoning that is required for answering questions about images"
-
+- How to use the same architecture for all modules
 ---
 ## Visual Coreference Resolution
 
