@@ -422,22 +422,16 @@ $$
 
 ---
 ## References
-### Neural Module Network
 - [Neural Module Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Andreas_Neural_Module_Networks_CVPR_2016_paper.pdf)
 - [Dynamic Neural Module Networks](https://arxiv.org/pdf/1601.01705.pdf)
 - [N2NMN (End-to-end Module Network)](https://arxiv.org/pdf/1704.05526.pdf)
 - [Stack NMN](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Ronghang_Hu_Explainable_Neural_Computation_ECCV_2018_paper.pdf)
 
-### Neural Symbolic
+
 - []
 - [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](https://arxiv.org/pdf/1806.07243.pdf)
 
-### Graph
 
 
-
-### Pairwise Relationship
-
-### Survey Paper
 
 ---
