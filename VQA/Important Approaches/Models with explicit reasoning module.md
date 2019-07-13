@@ -421,7 +421,20 @@ $$
 - Accept to ICCV 2017
 
 ### Introduction
+*Problems of previous visual reasoning methods*
+- **Black-box** for underlying reasoning process
+- Models that learn **direct input-output mappings** tend to **learn dataset biases but not reasoning**
 
+*Proposed method*
+- Inspired by Neural Module Network
+- Program generator: constructs an **explicit representation** of the **reasoning process**
+- Execution engine: executes the resulting program to produce an answer
+- Training process: combination of **backpropagation and REINFORCE**
+
+*Comparing with NMN and Dynamic-NMN*
+- Does not rely on syntactic parsing or hand-engineered modules
+- Only define the function vocabulary and the **universal** module architecture by hand, learning everything else
+- Can **generalize to novel questions** by composing modules in ways that not seen during training.
 
 ### Approach
 
@@ -432,9 +445,9 @@ $$
 
 
 ### Comments
-
-
-
+- "Automatically identifying and learning new modules without program supervision is still an open problem". Charming and horrible problem!
+- Justin Johnson is very expert in writing easy-to-read articles!
+- "While long-term memory is likely to be crucial component of intelligence, it is not a prerequisite for reasoning, especially the kind of reasoning that is required for answering questions about images"
 
 ---
 ## Visual Coreference Resolution
