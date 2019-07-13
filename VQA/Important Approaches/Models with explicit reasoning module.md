@@ -293,14 +293,56 @@
 - Accept to ECCV 2018
 
 ### Introduction
+*Problems of prior works*
+- Existing NMN based approaches need **strong supervision** for decision-making process (predicting module layout)
 
+*Abstract*
+- Performs compositional reasoning by automatically inducing a desired sub-task decomposition **without strong supervision**
+- Linking different reasoning tasks through **shared modules** that **handle common routines across tasks**
+- Experiments show that the proposed method is **more interpretable to human evaluators** compared to other SOTA models
 
+*Comparing to previous NMN works (e.g. N2NMN)*
+- Can be trained **without layout supervision**, and replaces the **layout graph with a stack-based data structure** 
+- Make the layout **soft and continuous**, can be optimized in a **fully differentiable way using gradient descent**
 
 ### Approach
+#### Module layout controller
+*Layout controller*
+- **Decomposes the reasoning task** into a sequence of sub-tasks
+- **Translates the input question into a soft layout**, specified via a soft distribution over module weights $w^{(t)}$ at each timestep $t$
+- **Supplies each module with a textual parameter $c_t$ at every time-step** using textual attention
+
+*Notations*
+- Input question $q$ with $S$ words
+
+*Structure Details*
+- Encode the input question $q$ into a $d-$dimensional sequence: 
+$$
+[h_1, ... , h_S] = BiLSTM(q; \theta_{BiLSTM})
+$$
+
+#### Neural modules with a memory stack
+*Neural modules*
+- Perform specific sub-task
+- Can be executed dynamically on-the-fly according to the soft layout
+
+*Memory stack*
+- Store and retrieve the intermediate outputs from each module during execution
+
+#### Soft program execution
+
+
+
+#### Training
+
 
 
 
 ### Experiments
+
+
+### Comments
+- Time step is a hyper-parameter?
 
 
 ---
