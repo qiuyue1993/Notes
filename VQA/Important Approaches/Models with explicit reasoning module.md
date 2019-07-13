@@ -323,7 +323,16 @@ $$
 - The controller runs in a recurrent manner from time-step $t=0$ to $t=T-1$
 - At each time-step $t$, it applies a time-step dependent linear transform to the question $q$, linearly combines it with the previous $d-$dimensional textual parameter $c_{t-1}$ as:
 $$
-u = W_2\[w_1^{(t)}q+b_1;c_{t-1}\] + b_2
+u = W_2\[W_1^{(t)}q+b_1;c_{t-1}\] + b_2
+$$
+- Using select the module to execute at current time-step $t$:
+$$
+w^{(t)} = softmax(MLP(u;\theta_{MLP}))
+$$
+- Finally, the controller predicts a textual parameter $c_t$ with:
+$$
+cv_{t,s} = softmax(W_3(u\odot h_s))
+c_t = \sum_{s=1}^{S} cv_{t,s}\cdot h_s
 $$
 
 #### Neural modules with a memory stack
@@ -349,6 +358,7 @@ $$
 ### Comments
 - Time step is a hyper-parameter?
 - Why do they combine question information with the previous textual parameter
+- RL is better for layout predictions???!
 
 ---
 ## Visual Coreference Resolution
