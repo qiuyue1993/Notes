@@ -1,7 +1,7 @@
 # Models with explicit reasoning module
 
 ## Indexing:
-### Neural Module Network
+### Neural Module Network (NMNs)
 - [Neural Module Network](#Neural-Module-Network)
 - [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network)
 - [N2NMN (End-to-end Module Network)](#N2NMN)
