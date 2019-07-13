@@ -439,6 +439,7 @@ $$
 ### Approach
 #### Overview
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_IEP_Model.png" width="600" hegiht="400" align=center/>
 
 - Develop a learnable compositional model for VQA
 - Input: an image $x$, and a question $q$
@@ -490,12 +491,14 @@ $$
 
 #### Strongly and semi-supervised learning
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_IEP_Evaluation-on-CLEVR.png" width="600" hegiht="400" align=center/>
 
 - Trained on strong supervision, the proposed method achieves nearly perfect results
 - With about 20K ground-truth programs, the semi-supervised achieves performance near to the strongly supervised one
 
 #### What do the modules learn?
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_IEP_Visualization.png" width="600" hegiht="400" align=center/>
 
 - The model clearly learns to attend to the correct objects
 - The individual modules do in fact **perform their intended functions**
@@ -503,17 +506,22 @@ $$
 
 #### Generalizing to new attribute combinations
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_IEP_Compositional-Ability.png" width="600" hegiht="400" align=center/>
 
 - CLEVR-CoGenT dataset for compositional generation
 - The results show that actually the proposed model have low compositional abilities; However, only fine-tune on a small set, the model can improve alot
 
 #### Generalizing to new question types
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_IEP_Unseen-Question-Type.png" width="600" hegiht="400" align=center/>
 
 - Test the ability of proposed model to generalize from short to long chains of reasoning
 
 
 #### Generalizing to human-posed questions
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_IEP_Human-proposed-dataset.png" width="600" hegiht="400" align=center/>
+
 *CLEVR-Humans Dataset*
 - Collect Human-posed questions collected from AMT
 
