@@ -358,13 +358,39 @@ $$
 
 
 ### Experiments
+*Dataset*
+- CLEVR, VQA (for VQA)
+- CLEVR-Ref (for Referential Expression Grounding)
 
+#### Model performance
+- Joint training the VQA task with REF task can boost the performance for both tasks which shows that the proposed model can **simultaneously handle these two tasks by exploiting the common sub-tasks in them**
+- Trained with expert layout still outperforms training from scratch, the gap between the two scenarios is relatively small
+- **The model learns to discretely select one module through the soft module weights**
+- Comparing to others NMN methods, the proposed Stack-NMN performs comparable to SOTA without supervision of layout prediction
+
+#### Model interpretability
+- Human studies on Stack-NMN and MAC
+
+*Metrics*
+- subjective perceptions
+- truthful beliefs of forward prediction
+
+*Subjective perceptions*
+- Human evaluators are shown the above image for evaluating
+- The Stack-NMN is more clear thant MAC for human evaluators
+
+*Forward prediction*
+- Evaluate whether humans can predict the model's answer
+- Or detect its failure based on visualizations
+- The Stack-NMN is more interpretable than MAC
 
 ### Comments
 - Time step is a hyper-parameter?
 - Why do they combine question information with the previous textual parameter
 - RL is better for layout predictions???!
 - Why LIFO
+- The modules **learn to almost discretely select one module**. This result is interesting
+- Evaluated on both of CLEVR and VQA is brave!
 
 ---
 ## Visual Coreference Resolution
