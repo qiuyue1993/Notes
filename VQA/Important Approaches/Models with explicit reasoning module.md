@@ -392,7 +392,7 @@ $$
 
 *Subjective perceptions*
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Stack-NMN_Subjective-Visualizations.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_Stack-NMN_Visualizations.png" width="600" hegiht="400" align=center/>
 
 - Human evaluators are shown the above image for evaluating
 - The Stack-NMN is more clear thant MAC for human evaluators
