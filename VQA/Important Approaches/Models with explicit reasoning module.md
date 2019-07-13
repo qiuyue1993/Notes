@@ -332,6 +332,8 @@ $$
 - Finally, the controller predicts a textual parameter $c_t$ with:
 $$
 cv_{t,s} = softmax(W_3(u\odot h_s))
+$$
+$$
 c_t = \sum_{s=1}^{S} cv_{t,s}\cdot h_s
 $$
 
