@@ -1,34 +1,33 @@
 # Models with explicit reasoning module
 
 ## Indexing:
-
+### Neural Module Network
 - [Neural Module Network](#Neural-Module-Network)
 - [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network)
 - [N2NMN (End-to-end Module Network)](#N2NMN)
 - [Stack NMN](#Stack-NMN)
-
-
 - [Inferring and Executing Programs for Visual Reasoning](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
 - [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks)
-
-- [Neural-Symbolic VQA](#Neural-Symbolic-VQA)
-- [The Neuro-Symbolic Concept Learner](#The-Neuro-Symbolic-Concept-Learner)
-
-- [Compositional models for VQA Can neural module networks really count?](#Compositional-models-for-VQA-Can-neural-module-networks-really-count?)
-
-- [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](#Learning-Conditioned-Graph-Structures-for-Interpretable-Visual-Question-Answering)
-- [Visual Query Answering by Entity-Attribute Graph Matching and Reasoning](#Visual-Query-Answering-by-Entity-Attribute-Graph-Matching-and-Reasoning)
-
-- [Relation Network](#Relation-Network)
-- [MUREL Multimodal Relational Reasoning for Visual Question Answering](#MUREL-Multimodal-Relational-Reasoning-for-Visual-Question-Answering)
-
 - [Transparency by design: Closing the gap between performance and interpretability in visual reasoning](Transparency-by-design-Closing-the-gap-between-performance-and-interpretability-in-visual-reasoning)
-
 - [Explainable and Explicit Visual Reasoning over Scene graphs](#Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs)
 - [MAC](#MAC)
 
-- [References](#References)
+### Neural Symbolic
+- [Neural-Symbolic VQA](#Neural-Symbolic-VQA)
+- [The Neuro-Symbolic Concept Learner](#The-Neuro-Symbolic-Concept-Learner)
 
+### Graph
+- [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](#Learning-Conditioned-Graph-Structures-for-Interpretable-Visual-Question-Answering)
+- [Visual Query Answering by Entity-Attribute Graph Matching and Reasoning](#Visual-Query-Answering-by-Entity-Attribute-Graph-Matching-and-Reasoning)
+
+### Pairwise Relationship
+- [Relation Network](#Relation-Network)
+- [MUREL Multimodal Relational Reasoning for Visual Question Answering](#MUREL-Multimodal-Relational-Reasoning-for-Visual-Question-Answering)
+
+### Survey Paper
+- [Compositional models for VQA Can neural module networks really count?](#Compositional-models-for-VQA-Can-neural-module-networks-really-count?)
+
+- [References](#References)
 
 ---
 ## Neural Module Network
