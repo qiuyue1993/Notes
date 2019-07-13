@@ -339,19 +339,22 @@ $$
 
 #### Neural modules with a memory stack
 *Neural modules*
+- Each module is a differentiable function with some internal trainable parameters
 - Perform specific sub-task
 - Can be executed dynamically on-the-fly according to the soft layout
+- Mostly following the terminology in N2NMN
 
 *Memory stack*
+- To handle **tree-structured layouts** for operations like **compare** or **transform**
 - Store and retrieve the intermediate outputs from each module during execution
-
-#### Soft program execution
-
-
+- Last-In-First-Out (LIFO)
+- The push and pop operations are differentiable
 
 #### Training
+- Can be trained effectively without reinforcement learning, from task-supervision alone.
 
-
+*VQA*
+- train with softmax cross entropy loss
 
 
 ### Experiments
@@ -361,6 +364,7 @@ $$
 - Time step is a hyper-parameter?
 - Why do they combine question information with the previous textual parameter
 - RL is better for layout predictions???!
+- Why LIFO
 
 ---
 ## Visual Coreference Resolution
