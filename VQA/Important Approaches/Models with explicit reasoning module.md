@@ -2,27 +2,27 @@
 
 ## Indexing:
 ### Neural Module Network (NMNs)
-- [Neural Module Network](#Neural-Module-Network)
-- [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network)
-- [N2NMN (End-to-end Module Network)](#N2NMN)
-- [Stack-NMN](#Stack-NMN)
-- [Inferring and Executing Programs for Visual Reasoning](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
-- [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks)
-- [Transparency by design: Closing the gap between performance and interpretability in visual reasoning](Transparency-by-design-Closing-the-gap-between-performance-and-interpretability-in-visual-reasoning)
-- [Explainable and Explicit Visual Reasoning over Scene graphs](#Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs)
-- [MAC](#MAC)
+- [Neural Module Network (CVPR 2016)](#Neural-Module-Network)
+- [Dynamic Neural Module Network (NAACL 2016)](#Dynamic-Neural-Module-Network)
+- [N2NMN (End-to-end Module Network) (ICCV 2017)](#N2NMN)
+- [Stack-NMN (ECCV 2018)](#Stack-NMN)
+- [Inferring and Executing Programs for Visual Reasoning (ICCV 2017)](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
+- [Visual Coreference Resolution in Visual Dialog using Neural Module Networks (ECCV 2018)](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks)
+- [Transparency by design: Closing the gap between performance and interpretability in visual reasoning (CVPR 2018)](Transparency-by-design-Closing-the-gap-between-performance-and-interpretability-in-visual-reasoning)
+- [Explainable and Explicit Visual Reasoning over Scene graphs (CVPR 2019)](#Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs)
+- [MAC (ICLR 2018)](#MAC)
 
 ### Neural Symbolic (\#Todo)
-- [Neural-Symbolic VQA](#Neural-Symbolic-VQA)
-- [The Neuro-Symbolic Concept Learner](#The-Neuro-Symbolic-Concept-Learner)
+- [Neural-Symbolic VQA (NIPS 2018)](#Neural-Symbolic-VQA)
+- [The Neuro-Symbolic Concept Learner (ICLR 2019)](#The-Neuro-Symbolic-Concept-Learner)
 
 ### Graph (\#Todo)
-- [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](#Learning-Conditioned-Graph-Structures-for-Interpretable-Visual-Question-Answering)
-- [Visual Query Answering by Entity-Attribute Graph Matching and Reasoning](#Visual-Query-Answering-by-Entity-Attribute-Graph-Matching-and-Reasoning)
+- [Learning Conditioned Graph Structures for Interpretable Visual Question Answering (NIPS 2018)](#Learning-Conditioned-Graph-Structures-for-Interpretable-Visual-Question-Answering)
+- [Visual Query Answering by Entity-Attribute Graph Matching and Reasoning (CVPR 2019)](#Visual-Query-Answering-by-Entity-Attribute-Graph-Matching-and-Reasoning)
 
 ### Pairwise Relationship (\#Todo)
-- [Relation Network](#Relation-Network)
-- [MUREL Multimodal Relational Reasoning for Visual Question Answering](#MUREL-Multimodal-Relational-Reasoning-for-Visual-Question-Answering)
+- [Relation Network (NIPS 2017)](#Relation-Network)
+- [MUREL Multimodal Relational Reasoning for Visual Question Answering (CVPR 2019)](#MUREL-Multimodal-Relational-Reasoning-for-Visual-Question-Answering)
 
 ### Survey Paper
 - [Compositional models for VQA Can neural module networks really count?](#Compositional-models-for-VQA-Can-neural-module-networks-really-count?)
