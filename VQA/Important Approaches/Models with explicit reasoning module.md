@@ -1,7 +1,7 @@
 # Models with explicit reasoning module
 
 ## Indexing:
-### Neural Module Network (NMNs)
+### Neural Module Networks (NMNs)
 - [Neural Module Network](#Neural-Module-Network) **(CVPR 2016)**
 - [Dynamic Neural Module Network](#Dynamic-Neural-Module-Network) **(NAACL 2016)**
 - [N2NMN (End-to-end Module Network)](#N2NMN) **(ICCV 2017)**
@@ -584,6 +584,22 @@ $$
 - **Count**: Input an attention map to produce the context vector by counting
 
 #### Neural Modules for Coreference Resolution
+*Reference Pool ($P_ref$)*
+- To keep track of entities in the dialog
+- Keep a semantic dictionary of key-value pairs $\(x_{txt}, a\)$ for all the **Find** modules
+- $P_{*ref*} = \{d\}$
+
+*Refer Module*
+
+
+
+*Not Module*
+
+
+
+*Exclude Module*
+
+
 
 
 #### Program Generation
