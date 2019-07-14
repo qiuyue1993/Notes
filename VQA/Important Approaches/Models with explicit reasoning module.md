@@ -569,7 +569,7 @@ $$
 - Module parameters: $\theta_m$
 - Neural Module $m$:
 $$
-y = f_m (x_{vis}, x_{txt}, \left\{a_i\right\}_{i=1}^{n_m}; \theta_m)
+y = f_m (x_{vis}, x_{txt}, \left\{ a_i \right\}_{i=1}^{n_m}; \theta_m)
 $$
 - The output $y$ can be a spatial image attention map $a$ or a context vector $c$
 - The output attention map $a$ feeds into next level modules while a context vector $c$ is used to obtain the final answer
