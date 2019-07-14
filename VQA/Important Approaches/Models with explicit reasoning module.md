@@ -587,10 +587,8 @@ $$
 *Reference Pool ($P_{ref}$)*
 - To keep track of entities in the dialog
 - Keep a semantic dictionary of key-value pairs $\(x_{txt}, a\)$ for all the **Find** modules
+- $P_{ref} = \lbrace (x_p^{(i)}, a_p^{(i)}) {\rbrace}_i$
 
-$$
-P_{*ref*} = \{d\}_{i}
-$$
 
 *Refer Module*
 
