@@ -608,21 +608,50 @@ a_{out} = \sum_{i=1}^{\vert P_{ref} \vert}\tilde{s_i} a_p^{(i)}
 $$
 
 *Not Module*
-
-
+- Designed to focus on regions of the image **not** attended by the input attention map $a$
 
 *Exclude Module*
-
-
+- To handle questions like *"What other red things are present?"*
 
 
 #### Program Generation
+*Purpose*
+- Transform the input question to a series of module tokens in order
+- Output a soft attention $a_{ti}$ over the question $Q_t$ for every module $m_i$ to instantiate the module
+- Decide whether an entity in $Q_t$ has been seen before 
 
+*How*
+- An attentional recurrent neural networks with memory
 
+*Details*
+- Input: history-aware question encoding $\hat{q_t}$, which is obtained by LSTM over input question, history
+- Program decoder: multi-layer LSTM network
 
 #### Other Model Components
+*Program execution*
+- a simple feed-forward nerual network
+- start the computation from the leaf modules 
+
+*Answer Decoding*
+- Uses context vector $c_t$ to score answers 
 
 ### Experiments
+*Datasets*
+- Synthetic MNIST Dialog dataset
+- VisDial dataset
+
+*MNIST Dialog Dataset*
+- Images: $4\*4$ grid of MNIST digits with four attributes: digit class, color, stroke, background color
+- Question-Answer pairs: 10 pairs for each image
+- Results: proposed CorefNMN achieves near perfect accuracy
+
+
+
+*VisDial Dataset*
+- Images: MS COCO images
+- QA pairs: 10-round dialogs for each image
+- Results: CorefNMN outperforms all previous methods and at the mean time has relatively high interpretability; Memory augmentation is important; 
+
 
 
 ### Comments
