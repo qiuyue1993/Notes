@@ -670,8 +670,16 @@ $$
 - Can NMNs be deeper?
 ---
 ## Transparency by design-Closing the gap between performance and interpretability in visual reasoning
+### Introduction
 
 
+### Approach
+
+
+### Experiments
+
+
+### Comments
 
 
 ---
