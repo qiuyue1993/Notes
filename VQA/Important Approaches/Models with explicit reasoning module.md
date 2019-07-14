@@ -564,7 +564,7 @@ $$
 - [N2NMN (End-to-end Module Network)](https://arxiv.org/pdf/1704.05526.pdf)
 - [Stack NMN](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Ronghang_Hu_Explainable_Neural_Computation_ECCV_2018_paper.pdf)
 - [Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/pdf/1705.03633.pdf)
-
+- [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](http://users.ece.cmu.edu/~skottur/papers/corefnmn_eccv18.pdf)
 - []
 - [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](https://arxiv.org/pdf/1806.07243.pdf)
 
