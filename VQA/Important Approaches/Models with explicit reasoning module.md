@@ -668,6 +668,11 @@ $$
 ### Comments
 - Neural Modules actually operates on Attention Maps ???!!!
 - Can NMNs be deeper?
+---
+## Transparency by design-Closing the gap between performance and interpretability in visual reasoning
+
+
+
 
 ---
 ## Neural-Symbolic VQA
@@ -698,6 +703,8 @@ $$
 - [Stack NMN](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Ronghang_Hu_Explainable_Neural_Computation_ECCV_2018_paper.pdf)
 - [Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/pdf/1705.03633.pdf)
 - [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](http://users.ece.cmu.edu/~skottur/papers/corefnmn_eccv18.pdf)
+- [Transparency by design: Closing the gap between performance and interpretability in visual reasoning](http://openaccess.thecvf.com/content_cvpr_2018/papers/Mascharka_Transparency_by_Design_CVPR_2018_paper.pdf)
+
 - []
 - [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](https://arxiv.org/pdf/1806.07243.pdf)
 
