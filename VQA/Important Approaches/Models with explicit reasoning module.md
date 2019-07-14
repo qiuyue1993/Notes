@@ -584,9 +584,10 @@ $$
 - **Count**: Input an attention map to produce the context vector by counting
 
 #### Neural Modules for Coreference Resolution
-*Reference Pool ($P_ref$)*
+*Reference Pool ($P_{ref}$)*
 - To keep track of entities in the dialog
 - Keep a semantic dictionary of key-value pairs $\(x_{txt}, a\)$ for all the **Find** modules
+
 $$
 P_{*ref*} = \{d\}_{i}
 $$
