@@ -8,7 +8,7 @@
 - [Stack-NMN](#Stack-NMN) **(ECCV 2018)**
 - [Inferring and Executing Programs for Visual Reasoning](#Inferring-and-Executing-Programs-for-Visual-Reasoning) **(ICCV 2017)**
 - [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](#Visual-Coreference-Resolution-in-Visual-Dialog-using-Neural-Module-Networks) **(ECCV 2018)**
-- [Transparency by design: Closing the gap between performance and interpretability in visual reasoning](Transparency-by-design-Closing-the-gap-between-performance-and-interpretability-in-visual-reasoning) **(CVPR 2018)**
+- [Transparency by design: Closing the gap between performance and interpretability in visual reasoning](#Transparency-by-design-Closing-the-gap-between-performance-and-interpretability-in-visual-reasoning) **(CVPR 2018)**
 - [Explainable and Explicit Visual Reasoning over Scene graphs (CVPR 2019)](#Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs) **(CVPR 2019)**
 - [MAC](#MAC) **(ICLR 2018)**
 
