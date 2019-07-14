@@ -562,7 +562,26 @@ $$
 - Answer Decoding: the context vector $c_t$ is used to obtain the final answer
 
 #### Neural Modules for Visual Question Answering
+*Neural Modules Definition*
+- Input image embeddings: x_{vis}, spatial activation maps of image $I$ computed from CNNs
+- Input text embeddings: x_{txt}, weighted sum of embeddings of words in the question $Q_t$ using soft attention weights $\alpha$ predicted by a program generator for module $m$
+- Input maps: $\{a_i\}$, single-channel spatial maps corresponding to the spatial image embeddings, with number $n_m$
+- Module parameters: $\theta_m$
+- Neural Module $m$:
+$$
+y = f_m (x_{vis}, x_{txt}, \{a_i\}_{i=1}^{n_m}; \theta_m)
+$$
+- The output $y$ can be a spatial image attention map $a$ or a context vector $c$
+- The output attention map $a$ feeds into next level modules while a context vector $c$ is used to obtain the final answer
 
+*Functions*
+- **Find**: localizes objects or attributes, by producing an attention over the image
+- **Relocate**: relocate attention for visual relationship related questions, such as "next to", "in front of"
+- **And**: Intersection of attention maps
+- **Or**: Union of attention maps
+- **Describe**: Input an attention map to produce the context vector by describing an attribute 
+- **Exist**: Input an attention map to produce the context vector by checking for existence
+- **Count**: Input an attention map to produce the context vector by counting
 
 #### Neural Modules for Coreference Resolution
 
@@ -577,7 +596,8 @@ $$
 
 
 ### Comments
-
+- Neural Modules actually operates on Attention Maps ???!!!
+- Can NMNs be deeper?
 
 ---
 ## Neural-Symbolic VQA
