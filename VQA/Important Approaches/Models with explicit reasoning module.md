@@ -591,8 +591,21 @@ $$
 
 
 *Refer Module*
-
-
+- Resolving references in the question $Q_t$, ground them in the conversation history $H$
+- Input: text embedding $x_{txt}$, reference pool $P_{*ref*}$
+- Resolves the entity presented by $x_{txt}$ in the form of a soft attention $\alpha$ over $Q_t$
+- Step 1 : Learn a *scoring* *network* to compute the similarity between query $x_{txt}$ and candidate $x_p^{(i)}$, introduced a $\delta_i t$ to measure the distance (considering that the coreference tend to be close to the words in a dialog)
+$$
+s_i = MLP([x_{txt}, x_p^{(i)}, \delta_i t])
+$$
+- Step 2: Apply a softmax function to compute contributions $\tilde{s_i}$ for each entity in the pool
+$$
+\tilde{s_i} = Softmax(s_i)
+$$
+- Step 3: weigh the corresponding attention maps to obtain the visual grounding $a_{out}$ for $x_{txt}$
+$$
+a_{out} = \sum_{i=1}^{\vert P_{ref} \vert}\tilde{s_i} a_p^{(i)}
+$$
 
 *Not Module*
 
