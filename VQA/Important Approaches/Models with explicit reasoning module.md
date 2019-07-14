@@ -537,12 +537,17 @@ $$
 - Accept to ECCV 2018
 
 ### Introduction
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_CorefNMN_Illustration.png" width="600" hegiht="400" align=center/>
+
 *Abstract*
 - Focus on **Visual Coreference Resolution**, involves determining which words, typically **noun phrases and pronouns**, *co-refer* to the same entity/object instance in an image.
 - Introducing two novel modules **Refer** and **Exclude** that perform explicit, grounded, coreference resolution at a finer word level.
 
 ### Approach
 #### Overview
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_CorefNMN_Framework.png" width="600" hegiht="400" align=center/>
 
 
 *Visual Dialog Definition*
@@ -562,6 +567,9 @@ $$
 - Answer Decoding: the context vector $c_t$ is used to obtain the final answer
 
 #### Neural Modules for Visual Question Answering
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_CorefNMN_Neural-Modules.png" width="600" hegiht="400" align=center/>
+
 *Neural Modules Definition*
 - Input image embeddings: x_{vis}, spatial activation maps of image $I$ computed from CNNs
 - Input text embeddings: x_{txt}, weighted sum of embeddings of words in the question $Q_t$ using soft attention weights $\alpha$ predicted by a program generator for module $m$
@@ -648,11 +656,14 @@ $$
 
 
 *VisDial Dataset*
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_CorefNMN_Evaluation-on-VisDial.png" width="600" hegiht="400" align=center/>
+
 - Images: MS COCO images
 - QA pairs: 10-round dialogs for each image
 - Results: CorefNMN outperforms all previous methods and at the mean time has relatively high interpretability; Memory augmentation is important; 
 
-
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_CorefNMN_Visualization.png" width="600" hegiht="400" align=center/>
 
 ### Comments
 - Neural Modules actually operates on Attention Maps ???!!!
