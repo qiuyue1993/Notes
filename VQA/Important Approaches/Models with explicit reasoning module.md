@@ -532,8 +532,51 @@ $$
 - "While long-term memory is likely to be crucial component of intelligence, it is not a prerequisite for reasoning, especially the kind of reasoning that is required for answering questions about images"
 - How to use the same architecture for all modules
 ---
-## Visual Coreference Resolution
+## Visual Coreference Resolution in Visual Dialog using Neural Module Networks
 
+- Accept to ECCV 2018
+
+### Introduction
+*Abstract*
+- Focus on **Visual Coreference Resolution**, involves determining which words, typically **noun phrases and pronouns**, *co-refer* to the same entity/object instance in an image.
+- Introducing two novel modules **Refer** and **Exclude** that perform explicit, grounded, coreference resolution at a finer word level.
+
+### Approach
+#### Overview
+
+
+*Visual Dialog Definition*
+- Input: $H = (C, (Q_1, A_1), ... , (Q_{t-1}, A_{t-1}))$
+- Output: ranking a list of answer candidates
+
+*Process*
+- **Identifies relevant words or phrases** in the current question that **refer to entities** in the image
+- Predicts whether each of these has been mentioned so far
+- For novel entities, localize them
+- For seen entities, **predicts the relevant coreference** in the history, and **retrieves**
+- Use *reference* *pool* to resolve coreferences
+
+*Components*
+- Program Generation: reasoning pathway, predicted for the current question $Q_t$
+- Program Execution: predicted program is executed by dynamically connecting neural modules to produce a context vector 
+- Answer Decoding: the context vector $c_t$ is used to obtain the final answer
+
+#### Neural Modules for Visual Question Answering
+
+
+#### Neural Modules for Coreference Resolution
+
+
+#### Program Generation
+
+
+
+#### Other Model Components
+
+### Experiments
+
+
+### Comments
 
 
 ---
