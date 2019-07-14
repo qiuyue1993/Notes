@@ -12,15 +12,15 @@
 - [Explainable and Explicit Visual Reasoning over Scene graphs](#Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs)
 - [MAC](#MAC)
 
-### Neural Symbolic (To do)
+### Neural Symbolic (\#Todo)
 - [Neural-Symbolic VQA](#Neural-Symbolic-VQA)
 - [The Neuro-Symbolic Concept Learner](#The-Neuro-Symbolic-Concept-Learner)
 
-### Graph (To do)
+### Graph (\#Todo)
 - [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](#Learning-Conditioned-Graph-Structures-for-Interpretable-Visual-Question-Answering)
 - [Visual Query Answering by Entity-Attribute Graph Matching and Reasoning](#Visual-Query-Answering-by-Entity-Attribute-Graph-Matching-and-Reasoning)
 
-### Pairwise Relationship (To do)
+### Pairwise Relationship (\#Todo)
 - [Relation Network](#Relation-Network)
 - [MUREL Multimodal Relational Reasoning for Visual Question Answering](#MUREL-Multimodal-Relational-Reasoning-for-Visual-Question-Answering)
 
