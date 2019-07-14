@@ -2,7 +2,7 @@
 
 ## Indexing:
 ### Neural Module Network (NMNs)
-- [Neural Module Network (CVPR 2016)](#Neural-Module-Network)
+- [Neural Module Network](#Neural-Module-Network) **CVPR 2016**
 - [Dynamic Neural Module Network (NAACL 2016)](#Dynamic-Neural-Module-Network)
 - [N2NMN (End-to-end Module Network) (ICCV 2017)](#N2NMN)
 - [Stack-NMN (ECCV 2018)](#Stack-NMN)
