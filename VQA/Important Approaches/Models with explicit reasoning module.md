@@ -12,15 +12,15 @@
 - [Explainable and Explicit Visual Reasoning over Scene graphs](#Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs)
 - [MAC](#MAC)
 
-### Neural Symbolic
+### Neural Symbolic (To do)
 - [Neural-Symbolic VQA](#Neural-Symbolic-VQA)
 - [The Neuro-Symbolic Concept Learner](#The-Neuro-Symbolic-Concept-Learner)
 
-### Graph
+### Graph (To do)
 - [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](#Learning-Conditioned-Graph-Structures-for-Interpretable-Visual-Question-Answering)
 - [Visual Query Answering by Entity-Attribute Graph Matching and Reasoning](#Visual-Query-Answering-by-Entity-Attribute-Graph-Matching-and-Reasoning)
 
-### Pairwise Relationship
+### Pairwise Relationship (To do)
 - [Relation Network](#Relation-Network)
 - [MUREL Multimodal Relational Reasoning for Visual Question Answering](#MUREL-Multimodal-Relational-Reasoning-for-Visual-Question-Answering)
 
@@ -569,7 +569,7 @@ $$
 - Module parameters: $\theta_m$
 - Neural Module $m$:
 $$
-y = f_m (x_{vis}, x_{txt}, {\{ a_i \}}_{i=1}^{n_m}; \theta_m)
+y = f_m (x_{vis}, x_{txt}, {\{{a_i}\}}_{i=1}^{n_m}; \theta_m)
 $$
 - The output $y$ can be a spatial image attention map $a$ or a context vector $c$
 - The output attention map $a$ feeds into next level modules while a context vector $c$ is used to obtain the final answer
