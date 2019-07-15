@@ -672,6 +672,9 @@ $$
 ---
 ## Transparency by design-Closing the gap between performance and interpretability in visual reasoning
 ### Introduction
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_TbD_Illustration.png" width="600" hegiht="400" align=center/>
+
 *Problems with former NMNs methods*
 - Are designed with a degree of model transparency, their **performance on complex visual reasoning benchmarks was lacking**
 
@@ -706,6 +709,9 @@ $$
 - The above idea makes the proposed TbD to be highly interpretable
 
 #### Architecture Details
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_TbD_Neural-Modules.png" width="600" hegiht="400" align=center/>
+
 - Use image features extracted from ResNet-101, and feed these through a simple convolutional block called **stem** which is proposed in [IEP](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
 - **Provide stem features to most of our modules**
 
@@ -752,7 +758,7 @@ $$
 #### CLEVR
 *Results*
 
-
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_TbD_Results-on-CLEVR.png" width="600" hegiht="400" align=center/>
 
 - Initial results on CLEVR: 98.7%
 - Refined: 99.1% on CLEVR
@@ -761,11 +767,17 @@ $$
 - Adding regularization results better attention that there will be less attention on unuseful background
 
 *Transparency*
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_TbD_Visualization.png" width="300" hegiht="500" align=center/>
+
 - Proposed a quantitative analysis of attention, mostly evaluate the Iob
 - TbD shows SOTA generative ability.
 
 
 #### CLEVR-CoGenT
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_TbD_Results-on-CLEVR-CoGenT.png" width="600" hegiht="400" align=center/>
+
 - CLEVR-CoGenT dataset provides test for generalization
 
 
