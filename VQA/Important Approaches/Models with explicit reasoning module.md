@@ -690,14 +690,30 @@ $$
 - Show that **compositional visual attention** provides **powerful insight into model behavior**
 - Propose a method to **quantitatively evaluate the interpretability of visual attention mechanisms**
 
-### Approach
+*Two main methods in VQA*
+- To parse the question into a series of logical operations, then perform each operation over the image features
+- To embed both the image and question into a feature space, and then reason over the features jointly
 
+### Approach
+#### Overall
+
+
+#### Architecture Details
+
+
+#### 
 
 ### Experiments
+
+#### CLEVR
+
+
+#### CLEVR-CoGenT
 
 
 ### Comments
 - Transparency by Design networks seems good!
+- Attention maps are not trustful!
 
 ---
 ## Neural-Symbolic VQA
