@@ -698,14 +698,47 @@ $$
 #### Overall
 *Intuition*
 - Combination of IEP, NMN, and N2NMN
-- Reuse the primitive operations proposed in [IEP](#Inferring and Executing Programs for Visual Reasoning), but redesign each module according to its intended function in spirit to the [NMN](#Neural-Module-Network) and [N2NMN](#N2NMN)
+- Reuse the primitive operations proposed in [IEP](#Inferring-and-Executing-Programs-for-Visual-Reasoning), but redesign each module according to its intended function in spirit to the [NMN](#Neural-Module-Network) and [N2NMN](#N2NMN)
 
 *Important Design*
 - Rather than reine high-dimensional feature maps, a TbD-net passes only **attention masks between its modules, which are one-dimensional attention masks**
 - The above idea makes the proposed TbD to be highly interpretable
 
 #### Architecture Details
+- Use image features extracted from ResNet-101, and feed these through a simple convolutional block called **stem** which is proposed in [IEP](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
+- **Provide stem features to most of our modules**
 
+*Attention*
+- Input: image features from the stem and a previous attention to refine
+- Output: a heatmap of $1 \times H \times W$
+- How: multiplying the input image features and attention mask elementwise, then processing those attended features with a series of convolutions
+
+*And*
+- Combine two attention masks in a set intersection
+
+*Or*
+- Combine two attention masks in a set union
+
+*Relate*
+- Purpose: attends to a region that has some spatial relation to another region
+- To relocate the attention
+- Problems: need global information from large receptive field
+- How: use a series of dilated convolutions to expand the receptive field
+
+*Same*
+- Input: stem image features, attention mask
+- Output: attention mask
+- How: perform a cross-correlation between the object of interest and every other object in the scene to determine which objects share the same property; then send this output through a convolutional layer to produce an attention mask
+
+*Query*
+- Purpose: extract a feature from an attended region of an image
+
+*Compare*
+- Purpose: compares the properties output by two *Query* modules and produces a feature map 
+
+*Classifier*
+- Purpose: takes as input the feature map from either a *Query* or *Compare* module and produces a distribution over answer
+- How: followed the work of [IEP](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
 
 #### 
 
@@ -721,6 +754,8 @@ $$
 - Transparency by Design networks seems good!
 - Attention maps are not trustful!
 - The key idea is the one-dimensional attention maps ????!
+- How did they generate the module layout
+
 ---
 ## Neural-Symbolic VQA
 
