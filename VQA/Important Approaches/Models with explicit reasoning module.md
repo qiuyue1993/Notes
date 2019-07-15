@@ -696,7 +696,13 @@ $$
 
 ### Approach
 #### Overall
+*Intuition*
+- Combination of IEP, NMN, and N2NMN
+- Reuse the primitive operations proposed in [IEP](#Inferring and Executing Programs for Visual Reasoning), but redesign each module according to its intended function in spirit to the [NMN](#Neural-Module-Network) and [N2NMN](#N2NMN)
 
+*Important Design*
+- Rather than reine high-dimensional feature maps, a TbD-net passes only **attention masks between its modules, which are one-dimensional attention masks**
+- The above idea makes the proposed TbD to be highly interpretable
 
 #### Architecture Details
 
@@ -714,7 +720,7 @@ $$
 ### Comments
 - Transparency by Design networks seems good!
 - Attention maps are not trustful!
-
+- The key idea is the one-dimensional attention maps ????!
 ---
 ## Neural-Symbolic VQA
 
