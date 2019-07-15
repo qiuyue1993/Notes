@@ -741,14 +741,33 @@ $$
 - Purpose: takes as input the feature map from either a *Query* or *Compare* module and produces a distribution over answer
 - How: followed the work of [IEP](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
 
-#### 
 
 ### Experiments
+*Determines the composition of a modular network*
+- Dumplicate to [IEP](#Inferring-and-Executing-Programs-for-Visual-Reasoning)
+
+*Training*
+- Use ground truth programs to train the network for program generator
 
 #### CLEVR
+*Results*
+
+
+
+- Initial results on CLEVR: 98.7%
+- Refined: 99.1% on CLEVR
+- At the mean time, the proposed method provides straightforward, interpretable outputs at *every stage*
+- Using increasing spatial resolution maps results greater performance
+- Adding regularization results better attention that there will be less attention on unuseful background
+
+*Transparency*
+- Proposed a quantitative analysis of attention, mostly evaluate the Iob
+- TbD shows SOTA generative ability.
 
 
 #### CLEVR-CoGenT
+- CLEVR-CoGenT dataset provides test for generalization
+
 
 
 ### Comments
@@ -756,6 +775,8 @@ $$
 - Attention maps are not trustful!
 - The key idea is the one-dimensional attention maps ????!
 - How did they generate the module layout
+- Not as much as different from IEP or N2NMN
+- Disentangled image representation is important for better generative ablitiy
 
 ---
 ## Neural-Symbolic VQA
