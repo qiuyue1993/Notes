@@ -669,7 +669,7 @@ $$
 - Neural Modules actually operates on Attention Maps ???!!!
 - Can NMNs be deeper?
 ---
-## Transparency by design-Claosing the gap between performance and interpretability in visual reasoning
+## Transparency by design-Closing the gap between performance and interpretability in visual reasoning
 ### Introduction
 *Problems with former NMNs methods*
 - Are designed with a degree of model transparency, their **performance on complex visual reasoning benchmarks was lacking**
