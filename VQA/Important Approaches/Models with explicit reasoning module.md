@@ -776,7 +776,7 @@ $$
 
 #### CLEVR-CoGenT
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_TbD_Results-on-CLEVR-CoGenT.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_TbD_Results-on-CLEVR-CoGenT.png" width="400" hegiht="200" align=center/>
 
 - CLEVR-CoGenT dataset provides test for generalization
 
