@@ -681,6 +681,14 @@ $$
 - Compose **visual primitives** that leverage an **explicit attention mechanism** to perform **reasoning operations**
 - Have the ability to **directly evaluate the model's learning process** via the **produced attention masks**; One can use this to **inspect the semantics of a visual operation**, and **redesign modules** to address apparent aberrations in reasoning
 
+*Definition of Transparency*
+- The ability to **examine the intermediate outputs of each module** and **understand their behavior at a high level**
+
+*Contributions*
+- Propose a set of **composable visual reasoning primitives** that incorporate an attention mechanism, which allows for model transparency
+- SOTA on CLEVR dataset, and on CoGenT generation task
+- Show that **compositional visual attention** provides **powerful insight into model behavior**
+- Propose a method to **quantitatively evaluate the interpretability of visual attention mechanisms**
 
 ### Approach
 
