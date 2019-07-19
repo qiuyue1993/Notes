@@ -791,9 +791,14 @@ $$
 - Disentangled image representation is important for better generative ablitiy
 ---
 ## Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs
+### Introduction
+
+### Approach
 
 
+### Experiments
 
+### Comments
 ---
 ## Neural-Symbolic VQA
 
