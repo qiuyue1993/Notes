@@ -812,6 +812,8 @@ $$
 - XNMs are **flexible to different graph quanlities**
 - XNMs is highly explainable and explicit
 
+*Difference and Similarity with previous NMNs*
+- Using the soft-program generator like in [Stack-NMN](#Stack-NMN), thus **do not need the supervised layout data**
 
 ### Approach
 
