@@ -792,6 +792,10 @@ $$
 ---
 ## Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs
 ### Introduction
+*Abstract*
+- eXplainable and eXplicit Neural Modules (XNMs), advance beyond existing NMNs towards **using scene graphs**
+- XNMs allow us to pay more **attention to teach machines how to think, regardless of what they look**
+
 
 ### Approach
 
