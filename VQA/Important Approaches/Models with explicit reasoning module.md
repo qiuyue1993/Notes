@@ -877,12 +877,15 @@ $$
 - Performed on one or more attention weights to produce a new attention
 - Three logical X modules: **And, Or, Not**
 - Applied to both the node and edge attention
+
 $$
 And(a^{1}, a^{2}) = min(a^{1}, a^{2})
 $$
+
 $$
 Not(a) = 1 - a
 $$
+
 $$
 Or(a^{1}, a^{2}) = max(a^{1}, a^{2})
 $$
