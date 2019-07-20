@@ -925,12 +925,15 @@ $$
 - Describe
 
 - For describe module, first obtain the "raw" attentive node feature by
+
 $$
 \bar{v} = \sum_{i=1}^{N} a_i v_i / \sum_{i=1}^{N} a_i
 $$
+
 - Then, project it into several ""fine-grained"" sub-spaces using $K$ transformation matrices, where $K$ is a hyperparameter related to the specific scene graph vocabulary
 - $c = Softmax(MLP(q))$ represents a probability distribution over $K$ aspects
 - The output feature is computed by
+
 $$
 Describe(a,q) = \sum_{k=1}^{K} c_k(M_k\bar{v})
 $$
