@@ -897,11 +897,19 @@ $$
 - $C_i, C_{i,j}$ denote the (multi-) labels of node $i$ and edge $ij$
 
 $$
-a_i = f(\upsilon, q)_i = \sum_{c\in {C_i}}b_c
+a_i = f(\upsilon, q)_i
 $$
 
 $$
-W_{i,j} = g(\varepsilon, q)_{i,j} = \sum_{c \in C_{i,j} }b_c
+a_i = \sum_{c\in {C_i}}b_c
+$$
+
+$$
+W_{i,j} = g(\varepsilon, q)_{i,j}
+$$
+
+$$
+W_{i,j} = \sum_{c \in C_{i,j} }b_c
 $$
 
 - In Det setting
