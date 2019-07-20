@@ -912,7 +912,7 @@ a_i = f(\upsilon, q)_i = sigmoid(MLP(v_i)^{T}q)
 $$
 
 $$
-W_{i,j} = (g(\varepsilon, q))_{i,j}
+W_{i,j} = g(\varepsilon, q)_{i,j}
 $$
 
 
