@@ -796,6 +796,22 @@ $$
 - eXplainable and eXplicit Neural Modules (XNMs), advance beyond existing NMNs towards **using scene graphs**
 - XNMs allow us to pay more **attention to teach machines how to think, regardless of what they look**
 
+*Problems of previous NMNs*
+- The **vision-to-reasoning shortcut* (visual biases)* exists as an obstacle on the way of NMNs towards the real X visual reasoing (eXplainable and eXplicit)
+- How to design a **complete inventory of X modules** is still a tricky engineering
+
+*Four meta-types in XNMs*
+- **AttendNode**: to find the queried entities
+- **AttendEdge**: to find the required relationships
+- **Transfer**: to transform the node attentions along the attentive edges
+- **Logic**: to perform basic logical operations on attention maps
+
+*Contributions*
+- 100% accuracy on CLEVR, CLEVR-CoGenT
+- Requires significantly **less parameters** 
+- XNMs are **flexible to different graph quanlities**
+- XNMs is highly explainable and explicit
+
 
 ### Approach
 
@@ -803,6 +819,8 @@ $$
 ### Experiments
 
 ### Comments
+- VQA v2 dataset may be not a good testbed for XMNs
+
 ---
 ## Neural-Symbolic VQA
 
