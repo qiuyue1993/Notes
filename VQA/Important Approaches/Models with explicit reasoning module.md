@@ -21,9 +21,6 @@
 - [Visual Query Answering by Entity-Attribute Graph Matching and Reasoning](#Visual-Query-Answering-by-Entity-Attribute-Graph-Matching-and-Reasoning) **(CVPR 2019)**
 - [Neural Task Graphs: Generalizing to Unseen Tasks from a Single Video Demonstration](#Neural-Task-Graphs-Generalizing-to-Unseen-Tasks-from-a-Single-Video-Demonstration)
 
-### Pairwise Relationship (\#Todo)
-- [Relation Network](#Relation-Network) **(NIPS 2017)**
-- [MUREL Multimodal Relational Reasoning for Visual Question Answering](#MUREL-Multimodal-Relational-Reasoning-for-Visual-Question-Answering) **(CVPR 2019)**
 
 ### Survey Paper (\#Todo)
 - [Compositional models for VQA Can neural module networks really count?](#Compositional-models-for-VQA-Can-neural-module-networks-really-count?)
@@ -1035,8 +1032,7 @@ $$
 --
 ## Learning Conditioned Graph Structures for Interpretable Visual Question Answering
 
----
-## Relation Network
+
 
 ---
 ## References
