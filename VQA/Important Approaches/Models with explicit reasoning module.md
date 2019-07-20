@@ -886,16 +886,58 @@ $$
 $$
 Or(a^{1}, a^{2}) = max(a^{1}, a^{2})
 $$
+
 #### Implementations
 *Attention Functions*
+- In GT setting
+- annotated labels are mutually exclusive
+- $C_i, C_{i,j}$ denote the (multi-) labels of node $i$ and edge $ij$
+$$
+a_i = f(\upsilon, q)_i = \sum_{c\in C_i} b_c
+$$
+$$
+W_{i,j} = g(\varepsilon, q)_{i,j} = \sum_{c\in C_{i,j}} b_c
+$$
+
+- In Det setting
+- Using sigmoid function to compute the attention weights
+$$
+a_i = f(\upsilon, q)_i = sigmoid(MLP(v_i)^{T}q)
+$$
+$$
+W_{i,j} = g(\varepsilon, q)_{i,j} = sigmoid(MLP(e_{ij})^{T}q)
+$$
 
 *Composite Reasoning Modules*
+- 5 modules
+- Intersect
+- Union
+- Filter
+- Same
+- Relate
 
 
 *Feature Output Modules*
+- 4 modules
+- Exist
+- Count
+- Compare
+- Describe
 
+- For describe module, first obtain the "raw" attentive node feature by
+$$
+\bar{v} = \sum_{i=1}^{N} a_i v_i / \sum_{i=1}^{N} a_i
+$$
+- Then, project it into several ""fine-grained"" sub-spaces using $K$ transformation matrices, where $K$ is a hyperparameter related to the specific scene graph vocabulary
+- $c = Softmax(MLP(q))$ represents a probability distribution over $K$ aspects
+- The output feature is computed by
+$$
+Describe(a,q) = \sum_{k=1}^{K} c_k(M_k\bar{v})
+$$
 
 *Program Generation & Training*
+- For datasets with GT program annotations, directly learn an LSTM sequence-to-sequence model to convert the word sequence into the module program
+- For datasets without layout annoations, following [Stack-NMN](#Stack-NMN) to make soft module selection with a differentiable stack struture
 
 ### Experiments
 
