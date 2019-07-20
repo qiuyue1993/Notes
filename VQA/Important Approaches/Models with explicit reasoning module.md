@@ -963,6 +963,36 @@ $$
 - For datasets without layout annoations, following [Stack-NMN](#Stack-NMN) to make soft module selection with a differentiable stack struture
 
 ### Experiments
+#### CLEVR
+*Settings*
+- Each modules (total 13) of CLEVR have the correspondent modules in XMNs
+- For CLEVR, the mapping matrix $K=4$
+- Use the program generator proposed in [IEP](#Inferring-and-Executing-Programs-for-Visual-Reasoning), BUT unpack the module and the input (e.g., seperate Filter[] with green, red, ...)
+- For GT, performs reasoning over the gt scene graphs
+- For Det, using the pretrained TbD-net as object detector (have detection noises)
+
+*Results*
+- 100% Acc. for GT setting
+- 97.9% Acc. with noisy detected scene graphs
+- 0.22 M parameters for GT seting (500MB for batch size 128)
+- When traning set is small, the proposed XMNs can also works well (converges fast)
+- Transparent
+
+#### CLEVR-CoGenT
+- Novel combinations of attributes in Condition B do not cause the performance drop at all (GT)
+- Drops a lot for Det setting, as the vision short-cut
+
+#### VQAv2
+*Settings*
+- Use the grounded visual features as node features
+- Concatenated node embeddings as edge features
+- Set $K=1$
+- Fused the output feature and question embedding for answer prediction
+- Followed [Stack-NMN](Stack-NMN) to build the module program
+
+*Results*
+
+
 
 ### Comments
 - VQA v2 dataset may be not a good testbed for XMNs
