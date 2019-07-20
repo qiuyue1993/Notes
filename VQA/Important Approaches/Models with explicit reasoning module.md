@@ -916,7 +916,7 @@ W_{i,j} = g(\varepsilon, q)_{i,j}
 $$
 
 $$
-W_{i,j} = sigmoid(MLP(e_{i,j})^{T}q)}
+W_{i,j} = sigmoid(MLP(e_{i,j})^{T}q)
 $$
 
 
