@@ -793,6 +793,9 @@ $$
 ## Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs
 ### Introduction
 *Abstract*
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_XNMs_Illustration.png" width="300" hegiht="400" align=center/>
+
 - eXplainable and eXplicit Neural Modules (XNMs), advance beyond existing NMNs towards **using scene graphs**
 - XNMs allow us to pay more **attention to teach machines how to think, regardless of what they look**
 
@@ -817,6 +820,9 @@ $$
 
 ### Approach
 #### Overall
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_XNMs_Overall-framework.png" width="600" hegiht="400" align=center/>
+
 - Input: image, question
 - Firstly, parse the image into a scene graph
 - Secondly, parse the question into a module program
@@ -843,6 +849,9 @@ $$
 - Note that, for CLEVR, as the relationship are just about spatial relationships, they use the difference between detected coordinates of object pairs as the edge embedding
 
 #### X Neural Modules
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_XNMs_Neural-Modules.png" width="600" hegiht="400" align=center/>
+
 - Four totally attention-based meta-types
 - Node attention weight vector: $a \in [0,1]^{N}$, $i-$th node denoted by $a_i$
 - Edge attention weight matrix: $W  \in [0,1]^{N\times N}$, where $W_{i,j}$ represents the weight of edge from node $i$ to node $j$
@@ -964,6 +973,9 @@ $$
 
 ### Experiments
 #### CLEVR
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_XNMs_Evaluation-on-CLEVR.png" width="600" hegiht="400" align=center/>
+
 *Settings*
 - Each modules (total 13) of CLEVR have the correspondent modules in XMNs
 - For CLEVR, the mapping matrix $K=4$
@@ -971,7 +983,10 @@ $$
 - For GT, performs reasoning over the gt scene graphs
 - For Det, using the pretrained TbD-net as object detector (have detection noises)
 
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_XNMs_Visualization.png" width="600" hegiht="400" align=center/>
+
 *Results*
+
 - 100% Acc. for GT setting
 - 97.9% Acc. with noisy detected scene graphs
 - 0.22 M parameters for GT seting (500MB for batch size 128)
@@ -979,10 +994,14 @@ $$
 - Transparent
 
 #### CLEVR-CoGenT
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_XNMs_Evaluation-on-CoGenT.png" width="600" hegiht="400" align=center/>
+
 - Novel combinations of attributes in Condition B do not cause the performance drop at all (GT)
 - Drops a lot for Det setting, as the vision short-cut
 
 #### VQAv2
+
 *Settings*
 - Use the grounded visual features as node features
 - Concatenated node embeddings as edge features
@@ -992,7 +1011,7 @@ $$
 
 *Results*
 
-
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_XNMs_Evaluation-on-VQAv2.png" width="600" hegiht="400" align=center/>
 
 ### Comments
 - VQA v2 dataset may be not a good testbed for XMNs
