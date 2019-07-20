@@ -816,12 +816,92 @@ $$
 - Using the soft-program generator like in [Stack-NMN](#Stack-NMN), thus **do not need the supervised layout data**
 
 ### Approach
+#### Overall
+- Input: image, question
+- Firstly, parse the image into a scene graph
+- Secondly, parse the question into a module program
+- Finally, execute the program over the scene graph
+- The XNMs are **attention-based**, making all the **intermediate reasoning steps transparent** 
 
+#### Scene Graph Representations
+- Formulate the scene graph of an image as $(\upsilon, \varepsilon)$
+- Graph nodes : $\upsilon = \lbrace v_1, ..., v_N \rbrace$ denotes the $N$ detected object, $v_i$ denotes the feature representation of $i-$th object
+- Graph edges: $\varepsilon = \lbrace e_{ij} \vert i,j = 1, ..., N\rbrace$, denotes the relations between each object pairs, $e_{ij}$ denotes the feature representation of the relation from object $i$ to object $j$
+
+*Setting 1: **GT** ground-truth scene graph*
+- Such as, CLEVR with GT scene graph
+- Nodes: ground-truth objects
+- Node features: object label embeddings
+- Edge features: ground-truth relation label embeddings
+- Collect all the *$C$* labels into a dictionary, map each label into a $d-$dimensional vector
+- Represent the nodes and edges using the concatenation of their corresponding label embeddings
+- Scene graphs are annotated with fixed-vocabulary object labels and relationship labels
+
+*Setting 2: **Det** detected objects*
+- Node features: RoI visual features
+- Edge features: the fusion of two node features
+- Note that, for CLEVR, as the relationship are just about spatial relationships, they use the difference between detected coordinates of object pairs as the edge embedding
+
+#### X Neural Modules
+- Four totally attention-based meta-types
+- Node attention weight vector: $a \in [0,1]^{N}$, $i-$th node denoted by $a_i$
+- Edge attention weight matrix: $W  \in [0,1]^{N\times N}$, where $W_{i,j}$ represents the weight of edge from node $i$ to node $j$
+ 
+*AttendNode [query]*
+- Input: query (e.g. find all ['cubes']), encoded as a vector $q$
+- Produce the node attention vector by:
+$$
+a = f(\upsilon, q)
+$$
+- $f$ is differentiable for every attention range from [0,1]
+
+*AttendEdge [query]*
+- To find the relevant edges given an input query (e.g. find all ["left"])
+- Input: query, encoded as a vector $q$
+- Produce the edge attention matrix by:
+$$
+W = g(\varepsilon, q)
+$$
+- $g$ is differentiable for every attention range from [0,1]
+
+*Transfer*
+- To transfer the node weights along the attentive relations to find new objects (e.g. find objects that are ["left"] to the ["cube"])
+- Input: the node attention vector $a$ and the edge attention matrix $W$
+- Update node attention by:
+$$
+a^{'} = norm(W^{T}a)
+$$
+- This module reallocates the node attention in an efficient and fully-differentiable manner
+
+*Logic*
+- Performed on one or more attention weights to produce a new attention
+- Three logical X modules: **And, Or, Not**
+- Applied to both the node and edge attention
+$$
+And(a^{1}, a^{2}) = min(a^{1}, a^{2})
+$$
+$$
+Not(a) = 1 - a
+$$
+$$
+Or(a^{1}, a^{2}) = max(a^{1}, a^{2})
+$$
+#### Implementations
+*Attention Functions*
+
+*Composite Reasoning Modules*
+
+
+*Feature Output Modules*
+
+
+*Program Generation & Training*
 
 ### Experiments
 
 ### Comments
 - VQA v2 dataset may be not a good testbed for XMNs
+- In GT setting, each nodes and edges are the concatenation of their corresponding label embedding. Are their the same length?
 
 ---
 ## Neural-Symbolic VQA
