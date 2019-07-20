@@ -892,18 +892,22 @@ $$
 - In GT setting
 - annotated labels are mutually exclusive
 - $C_i, C_{i,j}$ denote the (multi-) labels of node $i$ and edge $ij$
+
 $$
 a_i = f(\upsilon, q)_i = \sum_{c\in C_i} b_c
 $$
+
 $$
 W_{i,j} = g(\varepsilon, q)_{i,j} = \sum_{c\in C_{i,j}} b_c
 $$
 
 - In Det setting
 - Using sigmoid function to compute the attention weights
+
 $$
 a_i = f(\upsilon, q)_i = sigmoid(MLP(v_i)^{T}q)
 $$
+
 $$
 W_{i,j} = g(\varepsilon, q)_{i,j} = sigmoid(MLP(e_{ij})^{T}q)
 $$
