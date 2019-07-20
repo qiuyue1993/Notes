@@ -914,6 +914,7 @@ $$
 $$
 W_{i,j} = g(\varepsilon, q)_{i,j}
 $$
+$$
 = sigmoid(MLP(e_{i,j}}^{T}q)
 $$
 
