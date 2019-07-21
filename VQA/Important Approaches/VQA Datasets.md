@@ -88,18 +88,24 @@
 - By the end of current stage, they obtained a question set with **22M questions**
 
 #### Functional Representation and Entailment
-
-
-
-
-
-
-#### Analysis and Baseline Experiments
-
-
+*Function Program*
+- Each question pattern is associated with a structured representation 
+- E.g., For question "What color is the apple on the white table?"
+- The program is: "table->filter:white->relate(subject,on): apple->query: color"
+- Each program can be solved by an atomic operations
 
 #### Sampling and Balancing
+*Main issues of existing VQA datasets*
+- Question-conditional biases
 
+*GQA's effort to avoid biases*
+- Using the functional programs attached to each question to smooth out the answer distribution
+
+*Process*
+- Devide two labels, global and local
+- Global label: assigns the question to its answer type, e.g. *color* for *What color is the apple?*
+- Local label: considers the main subject/s of the question, e.g. *apple-color* or *table-material*
+- Smoothing answer distribution on above two degrees
 
 ### Conclusion
 
