@@ -75,7 +75,7 @@
 - Incorporate probabilistic sections into the patterns
 
 *Noteworthy*
-- <theObject> can be long sentences
+- $\langle$ theObject $\rangle$ can be long sentences
   
 *Four resources of generating questions*
 - The clean scene graphs
@@ -107,19 +107,56 @@
 - Local label: considers the main subject/s of the question, e.g. *apple-color* or *table-material*
 - Smoothing answer distribution on above two degrees
 
-
-
 ### Analysis and Baseline Experiments
 #### Dataset Analysis and Comparison
 *Statistics*
+- 22,669,678 questions
+- 113,018 images
+- vocabulary size: 3.097 words
+- 1,878 possible answers 
+
+*Two types*
+- Structural type: derived from the final functional program of the questions
+- Structural types: **verify** for yes/no questions; **query** for all open questions; **choose** for questions that represent two alternatives; **logical** which involve logical inference; **compare** for comparison questions between two or more objects; 
+- Semantic type: refers to the main subject of the question
+- Semantic types: **object** for existence questions; **attribute** consider the properties or position of an object; **category** related to object identification within some class; **relation** for questions asking about the subject or object of a described relation; **global** about overall properties of the scene such as weather or place.
 
 #### Baseline Experiments
+*Baseline methods*
+- "Blind" LSTM
+- "Deaf" CNN
+- LSTM + CNN
+- Prior model 1 based on local question group
+- Prior model 2 based on global question group
+- Up-down
+- MAC
+
+*Results*
+- Human exceed all methods above by a large margin
 
 
 #### Transdfer Performance
-
+- Test the transder performance between the GQA and VQA datasets
+- The results show that the GQA can serve as a good proxy for human-like questions
 
 #### New Evaluation Metrics
+- Introduce 5 new metrics
+
+***Consistency***
+- This metric measures **consistency across different questions**
+- Which is evaluated  by measuring the model's accuracy over the questions and their entailed questions
+
+
+***Validity*** and ***Plausibility***
+- Validity: checks whether a given answr is in the question scope, e.g., responding color to a color question
+- Plausibility: measuring whether the answer is reasonable, or makes sense (e.g. elephant usually do not eat, say, pizza); (Evaluated by checking whether the answer occurs at least once in relation with the question's subject, across the whole dataset)
+
+***Distribution***
+- Measures the overall match between the true answer distribution and the model predicted distribution, using Chi-Square statistic
+
+***Grounding***
+- For attention-based models, the grounding score checks whether the model attends to regions within the image that are relevant to the question
+
 
 
 ### Comments
