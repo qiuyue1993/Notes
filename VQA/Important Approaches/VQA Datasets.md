@@ -67,8 +67,8 @@
 *Question Group*
 - Each group is associated with 3 components:
 - A **function program** that represents its semantics
-- A set of textual rephrase: e.g., "What (Which) \langle type \rangle [do you think] \langle is \rangle \langle theObject \rangle ?"
-- A pair of short and long answers: e.g., \langle attribute \rangle and "The \langle object \rangle \langle is \rangle \langle attribute \rangle"
+- A set of textual rephrase: e.g., "What (Which) $\langle$ type $\rangle$ [do you think] $\langle$ is $\rangle$ $\langle$ theObject $\rangle$ ?"
+- A pair of short and long answers: e.g., $\langle$ attribute $\rangle$ and "The $\langle$ object $\rangle$ $\langle$ is $\rangle$ $\langle$ attribute $\rangle$"
  
 *Question Diversity*
 - Introduce synonyms
