@@ -68,7 +68,7 @@
 - Each group is associated with 3 components:
 - A **function program** that represents its semantics
 - A set of textual rephrase: e.g., "What (Which) <type> [do you think] <is> <theObject>?"
-- A pair of short and long answers: e.g., <attribute> and "The <object> <is> <attribute>."
+- A pair of short and long answers: e.g., <attribute> and "The <object> <is> <attribute>"
  
 *Question Diversity*
 - Introduce synonyms
@@ -107,7 +107,19 @@
 - Local label: considers the main subject/s of the question, e.g. *apple-color* or *table-material*
 - Smoothing answer distribution on above two degrees
 
-### Conclusion
+
+
+### Analysis and Baseline Experiments
+#### Dataset Analysis and Comparison
+*Statistics*
+
+#### Baseline Experiments
+
+
+#### Transdfer Performance
+
+
+#### New Evaluation Metrics
 
 
 ### Comments
