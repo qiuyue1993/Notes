@@ -37,7 +37,7 @@
 
 - Dataset Generation Processes
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_GQA_Dataset-Generation-Processes.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_GQA_Dataset-Generation-Processes.png" width="800" hegiht="400" align=center/>
 
 
 #### Overview
