@@ -136,7 +136,7 @@
 - vocabulary size: 3.097 words
 - 1,878 possible answers 
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_GQA_Detailed-Question-Type-Statistics.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_GQA_Detailed-Question-Type-Statistics.png" width="400" hegiht="150" align=center/>
 
 *Two types*
 - Structural type: derived from the final functional program of the questions
