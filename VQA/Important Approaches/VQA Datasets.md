@@ -8,9 +8,16 @@
 - Accept to CVPR 2019
 
 ### Introduction
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_GQA_Illustration.png" width="600" hegiht="400" align=center/>
+
 *Intuition*
 - For **real-world visual reasoning**
 - And **compositional** question answering
+
+- Dataset example
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_GQA_Dataset-Examples.png" width="600" hegiht="400" align=center/>
 
 *GQA*
 - Images come from Visual Genome dataset
@@ -27,6 +34,12 @@
 
 
 ### The GQA Dataset
+
+- Dataset Generation Processes
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_GQA_Dataset-Generation-Processes.png" width="600" hegiht="400" align=center/>
+
+
 #### Overview
 *GQA can be used to measure performance on*
 - Object and attribute recognition
@@ -55,6 +68,10 @@
 - Enrich the graph with positional information (absolute and relative) and semantic properties (location, weather)
 
 #### The Question Engine
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_GQA_Programs.png" width="600" hegiht="400" align=center/>
+
+
 *Two resources*
 - Scene graphs (rich content of objects, attributes and relationships)
 - Structural patterns
@@ -109,11 +126,17 @@
 
 ### Analysis and Baseline Experiments
 #### Dataset Analysis and Comparison
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_GQA_Dataset-Statistics.png" width="600" hegiht="400" align=center/>
+
+
 *Statistics*
 - 22,669,678 questions
 - 113,018 images
 - vocabulary size: 3.097 words
 - 1,878 possible answers 
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_GQA_Detailed-Question-Type-Statistics.png" width="600" hegiht="400" align=center/>
 
 *Two types*
 - Structural type: derived from the final functional program of the questions
@@ -122,6 +145,9 @@
 - Semantic types: **object** for existence questions; **attribute** consider the properties or position of an object; **category** related to object identification within some class; **relation** for questions asking about the subject or object of a described relation; **global** about overall properties of the scene such as weather or place.
 
 #### Baseline Experiments
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarization_GQA_Benchmark-results.png" width="600" hegiht="400" align=center/>
+
 *Baseline methods*
 - "Blind" LSTM
 - "Deaf" CNN
