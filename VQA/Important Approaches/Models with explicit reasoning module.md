@@ -12,6 +12,7 @@
 - [Neural-Symbolic VQA](#Neural-Symbolic-VQA) **(NIPS 2018)** (\#Todo)
 - [Explainable and Explicit Visual Reasoning over Scene graphs (CVPR 2019)](#Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs) **(CVPR 2019)**
 - [MAC](#MAC) **(ICLR 2018)** (\#Todo)
+‐ [Explicit Reasoning over End-to-End Neural Architectures for Visual Question Answering]
 
 ### Neural Symbolic (\#Todo)
 - [The Neuro-Symbolic Concept Learner](#The-Neuro-Symbolic-Concept-Learner) **(ICLR 2019)**
@@ -1016,7 +1017,19 @@ $$
 
 ---
 ## Neural-Symbolic VQA
+### Introduction
 
+
+### Approach
+
+
+
+### Experiments
+
+
+### Comments
+- Building structured representations for scenes and sentence meanings in ways that generalize to truly novel situations remains a challenge.
+- It is also important for symbolic representation of language.
 
 ---
 ## The Neuro-Symbolic Concept Learner
