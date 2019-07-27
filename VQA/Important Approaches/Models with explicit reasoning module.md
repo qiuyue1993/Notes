@@ -1044,7 +1044,7 @@ $$
 - [Visual Coreference Resolution in Visual Dialog using Neural Module Networks](http://users.ece.cmu.edu/~skottur/papers/corefnmn_eccv18.pdf)
 - [Transparency by design: Closing the gap between performance and interpretability in visual reasoning](http://openaccess.thecvf.com/content_cvpr_2018/papers/Mascharka_Transparency_by_Design_CVPR_2018_paper.pdf)
 - [Explainable and Explicit Visual Reasoning over Scene graphs](http://openaccess.thecvf.com/content_CVPR_2019/papers/Shi_Explainable_and_Explicit_Visual_Reasoning_Over_Scene_Graphs_CVPR_2019_paper.pdf)
-- []
+- [Neural-Symbolic VQA](https://arxiv.org/pdf/1810.02338.pdf)
 - [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](https://arxiv.org/pdf/1806.07243.pdf)
 
 
