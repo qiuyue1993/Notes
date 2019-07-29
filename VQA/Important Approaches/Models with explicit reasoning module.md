@@ -1027,6 +1027,9 @@ $$
 - Symbolic program execution offers **full transparency to the reasoning process**
 
 ### Approach
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Overall-framework.png " width="600" hegiht="400" align=center/>
+
 *Components*
 - A scene parser (de-renderer)
 - A question parser (program generator)
@@ -1066,9 +1069,13 @@ $$
 
 *Results*
 
+<img src=" https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-CLEVR.png" width="600" hegiht="400" align=center/>
 
+<img src=" https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Qualitative-Results-vs-CLEVR.png" width="600" hegiht="400" align=center/>
 
 - The proposed NS-VQA outperform other methods on all five question types
+
+<img src=" https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Efficiency-Experiments.png" width="600" hegiht="400" align=center/>
 
 
 - The proposed NS-VQA outperforms the IEP baseline even with a weaker supervision 
@@ -1083,6 +1090,9 @@ $$
 
 #### Generalizing to Unseen Attribute Combinations
 *Dataset*
+
+<img src=" https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-CLEVR-CoGenT-Human.png" width="600" hegiht="400" align=center/>
+
 - CLEVR-CoGenT: consisted of split A and B in which objects have opposite colors
 - 70K imaes and 700K questions for training 
 - 15K images and 150K questions for evaluation and testing
@@ -1099,6 +1109,9 @@ $$
 - Outperforms IEP by a **considerable margin** under **small amount of annotated programs**
 
 #### Extending to New Scene Context
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-Minecraft.png " width="600" hegiht="400" align=center/>
+
 *Dataset*
 - Objects and scenes are taken from minecraft world
 - Each image consists of 3 to 6 objects, each object is sampled from 12 entities
