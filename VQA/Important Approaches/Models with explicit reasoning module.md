@@ -1054,6 +1054,19 @@ $$
 ### Experiments
 
 
+#### Data-Efficient, Interpretable Reasoning
+
+
+
+#### Generalizing to Unseen Attribute Combinations
+
+
+
+#### Generalizing to Questions from Humans
+
+
+#### Extending to New Scene Context
+
 ### Comments
 - Building structured representations for scenes and sentence meanings in ways that generalize to truly novel situations remains a challenge.
 - It is also important for symbolic representation of language.
