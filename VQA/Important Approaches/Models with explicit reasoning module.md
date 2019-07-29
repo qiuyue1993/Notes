@@ -1018,11 +1018,38 @@ $$
 ---
 ## Neural-Symbolic VQA
 ### Introduction
+*Abstract*
+- Combine two powerful ideas: **deep representation learning** for visual recognition and language understanding; **symbolic program execution for reasoning**
 
+*Advantages of incorporating symbolic structure*
+- More **robust to long program traces**
+- Model is more **data- and memory-efficient**
+- Symbolic program execution offers **full transparency to the reasoning process**
 
 ### Approach
+*Components*
+- A scene parser (de-renderer)
+- A question parser (program generator)
+- A program executor
 
+#### Scene parser
+- Mask R-CNN to generate **segment proposals** of all objects
+- Predict the categorical labels of discrete intrinsic attributes
+- Predict the spacial attributes such as pose and 3D coordinates
 
+#### Question parser
+- Attention-based **sequence to sequence model** with an **encoder-decoder** structure 
+- Encoder: bidirectional LSTM
+- Decoder: a similar LSTM
+- The context vector together with the decoder output is passed to fully connected layer to obtain the distribution for the predicted token
+
+#### Program executor
+- Program executor: a collection of deterministic, generic functional modules in python; designed to **host all logic operations behind the questiosn in the dataset**
+- Each functional module is in **one-to-one corresondence** with tokens from the input program sequence (same with [IEP](Inferring-and-Executing-Programs-for-Visual-Reasoning))
+
+#### Training Paradigm
+- Mask R-CNN: Detectron
+- Reasoning: firstly, a small number of ground truth question-program pairs for direct supervision; Then, REINFORCE to fine-tune the parser
 
 ### Experiments
 
@@ -1030,6 +1057,7 @@ $$
 ### Comments
 - Building structured representations for scenes and sentence meanings in ways that generalize to truly novel situations remains a challenge.
 - It is also important for symbolic representation of language.
+- Recent progress on **unsupervised or weakly supervised representation learning**, in both language and vision, offer some **promise of generalization**
 
 ---
 ## The Neuro-Symbolic Concept Learner
