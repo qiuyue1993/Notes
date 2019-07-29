@@ -1069,13 +1069,13 @@ $$
 
 *Results*
 
-<img src=" https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-CLEVR.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-CLEVR.png" width="600" hegiht="400" align=center/>
 
-<img src=" https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Qualitative-Results-vs-CLEVR.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Qualitative-Results-vs-CLEVR.png" width="600" hegiht="400" align=center/>
 
 - The proposed NS-VQA outperform other methods on all five question types
 
-<img src=" https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Efficiency-Experiments.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Efficiency-Experiments.png" width="600" hegiht="400" align=center/>
 
 
 - The proposed NS-VQA outperforms the IEP baseline even with a weaker supervision 
@@ -1091,7 +1091,7 @@ $$
 #### Generalizing to Unseen Attribute Combinations
 *Dataset*
 
-<img src=" https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-CLEVR-CoGenT-Human.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-CLEVR-CoGenT-Human.png" width="600" hegiht="400" align=center/>
 
 - CLEVR-CoGenT: consisted of split A and B in which objects have opposite colors
 - 70K imaes and 700K questions for training 
