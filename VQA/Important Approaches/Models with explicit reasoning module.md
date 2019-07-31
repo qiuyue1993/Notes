@@ -11,6 +11,7 @@
 - [Transparency by design: Closing the gap between performance and interpretability in visual reasoning](#Transparency-by-design-Closing-the-gap-between-performance-and-interpretability-in-visual-reasoning) **(CVPR 2018)**
 - [Neural-Symbolic VQA](#Neural-Symbolic-VQA) **(NIPS 2018)**
 - [The Neuro-Symbolic Concept Learner](#The-Neuro-Symbolic-Concept-Learner) **(ICLR 2019)**
+
 - [Explainable and Explicit Visual Reasoning over Scene graphs (CVPR 2019)](#Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs) **(CVPR 2019)**
 
 
