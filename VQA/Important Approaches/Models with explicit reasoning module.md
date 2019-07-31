@@ -906,7 +906,9 @@ $$
 ---
 ## The Neuro-Symbolic Concept Learner
 ### Introduction
-
+*Abstract*
+- Propose **Neuro-Symbolic Concept Learner (NS-CL)**, a model that **learns visual concepts, words, and semantic parsing of sentences** without **explicit supervision**
+- Using **curriculum learning** to guide the searching over the **large compositional space** of images and language
 
 ### Approach
 
