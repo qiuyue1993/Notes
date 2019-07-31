@@ -790,6 +790,132 @@ $$
 
 
 
+
+---
+## Neural-Symbolic VQA
+### Introduction
+*Abstract*
+- Combine two powerful ideas: **deep representation learning** for visual recognition and language understanding; **symbolic program execution for reasoning**
+
+*Advantages of incorporating symbolic structure*
+- More **robust to long program traces**
+- Model is more **data- and memory-efficient**
+- Symbolic program execution offers **full transparency to the reasoning process**
+
+### Approach
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Overall-framework.png " width="600" hegiht="400" align=center/>
+
+*Components*
+- A scene parser (de-renderer)
+- A question parser (program generator)
+- A program executor
+
+#### Scene parser
+- Mask R-CNN to generate **segment proposals** of all objects
+- Predict the categorical labels of discrete intrinsic attributes
+- Predict the spacial attributes such as pose and 3D coordinates
+
+#### Question parser
+- Attention-based **sequence to sequence model** with an **encoder-decoder** structure 
+- Encoder: bidirectional LSTM
+- Decoder: a similar LSTM
+- The context vector together with the decoder output is passed to fully connected layer to obtain the distribution for the predicted token
+
+#### Program executor
+- Program executor: a collection of deterministic, generic functional modules in python; designed to **host all logic operations behind the questiosn in the dataset**
+- Each functional module is in **one-to-one corresondence** with tokens from the input program sequence (same with [IEP](Inferring-and-Executing-Programs-for-Visual-Reasoning))
+
+#### Training Paradigm
+- Mask R-CNN: Detectron
+- Reasoning: firstly, a small number of ground truth question-program pairs for direct supervision; Then, REINFORCE to fine-tune the parser
+
+### Experiments
+#### Data-Efficient, Interpretable Reasoning
+*Dataset*
+- CLEVR
+
+*Experiment Ablations*
+- Numbers of ground-truth programs used for pretraining
+- Question-answer pairs for REINFORCE
+
+*Evaluation Aspects*
+- The correctness of the answer
+- How well the proposed method recovers the underlying program
+
+*Results*
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-CLEVR.png" width="600" hegiht="400" align=center/>
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Qualitative-Results-vs-CLEVR.png" width="600" hegiht="400" align=center/>
+
+- The proposed NS-VQA outperform other methods on all five question types
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Efficiency-Experiments.png" width="600" hegiht="400" align=center/>
+
+
+- The proposed NS-VQA outperforms the IEP baseline even with a weaker supervision 
+- While trained on 500 annoated programs, NS-VQA achieved about 88% program accuracy vs. IEP (recovers half of the programs for 9K annoated programs)
+- NS-VQA achieved almost perfect on answer accuracy and program accuracy while trained with 9K programs
+- Comparing with MAC, NS-VQA need 270 programs (MAC do not need annoated programs), but requires fewer question-answer pairs to train
+- NS-VQA requires minimal memory for offline question answering
+
+*Training*
+- First pretrain the question parser on **270 annotated programs** sampled across the 90 question templates
+- Run REINFORCE on all the question-answer pairs
+
+#### Generalizing to Unseen Attribute Combinations
+*Dataset*
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-CLEVR-CoGenT-Human.png" width="600" hegiht="400" align=center/>
+
+- CLEVR-CoGenT: consisted of split A and B in which objects have opposite colors
+- 70K imaes and 700K questions for training 
+- 15K images and 150K questions for evaluation and testing
+
+*Results*
+- The vanilla NS-VQA trained purely on split A does not generalize as well as SOTA
+- After fine-tune the attribute recognition network (does not fine-tune on questions or progrms), the NS-VQA performs well generalization ablility.
+
+#### Generalizing to Questions from Humans
+*Dataset*
+- CLEVR-Humans
+
+*Results*
+- Outperforms IEP by a **considerable margin** under **small amount of annotated programs**
+
+#### Extending to New Scene Context
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-Minecraft.png " width="600" hegiht="400" align=center/>
+
+*Dataset*
+- Objects and scenes are taken from minecraft world
+- Each image consists of 3 to 6 objects, each object is sampled from 12 entities
+- Generate diverse questions and programs based on the objects' categorical and spatial attributes
+- Differences with CLEVR: a larger set of 3D objects with richer image content and visual appearance; questions involve hierarchical attributes
+
+*Results*
+- Reasoning on Minecraft generally requires weaker initial program signals
+- Most of the wrong answers are due to errors in perceiving heavily occluded objects
+
+### Comments
+- Building structured representations for scenes and sentence meanings in ways that generalize to truly novel situations remains a challenge.
+- It is also important for symbolic representation of language.
+- Recent progress on **unsupervised or weakly supervised representation learning**, in both language and vision, offer some **promise of generalization**
+
+---
+## The Neuro-Symbolic Concept Learner
+### Introduction
+
+
+### Approach
+
+
+### Experiments
+
+
+### Comments
+
 ---
 ## Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs
 ### Introduction
@@ -1017,127 +1143,6 @@ $$
 ### Comments
 - VQA v2 dataset may be not a good testbed for XMNs
 - In GT setting, each nodes and edges are the concatenation of their corresponding label embedding. Are their the same length?
-
----
-## Neural-Symbolic VQA
-### Introduction
-*Abstract*
-- Combine two powerful ideas: **deep representation learning** for visual recognition and language understanding; **symbolic program execution for reasoning**
-
-*Advantages of incorporating symbolic structure*
-- More **robust to long program traces**
-- Model is more **data- and memory-efficient**
-- Symbolic program execution offers **full transparency to the reasoning process**
-
-### Approach
-
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Overall-framework.png " width="600" hegiht="400" align=center/>
-
-*Components*
-- A scene parser (de-renderer)
-- A question parser (program generator)
-- A program executor
-
-#### Scene parser
-- Mask R-CNN to generate **segment proposals** of all objects
-- Predict the categorical labels of discrete intrinsic attributes
-- Predict the spacial attributes such as pose and 3D coordinates
-
-#### Question parser
-- Attention-based **sequence to sequence model** with an **encoder-decoder** structure 
-- Encoder: bidirectional LSTM
-- Decoder: a similar LSTM
-- The context vector together with the decoder output is passed to fully connected layer to obtain the distribution for the predicted token
-
-#### Program executor
-- Program executor: a collection of deterministic, generic functional modules in python; designed to **host all logic operations behind the questiosn in the dataset**
-- Each functional module is in **one-to-one corresondence** with tokens from the input program sequence (same with [IEP](Inferring-and-Executing-Programs-for-Visual-Reasoning))
-
-#### Training Paradigm
-- Mask R-CNN: Detectron
-- Reasoning: firstly, a small number of ground truth question-program pairs for direct supervision; Then, REINFORCE to fine-tune the parser
-
-### Experiments
-#### Data-Efficient, Interpretable Reasoning
-*Dataset*
-- CLEVR
-
-*Experiment Ablations*
-- Numbers of ground-truth programs used for pretraining
-- Question-answer pairs for REINFORCE
-
-*Evaluation Aspects*
-- The correctness of the answer
-- How well the proposed method recovers the underlying program
-
-*Results*
-
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-CLEVR.png" width="600" hegiht="400" align=center/>
-
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Qualitative-Results-vs-CLEVR.png" width="600" hegiht="400" align=center/>
-
-- The proposed NS-VQA outperform other methods on all five question types
-
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Efficiency-Experiments.png" width="600" hegiht="400" align=center/>
-
-
-- The proposed NS-VQA outperforms the IEP baseline even with a weaker supervision 
-- While trained on 500 annoated programs, NS-VQA achieved about 88% program accuracy vs. IEP (recovers half of the programs for 9K annoated programs)
-- NS-VQA achieved almost perfect on answer accuracy and program accuracy while trained with 9K programs
-- Comparing with MAC, NS-VQA need 270 programs (MAC do not need annoated programs), but requires fewer question-answer pairs to train
-- NS-VQA requires minimal memory for offline question answering
-
-*Training*
-- First pretrain the question parser on **270 annotated programs** sampled across the 90 question templates
-- Run REINFORCE on all the question-answer pairs
-
-#### Generalizing to Unseen Attribute Combinations
-*Dataset*
-
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-CLEVR-CoGenT-Human.png" width="600" hegiht="400" align=center/>
-
-- CLEVR-CoGenT: consisted of split A and B in which objects have opposite colors
-- 70K imaes and 700K questions for training 
-- 15K images and 150K questions for evaluation and testing
-
-*Results*
-- The vanilla NS-VQA trained purely on split A does not generalize as well as SOTA
-- After fine-tune the attribute recognition network (does not fine-tune on questions or progrms), the NS-VQA performs well generalization ablility.
-
-#### Generalizing to Questions from Humans
-*Dataset*
-- CLEVR-Humans
-
-*Results*
-- Outperforms IEP by a **considerable margin** under **small amount of annotated programs**
-
-#### Extending to New Scene Context
-
-<img src="https://github.com/qiuyue1993/Notes/blob/master/VQA/images/Paper-Summarize_NSVQA_Results-on-Minecraft.png " width="600" hegiht="400" align=center/>
-
-*Dataset*
-- Objects and scenes are taken from minecraft world
-- Each image consists of 3 to 6 objects, each object is sampled from 12 entities
-- Generate diverse questions and programs based on the objects' categorical and spatial attributes
-- Differences with CLEVR: a larger set of 3D objects with richer image content and visual appearance; questions involve hierarchical attributes
-
-*Results*
-- Reasoning on Minecraft generally requires weaker initial program signals
-- Most of the wrong answers are due to errors in perceiving heavily occluded objects
-
-### Comments
-- Building structured representations for scenes and sentence meanings in ways that generalize to truly novel situations remains a challenge.
-- It is also important for symbolic representation of language.
-- Recent progress on **unsupervised or weakly supervised representation learning**, in both language and vision, offer some **promise of generalization**
-
----
-## The Neuro-Symbolic Concept Learner
-
-
-
-
-
-
 
 --
 ## Learning Conditioned Graph Structures for Interpretable Visual Question Answering
