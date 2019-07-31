@@ -910,6 +910,22 @@ $$
 - Propose **Neuro-Symbolic Concept Learner (NS-CL)**, a model that **learns visual concepts, words, and semantic parsing of sentences** without **explicit supervision**
 - Using **curriculum learning** to guide the searching over the **large compositional space** of images and language
 
+*Three modules*
+- Neural-based perception module: extracts **object-level representations** from the scene
+- Visually-grounded semantic parser: **translate questions** into executable programs
+- Symbolic program executor: reads out the perceptual representation of objects, classifies their attributes/relations, and **executes the program** to obtain an answer
+
+*Curriculum learning*
+- NS-CL starts by **learning representations/concepts of individual objects** from short questions and simple scenes
+- NS-CL then learns **relational concepts** by leveraging these object-based concepts to **interpret object referrals**
+- The model iteratively adapts to more complex scenes and highly compositional questions
+
+*Generalization abilities*
+- Generalize to scenes with more objects and longer semantic programs
+- Generalize to new visual attribute compositions
+- Enables fast adaptation to novel visual concepts
+- The learned visual concepts transfer to new tasks, such as **image-caption retrieval** without any extra fine-tuning
+
 ### Approach
 
 
