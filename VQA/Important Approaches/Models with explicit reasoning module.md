@@ -938,18 +938,24 @@ $$
 
 #### Model Details
 *Visual Perception*
-
+- Pretrained Mask R-CNN to generate object proposals.
+- The bbox for each object paired with the original image is sent to ResNet-34 to extract the region-based and image-based features
+- Concatenate region-based and image-based features to represent object
 
 
 *Concept Quantization*
-
-
+- Visual attributes are implemented as **neural operators**: mapping the object representation into an attribute-specific embedding space
+- Use similarity-based metric to classify objects
 
 *DSL and semantic parsing*
-
-
+- Semantic parsing module **translates a natural language question into an executable program** with a hierarchy of primitive operations, represented in a domain-specific language (DSL) designed for VQA
+- The operations **share the same input and output interface**
+- Generates the hierarchies of latent programs in a **sequence to tree manner**
+- Bidirectional GRU Encoder-Decoder
 
 *Quasi-symbolic program execution*
+- Executes the program and derives the answer based on the object-based visual representation.
+- Program executor is a collection of deterministic functional modules designed to realize all logic operations specified in the DSL
 
 
 #### Training Paradigm
