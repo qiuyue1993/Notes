@@ -926,6 +926,9 @@ $$
 - Enables fast adaptation to novel visual concepts
 - The learned visual concepts transfer to new tasks, such as **image-caption retrieval** without any extra fine-tuning
 
+*Important points*
+- They propose to **use visual grounding as distant supervision** to parse questions into explicit programs with **zero program annotations**
+
 ### Approach
 
 
