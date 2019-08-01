@@ -930,6 +930,37 @@ $$
 - They propose to **use visual grounding as distant supervision** to parse questions into explicit programs with **zero program annotations**
 
 ### Approach
+#### Overview
+- First, use a **visual perception module** to construct an **object-based representation** for a scene
+- Then, run a **semantic parsing module** to translate a question into an **executable program**
+- Next, apply a **quasi-symbolic program executor** to infer the answer based on the scene representation
+- We use **paired images, questions, and answers** to jointly train the visual and language modules
+
+#### Model Details
+*Visual Perception*
+
+
+
+*Concept Quantization*
+
+
+
+*DSL and semantic parsing*
+
+
+
+*Quasi-symbolic program execution*
+
+
+#### Training Paradigm
+*Optimization Objective*
+
+
+
+*Curriculum visual concept learning*
+
+
+#### 
 
 
 ### Experiments
