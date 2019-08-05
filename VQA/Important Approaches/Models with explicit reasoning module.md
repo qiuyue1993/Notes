@@ -960,19 +960,44 @@ $$
 
 #### Training Paradigm
 *Optimization Objective*
+- concept learning
+- language understanding
 
-
+*Traning*
+- Using REINFORCE to optimize the semantic parser
 
 *Curriculum visual concept learning*
-
-
-#### 
-
+- Split training samples into four stages
+- First, learning object-level visual concepts
+- Second, learning relational questions
+- Third, learning more complex questions with perception modules fixed
+- Fourth, joint fine-tuning of all modules
 
 ### Experiments
+#### Visual Concept Learning
+
+
+
+#### Data-efficient and interpretable visual reasoning
+
+
+
+#### Generalization to new attributes and compositions
+
+
+#### Combinatorial generalization to new scenes and questions
+
+
+#### Extending to other program domain
+
+
+
+#### Extending to natural images and language
 
 
 ### Comments
+
+
 
 ---
 ## Explainable-and-Explicit-Visual-Reasoning-over-Scene-graphs
