@@ -133,3 +133,7 @@ $$
 - **Prediction: evaluate the future** ??
 - **Control: optimise the future** ??
 
+## References
+- [Video](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ&index=1)
+- [Slides](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/intro_RL.pdf)
+- [Chinese Summarize](https://zhuanlan.zhihu.com/p/50553186)
