@@ -72,6 +72,64 @@ $$
 - Formally, this is a **Markov decision process (MDP)**
 
 ## Partially Observable Environments
-- 
+- $O_t \neq S_t^{a}$
+- Agent must construct its own state representation 
 
+## Major Components of an RL Agent
+- Policy: **agent's behaviour function**
+- Value function: how good is each state and /or action
+- Model: agent's representation of the environment
+
+### Policy
+- The agent's behaviour
+- A map from state to action
+- Deterministic policy: a = \pi (s)
+- Stochastic policy: \pi (a|s) = P[A_t = a | S_t = s]
+
+### Value Function
+- A prediction of future reward
+
+### Model
+- Predicts what the environment will do next
+- $P$ predicts the next state
+- $R$ predicts the next reward
+
+## Categorizing RL agents (1)
+*Value Based*
+- Value Function
+- No Policy (Implicit)
+
+*Policy Based*
+- Policy
+- No Value Function
+
+*Actor Critic*
+- Policy 
+- Value Function
+
+## Categorizing RL agents (2)
+*Model Free*
+- Policy and / or Value Function
+- No Model
+
+*Model Based*
+- Policy and / or Value Function
+- Model
+
+## Learning and Planning
+*Reinforcement Learning*
+- The environment is initially unknown
+- The agent interacts with the environment
+- The agent improves its policy
+
+*Planning*
+- A model of the environment is known
+
+## Exploration and Exploitation
+- *Exploration* finds more information about the environment
+- *Exploitation* exploits known information to maximise reward
+
+## Prediction and Control
+- **Prediction: evaluate the future** ??
+- **Control: optimise the future** ??
 
