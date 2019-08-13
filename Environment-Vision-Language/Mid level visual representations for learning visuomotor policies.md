@@ -23,7 +23,12 @@
 - Relaxing the **fixed set of mid-level features constraint** may improve the performance
 - **Lifelong learning** of updating the visual estimators are important future research questions.
 
+**Problems of existing RL**
 - Previous research on RL of **pixel-to-torque** raised a question that **if all one needs from images can be learned from scratch using raw pixels by RL?**
+- Requires massive amounts of data, resulting policies exhibit difficulties reproducing across environments with even modest visual differences
+
+**Proposals**
+- Including appropriate perceptual priors can alleviate these two phenomena, improving generalization and sample efficiency
 
 ---
 ## Approach
