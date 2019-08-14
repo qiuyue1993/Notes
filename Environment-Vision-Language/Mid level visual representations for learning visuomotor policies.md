@@ -28,7 +28,14 @@
 - Requires massive amounts of data, resulting policies exhibit difficulties reproducing across environments with even modest visual differences
 
 **Proposals**
-- Including appropriate perceptual priors can alleviate these two phenomena, improving generalization and sample efficiency
+- Including appropriate perceptual priors can alleviate these two phenomena, improving generalization and sample 
+- We study how much **standard mid-level vision tasks and their associated features** can be used with **RL frameworks** in order to **train effective visuomotor policies**
+- Analysis three questions: learning speed; generalization to unseen test spaces; whether a fixed feature could suffice or a set of features is required for supporting arbitrary motor tasks.
+- We put forth a simple and practicle solver that takes a large set of features and outputs a smaller feature subset that minimizes the worst-case distance between the selected subset and the best-possible choice
+
+
+
+
 
 ---
 ## Approach
