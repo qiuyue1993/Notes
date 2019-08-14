@@ -42,15 +42,19 @@
 - Our setup assumes access to a set of features, where each feature is a function that can be applied to raw sensory data
 
 ### Using Mid-Level Vision for Active Tasks
-
-
+- Choose 20 mid-level visual task 
+- Freeze each encoder's weights to transform each observed image
+- During training, only the agent policy is updated
 
 ### Core Questions
-
+- **Sample Efficiency**: examine if an agent can learn faster
+- **Generalization**: can agent generalize better to unseen spaces
+- **Single Feature or Feature Set**: can a single feature support all downstream tasks? Is a set of features requried for gaining the feature benefits on arbitrary active tasks?
+- **Findings**: depth estimation features perform well for visual exploration and object classification for target-driven navigation
 
 ### A Covering Set for Mid-Level Perception
-
-
+- A compact feature set is desirable; therefore, we propose a **Max-Coverage Feature Selector** that curates a compact subset of features
+- **With a measure of distance between features, we can explicitly minimize the worst-case distance between the best feature and out selected subset**; The taxonomy method defines exactly such a distance.
 
 ---
 ## Experiments
