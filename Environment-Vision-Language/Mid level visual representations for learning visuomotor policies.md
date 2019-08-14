@@ -8,9 +8,20 @@
 - [References](#References)
 ---
 ## Introduction
+
+- Task Overview
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_illustration-simplified.png" width="600" hegiht="400" align=center/>
+
+
+
 **Abstract**
 - Discuss how much does **having visual priors abouth the world** assist in learning to perform **downstream motor tasks**
 - By **integrating a generic perceptual skill set** within a **reinforcement learning framework**
+
+- Illustration
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_illustration-detailed.png" width="600" hegiht="400" align=center/>
 
 **Finding and Approach**
 - Finding: The correct choice of feature depends on the downstream task.
@@ -42,6 +53,10 @@
 - Our setup assumes access to a set of features, where each feature is a function that can be applied to raw sensory data
 
 ### Using Mid-Level Vision for Active Tasks
+- Mid-Level Tasks
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_Mid-Level-Tasks.png" width="600" hegiht="400" align=center/>
+
 - Choose 20 mid-level visual task 
 - Freeze each encoder's weights to transform each observed image
 - During training, only the agent policy is updated
@@ -53,6 +68,11 @@
 - **Findings**: depth estimation features perform well for visual exploration and object classification for target-driven navigation
 
 ### A Covering Set for Mid-Level Perception
+
+- Geometry of the feature sets
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_Geometry-of-feature-set.png" width="600" hegiht="400" align=center/>
+
 - A compact feature set is desirable; therefore, we propose a **Max-Coverage Feature Selector** that curates a compact subset of features
 - **With a measure of distance between features, we can explicitly minimize the worst-case distance between the best feature and out selected subset**; The taxonomy method defines exactly such a distance.
 
@@ -74,6 +94,11 @@
 - For local planning and exploration, train/test cover 154.9 and 1270.1 square meters
 
 #### Downstream Active Tasks
+
+- Active tasks
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_active-tasks.png" width="600" hegiht="400" align=center/>
+
 *Navigation to a Visual Target*
 - Task: locate a specific target object as fast as possible
 - Touching the target: one-time positive reward +10
@@ -139,11 +164,27 @@
 
 ### Experimental results on hypothesis testing
 #### Hypothesis 1: Sample Complexity Results
+
+- Sample Efficiency results
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_sample-efficiency-results.png" width="600" hegiht="400" align=center/>
+
+
 - For each of the active tasks, several feature-based agents learn significantly faster than *scratch*
 - Policy trained with object classification recognizes and converges on the navigation target, but fails to cover the entire space in exploration
 - Distance estimation features only help the agent cover nearly the entire space in exploration, but fail in navigation 
 
 #### Hypothesis 2: Generalization Results
+
+- Train and test environment examples
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_train-test-environments.png" width="600" hegiht="400" align=center/>
+
+
+- Generalization Results
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_Generalization-results.png" width="600" hegiht="400" align=center/>
+
 *Large-Scale Analysis*
 - For all task, there is a significant gap between train/test performance for scratch, and a much smaller one for the best feature
 
@@ -151,6 +192,15 @@
 - Agents trained from scratch seem to **overfit completely**, rarely doing better than blind agents in the test environment
 
 #### Hypothesis 3: Rank Reversal Results
+
+- Comparison with SOTA
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_mid-level-vs-sota.png" width="600" hegiht="400" align=center/>
+
+- Rank Reversal Results
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_rank-reversal-results.png" width="600" hegiht="400" align=center/>
+
 - We found that there may not be one or two single features that consistently outperform all others
 - The top-performing exploration agent used *Distance Estimation features*
 - The top navigation agent used *Ojbect Classification features*
@@ -160,6 +210,15 @@
 - The SOTA representation learning methods are similarly task-specific, but the best feature outperforms them by a large margin
 
 ### Max-Coverage Feature Set Analysis
+
+- Max-Coverage feature set results
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_max-coverage-feature-set-results.png" width="600" hegiht="400" align=center/>
+
+- Test Trajectories results
+
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_agent-trajectories-during-test.png" width="600" hegiht="400" align=center/>
+
 *Overview*
 - Use feature set (with size $k=1 to 4$)
 
