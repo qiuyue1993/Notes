@@ -36,11 +36,21 @@
 **Findings**
 - Appropriate **choice of feature** depends fiercely on the final task. Solving multiple active tasks therefore requires a set of features.
 
-
-
-
 ---
 ## Approach
+### Overall
+- Our setup assumes access to a set of features, where each feature is a function that can be applied to raw sensory data
+
+### Using Mid-Level Vision for Active Tasks
+
+
+
+### Core Questions
+
+
+### A Covering Set for Mid-Level Perception
+
+
 
 ---
 ## Experiments
