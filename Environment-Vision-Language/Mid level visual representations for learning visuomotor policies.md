@@ -33,6 +33,8 @@
 - Analysis three questions: learning speed; generalization to unseen test spaces; whether a fixed feature could suffice or a set of features is required for supporting arbitrary motor tasks.
 - We put forth a simple and practicle solver that takes a large set of features and outputs a smaller feature subset that minimizes the worst-case distance between the selected subset and the best-possible choice
 
+**Findings**
+- Appropriate **choice of feature** depends fiercely on the final task. Solving multiple active tasks therefore requires a set of features.
 
 
 
