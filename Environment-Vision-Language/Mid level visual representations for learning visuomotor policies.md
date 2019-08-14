@@ -21,7 +21,7 @@
 
 - Illustration
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_illustration-detailed.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_illustration-detailed.png" width="800" hegiht="400" align=center/>
 
 **Finding and Approach**
 - Finding: The correct choice of feature depends on the downstream task.
@@ -71,7 +71,7 @@
 
 - Geometry of the feature sets
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_Geometry-of-feature-set.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_Geometry-of-feature-set.png" width="400" hegiht="200" align=center/>
 
 - A compact feature set is desirable; therefore, we propose a **Max-Coverage Feature Selector** that curates a compact subset of features
 - **With a measure of distance between features, we can explicitly minimize the worst-case distance between the best feature and out selected subset**; The taxonomy method defines exactly such a distance.
@@ -178,12 +178,12 @@
 
 - Train and test environment examples
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_train-test-environments.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_train-test-environments.png" width="800" hegiht="400" align=center/>
 
 
 - Generalization Results
 
-<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_Generalization-results.png" width="600" hegiht="400" align=center/>
+<img src="https://github.com/qiuyue1993/Notes/blob/master/Environment-Vision-Language/Images/Paper-Summarize_Mid-Level-RL_Generalization-results.png" width="800" hegiht="400" align=center/>
 
 *Large-Scale Analysis*
 - For all task, there is a significant gap between train/test performance for scratch, and a much smaller one for the best feature
