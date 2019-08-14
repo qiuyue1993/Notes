@@ -116,11 +116,37 @@
 - For each task and environment, conduct a hyperparameter search optimized for the *scratch* baseline and reuse it for every feature
 
 ### Baselines
+*Tabula Rasa (Scratch) Learning*
+- Trains the agent from scratch. Receives the raw RGB images as input and uses a randomly **initialized AtariNet tower**
 
+*Blind Intelligent Actor*
+- Similiar with *Scratch*, except that the visual input is a fixed image and does not depend on the state of the environment
 
+*Random Nonlinear Projections*
+- Identical to using *mid-level* features, except that the encoder network is randomly initialized and then frozen
+
+*Pixels as Features*
+- Identical to using *mid-level* features, except that they downsample the input image to the same size as the features and use it as the feature
+
+*Random Actions*
+- Uniformly randomly samples from the action space
+
+*SOTA Feature Learning*
+- Dynamic modeling
+- Curiosity
+- DARLA
+- ImageNet pretraining
 
 ### Experimental results on hypothesis testing
+#### Hypothesis 1: Sample Complexity Results
+- For each of the active tasks, several feature-based agents learn significantly faster than *scratch*
+- Policy trained with object classification recognizes and converges on the navigation target, but fails to cover the entire space in exploration
+- Distance estimation features only help the agent cover nearly the entire space in exploration, but fail in navigation 
 
+#### Hypothesis 2: Generalization Results
+
+
+#### Hypothesis 3: Rank Reversal Results
 
 
 
