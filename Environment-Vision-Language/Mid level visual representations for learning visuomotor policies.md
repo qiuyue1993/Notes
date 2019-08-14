@@ -101,13 +101,19 @@
 - Low-level controller for robot actuation
 - Actions: turn left, turn right, move forward
 
-
 #### Mid-Level Features
-
+- 20 different computer vision tasks
+- texture-based tasks (denoising)
+- 3D pixel-level (depth estimation)
+- low-dimensional geometry (room layout)
+- semantic tasks (object classification)
+- Use pre-trained network of taskonomy with ResNet-50 encoder without a global average-pooling layer
+- All networks use identical hyperparameters
 
 #### Reinforcement Learning Algorithm
-
-
+- Use the common Proximal Policy Optimization (PPO) algorithm with Generalized Advantage Estimation
+- Using experience replay and off-policy variant of PPO
+- For each task and environment, conduct a hyperparameter search optimized for the *scratch* baseline and reuse it for every feature
 
 ### Baselines
 
