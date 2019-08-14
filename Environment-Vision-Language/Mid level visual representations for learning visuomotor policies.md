@@ -58,6 +58,73 @@
 
 ---
 ## Experiments
+### Overall
+- 20 vision features, 4 baselines, 3-8 seeds per scenario
+- 800 policies
+- 109,639 GPU-hours
+
+### Experimental Setup
+*Environments*
+- Gibson environment (perceptually similar to the real world)
+
+*Train/Test Split*
+- Train and test in two disjoint sets of buildings
+- Training space: 40.2 square meters
+- Testing space: 415.6 square meters
+- For local planning and exploration, train/test cover 154.9 and 1270.1 square meters
+
+#### Downstream Active Tasks
+*Navigation to a Visual Target*
+- Task: locate a specific target object as fast as possible
+- Touching the target: one-time positive reward +10
+- Otherwise, small penalty -0.025 for living
+- Maximum episode length: 400
+- Shortest path: avg. 30 steps
+
+*Visual Exploration*
+- Must visit as many new parts of the space as quickly as possible
+- The environment is partitioned into small occupancy cells
+- Reward: proportional to the number of newly revealed cells
+- Maximum episode length: 1000
+
+*Local Planning*
+- The agent must direct itself to a given nonvisual target destination using visual inputs, avoid obstacles and walls
+- Receives dense positive reward proportional to the progress it makes toward the goal, penalized for colliding with walls and objects
+- A small negative reward for living
+- Maximum episode length: 400
+
+*Observation Space*
+- RGB image
+- Minimum amount of side information
+
+*Action Space*
+- Low-level controller for robot actuation
+- Actions: turn left, turn right, move forward
+
+
+#### Mid-Level Features
+
+
+#### Reinforcement Learning Algorithm
+
+
+
+### Baselines
+
+
+
+### Experimental results on hypothesis testing
+
+
+
+
+### Max-Coverage Feature Set Analysis
+
+
+
+### Universality Experiments
+
+
 
 
 
