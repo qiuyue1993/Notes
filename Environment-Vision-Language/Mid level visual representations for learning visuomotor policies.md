@@ -144,15 +144,33 @@
 - Distance estimation features only help the agent cover nearly the entire space in exploration, but fail in navigation 
 
 #### Hypothesis 2: Generalization Results
+*Large-Scale Analysis*
+- For all task, there is a significant gap between train/test performance for scratch, and a much smaller one for the best feature
 
+*Mind the Gap*
+- Agents trained from scratch seem to **overfit completely**, rarely doing better than blind agents in the test environment
 
 #### Hypothesis 3: Rank Reversal Results
-
-
+- We found that there may not be one or two single features that consistently outperform all others
+- The top-performing exploration agent used *Distance Estimation features*
+- The top navigation agent used *Ojbect Classification features*
+- The trend of **rank reversal** appears to be a widespread phenomenon
+- The **semantic features are useful for navigation**
+- The **geometric features are useful for exploration**
+- The SOTA representation learning methods are similarly task-specific, but the best feature outperforms them by a large margin
 
 ### Max-Coverage Feature Set Analysis
+*Overview*
+- Use feature set (with size $k=1 to 4$)
 
+*Performance*
+- With $k=4$ features, proposed max-coverage feature set can match or exceed the performance of the *best* task-specific feature
 
+*Sample Efficiency*
+- The proposed max-coverage feature set expected to be worse. However, they did not find a noticeable difference
+
+*Practicality*
+- The structure lends itself well to model-parallelism on modern computatinal architectures
 
 ### Universality Experiments
 
