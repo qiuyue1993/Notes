@@ -173,9 +173,14 @@
 - The structure lends itself well to model-parallelism on modern computatinal architectures
 
 ### Universality Experiments
+*Universality in Additional Buildings*
+- Repeat testing in 9 other buildings 
+- **Spearman's p of 0.93 for navigation and 0.85 for exploration**
 
-
-
+*Universality in Additional Simulators*
+- Test in VizDoom 3D simulator
+- The results is similar with in Gibson
+- Only feature-based agents can generalize without texture randomization during training
 
 
 ---
