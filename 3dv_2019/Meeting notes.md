@@ -71,7 +71,51 @@
 - Take home message: known your sensors
 
 
+# Day 2: Keynote speak
+## Speaker
+- Andrew Davison
+- Contents: from SLAM to Spatial AI
 
+
+- SLAM enabled products and systems
+- Cumulative levels of SLAM: robust localization; dense mapping; semantic understanding
+
+### Examples of Spatial AI system
+- Robot
+- AR glasses
+
+### A large gap to close
+- Despite rapid progress, there is still a long way to go
+
+### History - PhD work
+- AIST?
+- MonoSLAM: sparse feature-based slam (Used a strange, old-style visualization system; augmented for a simple AR)
+- Dyson 360 Eye: visual monoslam using omni-directional camera; dyson have big ambitions in home robotics; impressive 
+- Dense SLAM: PTAM, DTAM, Kinect, Kinect-fusion
+- Elastic Fusion: 
+- Semantic Fusion: combines elastic fusion with semantic segmentation network (ICRA 2017)
+- Semantic SLAM is important for spatial AI
+
+- SLAM meets Deep Learning: a sliding scale between end-to-end model and human-designed algorithm
+
+### New representations for spatial AI
+- CodeSLAM (CVPR 2018)
+- SceneCode (CVPR 2019)
+
+- SLAM + Object Recognition (3D Scene representation at object level)
+- Fusion++ (3DV2018): Used mask R-CNN
+- Event Cameras: toward SLAM competences
+
+- SLAMBench project (Graphcore-IPU(not CPU or GPU; graph; suited for SLAM))
+
+
+### Spatial AI brain
+- camra processors
+- camera interfaces
+- sensor interface
+- actuator interface
+- real-time loop
+- map store
 
 
 
