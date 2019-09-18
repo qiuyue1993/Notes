@@ -117,8 +117,31 @@
 - real-time loop
 - map store
 
+# Day3: Progress in Unsupervised Domain Alignment with GANs
+
+## GAN and recent develpments
+- Latent variables 
+- BigGAN
+- StyleGAN; AdaIN (feature wise linear transformation)
+- SPADE: (normalization, alpha, beta)
 
 
+## CycleGAN
+- Transform across domain without pair-wised data
+- General GAN loss + cycle consistence loss (L1 reconstruction)
+- Cycle gan seems to be doing pixel-level retexturing
+- Stochastic CycleGAN: add noise (determistic to stochastic -- shoes and edges)
+- Augmented CycleGAN: augment cycleGAN with latent variables
+
+## ICCV2019: batch weight for domain adaptation with mass shift
+- S1 and S2 forms clear clusters, but have different frequencies
+- using batch weight (///)
+- compared JDBW with MUNIT (munit does style transfer, not really domain adaptation)
+- Unsupervised semantic coupling: minist to svhn
+
+## 3D Structure from single ianmge data
+- Generates 3D models from 2D images
+- HoloGAN (Uses initial 3D CNN blocks; transforms features in the 3D feature spaces; projects to 2D convolutional layers)
 
 
 
