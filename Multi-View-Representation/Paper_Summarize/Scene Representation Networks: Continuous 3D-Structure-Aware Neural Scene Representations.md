@@ -32,6 +32,16 @@
 ---
 ## Related Work
 
+### Geometric Deep Learning
+- These methods are successful at modeling geometry
+- Often require 3D supervision
+
+### Nerual Scene Representations
+- Often latent codes of autoencoders
+- Models with unstructured scene representations fail to correct perform viewpoint transformations.
+
+### Neural Image Synthesis
+- Compositional Pattern Producing Networks parameterize images as learned functions that **map 2D image coordinates to color**.
 
 ---
 ## References
