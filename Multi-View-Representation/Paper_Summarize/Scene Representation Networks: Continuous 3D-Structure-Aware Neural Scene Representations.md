@@ -30,7 +30,7 @@
 - SRNs currently do not model view-dependent effects and reconstruct shape and appearance in an entangled manner. 
 
 ---
-## Related-Work
+## Related Work
 
 
 ---
