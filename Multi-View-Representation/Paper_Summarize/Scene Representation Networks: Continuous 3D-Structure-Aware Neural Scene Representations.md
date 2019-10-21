@@ -30,6 +30,10 @@
 - SRNs currently do not model view-dependent effects and reconstruct shape and appearance in an entangled manner. 
 
 ---
+## Related-Work
+
+
+---
 ## References
 - [Paper](https://arxiv.org/pdf/1906.01618.pdf)
 - [Code](https://github.com/vsitzmann/scene-representation-networks)
