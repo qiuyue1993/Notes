@@ -29,6 +29,7 @@
 ### Limitations
 - SRNs currently do not model view-dependent effects and reconstruct shape and appearance in an entangled manner. 
 
+$I_i$
 ---
 ## Related Work
 
