@@ -6,6 +6,10 @@
 - [References](#References)
 ---
 
+CLEVR
+Neural baby talk
+shape--
+
 ## Application Papers
 
 ### SplitNet: Sim2Sim and Task2Task Transfer for Embodied Visual Navigation
@@ -134,4 +138,5 @@
 
 ---
 
+SRNs, scenes, generation or VQA
 
