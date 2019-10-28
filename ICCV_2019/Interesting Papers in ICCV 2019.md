@@ -143,3 +143,6 @@ SRNs, scenes, generation or VQA
 Knowledge
 
 Grounding
+
+Self-cri tical　ｒｌ
+Gumble softmax sampling
