@@ -136,14 +136,4 @@
 
 ---
 
-- SRNs, scenes, generation or VQA
 
-- Knowledge
-
-- Grounding
-
-- Self-critical　rl
-- Gumble softmax sampling
-
-- Wiki
-- Language
