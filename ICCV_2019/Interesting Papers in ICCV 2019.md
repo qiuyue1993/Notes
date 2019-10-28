@@ -6,9 +6,7 @@
 - [References](#References)
 ---
 
-https://github.com/rohitgirdhar/CATER
-Neural baby talk
-ShapeGlot: Learning Language for Shape Differentiation
+
 
 ## Application Papers
 
