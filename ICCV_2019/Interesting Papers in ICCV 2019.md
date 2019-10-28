@@ -138,11 +138,14 @@ ShapeGlot: Learning Language for Shape Differentiation
 
 ---
 
-SRNs, scenes, generation or VQA
+- SRNs, scenes, generation or VQA
 
-Knowledge
+- Knowledge
 
-Grounding
+- Grounding
 
-Self-cri tical　ｒｌ
-Gumble softmax sampling
+- Self-critical　rl
+- Gumble softmax sampling
+
+- Wiki
+- Language
