@@ -6,9 +6,9 @@
 - [References](#References)
 ---
 
-CLEVR
+https://github.com/rohitgirdhar/CATER
 Neural baby talk
-shape--
+ShapeGlot: Learning Language for Shape Differentiation
 
 ## Application Papers
 
