@@ -140,3 +140,6 @@ ShapeGlot: Learning Language for Shape Differentiation
 
 SRNs, scenes, generation or VQA
 
+Knowledge
+
+Grounding
