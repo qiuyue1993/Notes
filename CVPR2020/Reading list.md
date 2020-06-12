@@ -192,7 +192,7 @@
 ### Embodied Language Grounding With 3D Visual Feature Representations 
 
 ---
-## Embodied Ai
+## Embodied AI
 
 ### RoboTHOR:An Open Simulation-to-Real Embodied AI Platform
 
