@@ -18,21 +18,63 @@
 ---
 ## Language and Vision
 
-### Fantastic Answers and Where to Find Them: Immersive Question-Directed Visual Attention
+### Visual Question Answering (VQA) / Text Visual Question Answering (TextVQA)
+- Fantastic Answers and Where to Find Them: Immersive Question-Directed Visual Attention
 
-### Image Search With Text Feedback by Visiolinguistic Attention Learning
+- Towards Causal VQA: Revealing and Reducing Spurious Correlations by Invariant and Covariant Semantic Editing
 
-### Context-Aware Attention Network for Image-Text Retrieval
+- Hierarchical Conditional Relation Networks for Video Question Answering (**Oral**)
 
-### More Grounded Image Captioning by Distilling Image-Text Matching Model
+- Iterative Answer Prediction With Pointer-Augmented Multimodal Transformers for TextVQA (**Oral**)
 
-### Show, Edit and Tell:A Framework for Editing Image Captions
+- SQulNTing at VQA Models:Introspecting VQA Models With Sub-Questions (**Oral**)
+
+- TA-Student VQA:Multi-Agents Training by Self-Questioning (**Oral**)
+
+- On the General Value of Evidence, and Bilingual Scene-Text Visual Question Answering
+
+- In Defense of Grid Features for Visual Question Answering
+
+- VQA With No Questions-Answers Training
+
+### Image Captioning / Image Captioning Generation
+- More Grounded Image Captioning by Distilling Image-Text Matching Model
+
+- Show, Edit and Tell:A Framework for Editing Image Captions
+
+- Say As You Wish:Fine-Grained Control of Image Caption Generation With Abstract Scene Graphs (**Oral**)
+
+- Normalized and Geometry-Aware Self-Attention Network for Image Captioning
+
+### Image-Text Retrieval / Search
+
+- Image Search With Text Feedback by Visiolinguistic Attention Learning
+
+- Context-Aware Attention Network for Image-Text Retrieval
+
+### Image Editing / Manipulation via Text
+- ManiGAN: Text-Guided Image Manipulation
+
+### Image generation from text
+
+
+### Visual Referring Expression
+- Graph-Structured Referring Expression Reasoning in the Wild (**Oral**)
+
+- REVERIE:Remote Embodied Visual Referring Expression in Real Indoor Environments (**Oral**)
+
+- Multi-Task Collaborative Network for Joint Referring Expression Comprehension and Segmentation (**Oral**)
+
+- Cops-Ref:A New Dataset for Task on Compositional Refering Expression Comprehension
+
+### Vision-Language Navigation (VLN)
+- Vision-Language Navigation With Self-Supervised Auxiliary Reasoning Tasks (**Oral**)
+
+### Visual Dialog
+- Iterative Context-Aware Graph Inference for Visual Dialog (**Oral**)
+
 
 ### UnrealText:Synthesizing Realistic Scene Text Images from the Unreal World
-
-### ManiGAN: Text-Guided Image Manipulation
-
-### Towards Causal VQA: Revealing and Reducing Spurious Correlations by Invariant and Covariant Semantic Editing
 
 ### Deep Relational Reasoning Graph Network for Arbitrary Shape Text Detection (**Oral**)
 
@@ -40,49 +82,25 @@
 
 ### Visual-Textual Capsule Routing for Text-Based Video Segmentation (**Oral**)
 
-### Graph-Structured Referring Expression Reasoning in the Wild (**Oral**)
-
-### Say As You Wish:Fine-Grained Control of Image Caption Generation With Abstract Scene Graphs (**Oral**)
-
-### Hierarchical Conditional Relation Networks for Video Question Answering (**Oral**)
-
-### REVERIE:Remote Embodied Visual Referring Expression in Real Indoor Environments (**Oral**)
-
-### Iterative Answer Prediction With Pointer-Augmented Multimodal Transformers for TextVQA (**Oral**)
-
-### SQulNTing at VQA Models:Introspecting VQA Models With Sub-Questions (**Oral**)
-
-### Vision-Language Navigation With Self-Supervised Auxiliary Reasoning Tasks (**Oral**)
-
 ### Sign Language Transformers:Joint End-to-End Sign Language Recognition and Translation (**Oral**)
-
-### Multi-Task Collaborative Network for Joint Referring Expression Comprehension and Segmentation (**Oral**)
 
 ### Counterfactual Vision and Language Learning (**Oral**)
 
-### Iterative Context-Aware Graph Inference for Visual Dialog (**Oral**)
-
-### TA-Student VQA:Multi-Agents Training by Self-Questioning (**Oral**)
-
-### Cops-Ref:A New Dataset for Task on Compositional Refering Expression Comprehension
-
 ### Modality Shifting Attention Network for Multi-Modal Video Question Answering
-
-### On the General Value of Evidence, and Bilingual Scene-Text Visual Question Answering
 
 ### PhraseCut: Language-Based Image Segmentation in the Wild
 
 ### Learning Unseen Concepts via Hierarchical Decomposition and Composition
 
-### In Defense of Grid Features for Visual Question Answering
+### 
 
 ### Dense Regression Network for Video Grounding
 
 ### Speech2Action: Cross-Modal Supervision for Action Recognition
 
-### Normalized and Geometry-Aware Self-Attention Network for Image Captioning
+### 
 
-### VQA With No Questions-Answers Training
+### 
 
 ### Video Object Grounding Using Semantic Roles in Language Description
 
