@@ -37,6 +37,8 @@
 
 - VQA With No Questions-Answers Training
 
+- Counterfactual Samples Synthesizing for Robust Visual Question Answering
+
 ### Image Captioning / Image Captioning Generation
 - More Grounded Image Captioning by Distilling Image-Text Matching Model
 
@@ -45,6 +47,12 @@
 - Say As You Wish:Fine-Grained Control of Image Caption Generation With Abstract Scene Graphs (**Oral**)
 
 - Normalized and Geometry-Aware Self-Attention Network for Image Captioning
+
+- Meshed-Memory Transformer for Image Captioning
+
+- Better Captioning With Sequence-Level Exploration
+
+- Transform and Tell:Entity-Aware News Image Captioning
 
 ### Image-Text Retrieval / Search
 
@@ -56,7 +64,7 @@
 - ManiGAN: Text-Guided Image Manipulation
 
 ### Image generation from text
-
+- RiFeGAN:Rich Feature Generation for Text-to-Image Synthesis From Prior Knowledge
 
 ### Visual Referring Expression
 - Graph-Structured Referring Expression Reasoning in the Wild (**Oral**)
@@ -70,9 +78,36 @@
 ### Vision-Language Navigation (VLN)
 - Vision-Language Navigation With Self-Supervised Auxiliary Reasoning Tasks (**Oral**)
 
+- Vision-Dialog Navigation by Exploring Cross-Modal Memory
+
 ### Visual Dialog
 - Iterative Context-Aware Graph Inference for Visual Dialog (**Oral**)
 
+- Two Causal Principles for Improving Visual Dialog
+
+### Video and Language
+
+- Visual-Textual Capsule Routing for Text-Based Video Segmentation (**Oral**)
+
+- Modality Shifting Attention Network for Multi-Modal Video Question Answering
+
+- Dense Regression Network for Video Grounding
+
+- Video Object Grounding Using Semantic Roles in Language Description
+
+- Fine-Grained Video-Text Retrieval With Hierarchical Graph Reasoning
+
+- Where Does It Exist:Spatio-Temporal Video Grounding for Multi-Form Sentences
+
+- Local-Global Video-Text Interactions for Temporal Grounding
+
+- Visual Grounding in Video for Unsupervised Word Translation
+
+- Spatio-Temporal Graph for Video Captioning With Knowledge Distillation
+
+- Straight to the Point:Fast-Forwarding Videos via Reinforcement Learning Using Textual Data
+
+- 
 
 ### UnrealText:Synthesizing Realistic Scene Text Images from the Unreal World
 
@@ -80,13 +115,13 @@
 
 ### ABCNet:Real-Time Scene Text Spotting With Adaptive Bezier-Curve Network (**Oral**)
 
-### Visual-Textual Capsule Routing for Text-Based Video Segmentation (**Oral**)
+### 
 
 ### Sign Language Transformers:Joint End-to-End Sign Language Recognition and Translation (**Oral**)
 
 ### Counterfactual Vision and Language Learning (**Oral**)
 
-### Modality Shifting Attention Network for Multi-Modal Video Question Answering
+### 
 
 ### PhraseCut: Language-Based Image Segmentation in the Wild
 
@@ -94,15 +129,9 @@
 
 ### 
 
-### Dense Regression Network for Video Grounding
-
 ### Speech2Action: Cross-Modal Supervision for Action Recognition
 
 ### 
-
-### 
-
-### Video Object Grounding Using Semantic Roles in Language Description
 
 ### 12-in-1:Multi-Task Vision and Language Representation Learning
 
@@ -112,45 +141,31 @@
 
 ### Referring Image Segmentation via Cross-Modal Progressive Comprehension
 
-### Meshed-Memory Transformer for Image Captioning
+### 
 
-### Fine-Grained Video-Text Retrieval With Hierarchical Graph Reasoning
-
-### Where Does It Exist:Spatio-Temporal Video Grounding for Multi-Form Sentences
-
-### Vision-Dialog Navigation by Exploring Cross-Modal Memory
+### 
 
 ### ALFRED:A Benchmark for Interpreting Grounded Instructions for Everyday Tasks
 
 ### Visual Commonsense R-CNN
 
-### Counterfactual Samples Synthesizing for Robust Visual Question Answering
-
-### Local-Global Video-Text Interactions for Temporal Grounding
+### 
 
 ### Beyond Short-Term Snippet:Video Relation Detection With Spatio-Temporal Global Context
 
-### Visual Grounding in Video for Unsupervised Word Translation
+### 
 
-### Two Causal Principles for Improving Visual Dialog
-
-### Spatio-Temporal Graph for Video Captioning With Knowledge Distillation
+### 
 
 ### A Real-Time Cross-Modality Correlation Filtering Method for Referring Expression Comprehension
 
-### Better Captioning With Sequence-Level Exploration
-
 ### Violin:A Large-Scale Dataset for Video-and-Language Inference
-
-### RiFeGAN:Rich Feature Generation for Text-to-Image Synthesis From Prior Knowledge
 
 ### Graph Structured Network for Image-Text Matching
 
-### Straight to the Point:Fast-Forwarding Videos via Reinforcement Learning Using Textual Data
+### 
 
 ### Multi-Modality Cross Attention Network for Image and Sentence Matching
-
-### X-Linear Attention Networks for Image Captioning
 
 ### On Vocabulary Reliance in Scene Text Recognition
 
@@ -173,8 +188,6 @@
 ### Differentiable Adaptive Computation Time for Visual Reasoning
 
 ### Learning From Web Data With Self-Organizing Memory Module
-
-### Transform and Tell:Entity-Aware News Image Captioning
 
 ### Syntax-Aware Action Targeting for Video Captioning
 
@@ -257,3 +270,7 @@
 - VLN SLAM
 
 - Edit
+
+- No 3D? Or 3D = Embodied
+
+- Video + Language = a lot
