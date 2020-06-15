@@ -8,7 +8,7 @@
 - [Others](#Others)
 
 ---
-## Language and Vision (89)
+## Language and Vision (Oral:18/89)
 
 ### Video / Action and Language (Oral:1/16)
 
