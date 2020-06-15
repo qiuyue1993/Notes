@@ -107,6 +107,19 @@
 
 - Straight to the Point:Fast-Forwarding Videos via Reinforcement Learning Using Textual Data
 
+- Violin:A Large-Scale Dataset for Video-and-Language Inference
+
+- Syntax-Aware Action Targeting for Video Captioning
+
+- Object Relational Graph With Teacher-Recommended Learning for Video Captioning
+
+
+### Audio and Vision
+
+- DAVD-Net:Deep Audio-Aided Video Decompression of Talking Heads (**Oral**)
+
+### Miscellaneous
+
 - 
 
 ### UnrealText:Synthesizing Realistic Scene Text Images from the Unreal World
@@ -159,7 +172,7 @@
 
 ### A Real-Time Cross-Modality Correlation Filtering Method for Referring Expression Comprehension
 
-### Violin:A Large-Scale Dataset for Video-and-Language Inference
+### 
 
 ### Graph Structured Network for Image-Text Matching
 
@@ -173,7 +186,7 @@
 
 ### What Machines See Is Not What They Get: Fooling Scene Text Recognition Models With Adversarial Text Images (**Oral**)
 
-### DAVD-Net:Deep Audio-Aided Video Decompression of Talking Heads (**Oral**)
+### 
 
 ### Webly Supervised Knowledge Embedding Model for Visual Reasoning
 
@@ -189,13 +202,13 @@
 
 ### Learning From Web Data With Self-Organizing Memory Module
 
-### Syntax-Aware Action Targeting for Video Captioning
+### 
 
 ### Learning Visual Emotion Representations From Web Data
 
 ### STEFANN:Scene Text Editor Using Font Adaptive Neural Network
 
-### Object Relational Graph With Teacher-Recommended Learning for Video Captioning
+### 
 
 ### MMTM:Multimodal Transfer Module for CNN Fusion
 
@@ -216,6 +229,8 @@
 ### SwapText:Image Based Texts Transfer in Scenes
 
 ### OrigamiNet:Weakly-Supervised, Segmentation-Free, One-Step, Full Page Text Recognition by learning to unfold
+
+
 
 ---
 ## 3D Vision and Language and Vision
