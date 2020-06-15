@@ -10,7 +10,7 @@
 ---
 ## Language and Vision (89)
 
-### Video / Action and Language (16)
+### Video / Action and Language (Oral:1/16)
 
 - Visual-Textual Capsule Routing for Text-Based Video Segmentation (**Oral**)
 
@@ -44,17 +44,17 @@
 
 - Beyond Short-Term Snippet:Video Relation Detection With Spatio-Temporal Global Context
 
-### Audio and Vision (2)
+### Audio and Vision (Oral:1/2)
 
 - DAVD-Net:Deep Audio-Aided Video Decompression of Talking Heads (**Oral**)
 
 - Music Gesture for Visual Sound Separation
 
-### Sign Language (1)
+### Sign Language (Oral:1/1)
 
 - Sign Language Transformers:Joint End-to-End Sign Language Recognition and Translation (**Oral**)
 
-### Text Detection (Recognition) / Scene Text Generation / Scene Text Editing (12)
+### Text Detection (Recognition) / Scene Text Generation / Scene Text Editing (Oral:3/12)
 
 - UnrealText:Synthesizing Realistic Scene Text Images from the Unreal World
 
@@ -80,7 +80,7 @@
 
 - OrigamiNet:Weakly-Supervised, Segmentation-Free, One-Step, Full Page Text Recognition by learning to unfold
 
-### Visual Question Answering (VQA) / Text Visual Question Answering (TextVQA) (10)
+### Visual Question Answering (VQA) / Text Visual Question Answering (TextVQA) (Oral:4/10)
 
 - Fantastic Answers and Where to Find Them: Immersive Question-Directed Visual Attention
 
@@ -108,13 +108,13 @@
 
 - Gold Seeker:Information Gain From Policy Distributions for Goal-Oriented Vision-and-Language Reasoning
 
-### Visual Dialog (2)
+### Visual Dialog (Oral:1/2)
 
 - Iterative Context-Aware Graph Inference for Visual Dialog (**Oral**)
 
 - Two Causal Principles for Improving Visual Dialog
 
-### Embodied AI / Vision-Language Navigation (VLN) (8)
+### Embodied AI / Vision-Language Navigation (VLN) (Oral:2/8)
 
 - RoboTHOR:An Open Simulation-to-Real Embodied AI Platform
 
@@ -132,7 +132,7 @@
 
 - Vision-Dialog Navigation by Exploring Cross-Modal Memory
 
-### Image Captioning / Image Captioning Generation (7)
+### Image Captioning / Image Captioning Generation (Oral:1/7)
 
 - More Grounded Image Captioning by Distilling Image-Text Matching Model
 
@@ -148,7 +148,7 @@
 
 - Transform and Tell:Entity-Aware News Image Captioning
 
-### Visual Referring Expression (6)
+### Visual Referring Expression (Oral:3/6)
 
 - Graph-Structured Referring Expression Reasoning in the Wild (**Oral**)
 
@@ -198,7 +198,7 @@
 
 - Learning Visual Emotion Representations From Web Data
 
-### Miscellaneous (10)
+### Miscellaneous (Oral:1/10)
 
 - Counterfactual Vision and Language Learning (**Oral**)
 
