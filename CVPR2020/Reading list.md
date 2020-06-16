@@ -135,6 +135,11 @@ Benckmark: We evaluate stateof-the-art vision algorithms for part detection and 
 
 - Vision-Language Navigation With Self-Supervised Auxiliary Reasoning Tasks (**Oral**)
 
+Abstract:  We introduce Auxiliary Reasoning Navigation (AuxRN), a framework with four self-supervised auxiliary reasoning tasks to take advantage of the additional training signals derived from the semantic information.
+Auxiliary tasks:  explaining the previous actions, estimating the navigation progress, predicting the next orientation, and evaluating the trajectory consistency. Each of the auxiliary tasks exploits useful reasoning knowledge respectively to indicate how an agent understands an environment.
+
+AuxRN pretrained in seen environment with our auxiliary reasoning tasks outperforms our baseline by 3.45% on validation set. Our final model, finetuned on unseen environments with auxiliary reasoning tasks obtains 65%, 4% higher than the previous state-ofthe-art result
+
 - Vision-Dialog Navigation by Exploring Cross-Modal Memory
 
 ### Image Captioning / Image Captioning Generation (Oral:1/7)
