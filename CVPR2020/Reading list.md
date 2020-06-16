@@ -90,7 +90,14 @@
 
 - Iterative Answer Prediction With Pointer-Augmented Multimodal Transformers for TextVQA (**Oral**)
 
-- SQulNTing at VQA Models:Introspecting VQA Models With Sub-Questions (**Oral**)
+- SQulNTing at VQA Models:Introspecting VQA Models With Sub-Questions (**Oral**) (**Liked**)
+Problems: existing VQA models have consistency issues – they answer the reasoning question correctly but fail on associated lowlevel perception questions.
+
+Abstract: We quantify the extent to which this phenomenon occurs by creating a new Reasoning split of the VQA dataset and collecting Sub-VQA, a new dataset1 consisting of 200K new perception questions which serve as sub questions corresponding to the set of perceptual tasks needed to effectively answer the complex reasoning questions in the Reasoning split.
+
+Method: we propose an approach called Sub-Question Importance-aware Network Tuning (SQuINT), which encourages the model to attend do the same parts of the image when answering the reasoning question and the perception sub questions. We show that SQuINT improves model consistency by 7.8%, also marginally improving its performance on the Reasoning questions in VQA, while also displaying qualitatively better attention maps.
+
+
 
 - TA-Student VQA:Multi-Agents Training by Self-Questioning (**Oral**)
 
