@@ -154,6 +154,12 @@
 
 - REVERIE:Remote Embodied Visual Referring Expression in Real Indoor Environments (**Oral**)
 
+Abstract: 
+Dataset: we propose a dataset of varied and complex robot tasks, described in
+natural language, in terms of objects visible in a large set of real images (Remote Embodied Visual referring Expressions in Real Indoor Environments (REVERIE) task and dataset.). Given an instruction, success requires navigating through a previously-unseen environment to identify an object.
+Method: A novel Interactive Navigator-Pointer model is also proposed that provides a strong baseline on the task.
+
+
 - Multi-Task Collaborative Network for Joint Referring Expression Comprehension and Segmentation (**Oral**)
 
 - Cops-Ref:A New Dataset for Task on Compositional Refering Expression Comprehension
