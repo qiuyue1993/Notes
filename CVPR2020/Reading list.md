@@ -119,6 +119,11 @@
 - RoboTHOR:An Open Simulation-to-Real Embodied AI Platform
 
 - SAPIEN:A SimulAted Part-Based Interactive ENvironment (**Oral**)
+Abstract: We present SAPIEN, a simulation environment for robotic vision and interaction tasks, which provides detailed part-level physical simulation, hierarchical robotics controllers and versatile rendering options.
+SAPIEN: PhysX-based interaction-rich and physics-realistic simulation environment; SAPIEN Asset: Including PartNet Mobility dataset, conating 14K movable parts over 2,346 3D models (46 common indoor object categories); SAPIEN Renderer: fast-frame-rate OpenGL rasterizer and more photorelistic ray-tracing options.
+
+Benckmark: We evaluate stateof-the-art vision algorithms for part detection and motion attribute recognition as well as demonstrate robotic interaction tasks using heuristic approaches and reinforcement learning algorithms.
+
 
 - Unsupervised Reinforcement Learning of Tranferable Meta-Skills for Embodied Navigation
 
