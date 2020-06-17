@@ -1,11 +1,55 @@
 # Reading List
 
 ## Indexing
+- [Awarded Papers](#Awarded-Papers)
 - [Language and Vision](#Language-and-Vision)
 - [Image Synthesis](#Image-Synthesis)
 - [3D Vision](#3D-Vision)
 - [Scene Analysis and Understanding](#Scene-Analysis-and-Understanding)
 - [Others](#Others)
+---
+## Awarded Papers
+
+- BSP-Net: Generating Compact Meshes via Binary Space Partitioning (**Best Student Paper**)
+
+Abstract: We are inspired by a classical spatial data structure from computer graphics, Binary Space Partitioning (BSP), to facilitate 3D learning. The core ingredient of BSP is an operation for recursive subdivision of space to obtain convex sets. 
+
+BSP-Net: BSP-Net, an unsupervised method which can generate compact and structured polygonal meshes in the form of convex decomposition. The convexes inferred by BSPNet can be easily extracted to form a polygon mesh, without any need for iso-surfacing.
+
+- DeepCap:Monocular Human Performance Capture Using Weak Supervision (**Best Student Paper Honorable Mention**)
+
+Abstract: We propose a novel deep learning approach for monocular dense human performance capture. Our method is trained
+in a weakly supervised manner based on multi-view supervision completely removing the need for training data with 3D ground truth annotations. The network architecture is based on two separate networks that disentangle the task into a pose estimation and a non-rigid surface deformation step. 
+
+• A learning-based 3D human performance capture approach that jointly tracks the skeletal pose and the nonrigid surface deformations from monocular images.
+• A new differentiable representation of deforming human surfaces which enables training from multi-view
+video footage directly.
+
+- UC-Net: Uncertainty Inspired RGB-D Saliency Detection via Conditional Variational Autoencoders (**Paper award nominees**)
+
+Abstract:　Inspired by the saliency data labeling process, we propose　probabilistic RGB-D saliency detection network via conditional variational autoencoders to model human annotation uncertainty and generate multiple saliency maps for each input image by sampling in the latent space. 
+
+Quantitative and qualitative evaluations on six challenging benchmark datasets against 18 competing algorithms demonstrate the effectiveness of our approach in
+learning the distribution of saliency maps, leading to a new state-of-the-art in RGB-D saliency detection.
+
+- Transferring Cross-domain Knowledge for Video Sign Language Recognition (**Paper award nominees**)
+
+Abstract: We observe that despite the existence of large domain gaps, isolated and news signs share the same visual concepts, such as hand gestures and body movements. Motivated by this observation, we propose a novel method that
+learns domain-invariant descriptors and fertilizes WSLR models by transferring knowledge of subtitled news sign to them.
+
+Method: We extract news signs using a base WSLR model, and then design a classifier jointly trained on news and isolated signs to coarsely align these two domains. In order to learn domain-invariant features within each class and suppress domain-specific features, our method further resorts to an external memory to store the class centroids of the aligned news signs. We then design a temporal attention based on the learnt descriptor to improve recognition performance. 
+
+- Cross-Batch Memory for Embedding Learning (**Paper award nominees**)
+
+Abstract: 
+
+Slow drift phenomena: The embedding features drift exceptionally slow even as the model parameters are updating throughout the training process.
+
+XBM: We propose a cross-batch memory (XBM) mechanism that memorizes the embeddings of past iterations, allowing the model to collect sufficient hard negative pairs across multiple mini-batches - even over the whole dataset.
+
+Our XBM can be directly integrated into a general pairbased DML framework, where the XBM augmented DML can boost performance considerably.
+
+We have presented a conceptually simple, easy to implement, and memory efficient cross-batch mining mechanism for pair-based DML.
 
 ---
 ## Language and Vision (Oral:18/89)
