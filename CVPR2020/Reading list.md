@@ -51,13 +51,17 @@ Our XBM can be directly integrated into a general pairbased DML framework, where
 
 We have presented a conceptually simple, easy to implement, and memory efficient cross-batch mining mechanism for pair-based DML.
 
-TextureFusion: High-Quality Texture Acquisition for Real-Time RGB-D Scanning (**Paper award nominees**)
+- TextureFusion: High-Quality Texture Acquisition for Real-Time RGB-D Scanning (**Paper award nominees**)
 
 Abstract: In this work, we propose a progressive texture-fusion method specially designed for real-time RGB-D scanning.
 
 Method: To this end, we first devise a novel texture-tile voxel grid, where texture tiles are embedded in the voxel grid of the signed distance function, allowing for high-resolution texture mapping on the low-resolution geometry volume. We associate vertices of implicit geometry directly with texture coordinates.  Second, we introduce real-time texture warping that applies a spatiallyvarying perspective mapping to input images so that texture warping efficiently mitigates the mismatch between the intermediate geometry and the current input view.
 
+- Total3DUnderstanding:Joint Layout, Object Pose and Mesh Reconstruction for Indoor Scenes from a Single Image (**Paper award nominees**)
 
+Abstract: We propose an end-to-end solution to jointly reconstruct room layout, object bounding boxes and meshes from a single image. 
+
+Method: a coarse-to-fine hierarchy with three components: 1. room layout with camera pose; 2. 3D object bounding boxes; 3. object meshes.
 
 ---
 ## Language and Vision (Oral:18/89)
