@@ -175,7 +175,23 @@ Method: we propose an approach called Sub-Question Importance-aware Network Tuni
 
 - Iterative Context-Aware Graph Inference for Visual Dialog (**Oral**)
 
+Abstract: We propose a novel Context-Aware Graph (CAG) neural network. Each node in the graph corresponds to a joint semantic feature, including both objectbased (visual) and history-related (textual) context representations. 
+
+The graph structure (relations in dialog) is iteratively updated using an adaptive top-K message passing mechanism. Then, after the update, we impose graph attention on all the nodes to get the final graph embedding and infer the answer.
+
+Experimental results on VisDial v0.9 and v1.0 datasets show that CAG outperforms comparative methods. Visualization results further validate the interpretability of our method.
+
 - Two Causal Principles for Improving Visual Dialog
+
+Abstract: This paper unravels two causal principlesfor improving Visual Dialog (VisDial).
+
+Principle 1: we should remove the direct input of the dialog history to the answer model, otherwise a harmful shortcut bias will be introduced.
+
+Principle 2: There is an unobserved confounder for history, question, and answer, leading to spurious correlations from training data.
+
+The two principles are model-agnostic, so they are applicable in any VisDial model. 
+
+
 
 ### Embodied AI / Vision-Language Navigation (VLN) (Oral:2/8)
 
