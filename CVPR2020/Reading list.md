@@ -235,6 +235,12 @@ AuxRN pretrained in seen environment with our auxiliary reasoning tasks outperfo
 
 - Vision-Dialog Navigation by Exploring Cross-Modal Memory
 
+Abstract: We propose the Cross-modal Memory Network (CMN) for remembering and understanding the rich information relevant to historical navigation actions.
+
+Method:  Our CMN consists of two memory modules, the language memory module (L-mem) and the visual memory module (V-mem). Specifically, L-mem learns latent relationships between the current language interaction and a dialog history by employing a multi-head attention mechanism. V-mem learns to associate the current visual views and the cross-modal memory about the previous navigation actions. The crossmodal memory is generated via a vision-to-language attention and a language-to-vision attention. Benefiting from the collaborative learning of the L-mem and the V-mem, our CMN is able to explore the memory about the decision making of historical navigation actions which is for the current step. 
+
+Results: Experiments on the CVDN dataset show that our CMN outperforms the previous state-of-the-art model by a significant margin on both seen and unseen environments. 
+
 ### Image Captioning / Image Captioning Generation (Oral:1/7)
 
 - More Grounded Image Captioning by Distilling Image-Text Matching Model
