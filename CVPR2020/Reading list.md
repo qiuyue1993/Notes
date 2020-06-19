@@ -320,6 +320,11 @@ Method: The prediction of VC R-CNN is by using causal intervention: P(Y |do(X)),
 
 - Active Speakers in Context
 
+Existing problem: Current methods for active speaker detection focus on modeling short-term audiovisual information from a single speaker. Although this strategy can be enough for addressing single-speaker scenarios, it prevents accurate detection when the task is to identify who of many candidate speakers are talking.
+
+Propose: This paper introduces the Active Speaker Context, a novel representation that models relationships between multiple speakers over long time horizons. Our
+Active Speaker Context is designed to learn pairwise and temporal relations from an structured ensemble of audiovisual observations.
+
 - MMTM:Multimodal Transfer Module for CNN Fusion
 
 - Hierarchical Graph Attention Network for Visual Relationship Detection
