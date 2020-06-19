@@ -211,6 +211,11 @@ Benckmark: We evaluate stateof-the-art vision algorithms for part detection and 
 
 - Neural Topological SLAM for Visual Navigation
 
+Abstract: We design topological representations for space that effectively leverage semantics and afford approximate geometric reasoning. At the heart of our representations are nodes with associated semantic features, that are interconnected using coarse geometric information.
+
+Advantages: (a) it uses graphbased representation which allows efficient long-term planning; (b) it explicitly encodes structural priors via function Fs; (c) the geometric function Fg allows efficient exploration and online map building for a new environment; (d) but most importantly, all the functions and policies can be learned in completely supervised manner forgoing the need for unreliable credit assignment via RL.
+
+
 - Towards Learning a Generic Agent for Vision-and-Language Navigation via Pre-Training
 
 - Embodied Language Grounding With 3D Visual Feature Representations 
