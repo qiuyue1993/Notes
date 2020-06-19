@@ -230,6 +230,11 @@ AuxRN pretrained in seen environment with our auxiliary reasoning tasks outperfo
 
 - Show, Edit and Tell:A Framework for Editing Image Captions
 
+Abstract: This paper proposes a novel approach to image captioning based on iterative adaptive refinement of an existing caption.
+
+Method: Our caption-editing model consisting of two sub-modules: (1) EditNet, a language module with an adaptive copy mechanism (Copy-LSTM) and a Selective Copy Memory Attention mechanism (SCMA), and (2) DCNet, an LSTM-based denoising auto-encoder. 
+
+
 - Say As You Wish:Fine-Grained Control of Image Caption Generation With Abstract Scene Graphs (**Oral**)
 
 - Normalized and Geometry-Aware Self-Attention Network for Image Captioning
