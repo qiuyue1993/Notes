@@ -114,6 +114,9 @@ Method: a coarse-to-fine hierarchy with three components: 1. room layout with ca
 
 - UnrealText:Synthesizing Realistic Scene Text Images from the Unreal World
 
+Abstract:  In this paper, we introduce UnrealText, an efficient image synthesis method that renders realistic images via a 3D graphics engine. 3D synthetic engine provides realistic appearance by rendering scene and text as a whole, and allows for better text region proposals with access to precise scene information, e.g. normal and even object meshes. 
+
+
 - Deep Relational Reasoning Graph Network for Arbitrary Shape Text Detection (**Oral**)
 
 - ABCNet:Real-Time Scene Text Spotting With Adaptive Bezier-Curve Network (**Oral**)
