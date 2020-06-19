@@ -297,6 +297,15 @@ Method: A novel Interactive Navigator-Pointer model is also proposed that provid
 
 - Counterfactual Vision and Language Learning (**Oral**)
 
+Existing problem: It is particularly remarkable that this success has been achieved on the basis of comparatively small datasets, given the scale of the problem. One explanation is that this has been accomplished partly by exploiting bias in the datasets rather than developing deeper multi-modal reasoning. This fundamentally limits the generalization of the method, and thus its practical applicability.
+
+Propose: We propose a method that addresses this problem by introducing counterfactuals in the training. In doing so we leverage structural causal models for counterfactual evaluation to formulate alternatives, for instance, questions that could be asked of the same image set. We encourage the model to reason about “what the answer could be about a counterfactual image or question”.
+
+
+Result: We show that simulating plausible alternative training data through this process results in better generalization.
+
+
+
 - Learning Unseen Concepts via Hierarchical Decomposition and Composition
 
 - 12-in-1:Multi-Task Vision and Language Representation Learning
