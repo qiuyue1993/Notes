@@ -314,6 +314,10 @@ Result: We show that simulating plausible alternative training data through this
 
 - Visual Commonsense R-CNN
 
+Abstract: We present a novel unsupervised feature representation learning method, Visual Commonsense Region-based Convolutional Neural Network (VC R-CNN), to serve as an improved visual region encoder for high-level tasks such as captioning and VQA.
+
+Method: The prediction of VC R-CNN is by using causal intervention: P(Y |do(X)), while others are by using the conventional likelihood: P(Y |X). 
+
 - Active Speakers in Context
 
 - MMTM:Multimodal Transfer Module for CNN Fusion
