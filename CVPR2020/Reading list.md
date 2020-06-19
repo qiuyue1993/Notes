@@ -218,7 +218,13 @@ Advantages: (a) it uses graphbased representation which allows efficient long-te
 
 - Towards Learning a Generic Agent for Vision-and-Language Navigation via Pre-Training
 
-- Embodied Language Grounding With 3D Visual Feature Representations 
+- Embodied Language Grounding With 3D Visual Feature Representations
+
+Abstract: We proposed models that associate language utterances with compositional 3D feature representations of the objects and scenes the utterances describe, and exploit the rich constrains of the 3D space for spatial reasoning.
+
+Method:  We infer these 3D visual scene feature maps from RGB images of the scene via view prediction. We present generative models that condition on the dependency tree of an utterance and generate a corresponding visual 3D feature map as well as reason about its plausibility. We also present a detector models that condition on both the dependency tree of an utterance and a related image and localize the object referents in the 3D feature map inferred from the image.
+
+Result: Outperforms 2D-CNN-based methods by a large margin in variety of tasks (classifying plausibility of utterances, detecting referential expressions, supplying rewards for trajectory optimization of object placement policies from language instructions).
 
 - Vision-Language Navigation With Self-Supervised Auxiliary Reasoning Tasks (**Oral**)
 
