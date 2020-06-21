@@ -104,6 +104,10 @@ Method: a coarse-to-fine hierarchy with three components: 1. room layout with ca
 
 - DAVD-Net:Deep Audio-Aided Video Decompression of Talking Heads (**Oral**)
 
+Abstract: We present a novel deep convolutional neural network method for very low bit rate video reconstruction of talking heads. 
+
+Method: The key innovation is a new DCNN architecture that can exploit the audio-video correlations to repair compression defects in the face region. We further improve reconstruction quality by embedding into our DCNN the encoder information of the video compression standards and introducing a constraining projection module in the network.
+
 - Music Gesture for Visual Sound Separation
 
 ### Sign Language (Oral:1/1)
