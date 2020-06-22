@@ -174,8 +174,6 @@ Abstract: We quantify the extent to which this phenomenon occurs by creating a n
 
 Method: we propose an approach called Sub-Question Importance-aware Network Tuning (SQuINT), which encourages the model to attend do the same parts of the image when answering the reasoning question and the perception sub questions. We show that SQuINT improves model consistency by 7.8%, also marginally improving its performance on the Reasoning questions in VQA, while also displaying qualitatively better attention maps.
 
-
-
 - TA-Student VQA:Multi-Agents Training by Self-Questioning (**Oral**)
 
 - On the General Value of Evidence, and Bilingual Scene-Text Visual Question Answering
@@ -303,6 +301,11 @@ Method: A novel Interactive Navigator-Pointer model is also proposed that provid
 - Multi-Task Collaborative Network for Joint Referring Expression Comprehension and Segmentation (**Oral**)
 
 - Cops-Ref:A New Dataset for Task on Compositional Refering Expression Comprehension
+
+Abstract: We propose a new dataset for visual reasoning in context of referring expression comprehension with two main features.
+
+Features: First, we design a novel expression engine rendering various reasoning logics that can be flexibly combined with rich visual properties to generate expressions with varying compositionality. Second, to better exploit the full reasoning chain embodied in an expression, we propose a new test setting by adding additional distracting images containing objects sharing similar properties with the referent, thus minimising the success rate of reasoning-free.
+
 
 - Referring Image Segmentation via Cross-Modal Progressive Comprehension
 
