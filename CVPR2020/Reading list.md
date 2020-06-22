@@ -158,6 +158,13 @@ In addition, we show that models can be made significantly more robust against i
 
 - Hierarchical Conditional Relation Networks for Video Question Answering (**Oral**)
 
+Abstract: We introduce a general-purpose reusable neural unit called Conditional Relation Network (CRN) that serves as a building block to construct more sophisticated structures for representation and reasoning over video.
+
+Method: A CRN is a relational transformer that encapsulates and maps an array of tensorial objects into a new array of the same kind, conditioned on a contextual feature. Model building becomes a simple exercise of replication, rearrangement and stacking of these reusable units for diverse modalities and contextual information. This design thus supports high-order relational and multi-step reasoning.
+
+The HCRN was evaluated on multiple VideoQA datasets (TGIF-QA, MSVD-QA, MSRVTT-QA)
+demonstrating competitive reasoning capability.
+
 - Iterative Answer Prediction With Pointer-Augmented Multimodal Transformers for TextVQA (**Oral**)
 
 - SQulNTing at VQA Models:Introspecting VQA Models With Sub-Questions (**Oral**) (**Liked**)
