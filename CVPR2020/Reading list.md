@@ -149,6 +149,13 @@ Abstract:  In this paper, we introduce UnrealText, an efficient image synthesis 
 
 - Towards Causal VQA: Revealing and Reducing Spurious Correlations by Invariant and Covariant Semantic Editing
 
+Problem: Due to deficiencies in models and datasets, today’s models often rely on correlations rather than predictions that are causal w.r.t. data.
+
+Abstract: We propose a novel way to analyze and measure the robustness of the state of the art models w.r.t semantic visual variations as well as propose ways to make models more robust against spurious correlations. Our method performs automated semantic image manipulations and tests for consistency in model predictions to quantify the model robustness as well as generate synthetic data to
+counter these problems. 
+
+In addition, we show that models can be made significantly more robust against inconsistent predictions using our edited data.
+
 - Hierarchical Conditional Relation Networks for Video Question Answering (**Oral**)
 
 - Iterative Answer Prediction With Pointer-Augmented Multimodal Transformers for TextVQA (**Oral**)
