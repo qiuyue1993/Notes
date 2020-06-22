@@ -227,6 +227,14 @@ Benckmark: We evaluate stateof-the-art vision algorithms for part detection and 
 
 - Unsupervised Reinforcement Learning of Tranferable Meta-Skills for Embodied Navigation
 
+Abstract: In this paper, we focus on visual navigation in the low-resource setting, where we have only a few training environments annotated with object information.
+
+Method: We propose a novel unsupervised reinforcement learning approach to learn transferable meta-skills (e.g., bypass obstacles, go straight) from unannotated environments without any supervisory signals. The agent can then fast adapt to visual navigation through learning a high-level master policy to combine these metaskills, when the visual-navigation-specified reward is provided.
+
+Experimental results show that our method significantly outperforms the baseline by 53.34% relatively on SPL, and further qualitative analysis demonstrates that our method learns transferable motor primitives for visual navigation.
+
+In our work, we frame low-resource visual navigation as a meta-learning problem. At the metatraining phase, the environments are not annotated with object information, and we assume access to a set of tasks that we refer to as the meta-training tasks. From these tasks, the embodied agent (we call it as meta-learner) then learns a set of transferable sub-policies, each of which corresponds to a specific meta-skill (also called as motor primitives, e.g., bypass obstacles, go straight) by performing a sequence of primitive actions.
+
 - Neural Topological SLAM for Visual Navigation
 
 Abstract: We design topological representations for space that effectively leverage semantics and afford approximate geometric reasoning. At the heart of our representations are nodes with associated semantic features, that are interconnected using coarse geometric information.
