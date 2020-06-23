@@ -410,6 +410,14 @@ Active Speaker Context is designed to learn pairwise and temporal relations from
 
 - Learning 3D Semantic Scene Graphs From 3D Indoor Reconstructions
 
+Abstract:  We leverage inference on scene graphs as a way to carry out 3D scene understanding, mapping objects and their relationships.
+
+Method: In particular, we propose a learned method that regresses a scene graph from the point cloud of a scene. Our novel architecture is based on PointNet and Graph Convolutional Networks (GCN). In addition, we introduce 3DSSG, a semiautomatically generated dataset, that contains semantically rich scene graphs of 3D scenes.
+
+Result: We show the application of our method in a domain-agnostic retrieval task, where graphs serve as an intermediate representation for 3D-3D and 2D-3D matching.
+
+
+
 ---
 ## Others (1)
 
