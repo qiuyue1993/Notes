@@ -120,8 +120,11 @@ Method: The key innovation is a new DCNN architecture that can exploit the audio
 
 Abstract:  In this paper, we introduce UnrealText, an efficient image synthesis method that renders realistic images via a 3D graphics engine. 3D synthetic engine provides realistic appearance by rendering scene and text as a whole, and allows for better text region proposals with access to precise scene information, e.g. normal and even object meshes. 
 
-
 - Deep Relational Reasoning Graph Network for Arbitrary Shape Text Detection (**Oral**)
+
+Abstract: We propose a novel unified relational reasoning graph network for arbitrary shape text detection.
+
+Method: An innovative local graph bridges a text proposal model via Convolutional Neural Network (CNN) and a deep relational reasoning network via Graph Convolutional Network (GCN), making our network end-to-end trainable. To be concrete, every text instance will be divided into a series of small rectangular components, and the geometry attributes (e.g., height, width, and orientation) of the small components will be estimated by our text proposal model. Given the geometry attributes, the local graph construction model can roughly establish linkages between different text components. For further reasoning and deducing the likelihood of linkages between the component and its neighbors, we adopt a graph-based network to perform deep relational reasoning on local graphs. 
 
 - ABCNet:Real-Time Scene Text Spotting With Adaptive Bezier-Curve Network (**Oral**)
 
@@ -449,5 +452,7 @@ Result: We show the application of our method in a domain-agnostic retrieval tas
 - Video + Language = a lot
 
 - Text: a lot
+
+- Graph NN -> Relationships
 
 
