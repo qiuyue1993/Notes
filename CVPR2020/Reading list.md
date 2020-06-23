@@ -366,6 +366,13 @@ Result: We show that simulating plausible alternative training data through this
 
 - ALFRED:A Benchmark for Interpreting Grounded Instructions for Everyday Tasks
 
+Abstract: We present ALFRED (Action Learning From Realistic Environments and Directives), a benchmark for learning a mapping from natural language instructions and egocentric vision to sequences of actions for household tasks.
+
+ALFRED consists of expert demonstrations in interactive visual environments for 25k natural language directives. These directives contain both high-level goals like “Rinse off a mug and place it in the coffee maker.” and low-level language instructions like “Walk to the coffee maker on the right.”
+
+The long horizon of ALFRED tasks poses a significant challenge with sub-problems including visual semantic navigation, object detection, referring expression grounding, and action grounding. These challenges may be approachable by models that exploit hierarchy, modularity,
+and structured reasoning and planning.
+
 - Visual Commonsense R-CNN
 
 Abstract: We present a novel unsupervised feature representation learning method, Visual Commonsense Region-based Convolutional Neural Network (VC R-CNN), to serve as an improved visual region encoder for high-level tasks such as captioning and VQA.
