@@ -150,6 +150,14 @@ Method: An innovative local graph bridges a text proposal model via Convolutiona
 
 - Fantastic Answers and Where to Find Them: Immersive Question-Directed Visual Attention
 
+Abstract: We introduce the first dataset of top-down attention in immersive scenes. 
+
+Dataset: The Immersive Questiondirected Visual Attention (IQVA) dataset features visual attention and corresponding task performance (i.e., answer correctness). It consists of 975 questions and answers collected from people viewing 360° videos in a head-mounted display. 
+
+Analyses of the data demonstrate a significant correlation between people’s task performance and their eye movements, suggesting the role of attention in task performance. 
+
+With that, a neural network is developed to encode the differences of correct and incorrect attention and jointly predict the two. The proposed attention model for the first time takes into account answer correctness, whose outputs naturally distinguish important regions from distractions.
+
 - Towards Causal VQA: Revealing and Reducing Spurious Correlations by Invariant and Covariant Semantic Editing
 
 Problem: Due to deficiencies in models and datasets, today’s models often rely on correlations rather than predictions that are causal w.r.t. data.
