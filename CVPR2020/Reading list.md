@@ -463,6 +463,10 @@ Result: We show the application of our method in a domain-agnostic retrieval tas
 
 - Online Knowledge Distillation via Collaborative Learning
 
+Abstract: KDCL, which is able to consistently improve the generalization ability of deep neural networks (DNNs) that have different learning capacities.
+
+KDCL treats all DNNs as “students” and collaboratively trains them in a single stage (knowledge is transferred among arbitrary students during
+collaborative training), enabling parallel computing, fast computations, and appealing generalization ability. Specifically, we carefully design multiple methods to generate soft target as supervisions by effectively ensembling predictions of students and distorting the input images.
 
 ---
 ## Notes
