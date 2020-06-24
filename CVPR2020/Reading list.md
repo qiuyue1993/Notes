@@ -401,6 +401,15 @@ Active Speaker Context is designed to learn pairwise and temporal relations from
 
 - Hierarchical Graph Attention Network for Visual Relationship Detection
 
+Previous problems: Existing graph-based methods mainly represent the relationships by an object-level graph, which ignores to model the triplet level dependencies.
+
+Abstract: In this work, a Hierarchical Graph Attention Network (HGAT) is proposed to capture the dependencies on both object-level and triplet-level.
+
+Method: Object level graph aims to capture the interactions between objects, while the triplet-level graph models the dependencies among relation triplets. In addition, prior knowledge and attention mechanism are introduced to fix the redundant or missing edges on graphs that are constructed according to spatial correlation.
+
+Result: Experimental results on the well-known VG and VRD datasets demonstrate that our model significantly outperforms the state-of-the-art methods.
+
+
 - Discriminative Multi-Modality Speech Recognition
 
 - PhraseCut: Language-Based Image Segmentation in the Wild
