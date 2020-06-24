@@ -421,6 +421,15 @@ Active Speaker Context is designed to learn pairwise and temporal relations from
 
 - 3D Part Guided Image Editing for Fine-Grained Object Understanding
 
+Abstract: Holistically understanding an object with its 3D movable parts is essential for visual models of a robot to interact with the world, we fill this important missing piece in autonomous driving by solving two critical issues.
+
+Contents: We propose an effective training data generation process by fitting a 3D car model with dynamic parts to cars in real images; we collected a large dataset in real driving scenario with cars in uncommon states (CUS), i.e. with door or trunk opened etc.
+
+Method: We propose a multi-task deep network which can simultaneously output 2D detection, instance-level segmentation, dynamic part segmentation, and state description.
+
+Result: The experimental results show that our editing data and deep
+network perform well on CUS.
+
 ---
 ## Scene Analysis and Understanding (2)
 
