@@ -444,6 +444,10 @@ network perform well on CUS.
 
 - Weakly Supervised Visual Semantic Parsing
 
+Previous problems: Existing SGG methods require millions of manually annotated bounding boxes for training, and are computationally inefficient, as they exhaustively process all pairs of object proposals to detect predicates.
+
+Abstract: Proposing a generalized formulation of SGG, namely Visual Semantic Parsing, which disentangles entity and predicate recognition, and enables sub-quadratic performance. Then we propose the Visual Semantic Parsing Network, VSPNET, based on a dynamic, attention-based, bipartite message passing framework that jointly infers graph nodes and edges through an iterative process. Additionally, we propose the first graphbased weakly supervised learning framework, based on a novel graph alignment algorithm, which enables training without bounding box annotations.
+
 - Learning 3D Semantic Scene Graphs From 3D Indoor Reconstructions
 
 Abstract:  We leverage inference on scene graphs as a way to carry out 3D scene understanding, mapping objects and their relationships.
