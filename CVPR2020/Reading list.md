@@ -144,6 +144,8 @@ Method: An innovative local graph bridges a text proposal model via Convolutiona
 
 - SwapText:Image Based Texts Transfer in Scenes
 
+Abstract:
+
 - OrigamiNet:Weakly-Supervised, Segmentation-Free, One-Step, Full Page Text Recognition by learning to unfold
 
 ### Visual Question Answering (VQA) / Text Visual Question Answering (TextVQA) (Oral:4/10)
