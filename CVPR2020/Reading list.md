@@ -144,7 +144,12 @@ Method: An innovative local graph bridges a text proposal model via Convolutiona
 
 - SwapText:Image Based Texts Transfer in Scenes
 
-Abstract:
+Abstract: In this work, we present SwapText, a three-stage framework to transfer texts across scene images. SwapText to address a novel task of replacing texts in the scene text images by intended texts.
+
+Method: First, a novel text swapping network is proposed to replace text labels only in the foreground image. Second, a background completion network is learned to reconstruct background images. Finally, the generated foreground image and background image are used to generate the word image by the fusion network. 
+
+Result:  Using the proposing framework, we can manipulate the texts of the input images even with severe geometric distortion. Qualitative and quantitative results are presented on several scene text datasets, including regular and irregular text datasets. 
+
 
 - OrigamiNet:Weakly-Supervised, Segmentation-Free, One-Step, Full Page Text Recognition by learning to unfold
 
