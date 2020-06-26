@@ -322,6 +322,18 @@ Result: When tested on COCO, our proposal achieves a new state of the art in sin
 
 - Transform and Tell:Entity-Aware News Image Captioning
 
+Abstract: We propose an end-to-end model which generates captions for images embedded in news articles.
+
+Previous challenges: News image captioning rely on real-worldknowledge, especially about named entities; and they typically have linguistically rich captions that include uncommon words.
+
+Method: We address the first challenge by associating words in the caption with faces and objects in the image, via a multi-modal, multi-head attention mechanism. We tackle the second challenge with a state-of-the-art transformer language model that uses byte-pair-encoding to generate captions as a sequence of word parts.
+
+Result: On the GoodNews dataset,  our model outperforms the previous state of the art by a factor of four in CIDEr score (13 → 54).
+
+We also introduce the NYTimes800k dataset which is 70% larger than GoodNews, has higher article quality, and includes the locations of images within articles as an additional contextual cue.
+
+
+
 ### Visual Referring Expression (Oral:3/6)
 
 - Graph-Structured Referring Expression Reasoning in the Wild (**Oral**)
