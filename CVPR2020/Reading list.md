@@ -312,6 +312,12 @@ Results: We extensively evaluate our proposals on MS-COCO image captioning datas
 
 - Meshed-Memory Transformer for Image Captioning
 
+Abstract: We present  a Meshed Transformer with Memory for Image Captioning. 
+
+Method: The architecture improves both the image encoding and the language generation steps: it learns a multi-level representation of the relationships between image regions integrating learned a priori knowledge, and uses a mesh-like connectivity at decoding stage to exploit low- and high-level features.
+
+Result: When tested on COCO, our proposal achieves a new state of the art in single-model and ensemble configurations on the “Karpathy” test split and on the online test server.  We also assess its performances when describing objects unseen in the training set.
+
 - Better Captioning With Sequence-Level Exploration
 
 - Transform and Tell:Entity-Aware News Image Captioning
