@@ -287,6 +287,12 @@ Results: Experiments on the CVDN dataset show that our CMN outperforms the previ
 
 - More Grounded Image Captioning by Distilling Image-Text Matching Model
 
+Abstract: we propose a Part-of-Speech (POS) enhanced image-text matching model - POS-SCAN, as the effective knowledge distillation for more grounded image captioning. We only keep the noun words when computing the matching score with the help of a Part-of-Speech (POS) tagger.
+
+Benifits: given a sentence and an image, POS-SCAN can ground the objects more accurately than SCAN; POS-SCAN serves as a word-region alignment regularization for the captioner’s visual attention module.
+
+Results: conventional image captioners equipped with POS-SCAN can significantly improve the grounding accuracy without strong supervision. 
+
 - Show, Edit and Tell:A Framework for Editing Image Captions
 
 Abstract: This paper proposes a novel approach to image captioning based on iterative adaptive refinement of an existing caption.
@@ -495,5 +501,9 @@ collaborative training), enabling parallel computing, fast computations, and app
 - Text: a lot
 
 - Graph NN -> Relationships
+
+- Grounding vs. Captioning
+
+- Knowledge Distillation
 
 
