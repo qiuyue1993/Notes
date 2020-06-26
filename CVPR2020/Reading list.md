@@ -518,4 +518,6 @@ collaborative training), enabling parallel computing, fast computations, and app
 
 - Knowledge Distillation
 
+- Transformer
+
 
