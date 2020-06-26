@@ -304,6 +304,12 @@ Method: Our caption-editing model consisting of two sub-modules: (1) EditNet, a 
 
 - Normalized and Geometry-Aware Self-Attention Network for Image Captioning
 
+Abstract: We improve Self-attention (SA) from two aspects to promote the performance of image captioning.
+
+Method: First, we propose Normalized Self-Attention (NSA), a reparameterization of SA that brings the benefits of normalization inside SA. Second, to compensate for the major limit of Transformer that it fails to model the geometry structure of the input objects, we propose a class of Geometry-aware Self-Attention (GSA) that extends SA to explicitly and efficiently consider the relative geometry relations between the objects in the image.
+
+Results: We extensively evaluate our proposals on MS-COCO image captioning dataset and superior results are achieved when comparing to state-of-the-art approaches. Further experiments on three challenging tasks, i.e. video captioning, machine translation, and visual question answering, show the generality of our methods.
+
 - Meshed-Memory Transformer for Image Captioning
 
 - Better Captioning With Sequence-Level Exploration
@@ -317,8 +323,8 @@ Method: Our caption-editing model consisting of two sub-modules: (1) EditNet, a 
 - REVERIE:Remote Embodied Visual Referring Expression in Real Indoor Environments (**Oral**)
 
 Abstract: 
-Dataset: we propose a dataset of varied and complex robot tasks, described in
-natural language, in terms of objects visible in a large set of real images (Remote Embodied Visual referring Expressions in Real Indoor Environments (REVERIE) task and dataset.). Given an instruction, success requires navigating through a previously-unseen environment to identify an object.
+Dataset: we propose a dataset of varied and complex robot tasks,　described in　natural language, in terms of objects visible in a large set of real images (Remote Embodied Visual referring Expressions in Real Indoor Environments (REVERIE) task and dataset.). Given an instruction, success requires navigating through a previously-unseen environment to identify an object.
+
 Method: A novel Interactive Navigator-Pointer model is also proposed that provides a strong baseline on the task.
 
 
