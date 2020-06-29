@@ -406,9 +406,9 @@ Propose: We propose a method that addresses this problem by introducing counterf
 
 Result: We show that simulating plausible alternative training data through this process results in better generalization.
 
-
-
 - Learning Unseen Concepts via Hierarchical Decomposition and Composition
+
+Abstract: 
 
 - 12-in-1:Multi-Task Vision and Language Representation Learning
 
