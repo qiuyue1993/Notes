@@ -510,8 +510,6 @@ collaborative training), enabling parallel computing, fast computations, and app
 
 - Web data
 
-- Video
-
 - Robotics, V and L
 
 - VLN SLAM
@@ -532,4 +530,5 @@ collaborative training), enabling parallel computing, fast computations, and app
 
 - Transformer
 
+- Causal Reasoning
 
