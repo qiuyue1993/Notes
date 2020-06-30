@@ -454,6 +454,13 @@ Result: Experimental results on the well-known VG and VRD datasets demonstrate t
 
 - Discriminative Multi-Modality Speech Recognition
 
+Abstract: We propose a two-stage speech recognition model. In the first stage, the target voice is separated from background noises with help from the corresponding visual information of lip movements, making the model ‘listen’ clearly. At the second stage, the audio modality combines visual modality again to better understand the speech by a MSR sub-network, further improving the recognition rate. 
+
+Key contributions: we introduce a pseudo-3D residual convolution (P3D)-based visual front-end to extract more discriminative features; we upgrade the temporal convolution block from 1D ResNet with the temporal convolutional network (TCN), which is more suitable for the temporal tasks;  the MSR sub-network
+is built on the top of Element-wise-Attention Gated Recurrent Unit (EleAtt-GRU), which is more effective than Transformer in long sequences.
+
+Result: We conducted extensive experiments on the LRS3-TED and the LRW datasets. Our twostage model (audio enhanced multi-modality speech recognition, AE-MSR) consistently achieves the state-of-the-art performance by a significant margin, which demonstrates the necessity and effectiveness of AE-MSR.
+
 - PhraseCut: Language-Based Image Segmentation in the Wild
 
 ---
