@@ -408,7 +408,12 @@ Result: We show that simulating plausible alternative training data through this
 
 - Learning Unseen Concepts via Hierarchical Decomposition and Composition
 
-Abstract: 
+Abstract: We present a hierarchical decompositionand-composition (HiDC) model for unseen compositional concept recognition.
+
+Method: We propose to decompose each seen image as visual elements and learn the corresponding subconcepts in independent subspaces. We generate compositions from these subspaces in three hierarchical forms, and learn the composed concepts in a unified composition space. We define semi-positive concepts to depict finegrained contextual relationships between sub-concepts, and learn accurate compositional concepts with adaptive pseudo supervision exploited from the generated compositions. 
+
+Result: We validate the proposed approach on two challenging benchmarks, and demonstrate its superiority over state-of-the-art approaches.
+
 
 - 12-in-1:Multi-Task Vision and Language Representation Learning
 
