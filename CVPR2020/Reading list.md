@@ -393,7 +393,19 @@ Features: First, we design a novel expression engine rendering various reasoning
 
 - Learning From Web Data With Self-Organizing Memory Module
 
+Abstract: In this paper, we propose a novel method, which is capable of handling these two types of noises together (label noise and background noise), without the supervision of clean images in the training stage.
+
+Method: We formulate our method under the framework of multi-instance learning by grouping ROIs (i.e., images and their region proposals) from the same category into bags. ROIs in each bag are assigned with different weights based on the representative/discriminative scores of their nearest clusters, in which the clusters and their scores are obtained via our designed memory module. Our memory module could be naturally integrated with the classification module, leading to an end-to-end trainable system.
+
 - Learning Visual Emotion Representations From Web Data
+
+Abstract: We present a scalable approach for learning powerful visual features for emotion recognition.
+
+Dataset: we curated a webly derived large scale dataset, StockEmotion, which has more than a million images. StockEmotion uses 690 emotion related tags as labels giving us a fine-grained and diverse set of emotion labels, circumventing the difficulty in manually obtaining emotion annotations.
+
+Method: EmotionNet, which we further regularized using joint text and visual embedding and text distillation. We propose methods to handle noisily, partially annotated data, improving visual feature learning through text model distillation and joint visual-text embedding.
+
+Result: EmotionNet trained on the StockEmotion dataset outperforms SOTA models on four different visual emotion tasks. EmotionNet achieves competitive zero-shot recognition performance against fully supervised baselines on a challenging visual emotion dataset, EMOTIC.
 
 ### Miscellaneous (Oral:1/10)
 
