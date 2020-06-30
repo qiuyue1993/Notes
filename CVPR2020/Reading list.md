@@ -228,8 +228,6 @@ Principle 2: There is an unobserved confounder for history, question, and answer
 
 The two principles are model-agnostic, so they are applicable in any VisDial model. 
 
-
-
 ### Embodied AI / Vision-Language Navigation (VLN) (Oral:2/8)
 
 - RoboTHOR:An Open Simulation-to-Real Embodied AI Platform
@@ -239,7 +237,6 @@ Abstract: We present SAPIEN, a simulation environment for robotic vision and int
 SAPIEN: PhysX-based interaction-rich and physics-realistic simulation environment; SAPIEN Asset: Including PartNet Mobility dataset, conating 14K movable parts over 2,346 3D models (46 common indoor object categories); SAPIEN Renderer: fast-frame-rate OpenGL rasterizer and more photorelistic ray-tracing options.
 
 Benckmark: We evaluate stateof-the-art vision algorithms for part detection and motion attribute recognition as well as demonstrate robotic interaction tasks using heuristic approaches and reinforcement learning algorithms.
-
 
 - Unsupervised Reinforcement Learning of Tranferable Meta-Skills for Embodied Navigation
 
@@ -256,7 +253,6 @@ In our work, we frame low-resource visual navigation as a meta-learning problem.
 Abstract: We design topological representations for space that effectively leverage semantics and afford approximate geometric reasoning. At the heart of our representations are nodes with associated semantic features, that are interconnected using coarse geometric information.
 
 Advantages: (a) it uses graphbased representation which allows efficient long-term planning; (b) it explicitly encodes structural priors via function Fs; (c) the geometric function Fg allows efficient exploration and online map building for a new environment; (d) but most importantly, all the functions and policies can be learned in completely supervised manner forgoing the need for unreliable credit assignment via RL.
-
 
 - Towards Learning a Generic Agent for Vision-and-Language Navigation via Pre-Training
 
@@ -299,7 +295,6 @@ Abstract: This paper proposes a novel approach to image captioning based on iter
 
 Method: Our caption-editing model consisting of two sub-modules: (1) EditNet, a language module with an adaptive copy mechanism (Copy-LSTM) and a Selective Copy Memory Attention mechanism (SCMA), and (2) DCNet, an LSTM-based denoising auto-encoder. 
 
-
 - Say As You Wish:Fine-Grained Control of Image Caption Generation With Abstract Scene Graphs (**Oral**)
 
 - Normalized and Geometry-Aware Self-Attention Network for Image Captioning
@@ -332,8 +327,6 @@ Result: On the GoodNews dataset,  our model outperforms the previous state of th
 
 We also introduce the NYTimes800k dataset which is 70% larger than GoodNews, has higher article quality, and includes the locations of images within articles as an additional contextual cue.
 
-
-
 ### Visual Referring Expression (Oral:3/6)
 
 - Graph-Structured Referring Expression Reasoning in the Wild (**Oral**)
@@ -345,7 +338,6 @@ Dataset: we propose a dataset of varied and complex robot tasks,ã€€described inã
 
 Method: A novel Interactive Navigator-Pointer model is also proposed that provides a strong baseline on the task.
 
-
 - Multi-Task Collaborative Network for Joint Referring Expression Comprehension and Segmentation (**Oral**)
 
 - Cops-Ref:A New Dataset for Task on Compositional Refering Expression Comprehension
@@ -353,7 +345,6 @@ Method: A novel Interactive Navigator-Pointer model is also proposed that provid
 Abstract: We propose a new dataset for visual reasoning in context of referring expression comprehension with two main features.
 
 Features: First, we design a novel expression engine rendering various reasoning logics that can be flexibly combined with rich visual properties to generate expressions with varying compositionality. Second, to better exploit the full reasoning chain embodied in an expression, we propose a new test setting by adding additional distracting images containing objects sharing similar properties with the referent, thus minimising the success rate of reasoning-free.
-
 
 - Referring Image Segmentation via Cross-Modal Progressive Comprehension
 
@@ -368,6 +359,13 @@ Features: First, we design a novel expression engine rendering various reasoning
 - Multi-Modal Graph Neural Network for Joint Reasoning on Vision and Scene Text
 
 - Visual-Semantic Matching by Exploring High-Order Attention and Distraction
+
+Abstract: We address cross-modality semantic matching task from two previously-ignored aspects: high-order semantic information (e.g., object-predicatesubject triplet, object-attribute pair) and visual distraction (i.e., despite the high relevance to textual query, images may also contain many prominent distracting objects or visual relations). Specifically, we build scene graphs for both visual and textual modalities. 
+
+Technical contributions: We formulate the visual-semantic matching task as an attention-driven cross-modality scene graph matching problem. Graph convolutional networks (GCNs) are used to extract high-order information from two scene graphs; some top-ranked samples are indeed false matching due to the co-occurrence of both highly-relevant and distracting information. We devise an information-theoretic measure for estimating semantic distraction and re-ranking the initial retrieval results.
+
+Result: Comprehensive experiments and ablation studies on two large public datasets (MS-COCO and Flickr30K) demonstrate the superiority of the proposed method and the effectiveness of both high-order attention and distraction.
+
 
 - MCEN:Bridging Cross-Modal Gap between Cooking Recipes and Dish Images with Latent Variable Model
 
