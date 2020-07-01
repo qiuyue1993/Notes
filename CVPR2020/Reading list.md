@@ -382,6 +382,12 @@ Result: Extensive experimental results clearly demonstrate that the proposed MCE
 
 - Context-Aware Attention Network for Image-Text Retrieval
 
+Abstract: In this work, we propose a unified Context-Aware Attention Network (CAAN), which selectively focuses on critical local fragments (regions and words) by aggregating the global context. Specifically, it simultaneously utilizes global intermodal alignments and intra-modal correlations to discover
+latent semantic relations. Considering the interactions between images and sentences in the retrieval process, intramodal correlations are derived from the second-order attention of region-word alignments instead of intuitively comparing the distance between original features.
+
+Result: Our method achieves fairly competitive results on two generic imagetext retrieval datasets Flickr30K and MS-COCO.
+
+
 - IMRAM:Iterative Matching With Recurrent Attention Memory for Cross-Modal Image-Text Retrieval
 
 ### Image Editing / Manipulation via Text (1)
