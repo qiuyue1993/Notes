@@ -369,6 +369,13 @@ Result: Comprehensive experiments and ablation studies on two large public datas
 
 - MCEN:Bridging Cross-Modal Gap between Cooking Recipes and Dish Images with Latent Variable Model
 
+Abstract: In this paper, we focus on the task of cross-modal retrieval between food images and cooking recipes.
+
+Method:  We present Modality-Consistent Embedding Network (MCEN) that learns modality-invariant representations by projecting images and texts to the same embedding space. To capture the latent alignments between modalities, we incorporate stochastic latent variables to explicitly exploit the interactions between textual and visual features. Importantly, our method learns the cross-modal alignments during training but computes embeddings of different modalities independently at inference time for the sake of efficiency.
+
+Result: Extensive experimental results clearly demonstrate that the proposed MCEN outperforms all existing approaches on the benchmark Recipe1M dataset and requires less computational cost.
+
+
 ### Image-Text Retrieval / Search (3)
 
 - Image Search With Text Feedback by Visiolinguistic Attention Learning
