@@ -390,6 +390,14 @@ Result: Our method achieves fairly competitive results on two generic imagetext 
 
 - IMRAM:Iterative Matching With Recurrent Attention Memory for Cross-Modal Image-Text Retrieval
 
+Fact: Semantics are diverse (i.e. involving different kinds of semantic concepts), and humans usually follow a latent structure to combine them into understandable languages.
+
+Abstract: We propose an Iterative Matching with Recurrent Attention Memory (IMRAM) method, in which correspondences between images and texts are captured with multiple steps of alignments.
+
+Method: We introduce an iterative matching scheme to explore such fine-grained correspondence progressively. A memory distillation unit is used to refine alignment knowledge from early steps to later ones. We formulate the proposed iterative matching method with a recurrent attention memory which incorporates a cross-modal attention unit and a memory distillation unit to refine the correspondence between images and texts.
+
+Result: Experiment results on three benchmark datasets, i.e. Flickr8K, Flickr30K, and MS COCO, show that our IMRAM achieves state-of-the-art performance, well demonstrating its effectiveness. Experiments on a practical business advertisement dataset, named KWAI-AD, further validates the applicability of our method in practical scenarios.
+
 ### Image Editing / Manipulation via Text (1)
 
 - ManiGAN: Text-Guided Image Manipulation
