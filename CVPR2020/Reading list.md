@@ -130,6 +130,16 @@ Method: An innovative local graph bridges a text proposal model via Convolutiona
 
 - On Vocabulary Reliance in Scene Text Recognition
 
+Previous neglated problem: the state-ofthe-art methods perform well on images with words within vocabulary but generalize poorly to images with words outside vocabulary. 
+
+Abstract: we establish an analytical framework to conduct an in-depth study on the problem of vocabulary reliance in scene text recognition.
+
+Key findings: (1) Vocabulary reliance is ubiquitous; (2) Attention-based decoders prove weak in generalizing to words outside vocabulary and segmentation-based decoders perform well in utilizing visual features;  (3) Context modeling is highly coupled with the prediction layers.
+
+Method: we propose a simple yet effective mutual learning strategy to allow models of two families (attention-based and segmentationbased) to learn collaboratively.
+
+Results:  This remedy alleviates the problem of vocabulary reliance and improves the overall scene text recognition performance.
+
 - ContourNet:Taking a Further Step Toward Accurate Arbitrary-Shaped Scene Text Detection
 
 - What Machines See Is Not What They Get: Fooling Scene Text Recognition Models With Adversarial Text Images (**Oral**)
