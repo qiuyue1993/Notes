@@ -154,6 +154,12 @@ Results: Without external data for training, the proposed method achieves 85.4% 
 
 - STEFANN:Scene Text Editor Using Font Adaptive Neural Network
 
+Abstract: In this paper, we propose a method to modify text in an image at character-level. 
+
+Method: We approach the problem in two stages. At first, the unobserved character (target) is generated from an observed character (source) being modified. We propose two different neural network architectures – (a) FANnet to achieve structural consistency with source font and (b) Colornet to preserve source color. Next, we replace the source character with the generated character maintaining both geometric and visual consistency with neighboring characters. 
+
+Result:  Our method works as a unified platform for modifying text in images. We present the effectiveness of our method on COCO-Text and ICDAR datasets both qualitatively and quantitatively.
+
 - SEED:Semantics Enhanced Encoder-Decoder Framework for Scene Text Recognition
 
 - Learn to Augment:Joint Data Augmentation and Network Optimization for Text Recognition
