@@ -350,6 +350,12 @@ Features: First, we design a novel expression engine rendering various reasoning
 
 - A Real-Time Cross-Modality Correlation Filtering Method for Referring Expression Comprehension
 
+Abstract: we propose a novel Realtime Cross-modality Correlation Filtering method (RCCF). RCCF reformulates the referring expression comprehension as a correlation filtering process.
+
+Method: The expression is first mapped from the language domain to the visual domain and then treated as a template (kernel) to perform correlation filtering on the image feature map. The peak value in the correlation heatmap indicates the center points of the target box. In addition, RCCF also regresses a 2-D object size and 2-D offset. The center point coordinates, object size and center point offset together to form the target bounding box. 
+
+Result: Our method runs at 40 FPS while achieving leading performance in RefClef, RefCOCO, RefCOCO+ and RefCOCOg benchmarks. In the challenging RefClef dataset, our methods almost double the state-of-the-art performance (34.70% increased to 63.79%).
+
 ### Image-Text Matching / Visual-Semantic Matching (Embedding) (5)
 
 - Graph Structured Network for Image-Text Matching
