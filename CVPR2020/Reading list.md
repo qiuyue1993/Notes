@@ -142,6 +142,14 @@ Results:  This remedy alleviates the problem of vocabulary reliance and improves
 
 - ContourNet:Taking a Further Step Toward Accurate Arbitrary-Shaped Scene Text Detection
 
+Two main challenges: 1) many methods suffer from false positives in theirtext representations; 2) the large scale variance of scene texts makes it hard for network to learn samples
+
+Abstract: We propose the ContourNet, which effectively handles these two problems.
+
+Method: A scaleinsensitive Adaptive Region Proposal Network (AdaptiveRPN) is proposed to generate text proposals by only focusing on the Intersection over Union (IoU) values between predicted and ground-truth bounding boxes. Then a novel Local Orthogonal Texture-aware Module (LOTM) models the local texture information of proposal features in two orthogonal directions and represents text region with a set of contour points. Point Re-scoring Algorithm filters FPs by considering the response values in both orthogonal directions simultaneously.
+
+Results: Without external data for training, the proposed method achieves 85.4% and 83.9% in F-measure on Total-Text and CTW1500 dataset with 3.8 FPS and 4.5 FPS respectively, which outperforms recent counterparts by a large margin.
+
 - What Machines See Is Not What They Get: Fooling Scene Text Recognition Models With Adversarial Text Images (**Oral**)
 
 - STEFANN:Scene Text Editor Using Font Adaptive Neural Network
