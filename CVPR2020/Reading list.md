@@ -174,6 +174,13 @@ Result: The state-of-theart ASTER method is integrated into the proposed framewo
 
 - Learn to Augment:Joint Data Augmentation and Network Optimization for Text Recognition
 
+Abstract: We propose a new method for text image augmentation.
+
+Method: Different from traditional augmentation methods such as rotation, scaling and perspective transformation, our proposed augmentation method is designed to learn proper and efficient data augmentation which is more effective and specific for training a robust recognizer. By using a set of custom fiducial points, the proposed augmentation method is flexible and controllable. An agent network learns from the output of the recognition network and controls the fiducial points to generate more proper training samples for the recognition network. 
+
+Result: Extensive experiments on various benchmarks, including regular scene text, irregular scene text and handwritten text, show that the proposed
+augmentation and the joint learning methods significantly boost the performance of the recognition networks.
+
 - Fast(er) Reconstruction of Shredded Text Documents via Self-Supervised Deep Asymmetric Metric Learning
 
 - SwapText:Image Based Texts Transfer in Scenes
