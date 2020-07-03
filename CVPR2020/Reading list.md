@@ -183,6 +183,14 @@ augmentation and the joint learning methods significantly boost the performance 
 
 - Fast(er) Reconstruction of Shredded Text Documents via Self-Supervised Deep Asymmetric Metric Learning
 
+Existing problems: A sensitive issue, however, is that current deep model solutions require an inference whenever a pair of shreds has to be evaluated.
+
+Abstract: This work addressed the problem of reconstructing mechanically-shredded text documents, more specifically the critical part of evaluating compatibility between shreds.This work proposes a scalable deep learning approach for measuring pairwise compatibility in which the number of inferences scales linearly (rather than quadratically) with the number of shreds.
+
+Method: Instead of predicting compatibility directly, deep models are leveraged to asymmetrically project the raw shred content onto a common metric space in which distance is proportional to the compatibility. In addition, the proposed method is trained with artificially generated data (i.e., does not require real-world data) in a self-supervised way (i.e., does not require annotation).
+
+Result: Experimental results show that our method has accuracy comparable to the state-of-the-art with a speed-up of about 22 times for a test instance with 505 shreds (20 mixed shredded-pages from different documents).
+
 - SwapText:Image Based Texts Transfer in Scenes
 
 Abstract: In this work, we present SwapText, a three-stage framework to transfer texts across scene images. SwapText to address a novel task of replacing texts in the scene text images by intended texts.
