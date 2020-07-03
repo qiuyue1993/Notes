@@ -162,6 +162,16 @@ Result:  Our method works as a unified platform for modifying text in images. We
 
 - SEED:Semantics Enhanced Encoder-Decoder Framework for Scene Text Recognition
 
+Existing problems: Scene text recognition methods still face lots of challenges like image blur, uneven illumination, and incomplete characters.
+
+Reason: We argue that most encoder-decoder methods are based on local visual features without explicit global semantic information.
+
+Abstract: we propose a semantics enhanced encoder-decoder framework to robustly recognize low-quality scene texts.
+
+Method: We propose SEED for scene text recognition, which predicts additional global semantic information to guide the decoding process, and the predicted semantic information is supervised by the word embedding from a pre-trained language model.
+
+Result: The state-of-theart ASTER method is integrated into the proposed framework as an exemplar. Extensive experiments demonstrate that the proposed framework is more robust for low-quality text images, and achieves state-of-the-art results on several benchmark datasets.
+
 - Learn to Augment:Joint Data Augmentation and Network Optimization for Text Recognition
 
 - Fast(er) Reconstruction of Shredded Text Documents via Self-Supervised Deep Asymmetric Metric Learning
