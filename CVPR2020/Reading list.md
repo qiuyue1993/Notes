@@ -202,6 +202,13 @@ Result:  Using the proposing framework, we can manipulate the texts of the input
 
 - OrigamiNet:Weakly-Supervised, Segmentation-Free, One-Step, Full Page Text Recognition by learning to unfold
 
+Abstract: We take a step from segmentation-free single line recognition towards segmentation-free multi-line / full page recognition. 
+
+Method: We propose a novel and simple neural network module, termed OrigamiNet, that can augment any CTC-trained, fully convolutional single line text recognizer, to convert it into a multi-line version by providing the model with enough spatial capacity to be able to properly collapse a 2D input signal into 1D without losing information. Such modified networks can be trained using exactly their same simple original procedure, and using only unsegmented image and text pairs.
+
+Result: We carry out a set of interpretability experiments that show that our trained models learn an accurate implicit line segmentation. We achieve state-of-the-art character error rate on both IAM & ICDAR 2017 HTR benchmarks for handwriting recognition, surpassing all other methods in the literature. On IAM we even surpass single line methods that use accurate localization information during training.
+
+
 ### Visual Question Answering (VQA) / Text Visual Question Answering (TextVQA) (Oral:4/10)
 
 - Fantastic Answers and Where to Find Them: Immersive Question-Directed Visual Attention
