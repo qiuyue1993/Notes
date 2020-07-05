@@ -591,7 +591,7 @@ Result: We conducted extensive experiments on the LRS3-TED and the LRW datasets.
 - SynSin:End-to-End View Synthesis From a Single Image
 
 ---
-## 3D Vision (2)
+## 3D Vision (5)
 
 - Total3DUnderstanding: Joint Layout, Object Pose and Mesh Reconstruction for Indoor Scenes From a Single Image (**Oral**)
 
@@ -605,6 +605,18 @@ Method: We propose a multi-task deep network which can simultaneously output 2D 
 
 Result: The experimental results show that our editing data and deep
 network perform well on CUS.
+
+⁻ SG-NN: Sparse Generative Neural Networks for Self-Supervised Scene Completion of RGB-D Scans
+
+Abstract: We present a novel approach that converts partial and noisy RGB-D scans into high-quality 3D scene reconstructions by inferring unobserved scene geometry. Our approach is fully self-supervised and can hence be trained solely on real-world, incomplete scans. 
+
+Method: To achieve selfsupervision, we remove frames from a given (incomplete) 3D scan in order to make it even more incomplete; selfsupervision is then formulated by correlating the two levels of partialness of the same scan while masking out regions that have never been observed. Combined with a new 3D sparse generative neural network architecture, our method is able to predict highly-detailed surfaces in a coarse-to-fine hierarchical fashion.
+
+Result: generating 3D scenes at 2cm resolution, more than twice the resolution of existing state-of-the-art methods as well as outperforming them by a significant margin in reconstruction quality.
+
+- Anisotropic Convolutional Networks for 3D Semantic Scene Completion
+
+- Select, Supplement and Focus for RGB-D Saliency Detection
 
 ---
 ## Scene Analysis and Understanding (2)
