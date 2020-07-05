@@ -111,6 +111,14 @@ Result: The proposed module increases action accuracy in generated descriptions,
 
 - Object Relational Graph With Teacher-Recommended Learning for Video Captioning
 
+Existing problems:  Existing models lack adequate visual representation due to the neglect of interaction between object, and sufficient training for content-related words due to long-tailed problems.
+
+Abstract: We propose a complete video captioning system including both a novel model and an effective training strategy. 
+
+Method: we propose an object relational graph (ORG) based encoder, which captures more detailed interaction features to enrich visual representation. Meanwhile, we design a teacher-recommended learning (TRL) method to make full use of the successful external language model (ELM) to integrate the abundant linguistic knowledge into the caption model. The ELM generates more semantically similar word proposals which extend the groundtruth words used for training to deal with the long-tailed problem. 
+
+Result: Experimental evaluations on three benchmarks: MSVD, MSR-VTT and VATEX show the proposed ORGTRL system achieves state-of-the-art performance.
+
 - Speech2Action: Cross-Modal Supervision for Action Recognition
 
 - Listen to Look:Action Recognition by Previewing Audio
