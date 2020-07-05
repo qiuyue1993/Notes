@@ -74,6 +74,16 @@ Method: a coarse-to-fine hierarchy with three components: 1. room layout with ca
 
 - Dense Regression Network for Video Grounding
 
+Previous problem: The key challenge in this task is that one training video might only contain a few annotated starting/ending frames that can be used as positive examples for model training. Most conventional approaches directly train a binary classifier using such imbalance data, thus achieving inferior results.
+
+Abstract: The key idea of this paper is to use the distances between the frame within the ground truth and the starting (ending) frame as dense supervisions
+to improve the video grounding accuracy.
+
+Method: We design a novel dense regression network (DRN) to regress the distances from each frame to the starting (ending) frame of the video segment described by the query. We also propose a simple but effective IoU regression head module to explicitly consider the localization quality of the grounding
+results (i.e., the IoU between the predicted location and the ground truth). 
+
+Result:  Experimental results show that our approach significantly outperforms state-of-the-arts on three datasets (i.e., Charades-STA, ActivityNet-Captions, and TACoS).
+
 - Video Object Grounding Using Semantic Roles in Language Description
 
 - Fine-Grained Video-Text Retrieval With Hierarchical Graph Reasoning
