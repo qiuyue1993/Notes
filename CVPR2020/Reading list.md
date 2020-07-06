@@ -637,6 +637,14 @@ Result: Extensive experiments on two SSC benchmarks, NYU-Depth-v2 and NYUCAD, sh
 
 - Select, Supplement and Focus for RGB-D Saliency Detection
 
+Previous problem: RGB-D saliency detection methods are also negatively influenced by randomly distributed erroneous or missing regions on the depth map or along the object boundaries.
+
+Abstract: We propose a new framework for accurate RGB-D saliency detection taking account of global location and local detail complementarities from two modalities.
+
+Method: This is achieved by designing a complimentary interaction module (CIM) to discriminatively select useful representation from the RGB and depth data, and effectively integrate cross-modal features. It includes a complimentary interaction model, which consists of a cross-modal attention unit and a boundary supplement unit to capture effective features for salient object location and boundary detail refinement. Benefiting from the proposed CIM, the fused features can accurately locate salient objects with fine edge details. Moreover, we propose a compensationaware loss to improve the network’s confidence in detecting hard samples.
+
+Result: Comprehensive experiments on six public datasets demonstrate that our method outperforms 18 state-of-the-art methods.
+
 ---
 ## Scene Analysis and Understanding (2)
 
