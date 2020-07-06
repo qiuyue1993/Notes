@@ -628,6 +628,13 @@ Result: generating 3D scenes at 2cm resolution, more than twice the resolution o
 
 - Anisotropic Convolutional Networks for 3D Semantic Scene Completion
 
+Abstract: We propose a novel module called anisotropic convolution, which properties with flexibility and power impossible for the competing methods such
+as standard 3D convolution and some of its variations.
+
+Method: In contrast to the standard 3D convolution that is limited to a fixed 3D receptive field, our module is capable of modeling the dimensional anisotropy voxel-wisely. The basic idea is to enable anisotropic 3D receptive field by decomposing a 3D convolution into three consecutive 1D convolutions, and the kernel size for each such 1D convolution is adaptively determined on the fly. By stacking multiple such anisotropic convolution modules, the voxel-wise modeling capability can be further enhanced while maintaining a controllable amount of model parameters.
+
+Result: Extensive experiments on two SSC benchmarks, NYU-Depth-v2 and NYUCAD, show the superior performance of the proposed method.
+
 - Select, Supplement and Focus for RGB-D Saliency Detection
 
 ---
