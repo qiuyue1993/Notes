@@ -125,6 +125,18 @@ Result: Experimental evaluations on three benchmarks: MSVD, MSR-VTT and VATEX sh
 
 - Beyond Short-Term Snippet:Video Relation Detection With Spatio-Temporal Global Context
 
+Previous method and problems: A majority of existing works divide a video into short segments, predict relationships in each segment, and merge them. Such methods cannot capture relations involving long motions. Predicting the same relationship across neighboring video segments is also inefficient.
+
+Abstract: this work proposes a novel sliding-window scheme to simultaneously predict short-term and long-term relationships.
+
+Method: Our model contains three stages: Object Tracklets Proposal, Relationship Pair Proposal and Relationship Classfication. The first stage generates object tracklet proposals; The second stage refines proposal features and find related subjectobject proposals; The third stage focuses on predicting the
+relationships between related pairs. 
+
+Method details: We run windows with different kernel sizes on object tracklets to generate sub-tracklet proposals with different duration, while the
+computational load is similar to that in segment-based methods. To fully utilize spatial and temporal information in videos, we construct one spatial and one temporal graph and employ Graph Convloutional Network to generate contextual embedding for tracklet proposal compatibility evaluation. We only predict relationships on highlycompatible proposal pairs.
+
+Result: Our method achieves state-ofthe-art performance on both ImageNet-VidVRD and VidOR dataset across multiple tasks. Especially for ImageNetVidVRD, we obtain an average of 3% (R@50 from 8.07% to 11.21%) improvement under all evaluation metrics.
+
 ### Audio and Vision (Oral:1/2)
 
 - DAVD-Net:Deep Audio-Aided Video Decompression of Talking Heads (**Oral**)
