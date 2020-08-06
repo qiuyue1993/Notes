@@ -7,6 +7,7 @@
 - [Method](#Method)
 - [Experiments](#Experiments)
 - [Conclusion](#Conclusion)
+- [Thoughts](#Thoughts)
 - [reference](#reference)
 
 ---
@@ -18,6 +19,9 @@
 
 ---
 ## Introduction
+
+- Navigating successfully from place to place is a fundamental need for a robot in a human environment and can be facilitated, as with smart assistants, through dialog.
+
 
 ---
 ## Related Works
@@ -34,6 +38,10 @@
 ---
 ## Conclusion
 
+
+---
+## Thoughts
+- CVDN is not big enough? (7,000 instances)
 
 --
 ## Reference
