@@ -51,8 +51,13 @@ In this work, we presented an environment-agnostic multitask learning framework 
 
 Results: Extensive experiments show that environment-agnostic multitask learning significantly reduces the performance gap between seen and unseen environments, and the navigation agent trained so outperforms baselines on unseen environments by 16% (relative measure on success rate) on VLN and 120% (goal progress) on NDH. Our submission to the CVDN leaderboard establishes a new state-of-the-art for the NDH task on the holdout test set.
 
-## 
+## Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments
 
+Proposed task: We develop a language-guided navigation task set in a continuous 3D environment where agents must execute low-level actions to　follow natural language navigation directions.
+
+Difference with VLN: Specifically, our setting drops the presumptions of known environment topologies, short-range oracle navigation, and perfect agent localization. This suggests prior results in VLN may be overly optimistic in terms of progress towards instruction-following robots functioning in the wild.
+
+Experiment: To contextualize this new task, we develop models that mirror many of the advances made in prior settings as well as single-modality baselines. While some transfer, we find significantly lower absolute performance in the continuous setting – suggesting that performance in prior ‘navigation-graph’ settings may be inflated by the strong implicit assumptions.
 
 
 
