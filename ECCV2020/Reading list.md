@@ -31,6 +31,16 @@ Result: Experimental results demonstrate the effectiveness of the proposed model
 
 - We show that our end-to-end method outperforms the best 2D visual grounding method that simply backprojects its 2D predictions to 3D by a significant margin (9.04 Acc@0.5IoU vs. 22.39 Acc@0.5IoU).
 
+## Active Visual Information Gathering for Vision-Language Navigation
+
+Existing problems: Agents trained by current approaches typically suffer from this and would consequently struggle to avoid random and inefficient actions at every step.
+
+Inspiration: In contrast, when humans face such a challenge, they can still maintain robust navigation by actively exploring the surroundings to gather more information and thus make more confident navigation decisions.  This work draws inspiration from human navigation behavior and endows an agent with an active information gathering ability for a more intelligent vision-language navigation policy.
+
+Proposed method: y. To achieve this, we propose an end-to-end framework for learning an exploration policy that decides i) when and where to explore, ii) what information is worth gathering during exploration, and iii) how to adjust the navigation decision after the exploration.
+
+Results:  The experimental results show promising exploration strategies emerged from training, which leads to significant boost in navigation performance. On the R2R challenge leaderboard, our agent gets promising results all three VLN settings, i.e., single run, pre-exploration, and beam search.
+
 
 
 
