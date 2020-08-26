@@ -86,6 +86,23 @@ Value consists of a set of well-designed probing tasks that unveil the inner mec
 
 Result: : (i) Pre-trained models exhibit a propensity for attending over text rather than images during inference. (ii) There exists a subset of attention heads that are tailored for capturing cross-modal interactions. (iii) Learned attention matrix in pre-trained models demonstrates patterns coherent with the latent alignment between image regions and textual words. (iv) Plotted attention patterns reveal visually-interpretable relations among image regions. (v) Pure linguistic knowledge is also effectively encoded in the attention heads.
 
+## Spatiotemporal Attacks for Embodied Agents
+
+
+
+
+## A Cordial Sync: Going Beyond Marginal Policies for Multi-Agent Embodied Tasks
+
+
+
+
+## SoundSpaces: Audio-Visual Navigation in 3D Environments
+
+
+
+
+## Learning Object Relation Graph and Tentative Policy for Visual Navigation
+
 
 
 
