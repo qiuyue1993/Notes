@@ -99,7 +99,13 @@ our perturbations have strong attack and generalization abilities. We also provi
 
 ## A Cordial Sync: Going Beyond Marginal Policies for Multi-Agent Embodied Tasks
 
+Existing problem: While multi-agent collaboration research has flourished in gridworld-like environments, relatively little work has considered visually rich domains.
 
+Proposed task: Addressing this, we introduce the novel task FurnMove in which agents work together to move a piece of furniture through a living room to a goal. Unlike existing tasks, FurnMove requires agents to coordinate at every timestep.
+
+Approach: We identify two challenges when training agents to complete FurnMove: existing decentralized action sampling procedures do not permit expressive joint action policies and, in tasks requiring close coordination, the number of failed actions dominates successful actions. To confront these challenges we introduce SYNC-policies (synchronize your actions coherently) and CORDIAL (coordination loss).
+
+Result: Using SYNC-policies and CORDIAL, our agents achieve a 58% completion rate on FurnMove, an impressive absolute gain of 25 percentage points over competitive decentralized baselines.
 
 
 ## SoundSpaces: Audio-Visual Navigation in 3D Environments
