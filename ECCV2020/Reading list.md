@@ -88,8 +88,14 @@ Result: : (i) Pre-trained models exhibit a propensity for attending over text ra
 
 ## Spatiotemporal Attacks for Embodied Agents
 
+Existing problems: Existing work on adversarial attacks have mainly focused on static scenes; however, it remains unclear whether such attacks are effective against embodied agents, which could navigate and interact with a dynamic environment. 
 
+Proposed work:  In this work, we take the first step to study adversarial attacks for embodied agents.
 
+Approach: In particular, we generate spatiotemporal perturbations to form 3D adversarial examples, which exploit the interaction history in both the temporal and spatial dimensions. Regarding the temporal dimension, since agents make predictions based on historical observations, we develop a trajectory attention module to explore scene view contributions, which further help localize 3D objects appeared with highest stimuli. By conciliating with clues from the temporal dimension, along the spatial dimension, we adversarially perturb the physical properties (e.g., texture and 3D shape) of the contextual objects that appeared in the most important scene views.
+
+Result: Extensive experiments on the EQA-v1 dataset for several embodied tasks in both the white-box and black-box settings have been conducted, which demonstrate that
+our perturbations have strong attack and generalization abilities. We also provide a discussion of adversarial training using our generated attacks, and a perceptual study indicating that contrary to the human vision system, current embodied agents are mostly more sensitive to object textures rather than shapes, which sheds some light on bridging the gap between human perception and embodied perception.
 
 ## A Cordial Sync: Going Beyond Marginal Policies for Multi-Agent Embodied Tasks
 
