@@ -107,11 +107,17 @@ Approach: We identify two challenges when training agents to complete FurnMove: 
 
 Result: Using SYNC-policies and CORDIAL, our agents achieve a 58% completion rate on FurnMove, an impressive absolute gain of 25 percentage points over competitive decentralized baselines.
 
-
 ## SoundSpaces: Audio-Visual Navigation in 3D Environments
 
+Existing problems: Moving around in the world is naturally a multisensory experience, but today’s embodied agents are deaf—restricted to solely their visual perception of the environment.
 
+Proposed task:  We introduce audio-visual navigation for complex, acoustically and visually realistic 3D environments. By both seeing and hearing, the agent must learn to navigate to a sounding object. The agent to (1) discover elements of the geometry of the physical space indicated by the reverberating audio and (2) detect and follow sound-emitting targets. We consider two variants of the navigation task: (1) AudioGoal, where the target is indicated by the sound it emits, and (2) AudioPointGoal, where the agent is additionally directed towards the goal location at the onset.
 
+Approach:  We propose a multi-modal deep reinforcement learning approach to train navigation policies end-to-end from a stream of egocentric audio-visual observations.
+
+Dataset:  SoundSpaces: a first-of-its-kind dataset of audio renderings based on geometrical acoustic simulations for two sets of publicly available 3D environments (Matterport3D and Replica), and we instrument Habitat to support the new sensor, making it possible to insert arbitrary sound sources in an array of real-world scanned environments.
+
+Result: Our results show that audio greatly benefits embodied visual navigation in 3D spaces, and our work lays groundwork for new research in embodied AI with audio-visual perception. 
 
 ## Learning Object Relation Graph and Tentative Policy for Visual Navigation
 
