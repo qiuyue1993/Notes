@@ -130,6 +130,8 @@ being stuck. Specifically, trial-driven IL is a type of supervision used in poli
 
 Result: Experiment in the artificial environment AI2-Thor validates that each of the techniques is effective. When combined, the techniques bring significantly improvement over baseline methods in navigation effectiveness and efficiency in unseen environments. We report 22.8% and 23.5% increase in success rate and Success weighted by Path Length (SPL), respectively. Furthermore, our proposed trial-driven imitation learning empowers our agent to escape from deadlock states in training, while our tentative policy network allows our navigation system to leave deadlock states in unseen testing environments, thus further promoting navigation effectiveness and achieving better navigation performance.
 
+## Occupancy Anticipation for Efficient Exploration and Navigation
+
 
 
 
