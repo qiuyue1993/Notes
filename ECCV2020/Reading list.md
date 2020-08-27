@@ -121,6 +121,17 @@ Result: Our results show that audio greatly benefits embodied visual navigation 
 
 ## Learning Object Relation Graph and Tentative Policy for Visual Navigation
 
+Target: In this task, it is critical to learn informative visual representation and robust navigation policy.
+
+Proposed method: Aiming to improve these two components, this paper proposes three complementary techniques, object relation graph (ORG), trial-driven imitation learning (IL), and a memory-augmented tentative policy network (TPN).
+
+Approach details:  ORG improves visual representation learning by integrating object relationships, including category closeness and spatial correlations, e.g., a TV usually co-occurs with a remote spatially. Both Trial-driven IL and TPN underlie robust navigation policy, instructing the agent to escape from deadlock states, such as looping or
+being stuck. Specifically, trial-driven IL is a type of supervision used in policy network training, while TPN, mimicking the IL supervision in unseen environment, is applied in testing.
+
+Result: Experiment in the artificial environment AI2-Thor validates that each of the techniques is effective. When combined, the techniques bring significantly improvement over baseline methods in navigation effectiveness and efficiency in unseen environments. We report 22.8% and 23.5% increase in success rate and Success weighted by Path Length (SPL), respectively. Furthermore, our proposed trial-driven imitation learning empowers our agent to escape from deadlock states in training, while our tentative policy network allows our navigation system to leave deadlock states in unseen testing environments, thus further promoting navigation effectiveness and achieving better navigation performance.
+
+
+
 
 
 
