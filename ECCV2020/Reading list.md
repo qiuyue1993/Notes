@@ -138,6 +138,18 @@ Proposed method: We propose occupancy anticipation, where the agent uses its ego
 
 Result: By exploiting context in both the egocentric views and top-down maps our model successfully anticipates a broader map of the environment, with performance significantly better than strong baselines.  Furthermore, when deployed for the sequential decision-making tasks of exploration and navigation, our model outperforms state-of-the-art methods on the Gibson and Matterport3D datasets. Our approach is the winning entry in the 2020 Habitat PointNav Challenge.
 
+## PhraseClick: Toward Achieving Flexible Interactive Segmentation by Phrase and Click
+
+
+## Contrastive Learning for Weakly Supervised Phrase Grounding
+
+
+
+## Visual Question Answering on Image Sets
+
+
+
+
 
 
 
