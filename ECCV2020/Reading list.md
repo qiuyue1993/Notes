@@ -158,7 +158,14 @@ Result: Training with our negatives yields a ∼ 10% absolute gain in accuracyov
 
 ## Visual Question Answering on Image Sets
 
+Proposed work: . We introduce the task of Image-Set Visual Question Answering (ISVQA), which generalizes the commonly studied single-image VQA problem to multi-image settings. Taking a natural language question and a set of images as input, it aims to answer the question based on the content of the images. The questions can be about objects and relationships in one or more images or about the entire scene depicted by the image set.
 
+Dataset: We introduce two ISVQA datasets – indoor and outdoor scenes. They simulate the real-world scenarios of indoor image collections and multiple car-mounted cameras, respectively. The indoor-scene dataset contains 91,479 human-annotated questions for 48,138 image sets, and the outdoor-scene dataset has 49,617 questions for 12,746 image sets. 
+
+##
+
+
+## 
 
 
 
