@@ -148,7 +148,13 @@ Result: Moreover, the proposed approach is flexible in terms of interaction mode
 
 ## Contrastive Learning for Weakly Supervised Phrase Grounding
 
+Proposed method:  We show that phrase grounding can be learned by optimizing word-region attention to maximize a lower bound on mutual information between images and caption words. 
 
+Finding: We formulate the problem as that of estimating mutual information between image regions and caption words. We demonstrate that maximizing a lower bound on mutual information with respect to parameters of a region-word attention mechanism results in learning to ground words in images. We also show that language models can be used to generate contextpreserving negative captions which greatly improve learning in comparison to randomly sampling negatives from training data.
+
+Approach: Given pairs of images and captions, we maximize compatibility of the attention-weighted regions and the words in the corresponding caption, compared to non- corresponding pairs of images and captions. A key idea is to construct effective negative captions for learning through language model guided word substitutions.
+
+Result: Training with our negatives yields a ∼ 10% absolute gain in accuracyover randomly-sampled negatives from the training data. Our weakly supervised phrase grounding model trained on COCO-Captions shows a healthy gain of 5.7% to achieve 76.7% accuracy on Flickr30K Entities benchmark.
 
 ## Visual Question Answering on Image Sets
 
