@@ -162,10 +162,18 @@ Proposed work: . We introduce the task of Image-Set Visual Question Answering (I
 
 Dataset: We introduce two ISVQA datasets – indoor and outdoor scenes. They simulate the real-world scenarios of indoor image collections and multiple car-mounted cameras, respectively. The indoor-scene dataset contains 91,479 human-annotated questions for 48,138 image sets, and the outdoor-scene dataset has 49,617 questions for 12,746 image sets. 
 
-##
+## VQA-LOL: Visual Question Answering under the Lens of Logic
 
 
-## 
+## TRRNet: Tiered Relation Reasoning for Compositional Visual Question Answering
+
+
+## Semantic Equivalent Adversarial Data Augmentation for Visual Question Answering
+
+
+## RTM3D: Real-time Monocular 3D Detection from Object Keypoints for Autonomous Driving
+
+
 
 
 
