@@ -164,6 +164,19 @@ Dataset: We introduce two ISVQA datasets – indoor and outdoor scenes. They sim
 
 ## VQA-LOL: Visual Question Answering under the Lens of Logic
 
+Previous problem:  State-of-the-art models answer questions from the VQA dataset correctly, but struggle when asked a logical composition including negation, conjunction, disjunction, and antonyms. In this paper, we investigate whether visual question answering (VQA) systems trained to answer a question about an image, are able to answer the logical composition of multiple such questions. 
+
+Proposed work:  We develop a model that improves on this metric substantially, while retaining VQA performance.
+
+Dataset: We construct an augmentation of the VQA dataset as a benchmark, with questions containing logical compositions and linguistic transformations (negation, disjunction,
+conjunction, and antonyms).
+
+Approach: We propose our Lens of Logic (LOL) model which uses question-attention and logic-attention to understand logical connectives in the question, and a novel Frchet-Compatibility Loss, which ensures that the answers of the component questions and the composed question are consistent with the inferred logical operation.
+
+Findings: When put under this Lens of Logic, state-of-the-art VQA models have difficulty in correctly answering these logically composed questions.
+
+Results: Our model shows substantial improvement in learning logical compositions while retaining performance on VQA. We suggest this work as a move towards robustness by embedding logical connectives in visual understanding.
+
 
 ## TRRNet: Tiered Relation Reasoning for Compositional Visual Question Answering
 
