@@ -180,6 +180,13 @@ Results: Our model shows substantial improvement in learning logical composition
 
 ## TRRNet: Tiered Relation Reasoning for Compositional Visual Question Answering
 
+Intention: Compositional visual question answering requires reasoning over both semantic and geometry object relations. 
+
+Method details: We propose a novel tiered attention network for relation reasoning. The TRR network consists of a series of TRR units. Each TRR unit can be decomposed into four basic components: a root attention to model object level importance, a root to leaf attention passing module to select candidate objects based on root attention and generate pairwise relations, a leaf attention to model relation level importance and finally a message passing module for information communication between reasoning units.
+
+Proposed method: We propose a novel tiered reasoning method that dynamically selects object level candidates based on language representations and generates robust pairwise relations within the selected candidate objects. Moreover, we propose a policy network that decides the appropriate reasoning steps based on question complexity and current reasoning status.
+
+Result: The proposed tiered relation reasoning method can be compatible with the majority of the existing visual reasoning frameworks, leading to significant performance improvement with very little extra computational cost. In experiments, We achieve state-of-the-art performance on GQA dataset and competitive results on CLEVR datasets and VQAv2 dataset without functional program supervision.
 
 ## Semantic Equivalent Adversarial Data Augmentation for Visual Question Answering
 
