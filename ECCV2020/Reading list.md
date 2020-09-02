@@ -198,6 +198,32 @@ Result: We then use adversarial learning to train a classic VQA model (BUTD) wit
 
 ## RTM3D: Real-time Monocular 3D Detection from Object Keypoints for Autonomous Driving
 
+Proposed work: In this work, we propose an efficient and accurate monocular 3D detection framework in single shot.
+
+Previous methods: Most successful 3D detectors take the projection constraint from the 3D bounding box to the 2D box as an important component. Four edges of a 2D box provide only four constraints and the performance deteriorates dramatically with the small error of the 2D detector. 
+
+Approach: Different from these approaches, our method predicts the nine perspective keypoints of a 3D bounding box in image space, and then utilize the geometric relationship of 3D and 2D perspectives to recover the dimension, location, and orientation in 3D space. 
+
+Result: In this method, the properties of the object can be predicted stably even when the estimation of keypoints is very noisy, which enables us to obtain fast detection speed with a small architecture.  Training our method only uses the 3D properties of the object without any extra annotations, category-specific 3D shape priors, or depth maps. Our method is the first real-time system (FPS>24) for monocular image 3D detection while achieves state-of-the-art performance on the KITTI benchmark.
+
+## Captioning Images Taken by People Who Are Blind
+
+
+## Learning to Generate Grounded Visual Captions without Localization Supervision
+
+
+## Describing Unseen Videos via Multi-Modal Cooperative Dialog Agents
+
+
+## Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline
+
+
+## Learning Predictive Models from Observation and Interaction
+
+
+
+
+
 
 
 
