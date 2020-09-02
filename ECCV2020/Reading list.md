@@ -190,6 +190,11 @@ Result: The proposed tiered relation reasoning method can be compatible with the
 
 ## Semantic Equivalent Adversarial Data Augmentation for Visual Question Answering
 
+Previous problems: On the other hand, the data augmentation, as one of the major tricks for DNN, has been widely used in many computer vision tasks. However, there are few works studying the data augmentation problem for VQA and none of the existing image based augmentation schemes (such as rotation and flipping) can be directly applied to VQA due to its semantic structure – an himage, question, answeri triplet needs to be maintained correctly. 
+
+Proposed method: In this paper, instead of directly manipulating images and questions, we use generated adversarial examples for both images and questions as the augmented data. The augmented examples do not change the visual properties presented in the image as well as the semantic meaning of the question, the correctness of the image, question, answer is thus still maintained.
+
+Result: We then use adversarial learning to train a classic VQA model (BUTD) with our augmented data. We find that we not only improve the overall performance on VQAv2, but also can withstand adversarial attack effectively, compared to the baseline model. We show that the model trained with our method achieves 65.16% accuracy on the clean validation set, beating its vanilla training counterpart by 1.84%. Moreover, the adversarially trained model significantly increases accuracy on adversarial examples by 21.55%.
 
 ## RTM3D: Real-time Monocular 3D Detection from Object Keypoints for Autonomous Driving
 
