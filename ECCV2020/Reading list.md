@@ -226,6 +226,15 @@ Result: We show that our model significantly improves grounding accuracy without
 
 ## Describing Unseen Videos via Multi-Modal Cooperative Dialog Agents
 
+Needs: With the arising concerns for the AI systems provided with direct access to abundant sensitive information, researchers seek to develop more reliable AI with implicit information sources.
+
+Proposed work: We introduce a new task called video description via two multi-modal cooperative dialog agents, whose ultimate goal is for one conversational agent to describe an unseen video based on the dialog and two static frames.
+
+Proposed task detail: Specifically, one of the intelligent agents - Q-BOT - is given two static frames from the beginning and the end of the video, as well as a finite number of opportunities to ask relevant natural language questions before describing the unseen video. A-BOT, the other agent who has already seen the entire video, assists Q-BOT to accomplish the goal by providing answers to those questions. 
+
+Approach:  We propose a QA-Cooperative Network with a dynamic dialog history update learning mechanism to transfer knowledge from A-BOT to Q-BOT, thus helping Q-BOT to better describe the video. 
+
+Result: Extensive experiments demonstrate that Q-BOT can effectively learn to describe an unseen video by the proposed model and the cooperative learning method, achieving the promising performance where Q-BOT is given the full ground truth history dialog. We experimentally demonstrate the knowledge gap as well as the transfer process between two agents on the AVSD dataset [18]. With the proposed method, our Q-BOT achieves very promising performance comparable to the strong baseline situation where full ground truth dialog is provided.
 
 ## Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline
 
