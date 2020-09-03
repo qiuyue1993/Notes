@@ -218,6 +218,11 @@ Work: We analyze this dataset to (1) characterize the typical captions, (2) char
 
 ## Learning to Generate Grounded Visual Captions without Localization Supervision
 
+Previous problems: When automatically generating a sentence description for an image or video, it often remains unclear how well the generated caption is grounded, that is whether the model uses the correct image regions to output particular words, or if the model is hallucinating based on priors in the dataset and/or the language model.
+
+Proposed method: In this work, we help the model to achieve this via a novel cyclical training regimen that forces the model to localize each word in the image after the sentence decoder generates it, and then reconstruct the sentence from the localized image region(s) to match the ground-truth. Our proposed framework only requires learning one extra fully-connected layer (the localizer), a layer that can be removed at test time. 
+
+Result: We show that our model significantly improves grounding accuracy without relying on grounding supervision or introducing extra computation during inference, for both image and video captioning tasks. . We evaluate our proposed approach on both image and video captioning tasks. We show that the proposed training regime can boost grounding accuracy over a state-of-the-art baseline, enabling grounded models to be trained without bounding box annotations, while retaining high captioning quality across two datasets and various experimental settings.
 
 ## Describing Unseen Videos via Multi-Modal Cooperative Dialog Agents
 
