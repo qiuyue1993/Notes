@@ -208,6 +208,13 @@ Result: In this method, the properties of the object can be predicted stably eve
 
 ## Captioning Images Taken by People Who Are Blind
 
+Previous problems: While an important problem in the vision community is to design algorithms that can automatically caption images, few publiclyavailable datasets for algorithm development directly address the interests of real users.
+
+Proposed work: Observing that people who are blind have relied on (human-based) image captioning services to learn about images they take for nearly a decade, we introduce the first image captioning dataset to represent this real use case.
+
+Dataset: This new dataset, which we call VizWizCaptions, consists of over 39,000 images originating from people who are blind that are each paired with five captions.
+
+Work: We analyze this dataset to (1) characterize the typical captions, (2) characterize the diversity of content found in the images, and (3) compare its content to that found in eight popular vision datasets. We also analyze modern image captioning algorithms to identify what makes this new dataset challenging for the vision community. 
 
 ## Learning to Generate Grounded Visual Captions without Localization Supervision
 
