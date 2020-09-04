@@ -250,7 +250,18 @@ Results: Our best single model outperforms prior published work (including model
 
 ## Learning Predictive Models from Observation and Interaction
 
+Previous issues: However, learning a model that captures the dynamics of complex skills represents a major challenge: if the agent needs a good model to perform these skills, it might never be able to collect the experience on its own that is required to learn these delicate and complex behaviors.
 
+Insight: Instead, we can imagine augmenting the training set with observational data of other agents, such as humans. Such data is likely more plentiful, but represents a different embodiment.
+
+Problems: For example, videos of humans might show a robot how to use a tool, but (i) are not annotated with suitable robot actions, and (ii) contain a systematic distributional shift due to the embodiment differences between humans and robots.
+
+Approach: We address the first challenge by formulating the corresponding graphical model and treating the action as an observed variable for the interaction data and an unobserved variable for the observation data; and the second challenge by using a domain-dependent prior.
+
+Contribution: The main contribution of this work is an approach for learning predictive models that can leverage both videos of an agent annotated with actions and observational data for which actions are not available; We formulate a latent variable model for prediction, in which the actions are observed variables in the first case and unobserved variables in the second case. We further address the domain shift between the observation and interaction data by learning a domainspecific prior over the latent variables. We instantiate the model with deep neural networks and train it with amortized variational inference.
+
+Result:  In two problem settings – driving and object manipulation – we find that our method is able to effectively leverage observational data from dashboard cameras and humans, respectively, to improve the performance of action-conditioned prediction. Further, we find that the resulting model enables a robot to solve tool-use tasks, and
+achieves significantly greater success than a model that does not use observational data of a human using tools.
 
 ## Neural Object Learning for 6D Pose Estimation Using a Few Cluttered Images
 
