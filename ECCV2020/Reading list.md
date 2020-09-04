@@ -238,6 +238,15 @@ Result: Extensive experiments demonstrate that Q-BOT can effectively learn to de
 
 ## Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline
 
+Previous works: Prior work in visual dialog has focused on training deep neural models on VisDial in isolation.
+
+Proposed work: We present an approach to leverage pretraining on related vision-language datasets before transferring to visual dialog. We adapt the recently proposed ViLBERT model for multi-turn visually-grounded conversations. Our model is pretrained on the Conceptual Captions and Visual Question Answering datasets, and finetuned on VisDial.
+
+Detailed: Next, we find that additional finetuning using "dense" annotations in VisDial leads to even higher NDCG – more than 10% over our base model – but hurts MRR – more than 17% below our base model! This highlights a trade-off between the two primary metrics – NDCG and MRR – which we find is due to dense annotations not correlating well with the original ground-truth answers to questions finetuning on VisDial [1]. We next finetune our model on dense annotations i.e. relevance scores for all 100 answer options corresponding to each question on a subset of the training set.
+
+Findings: Next, we find that additional finetuning using "dense" annotations in VisDial leads to even higher NDCG – more than 10% over our base model – but hurts MRR – more than 17% below our base model! This highlights a trade-off between the two primary metrics – NDCG and MRR – which we find is due to dense annotations not correlating well with the original ground-truth answers to questions.
+
+Results: Our best single model outperforms prior published work (including model ensembles) by more than 1% absolute on NDCG and MRR.
 
 ## Learning Predictive Models from Observation and Interaction
 
