@@ -281,6 +281,19 @@ Result: We show how a 3D detector can be trained to detect objects in a scene by
 focus while LiDARs sense the entire environment and have low spatial and angular resolution.
 
 
+## Multimodal Shape Completion via Conditional Generative Adversarial Networks
+
+
+
+
+## Generative Sparse Detection Networks for 3D Single-shot Object Detection
+
+
+
+
+
+
+
 
 
 
