@@ -273,6 +273,17 @@ Result: Evaluations performed on two public datasets show that the rendered imag
 
 ## Active Perception using Light Curtains for Autonomous Driving
 
+Existing sensor: Most real-world 3D sensors such as LiDARs perform fixed scans of the entire environment, while being decoupled from the recognition system that processes the sensor data.
+
+Proposed work: We propose a method for 3D object recognition using light curtains, a resource-efficient controllable sensor that measures depth at user-specified locations in the environment. Crucially, we propose using prediction uncertainty of a deep learning based 3D point cloud detector to guide active perception.  Given a neural network’s uncertainty, we derive an optimization objective to place light curtains using the principle of maximizing information gain. Then, we develop a novel and efficient optimization algorithm to maximize this objective by encoding the physical constraints of the device into a constraint graph and optimizing with dynamic programming.
+
+Result: We show how a 3D detector can be trained to detect objects in a scene by sequentially placing uncertainty-guided light curtains to successively improve detection accuracy. There are two main advantages of using programmable light curtains over LiDARs. First, they can be cheaply constructed, since light curtains use ordinary CMOS sensors (a current lab-built prototype costs $1000, and the price is expected to go down significantly in production). In contrast, a 64-beam Velodyne LiDAR that is commonly used in 3D self-driving datasets like KITTI [11] costs upwards of $80,000. Second, light curtains generate data with much higher resolution in regions where they actively
+focus [3] while LiDARs sense the entire environment and have low spatial and angular resolution.
+
+
+
+
+
 
 
 
