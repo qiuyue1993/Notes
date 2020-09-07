@@ -265,8 +265,11 @@ achieves significantly greater success than a model that does not use observatio
 
 ## Neural Object Learning for 6D Pose Estimation Using a Few Cluttered Images
 
+Existing problem: Recent methods for 6D pose estimation of objects assume either textured 3D models or real images that cover the entire range of target poses. However, it is difficult to obtain textured 3D models and annotate the poses of objects in real scenarios.
 
+Proposed method: This paper proposes a method, Neural Object Learning (NOL), that creates synthetic images of objects in arbitrary poses by combining only a few observations from cluttered images.  A novel refinement step is proposed to align inaccurate poses of objects in source images, which results in better quality images.
 
+Result: Evaluations performed on two public datasets show that the rendered images created by NOL lead to state-of-the-art performance in comparison to methods that use 13 times the number of real images. Evaluations on our new dataset show multiple objects can be trained and recognized simultaneously using a sequence of a fixed scene.
 
 ## Active Perception using Light Curtains for Autonomous Driving
 
