@@ -294,6 +294,11 @@ Result: We extensively evaluate the approach on several datasets that contain va
 
 
 
+## Mask2CAD: 3D Shape Prediction by Learning to Segment and Retrieve
+
+
+## Hallucinating Visual Instances in Total Absentia
+
 
 
 
