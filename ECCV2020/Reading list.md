@@ -280,11 +280,15 @@ Proposed work: We propose a method for 3D object recognition using light curtain
 Result: We show how a 3D detector can be trained to detect objects in a scene by sequentially placing uncertainty-guided light curtains to successively improve detection accuracy. There are two main advantages of using programmable light curtains over LiDARs. First, they can be cheaply constructed, since light curtains use ordinary CMOS sensors (a current lab-built prototype costs 1000, and the price is expected to go down significantly in production). In contrast, a 64-beam Velodyne LiDAR that is commonly used in 3D self-driving datasets like KITTI costs upwards of 80,000. Second, light curtains generate data with much higher resolution in regions where they actively
 focus while LiDARs sense the entire environment and have low spatial and angular resolution.
 
-
 ## Multimodal Shape Completion via Conditional Generative Adversarial Networks
 
+Existing research: Several deep learning methods have been proposed for completing partial data from shape acquisition setups, i.e., filling the regions that were missing in the shape. These methods, however, only complete the partial shape with a single output, ignoring the ambiguity when reasoning the missing geometry.
 
+Proposed method: we pose a multi-modal shape completion problem, in which we seek to complete the partial shape with multiple outputs by learning a one-to-many mapping. We develop the first multimodal shape completion method that completes the partial shape via conditional generative modeling, without requiring paired training data. Our approach distills the ambiguity by conditioning the completion on a learned multimodal distribution of possible results. 
 
+Model details: We address the challenge by completing the partial shape in a conditional generative modeling setting. We design a conditional generative adversarial network (cGAN) wherein a generator learns to map incomplete training data, combined with a latent vector sampled from a learned multimodal shape distribution, to a suitable latent representation such that a discriminator cannot differentiate between the mapped latent variables and the latent variables obtained from complete training data (i.e., complete shape models). An encoder is introduced to encode mode latent vectors from complete shapes, learning the multimodal distribution of all possible outputs. 
+
+Result: We extensively evaluate the approach on several datasets that contain varying forms of shape incompleteness, and compare among several baseline methods and variants of our methods qualitatively and quantitatively, demonstrating the merit of our method in completing partial shapes with both diversity and quality.
 
 ## Generative Sparse Detection Networks for 3D Single-shot Object Detection
 
