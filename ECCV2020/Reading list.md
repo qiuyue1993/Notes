@@ -301,6 +301,13 @@ Result: GSDN can process unprecedentedly large-scale inputs with a single fully-
 
 ## Mask2CAD: 3D Shape Prediction by Learning to Segment and Retrieve
 
+Intuition: We propose to leverage existing largescale datasets of 3D models to understand the underlying 3D structure of objects seen in an image by constructing a CAD-based representation of the objects and their poses.
+
+Proposed method: We present Mask2CAD, which jointly detects objects in real-world images and for each detected object, optimizes for the most similar CAD model and its pose.  We construct a joint embedding space between the detected regions of an image corresponding to an object and 3D CAD models, enabling retrieval of CAD models for an input RGB image. 
+
+Length:  We show that our approach produces accurate shape reconstructions and is capable of generalizing to unseen 3D objects at test time. We believe that this makes a promising step in 3D perception from images as well as transforming real-world imagery to a synthetic representation, opening up new possibilities for digitization of real-world environments for applications such as content creation or domain transfer.
+
+Result: This produces a clean, lightweight representation of the objects in an image; this CAD-based representation ensures a valid, efficient shape representation for applications such as content creation or interactive scenarios, and makes a step towards understanding the transformation of real-world imagery to a synthetic domain. Experiments on real-world images from Pix3D demonstrate the advantage of our approach in comparison to state of the art. To facilitate future research, we additionally propose a new image-to-3D baseline on ScanNet which features larger shape diversity, real-world occlusions, and challenging image views.
 
 ## Hallucinating Visual Instances in Total Absentia
 
