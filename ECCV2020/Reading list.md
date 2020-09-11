@@ -292,7 +292,12 @@ Result: We extensively evaluate the approach on several datasets that contain va
 
 ## Generative Sparse Detection Networks for 3D Single-shot Object Detection
 
+Proposed method: We propose Generative Sparse Detection Network (GSDN), a fully-convolutional single-shot sparse detection network that efficiently generates the support for object proposals.
 
+Key component: The key component of our model is a generative sparse tensor decoder, which uses a series of transposed convolutions and pruning layers to expand the support
+of sparse tensors while discarding unlikely object centers to maintain minimal runtime and memory footprint. Our single-shot 3D object detection network consists of two components: an hierarchical sparse tensor encoder which efficiently extracts deep hierarchical features, and a generative sparse tensor decoder which expands the support of the sparse input to ground object proposals on.
+
+Result: GSDN can process unprecedentedly large-scale inputs with a single fully-convolutional feed-forward pass, thus does not require the heuristic post-processing stage that stitches results from sliding windows as other previous methods have. We validate our approach on three 3D indoor datasets including the large-scale 3D indoor reconstruction dataset where our method outperforms the state-of-the-art methods by a relative improvement of 7.14% while being 3.78 times faster than the best prior work.
 
 ## Mask2CAD: 3D Shape Prediction by Learning to Segment and Retrieve
 
