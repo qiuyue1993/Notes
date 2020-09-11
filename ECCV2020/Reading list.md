@@ -311,6 +311,16 @@ Result: This produces a clean, lightweight representation of the objects in an i
 
 ## Hallucinating Visual Instances in Total Absentia
 
+Proposed task: We investigate a new visual restoration task, termed as hallucinating visual instances in total absentia (HVITA). Unlike conventional image inpainting task that works on images with only part of a visual instance missing, HVITA concerns scenarios where an object is completely absent from the scene.
+
+Task difficulty: This seemingly minor difference in fact makes the HVITA a much challenging task, as the restoration algorithm would have to not only infer the category of the object in total absentia, but also hallucinate an object of which the appearance is consistent with the background.
+
+Approach: Towards solving HVITA, we propose an end-to-end deep approach that explicitly looks into the global semantics within the image. Specifically, we transform the input image to a semantic graph, wherein each node corresponds to a detected object in the scene. We then adopt a Graph Convolutional Network on top of the scene graph to estimate the category of the missing object in the masked region, and finally introduce a Generative Adversarial Module to carry out the hallucination. 
+
+Result: Experiments on COCO, Visual Genome and NYU Depth v2 datasets demonstrate that the proposed approach yields truly encouraging and visually plausible results.
+
+
+
 
 
 
