@@ -319,6 +319,19 @@ Approach: Towards solving HVITA, we propose an end-to-end deep approach that exp
 
 Result: Experiments on COCO, Visual Genome and NYU Depth v2 datasets demonstrate that the proposed approach yields truly encouraging and visually plausible results.
 
+## Linguistic Structure Guided Context Modeling for Referring Image Segmentation
+
+Previous problem: Multimodal context of the sentence is crucial to distinguish the referent from the background. Existing methods either insufficiently or redundantly model
+the multimodal context. 
+
+Proposed method: To tackle this problem, we propose a “gatherpropagate-distribute” scheme to model multimodal context by crossmodal interaction and implement this scheme as a novel Linguistic Structure guided Context Modeling (LSCM) module. Our LSCM module builds a Dependency Parsing Tree suppressed Word Graph (DPT-WG) which guides all the words to include valid multimodal context of the sentence while excluding disturbing ones through three steps over the multimodal feature, i.e., gathering, constrained propagation and distributing.
+
+Results: Extensive experiments on four benchmarks demonstrate that our method outperforms all the previous state-of-the-arts. Extensive experiments on four benchmarks demonstrate that our method outperforms all the previous state-of-the-arts, i.e., UNC (+1.58%), UNC+ (+3.09%), G-Ref (+1.65%) and ReferIt (+2.44%).
+
+## 
+
+
+
 
 
 
