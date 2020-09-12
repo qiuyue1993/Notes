@@ -328,7 +328,15 @@ Proposed method: To tackle this problem, we propose a “gatherpropagate-distrib
 
 Results: Extensive experiments on four benchmarks demonstrate that our method outperforms all the previous state-of-the-arts. Extensive experiments on four benchmarks demonstrate that our method outperforms all the previous state-of-the-arts, i.e., UNC (+1.58%), UNC+ (+3.09%), G-Ref (+1.65%) and ReferIt (+2.44%).
 
-## 
+## Learning to Plan with Uncertain Topological Maps
+
+Proposed method: We train an agent to navigate in 3D environments using a hierarchical strategy including a high-level graph based planner and a local policy. Our main contribution is a data driven learning based approach for planning under uncertainty in topological maps, requiring an estimate of shortest paths in valued graphs with a probabilistic structure.
+
+Comparison to existing methods:  Whereas classical symbolic algorithms achieve optimal results on noise-less topologies, or optimal results in a probabilistic sense on graphs
+with probabilistic structure, we aim to show that machine learning can overcome missing information in the graph by taking into account rich high-dimensional node features, for instance visual information available at each location of the map
+
+Results:  By performing an empirical analysis of our method in simulated photo-realistic 3D environments, we demonstrate that the inclusion of visual features in the learned neural planner outperforms classical symbolic solutions for graph based planning.
+
 
 
 
