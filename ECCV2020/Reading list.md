@@ -355,10 +355,24 @@ Approach: We introduce a new spatio-temporal deep neural network architecture ca
 
 Results: The experiments show that HATNet trained on HVU outperforms current stateof-the-art methods on challenging human action datasets: HMDB51, UCF101, and Kinetics. In particular, if the model is pre-trained on HVU and fine-tuned on the corresponding datasets it outperforms models pre-trained on Kinetics. This shows the richness of our dataset as well as the importance of multi-task learning. We experimentally show that HATNet achieves outstanding performance on UCF101 (97.8%), HMDB51 (76.5%) and Kinetics (77.6%).
 
-##
+## Spatially Aware Multimodal Transformers for TextVQA
+
+Previous method: Existing approaches are limited in their use of spatial relations and rely on fully-connected transformer-based architectures to implicitly learn the spatial structure of a scene.
+
+Proposed method: In contrast, we propose a novel spatially aware self-attention layer such that each visual entity only looks at neighboring entities defined by a spatial graph. Further, each head in our multi-head self-attention layer focuses on a different subset of relations. Our approach has two advantages: (1) each head considers local context instead of dispersing the attention amongst all visual entities; (2) we avoid learning redundant features. We developed a spatially aware self-attention layer that encodes different types of relations between input entities via a graph.  In our proposed method, each input entity only looks at neighboring entities as defined by a spatial graph. This allows each input to focus on a local context instead of dispersing attention amongst all other entities. Each head also focuses on a different subset of the spatial relations which avoids learning redundant features.
+
+Result: We show that our model improves the absolute accuracy of current state-of-the-art methods on TextVQA by 2.2% overall over an improved baseline, and 4.62% on questions that involve spatial reasoning and can be answered correctly using OCR tokens. Similarly on ST-VQA, we improve the absolute accuracy by 4.2%. We further show that spatially aware self-attention improves visual grounding.
+
+## SceneCAD: Predicting Object Alignments and Layouts in RGB-D Scans
+
+Proposed work: We present a novel approach to reconstructing lightweight, CAD-based representations of scanned 3D environments from commodity RGB-D sensors. Our key idea is to jointly optimize for both CAD model alignments as well as layout estimations of the scanned scene, explicitly modeling inter-relationships between objects-to-objects and objects-to-layout. Since object arrangement and scene layout are intrinsically coupled, we show that treating the problem jointly significantly helps to produce globally-consistent representations of a scene. Object CAD odels are aligned to the scene by establishing dense correspondences between geometry, and we introduce a hierarchical layout prediction approach to estimate layout planes from corners and edges of the scene. To this end, we propose a message-passing graph neural network to model the inter-relationships between objects and layout, guiding generation of a globally object alignment in a scene.
+
+Result:  By considering the global scene layout, we achieve significantly improved CAD alignments compared to state-of-the-art methods, improving from 41.83% to 58.41% alignment
+accuracy on SUNCG and from 50.05% to 61.24% on ScanNet, respectively. The resulting CAD-based representations makes our method well-suited for applications in content creation such as augmented- or virtual reality.
 
 
-##
+
+
 
 
 
