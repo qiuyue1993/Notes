@@ -345,6 +345,24 @@ Proposed method: We present a simultaneous detection and tracking algorithm that
 
 Result: CenterTrack is simple, online (no peeking into the future), and real-time. It achieves 67.8% MOTA on the MOT17 challenge at 22 FPS and 89.4% MOTA on the KITTI tracking benchmark at 15 FPS, setting a new state of the art on both datasets. CenterTrack is easily extended to monocular 3D tracking by regressing additional 3D attributes. Using monocular video input, it achieves 28.3% AMOTA@0.2 on the newly released nuScenes 3D tracking benchmark, substantially outperforming the monocular baseline on this benchmark while running at 28 FPS.
 
+## Large Scale Holistic Video Understanding
+
+Previous problem: Video recognition has been advanced in recent years by benchmarks with rich annotations. However, research is still mainly limited to human action or sports recognition - focusing on a highly specific video understanding task and thus leaving a significant gap towards describing the overall content of a video.
+
+Proposed dataset: We fill this gap by presenting a large-scale “Holistic Video Understanding Dataset” (HVU). HVU is organized hierarchically in a semantic taxonomy that focuses on multi-label and multi-task video understanding as a comprehensive problem that encompasses the recognition of multiple semantic aspects in the dynamic scene. HVU contains approx. 572k videos in total with 9 million annotations for training, validation and test set spanning over 3457 labels. HVU encompasses semantic aspects defined on categories of scenes, objects, actions, events, attributes and concepts which naturally captures the real-world scenarios.
+
+Approach: We introduce a new spatio-temporal deep neural network architecture called “Holistic Appearance and Temporal Network” (HATNet) that builds on fusing 2D and 3D architectures into one by combining intermediate representations of appearance and temporal cues. HATNet focuses on the multi-label and multi-task learning problem and is trained in an end-to-end manner. 
+
+Results: The experiments show that HATNet trained on HVU outperforms current stateof-the-art methods on challenging human action datasets: HMDB51, UCF101, and Kinetics. In particular, if the model is pre-trained on HVU and fine-tuned on the corresponding datasets it outperforms models pre-trained on Kinetics. This shows the richness of our dataset as well as the importance of multi-task learning. We experimentally show that HATNet achieves outstanding performance on UCF101 (97.8%), HMDB51 (76.5%) and Kinetics (77.6%).
+
+##
+
+
+##
+
+
+
+
 
 
 
